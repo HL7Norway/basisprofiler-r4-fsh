@@ -15,7 +15,7 @@ Description: "Informasjon om pasienten, basert på no-basis."
 // Eksempel på pasient med navn og fødselsnummer
 
 Instance: Pasient-1
-InstanceOf: MalPatient
+InstanceOf: NoBasisPatient
 Description: "Eksempel på pasient med navn og fødselsnummer"
 * identifier.system = "urn:oid:2.16.578.1.12.4.1.4.1"
 * identifier.value = "13031353453"
