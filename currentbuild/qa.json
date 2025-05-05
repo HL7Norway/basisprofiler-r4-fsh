@@ -1,13 +1,13 @@
 {
-  "url" : "http://hl7.no/fhir/ig/mal/ImplementationGuide/hl7.fhir.no.mal",
-  "name" : "Mal",
-  "title" : "Mal",
-  "description" : "Implementasjonsguide for å TODO",
+  "url" : "http://hl7.no/fhir/ig/no-basis/ImplementationGuide/hl7.fhir.no.basis",
+  "name" : "nobasis",
+  "title" : "no-basis",
+  "description" : "no-basis R4 for FSH - under utvikling",
   "status" : "draft",
-  "package-id" : "hl7.fhir.no.mal",
+  "package-id" : "hl7.fhir.no.basis",
   "ig-ver" : "0.1.0",
-  "date" : "Fri, 04 Apr, 2025 11:23:40 +0000",
-  "dateISO8601" : "2025-04-04T11:23:40+00:00",
+  "date" : "Mon, 05 May, 2025 09:03:18 +0000",
+  "dateISO8601" : "2025-05-05T09:03:18+00:00",
   "errs" : 0,
   "warnings" : 6,
   "hints" : 1,
@@ -15,5 +15,5 @@
   "suppressed-warnings" : 0,
   "version" : "4.0.1",
   "tool" : "5.0.0 (3)",
-  "maxMemory" : 640821960
+  "maxMemory" : 743567376
 }

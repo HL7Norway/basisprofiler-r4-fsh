@@ -1,16 +1,16 @@
 {
   "resourceType" : "ImplementationGuide",
-  "id" : "hl7.fhir.no.mal",
+  "id" : "hl7.fhir.no.basis",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide hl7.fhir.no.mal</b></p><a name=\"hl7.fhir.no.mal\"> </a><a name=\"hchl7.fhir.no.mal\"> </a><a name=\"hl7.fhir.no.mal-no-NO\"> </a><h2>Mal</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.no/fhir/ig/mal/ImplementationGuide/hl7.fhir.no.mal</pre><div><p>Implementasjonsguide for å TODO</p>\n</div></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide hl7.fhir.no.basis</b></p><a name=\"hl7.fhir.no.basis\"> </a><a name=\"hchl7.fhir.no.basis\"> </a><a name=\"hl7.fhir.no.basis-no-NO\"> </a><h2>nobasis</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.no/fhir/ig/no-basis/ImplementationGuide/hl7.fhir.no.basis</pre><div><p>no-basis R4 for FSH - under utvikling</p>\n</div></div>"
   },
-  "url" : "http://hl7.no/fhir/ig/mal/ImplementationGuide/hl7.fhir.no.mal",
+  "url" : "http://hl7.no/fhir/ig/no-basis/ImplementationGuide/hl7.fhir.no.basis",
   "version" : "0.1.0",
-  "name" : "Mal",
-  "title" : "Mal",
+  "name" : "nobasis",
+  "title" : "no-basis",
   "status" : "draft",
-  "date" : "2025-04-04T11:22:52+00:00",
+  "date" : "2025-05-05T09:02:32+00:00",
   "publisher" : "HL7 Norge",
   "contact" : [{
     "name" : "HL7 Norge",
@@ -19,7 +19,7 @@
       "value" : "https://www.hl7.no"
     }]
   }],
-  "description" : "Implementasjonsguide for å TODO",
+  "description" : "no-basis R4 for FSH - under utvikling",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -27,7 +27,7 @@
       "display" : "Norway"
     }]
   }],
-  "packageId" : "hl7.fhir.no.mal",
+  "packageId" : "hl7.fhir.no.basis",
   "license" : "CC0-1.0",
   "fhirVersion" : ["4.0.1"],
   "dependsOn" : [{
@@ -38,7 +38,7 @@
     }],
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r4",
-    "version" : "6.2.0"
+    "version" : "6.3.0"
   },
   {
     "id" : "hl7ext",
@@ -49,12 +49,6 @@
     "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
     "packageId" : "hl7.fhir.uv.extensions.r4",
     "version" : "5.2.0"
-  },
-  {
-    "id" : "hl7_fhir_no_basis",
-    "uri" : "http://fhir.org/packages/hl7.fhir.no.basis/ImplementationGuide/hl7.fhir.no.basis",
-    "packageId" : "hl7.fhir.no.basis",
-    "version" : "2.2.0"
   }],
   "definition" : {
     "extension" : [{
@@ -163,7 +157,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "http://hl7.no/fhir/ig/mal/history.html"
+        "valueString" : "http://hl7.no/fhir/ig/no-basis/history.html"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -334,7 +328,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
-      "valueCode" : "hl7.fhir.uv.tools.r4#0.4.1"
+      "valueCode" : "hl7.fhir.uv.tools.r4#0.5.0"
     },
     {
       "extension" : [{
@@ -442,7 +436,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "http://hl7.no/fhir/ig/mal/history.html"
+        "valueString" : "http://hl7.no/fhir/ig/no-basis/history.html"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -617,19 +611,7 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/mal-observation-blodprove"
-      },
-      "name" : "Blodprøve",
-      "description" : "Profil for vanlige blodprøver",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/mal-patient"
+        "reference" : "StructureDefinition/no-basis-patient"
       },
       "name" : "Pasient",
       "description" : "Informasjon om pasienten, basert på no-basis.",
@@ -645,7 +627,7 @@
       },
       "name" : "Pasient-1",
       "description" : "Eksempel på pasient med navn og fødselsnummer",
-      "exampleCanonical" : "http://hl7.no/fhir/ig/mal/StructureDefinition/mal-patient"
+      "exampleCanonical" : "http://hl7.no/fhir/ig/no-basis/StructureDefinition/no-basis-patient"
     }],
     "page" : {
       "extension" : [{

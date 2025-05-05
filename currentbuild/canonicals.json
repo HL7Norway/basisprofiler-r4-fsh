@@ -1,23 +1,16 @@
 [
   {
-    "id" : "hl7.fhir.no.mal",
+    "id" : "hl7.fhir.no.basis",
     "type" : "ImplementationGuide",
-    "url" : "http://hl7.no/fhir/ig/mal/ImplementationGuide/hl7.fhir.no.mal",
+    "url" : "http://hl7.no/fhir/ig/no-basis/ImplementationGuide/hl7.fhir.no.basis",
     "version" : "0.1.0",
-    "name" : "Mal"
+    "name" : "nobasis"
   },
   {
-    "id" : "mal-observation-blodprove",
+    "id" : "no-basis-patient",
     "type" : "StructureDefinition",
-    "url" : "http://hl7.no/fhir/ig/mal/StructureDefinition/mal-observation-blodprove",
+    "url" : "http://hl7.no/fhir/ig/no-basis/StructureDefinition/no-basis-patient",
     "version" : "0.1.0",
-    "name" : "MalObservationBlood"
-  },
-  {
-    "id" : "mal-patient",
-    "type" : "StructureDefinition",
-    "url" : "http://hl7.no/fhir/ig/mal/StructureDefinition/mal-patient",
-    "version" : "0.1.0",
-    "name" : "MalPatient"
+    "name" : "NoBasisPatient"
   }
 ]
