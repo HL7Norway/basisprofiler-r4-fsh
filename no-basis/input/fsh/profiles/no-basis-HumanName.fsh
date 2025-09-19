@@ -15,6 +15,7 @@ Description: "Basisprofil for Norwegian HumanName. Defined by The Norwegian Dire
 * given ^short = "Given names (not always 'first')"
 * given ^definition = "Given name. In Norway Given name does not include middlenames according to the regulation for norwegian names. Multiple given names are however legal. Ref. 'Lov om personnavn' for further details about Norwegian HumanNames."
 * given ^alias[0] = "fornavn"
+* extension[no-basis-middlename] only NoBasisMiddlename
 * prefix ^short = "Prefix is not used in Norwegian names"
 * prefix ^definition = "This is not a part of official Norwegian names as defined in 'lov om personnavn' regulation. Part of the name that is acquired as a title due to academic, legal, employment or nobility status, etc. and that appears at the start of the name."
 * prefix ^mustSupport = false
@@ -24,6 +25,5 @@ Description: "Basisprofil for Norwegian HumanName. Defined by The Norwegian Dire
 * ^short = "Norwegian human name"
 * ^definition = "Defines the format of norwegian human name according to norwegian legislation (lov om personnavn)."
 * extension contains no-basis-middlename 0..1
-* extension[no-basis-middlename] only NoBasisMiddlename
 // * extension[no-basis-middlename] ^short = "Defines a middle name"
 // * extension[no-basis-middlename] ^definition = "Defines a middle name as a specific extension as this is widely used in Norwegian names. The middlename is defined in norwegian legislation (lov om personnavn)."
