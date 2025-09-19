@@ -22,3 +22,5 @@ Description: "Eksempel på pasient med navn og fødselsnummer"
 * identifier.value = "13031353453"
 * name.family = "Lin"
 * name.given = "Rita"
+* text.status = #generated
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Eksempel på pasient</div>"
