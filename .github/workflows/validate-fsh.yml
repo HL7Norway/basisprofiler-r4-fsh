@@ -21,13 +21,14 @@ jobs:
       with:
         python-version: '3.11'
 
-    - name: Cache Node.js and pip modules
+    - name: Cache Node.js, pip, and FHIR packages
       uses: actions/cache@v4
       with:
         path: |
           ~/.npm
           ~/.cache/pip
-        key: ${{ runner.os }}-deps-${{ hashFiles('**/package-lock.json') }}-${{ hashFiles('**/requirements.txt') }}
+          ~/.fhir/packages
+        key: ${{ runner.os }}-deps-${{ hashFiles('**/package-lock.json') }}-${{ hashFiles('**/requirements.txt') }}-${{ hashFiles('**/.fhirpackageindex.json') }}
         restore-keys: |
           ${{ runner.os }}-deps-
 
