@@ -3,14 +3,14 @@
   "id" : "hl7.fhir.no.basis",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide hl7.fhir.no.basis</b></p><a name=\"hl7.fhir.no.basis\"> </a><a name=\"hchl7.fhir.no.basis\"> </a><a name=\"hl7.fhir.no.basis-no-NO\"> </a><h2>nobasis</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.no/fhir/ig/no-basis/ImplementationGuide/hl7.fhir.no.basis</pre><div><p>no-basis R4 for FSH - under utvikling</p>\n</div></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide hl7.fhir.no.basis</b></p><a name=\"hl7.fhir.no.basis\"> </a><a name=\"hchl7.fhir.no.basis\"> </a><h2>nobasis</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.no/fhir/ig/no-basis/ImplementationGuide/hl7.fhir.no.basis</pre><div><p>no-basis R4 for FSH - under utvikling</p>\n</div></div>"
   },
   "url" : "http://hl7.no/fhir/ig/no-basis/ImplementationGuide/hl7.fhir.no.basis",
   "version" : "0.1.0",
   "name" : "nobasis",
   "title" : "no-basis",
   "status" : "draft",
-  "date" : "2025-05-05T09:02:32+00:00",
+  "date" : "2025-09-19T21:44:58+00:00",
   "publisher" : "HL7 Norge",
   "contact" : [{
     "name" : "HL7 Norge",
@@ -38,7 +38,7 @@
     }],
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r4",
-    "version" : "6.3.0"
+    "version" : "6.5.0"
   },
   {
     "id" : "hl7ext",
@@ -328,7 +328,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
-      "valueCode" : "hl7.fhir.uv.tools.r4#0.5.0"
+      "valueCode" : "hl7.fhir.uv.tools.r4#0.8.0"
     },
     {
       "extension" : [{
@@ -606,6 +606,18 @@
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     }],
     "resource" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/no-basis-middlename"
+      },
+      "name" : "no-basis-middlename",
+      "description" : "The basis extension defines the Norwegian middlename which is called 'mellomnavn' and defined by Norwegian legislation (Lov om personnavn).",
+      "exampleBoolean" : false
+    },
+    {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"

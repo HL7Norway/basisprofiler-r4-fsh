@@ -1,86 +1,137 @@
 {
-  "date" : "Mon, 05 May, 2025 09:03:18 +0000",
+  "date" : "Fri, 19 Sep, 2025 21:45:32 +0000",
   "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
   "files" : [
     {
       "name" : "/fsh-generated/resources/ImplementationGuide-hl7.fhir.no.basis.json",
-      "size" : 1771,
+      "size" : 2124,
       "processes" : [
         {
           "activity" : "load",
-          "start" : 45,
-          "length" : 25
+          "start" : 34,
+          "length" : 23
         },
         {
           "activity" : "checkR4R4B",
-          "start" : 49,
-          "length" : 3
+          "start" : 43,
+          "length" : 7
         },
         {
           "activity" : "generateNarratives",
-          "start" : 49,
-          "length" : 319
+          "start" : 43,
+          "length" : 99
         },
         {
           "activity" : "validate",
-          "start" : 51,
-          "length" : 5997
-        },
-        {
-          "activity" : "scanForUsageStats",
-          "start" : 57,
-          "length" : 1
+          "start" : 47,
+          "length" : 1935
         },
         {
           "activity" : "generate1",
-          "start" : 57,
-          "length" : 75
+          "start" : 49,
+          "length" : 71
         },
         {
           "activity" : "generate2",
-          "start" : 59,
-          "length" : 68
+          "start" : 50,
+          "length" : 78
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 67,
+          "start" : 60,
           "length" : 3
-        },
-        {
-          "activity" : "scanExamplesForR5",
-          "start" : 70,
-          "length" : 2
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/Patient-Pasient-1.json",
-      "size" : 374,
+      "size" : 502,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 44,
-          "length" : 16
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 50,
-          "length" : 247
+          "start" : 34,
+          "length" : 15
         },
         {
           "activity" : "validate",
-          "start" : 57,
-          "length" : 82
+          "start" : 49,
+          "length" : 5
         },
         {
           "activity" : "generate1",
-          "start" : 57,
-          "length" : 16
+          "start" : 49,
+          "length" : 13
         },
         {
           "activity" : "generate2",
-          "start" : 59,
+          "start" : 51,
           "length" : 19
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-no-basis-middlename.json",
+      "size" : 2333,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 34,
+          "length" : 15
+        },
+        {
+          "activity" : "load",
+          "start" : 34,
+          "length" : 31
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 34,
+          "length" : 34
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 43,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 43,
+          "length" : 85
+        },
+        {
+          "activity" : "validate",
+          "start" : 43,
+          "length" : 3552
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 49,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 49,
+          "length" : 58
+        },
+        {
+          "activity" : "generate2",
+          "start" : 51,
+          "length" : 272
+        },
+        {
+          "activity" : "generate2",
+          "start" : 52,
+          "length" : 1025
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 60,
+          "length" : 2
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 63,
+          "length" : 1
         }
       ]
     },
@@ -90,63 +141,53 @@
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 44,
-          "length" : 13
+          "start" : 34,
+          "length" : 16
         },
         {
           "activity" : "load",
-          "start" : 44,
-          "length" : 18
+          "start" : 34,
+          "length" : 19
         },
         {
           "activity" : "generateSnapshots",
-          "start" : 45,
-          "length" : 87
+          "start" : 34,
+          "length" : 80
         },
         {
-          "activity" : "loadDepInfo",
+          "activity" : "generateNarratives",
+          "start" : 43,
+          "length" : 46
+        },
+        {
+          "activity" : "validate",
+          "start" : 46,
+          "length" : 438
+        },
+        {
+          "activity" : "scanForUsageStats",
           "start" : 49,
           "length" : 1
         },
         {
-          "activity" : "generateNarratives",
-          "start" : 50,
-          "length" : 77
-        },
-        {
-          "activity" : "validate",
-          "start" : 50,
-          "length" : 958
-        },
-        {
-          "activity" : "scanForUsageStats",
-          "start" : 57,
-          "length" : 1
-        },
-        {
           "activity" : "generate1",
-          "start" : 57,
-          "length" : 182
+          "start" : 49,
+          "length" : 166
         },
         {
           "activity" : "generate2",
-          "start" : 59,
-          "length" : 596
+          "start" : 51,
+          "length" : 710
         },
         {
           "activity" : "generate2",
-          "start" : 59,
-          "length" : 1426
+          "start" : 53,
+          "length" : 606
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 67,
+          "start" : 60,
           "length" : 11
-        },
-        {
-          "activity" : "scanExamplesForR5",
-          "start" : 70,
-          "length" : 2
         }
       ]
     }

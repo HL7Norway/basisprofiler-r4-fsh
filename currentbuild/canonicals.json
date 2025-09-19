@@ -1,5 +1,12 @@
 [
   {
+    "id" : "no-basis-middlename",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.no/fhir/StructureDefinition/no-basis-middlename",
+    "version" : "0.1.0",
+    "name" : "NoBasisMiddlename"
+  },
+  {
     "id" : "hl7.fhir.no.basis",
     "type" : "ImplementationGuide",
     "url" : "http://hl7.no/fhir/ig/no-basis/ImplementationGuide/hl7.fhir.no.basis",
