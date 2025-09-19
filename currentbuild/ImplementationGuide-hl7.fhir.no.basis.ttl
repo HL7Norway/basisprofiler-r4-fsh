@@ -18,7 +18,7 @@
   fhir:name [ fhir:v "nobasis"] ; # 
   fhir:title [ fhir:v "no-basis"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-09-19T21:44:58+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-09-19T21:49:35+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 Norge"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 Norge" ] ;
