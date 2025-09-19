@@ -3,10 +3,8 @@ name: Validate FSH Files
 on:
   workflow_dispatch:
 
-# CONFIGURATION: The "short name" of the IG and the folder must be the same
 env:
   IG_SHORTNAME: no-basis
-  # IG: ${{ vars.IG_KORTNAVN }}
 
 jobs:
   validate:
@@ -14,37 +12,32 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
-      
-    - name: Setup Node.js
+
+    - name: Setup Node.js and Python
       uses: actions/setup-node@v4
       with:
-        node-version: '16'
-        
-    - name: Setup Python
-      uses: actions/setup-python@v5
+        node-version: '20'
+    - uses: actions/setup-python@v5
       with:
-        python-version: '3.x'
-        
-    - name: Cache Node.js modules
+        python-version: '3.11'
+
+    - name: Cache Node.js and pip modules
       uses: actions/cache@v4
       with:
-        path: ~/.npm
-        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+        path: |
+          ~/.npm
+          ~/.cache/pip
+        key: ${{ runner.os }}-deps-${{ hashFiles('**/package-lock.json') }}-${{ hashFiles('**/requirements.txt') }}
         restore-keys: |
-          ${{ runner.os }}-node-
-          ${{ runner.os }}-
+          ${{ runner.os }}-deps-
 
-    - name: Install fsh-sushi
-      run: npm install -g fsh-sushi
+    - name: Install dependencies
+      run: |
+        npm install -g fsh-sushi
+        pip install -U git+https://github.com/glichtner/fsh-validator
 
     - name: Install hl7.fhir.no.basis-2.2.0-snapshots in local cache
-      run: |
-        echo "NPM install fhir r4 core 4.0.1 from package registry"
-        npm --registry https://packages.simplifier.net install hl7.fhir.r4.core@4.0.1
-      
-
-    - name: Install fsh-validator
-      run: pip install -U git+https://github.com/glichtner/fsh-validator
+      run: npm --registry https://packages.simplifier.net install hl7.fhir.r4.core@4.0.1
 
     - name: Run fsh-validator
       run: |
