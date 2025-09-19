@@ -7,7 +7,7 @@ Description: "Basisprofil for Norwegian HumanName. Defined by The Norwegian Dire
 * ^version = "2.0.15"
 * ^status = #active
 * ^date = "2019-05-20"
-* ^fhirVersion = "4.0.1"
+* ^fhirVersion = 4.0.1
 * ^kind = #complex-type
 * ^abstract = false
 * family ^definition = "Ref. 'lov om personnavn' for further details about Norwegian HumanNames. The part of a name that links to the genealogy. In some cultures (e.g. Eritrea) the family name of a son is the first name of his father."
