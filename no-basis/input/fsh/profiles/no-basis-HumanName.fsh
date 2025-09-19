@@ -10,10 +10,6 @@ Description: "Basisprofil for Norwegian HumanName. Defined by The Norwegian Dire
 * ^fhirVersion = "4.0.1"
 * ^kind = #complex-type
 * ^abstract = false
-* extension contains no-basis-middlename 0..1
-* extension[no-basis-middlename] only http://hl7.no/fhir/StructureDefinition/no-basis-middlename
-* extension[no-basis-middlename] ^short = "Defines a middle name"
-* extension[no-basis-middlename] ^definition = "Defines a middle name as a specific extension as this is widely used in Norwegian names. The middlename is defined in norwegian legislation (lov om personnavn)."
 * family ^definition = "Ref. 'lov om personnavn' for further details about Norwegian HumanNames. The part of a name that links to the genealogy. In some cultures (e.g. Eritrea) the family name of a son is the first name of his father."
 * family ^alias[0] = "etternavn"
 * given ^short = "Given names (not always 'first')"
@@ -27,3 +23,7 @@ Description: "Basisprofil for Norwegian HumanName. Defined by The Norwegian Dire
 * suffix ^mustSupport = false
 * ^short = "Norwegian human name"
 * ^definition = "Defines the format of norwegian human name according to norwegian legislation (lov om personnavn)."
+* extension contains no-basis-middlename 0..1
+* extension[no-basis-middlename] only http://hl7.no/fhir/StructureDefinition/no-basis-middlename
+* extension[no-basis-middlename] ^short = "Defines a middle name"
+* extension[no-basis-middlename] ^definition = "Defines a middle name as a specific extension as this is widely used in Norwegian names. The middlename is defined in norwegian legislation (lov om personnavn)."
