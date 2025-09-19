@@ -24,6 +24,6 @@ Description: "Basisprofil for Norwegian HumanName. Defined by The Norwegian Dire
 * ^short = "Norwegian human name"
 * ^definition = "Defines the format of norwegian human name according to norwegian legislation (lov om personnavn)."
 * extension contains no-basis-middlename 0..1
-* extension[no-basis-middlename] only http://hl7.no/fhir/StructureDefinition/no-basis-middlename
-* extension[no-basis-middlename] ^short = "Defines a middle name"
-* extension[no-basis-middlename] ^definition = "Defines a middle name as a specific extension as this is widely used in Norwegian names. The middlename is defined in norwegian legislation (lov om personnavn)."
+* extension[no-basis-middlename] only NoBasisMiddlename
+// * extension[no-basis-middlename] ^short = "Defines a middle name"
+// * extension[no-basis-middlename] ^definition = "Defines a middle name as a specific extension as this is widely used in Norwegian names. The middlename is defined in norwegian legislation (lov om personnavn)."
