@@ -10,7 +10,7 @@ Description: "The basis extension defines the Norwegian middlename which is call
 * ^purpose = "Specific usage of middle name as a specific part of official name standard where name order is important"
 * ^context[+].type = #element
 * ^context[=].expression = "HumanName"
-* ^fhirVersion = #4.0.1
+* ^fhirVersion = "4.0.1"
 * ^kind = #primitive-type
 * ^abstract = false
 // url constraint not needed for extension definition

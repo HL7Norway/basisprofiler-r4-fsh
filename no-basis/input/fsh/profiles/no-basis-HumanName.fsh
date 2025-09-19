@@ -7,7 +7,7 @@ Description: "Basisprofil for Norwegian HumanName. Defined by The Norwegian Dire
 * ^version = "2.0.15"
 * ^status = #active
 * ^date = "2019-05-20"
-* ^fhirVersion = #4.0.1
+* ^fhirVersion = "4.0.1"
 * ^kind = #complex-type
 * ^abstract = false
 * extension contains no-basis-middlename 0..1
