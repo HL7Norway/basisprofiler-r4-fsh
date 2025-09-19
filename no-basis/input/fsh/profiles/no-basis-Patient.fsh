@@ -9,6 +9,7 @@ Description: "Informasjon om pasienten, basert på no-basis."
 
 * identifier MS
 * name.family MS
+* name only HumanName or NoBasisHumanName
 
 // Pasient: "Doktor, jeg tror jeg har brukket armen på flere steder." Lege: "Da bør du kanskje unngå de stedene i fremtiden."
 
