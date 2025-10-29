@@ -5,7 +5,7 @@
 # Oppdater med riktig informasjon
 id: hl7.fhir.no.basis
 canonical: http://hl7.no/fhir/ig/no-basis
-name: no-basis
+name: NoBasis
 title: "no-basis"
 description: no-basis R4 for FSH - under utvikling
 status: draft
@@ -28,3 +28,8 @@ menu:
   Home: index.html
   Artifacts: artifacts.html
   TOC: toc.html
+
+parameters:
+  special-url:
+  - http://hl7.no/fhir/StructureDefinition/no-basis-HumanName
+  - http://hl7.no/fhir/StructureDefinition/no-basis-middlename
