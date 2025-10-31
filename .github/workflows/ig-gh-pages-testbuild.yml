@@ -42,5 +42,5 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ${{ env.IG_SHORTNAME }}/output
-          destination_dir: currentbuild
+          destination_dir: testbuild
           commit_message: '${{ env.IG }}: ${{ github.event.head_commit.message }}' 
