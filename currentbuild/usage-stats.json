@@ -1,27 +1,566 @@
 {
   "package": "hl7.fhir.no.basis",
-  "version": "0.1.0",
+  "version": "2.2.3-test",
   "fhirVersion": "4.0.1",
   "jurisdiction": "NO",
   "extensions": [
     {
-      "url": "http://hl7.no/fhir/StructureDefinition/no-basis-middlename",
+      "url": "http://hl7.no/fhir/StructureDefinition/no-basis-relatedperson-person-reference",
+      "title": "no-basis-relatedperson-person-reference",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://hl7.no/fhir/ig/StructureDefinition/no-basis-address-official",
+      "title": "no-basis-address-official",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://hl7.no/fhir/ig/StructureDefinition/no-basis-group",
+      "title": "no-basis-group",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://hl7.no/fhir/ig/StructureDefinition/no-basis-middlename",
       "title": "no-basis-middlename",
       "types": [
-        "string",
         "string"
+      ]
+    },
+    {
+      "url": "http://hl7.no/fhir/ig/StructureDefinition/no-basis-municipalitycode",
+      "title": "no-basis-municipalitycode",
+      "types": [
+        "Coding",
+        "string",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://hl7.no/fhir/ig/StructureDefinition/no-basis-partof",
+      "title": "no-basis-partof",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://hl7.no/fhir/ig/StructureDefinition/no-basis-person-citizenship",
+      "title": "no-basis-person-citizenship",
+      "types": [
+        "CodeableConcept",
+        "Period",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://hl7.no/fhir/ig/StructureDefinition/no-basis-prescriptiongroup",
+      "title": "no-basis-prescriptiongroup",
+      "types": [
+        "CodeableConcept",
+        "string",
+        "Extension",
+        "Coding",
+        "string",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean",
+        "string",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://hl7.no/fhir/ig/StructureDefinition/no-basis-propertyinformation",
+      "title": "no-basis-propertyinformation",
+      "types": [
+        "integer",
+        "integer",
+        "integer",
+        "integer",
+        "Coding",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://hl7.no/fhir/ig/StructureDefinition/no-basis-shortnotice",
+      "title": "no-basis-shortnotice",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://hl7.no/fhir/ig/StructureDefinition/no-basis-sourceofinformation",
+      "title": "no-basis-sourceofinformation",
+      "types": [
+        "CodeableConcept",
+        "string",
+        "Extension",
+        "Coding",
+        "string",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean",
+        "string",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://hl7.no/fhir/ig/StructureDefinition/no-basis-urban-district",
+      "title": "no-basis-urban-district",
+      "types": [
+        "Coding"
+      ]
+    },
+    {
+      "url": "http://hl7.no/fhir/ig/StructureDefinition/no-basis-virtual-service",
+      "title": "no-basis-virtual-service",
+      "types": [
+        "Coding",
+        "string",
+        "url",
+        "ContactPoint",
+        "url",
+        "positiveInt",
+        "string",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
       ]
     }
   ],
   "profiles": {
+    "Procedure": [
+      {
+        "url": "http://hl7.no/fhir/StructureDefinition/no-basis-Procedure",
+        "title": "no-basis-Procedure"
+      }
+    ],
+    "Person": [
+      {
+        "url": "http://hl7.no/fhir/ig/StructureDefinition/no-basis-Person",
+        "title": "no-basis-Person"
+      }
+    ],
+    "AllergyIntolerance": [
+      {
+        "url": "http://hl7.no/fhir/ig/StructureDefinition/no-basis-AllergyIntolerance",
+        "title": "no-basis-AllergyIntolerance"
+      }
+    ],
+    "Appointment": [
+      {
+        "url": "http://hl7.no/fhir/ig/StructureDefinition/no-basis-Appointment",
+        "title": "no-basis-Appointment"
+      }
+    ],
+    "AppointmentResponse": [
+      {
+        "url": "http://hl7.no/fhir/ig/StructureDefinition/no-basis-AppointmentResponse",
+        "title": "no-basis-AppointmentResponse"
+      }
+    ],
+    "Composition": [
+      {
+        "url": "http://hl7.no/fhir/ig/StructureDefinition/no-basis-Composition",
+        "title": "no-basis-Composition"
+      }
+    ],
+    "DocumentReference": [
+      {
+        "url": "http://hl7.no/fhir/ig/StructureDefinition/no-basis-DocumentReference",
+        "title": "no-basis-DocumentReference"
+      }
+    ],
+    "Endpoint": [
+      {
+        "url": "http://hl7.no/fhir/ig/StructureDefinition/no-basis-Endpoint",
+        "title": "no-basis-Endpoint"
+      }
+    ],
+    "HealthcareService": [
+      {
+        "url": "http://hl7.no/fhir/ig/StructureDefinition/no-basis-HealthcareService",
+        "title": "no-basis-HealthcareService"
+      }
+    ],
+    "Location": [
+      {
+        "url": "http://hl7.no/fhir/ig/StructureDefinition/no-basis-Location",
+        "title": "no-basis-Location"
+      }
+    ],
+    "Medication": [
+      {
+        "url": "http://hl7.no/fhir/ig/StructureDefinition/no-basis-Medication",
+        "title": "no-basis-Medication"
+      }
+    ],
+    "MedicationStatement": [
+      {
+        "url": "http://hl7.no/fhir/ig/StructureDefinition/no-basis-MedicationStatement",
+        "title": "no-basis-MedicationStatement"
+      }
+    ],
+    "Organization": [
+      {
+        "url": "http://hl7.no/fhir/ig/StructureDefinition/no-basis-Organization",
+        "title": "no-basis-Organization"
+      }
+    ],
     "Patient": [
       {
-        "url": "http://hl7.no/fhir/ig/no-basis/StructureDefinition/no-basis-patient",
-        "title": "Pasient"
+        "url": "http://hl7.no/fhir/ig/StructureDefinition/no-basis-Patient",
+        "title": "no-basis-Patient"
+      }
+    ],
+    "Practitioner": [
+      {
+        "url": "http://hl7.no/fhir/ig/StructureDefinition/no-basis-Practitioner",
+        "title": "no-basis-Practitioner"
+      }
+    ],
+    "PractitionerRole": [
+      {
+        "url": "http://hl7.no/fhir/ig/StructureDefinition/no-basis-PractitionerRole",
+        "title": "no-basis-PractitionerRole"
+      }
+    ],
+    "RelatedPerson": [
+      {
+        "url": "http://hl7.no/fhir/ig/StructureDefinition/no-basis-RelatedPerson",
+        "title": "no-basis-RelatedPerson"
+      }
+    ],
+    "Substance": [
+      {
+        "url": "http://hl7.no/fhir/ig/StructureDefinition/no-basis-Substance",
+        "title": "no-basis-Substance"
       }
     ]
   },
   "usage": {
+    "http://hl7.no/fhir/StructureDefinition/no-basis-address-official": [
+      "Organization.address",
+      "Patient.address",
+      "RelatedPerson.address"
+    ],
+    "http://hl7.no/fhir/StructureDefinition/no-basis-middlename": [
+      "Patient.contact.name",
+      "RelatedPerson.name"
+    ],
+    "http://hl7.no/fhir/StructureDefinition/no-basis-municipalitycode": [
+      "Patient.address.district"
+    ],
+    "http://hl7.no/fhir/StructureDefinition/no-basis-person-citizenship": [
+      "RelatedPerson"
+    ],
+    "http://hl7.no/fhir/StructureDefinition/no-basis-propertyinformation": [
+      "Patient.address",
+      "RelatedPerson.address"
+    ],
+    "http://hl7.no/fhir/StructureDefinition/no-basis-relatedperson-person-reference": [
+      "RelatedPerson.patient"
+    ],
+    "http://hl7.no/fhir/ig/StructureDefinition/no-basis-address-official": [
+      "Address",
+      "Patient.address"
+    ],
+    "http://hl7.no/fhir/ig/StructureDefinition/no-basis-group": [
+      "Appointment"
+    ],
+    "http://hl7.no/fhir/ig/StructureDefinition/no-basis-middlename": [
+      "HumanName",
+      "Patient.name"
+    ],
+    "http://hl7.no/fhir/ig/StructureDefinition/no-basis-municipalitycode": [
+      "Address.district"
+    ],
+    "http://hl7.no/fhir/ig/StructureDefinition/no-basis-partof": [
+      "Appointment"
+    ],
+    "http://hl7.no/fhir/ig/StructureDefinition/no-basis-prescriptiongroup": [
+      "Medication"
+    ],
+    "http://hl7.no/fhir/ig/StructureDefinition/no-basis-propertyinformation": [
+      "Address",
+      "Patient.address"
+    ],
+    "http://hl7.no/fhir/ig/StructureDefinition/no-basis-shortnotice": [
+      "AppointmentResponse"
+    ],
+    "http://hl7.no/fhir/ig/StructureDefinition/no-basis-sourceofinformation": [
+      "AllergyIntolerance"
+    ],
+    "http://hl7.no/fhir/ig/StructureDefinition/no-basis-urban-district": [
+      "Address"
+    ],
+    "http://hl7.no/fhir/ig/StructureDefinition/no-basis-virtual-service": [
+      "Appointment"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.url": [
+      "NamingSystem"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.version": [
+      "NamingSystem"
+    ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
       "StructureDefinition.snapshot.element.constraint"
     ],
@@ -34,11 +573,27 @@
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
       "StructureDefinition.snapshot.element.binding"
     ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/patient-citizenship": [
+      "Patient"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/regex": [
+      "StructureDefinition.snapshot.element.type"
+    ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
       "StructureDefinition.snapshot.element.type"
     ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm": [
+      "StructureDefinition"
+    ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
+      "StructureDefinition.differential.element.type",
       "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg": [
+      "StructureDefinition"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
       "ImplementationGuide.definition"
