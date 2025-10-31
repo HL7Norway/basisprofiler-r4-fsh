@@ -1,11 +1,8 @@
-# Introduction  
+### This is a test of a new build pipeline for no-basis  
 
-|Version|2.0.17-alpha|
-|-|-|
-|Publish date|2019-06-27|
-|IG namespace|http://hl7.no/fhir/ImplementationGuide/no-basis-ImplementationGuide-v2015 |
-|Latest package definition|https://simplifier.net/packages/hl7.fhir.no.basis/2.0.17-alpha |
-|Last bugfix|2021-06-21|
+This repo is currently a test for running a new build pipeline for HL7 Norway's no-basis profiles.
+
+### About no-basis
 
 The Norwegian basisprofiles are developed by HL7 Norway and The Norwegian Directorate of eHealth in cooperation with the industry. The profiles are use-case independent and have several purposes:
 
