@@ -1,4 +1,4 @@
-name: Gen IG and publish GH pages
+name: Testbuild Gen IG and publish GH pages
 
 on:
   workflow_dispatch:
