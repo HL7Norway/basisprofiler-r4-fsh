@@ -9,18 +9,4 @@ Description: "Informasjon om pasienten, basert på no-basis."
 
 * identifier MS
 * name.family MS
-// * name only HumanName or NoBasisHumanName
-
-// Pasient: "Doktor, jeg tror jeg har brukket armen på flere steder." Lege: "Da bør du kanskje unngå de stedene i fremtiden."
-
-// Eksempel på pasient med navn og fødselsnummer
-
-Instance: Pasient-1
-InstanceOf: NoBasisPatient
-Description: "Eksempel på pasient med navn og fødselsnummer"
-* identifier.system = "urn:oid:2.16.578.1.12.4.1.4.1"
-* identifier.value = "13031353453"
-* name.family = "Lin"
-* name.given = "Rita"
-* text.status = #generated
-* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Eksempel på pasient</div>"
+* name only NoBasisHumanName
