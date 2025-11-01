@@ -1,35 +1,20 @@
-### Tittel
+### This is a test of a new build pipeline for no-basis  
 
-Introduksjonstekst (husk at dette er en mal, og ALL tekst må endres - dette er kun et eksempel)
+This repo is currently a test for running a new build pipeline for HL7 Norway's no-basis profiles.
 
-### Mål
+### About no-basis
 
-Målet med denne implementasjonsguiden er å gi en standardisert måte å representere og utveksle helsedata på ved hjelp av HL7 FHIR. Guiden beskriver hvordan ulike FHIR-profiler og ressurser kan brukes for å oppnå interoperabilitet mellom helsesystemer.
+The Norwegian basisprofiles are developed by HL7 Norway and The Norwegian Directorate of eHealth in cooperation with the industry. The profiles are use-case independent and have several purposes:
 
-### Omfang
+* Can be used directly in use cases where the use-case don't need additional information or restrictions
+* Can be used as a basis for further profiling in use-cases where additional specification of the content is needed (national profiles). In this case the basis profiles should be used as a base for national profiles developed by the user
+* Can be used as inspiration for use-case specific profiling
 
-Denne implementasjonsguiden dekker følgende områder:
+The basis profiles are open, in effect it does not add any restrictions to the information content beyond what is necessary to apply FHIR resources in Norwegian context. The basis profiles typically profiles necessary identifiers and coding used in Norway.  
 
-- Pasientadministrasjon
-- Kliniske observasjoner
-- Medisinsk historikk
-- Behandlingsplaner
-- Laboratorieresultater
+The model under visualizes the role of Norwegian base profiles. On top are the FHIR resources as defined by HL7 International. 
+The Norwegian base profiles describes the minimum restrictions necessary independent of use-case to use a given FHIR resource in Norway.  
+The national profiles specifies further any reuseable patterns within a given use-case. This can for example be what information elements in Patient should be supported when exchanging patient data, or how Medication.dosage should be descried in an integration between an EHR and a charting system. The level of implemented profiles represents the actual interface implemented in a given clinial application.  
 
-### Brukstilfeller
-
-#### Pasientregistrering
-
-Denne guiden beskriver hvordan pasienter kan registreres i et helsesystem ved hjelp av FHIR `Patient`-ressursen. Eksempler inkluderer opprettelse, oppdatering og sletting av pasientdata.
-
-#### Kliniske observasjoner
-
-Guiden viser hvordan kliniske observasjoner som blodtrykk, puls og temperatur kan representeres ved hjelp av FHIR `Observation`-ressursen.
-
-### Figur
-
-Eksempel på en figur laget med PlantUML.
-
-<img src="test.svg" width="40%" />
-
-
+<a href="https://raw.githubusercontent.com/HL7Norway/basisprofiler-r4/master/Images/profilering-hierarki.PNG">
+<img src="https://raw.githubusercontent.com/HL7Norway/basisprofiler-r4/master/Images/profilering-hierarki.PNG" alt="Drawing" style="width: 100%;max-width: 1200px"/></a>
