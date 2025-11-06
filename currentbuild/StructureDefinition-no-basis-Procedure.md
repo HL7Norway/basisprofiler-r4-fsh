@@ -16,7 +16,7 @@ Basis profile for a procedure, to be used in Norway. The profile is adapted to i
 
 **Usages:**
 
-* This Profile is not used by any profiles in this Implementation Guide
+* Examples for this Profile: [Procedure/no-basis-Procedure-example](Procedure-no-basis-Procedure-example.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.no.basis|current/StructureDefinition/no-basis-Procedure)
 

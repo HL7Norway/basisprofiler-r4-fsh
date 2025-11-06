@@ -12,13 +12,13 @@
   fhir:id [ fhir:v "no-basis-Procedure-example"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "http://hl7.no/fhir/StructureDefinition/no-basis-Procedure"^^xsd:anyURI ;
-       fhir:l <http://hl7.no/fhir/StructureDefinition/no-basis-Procedure>
+       fhir:v "http://hl7.no/fhir/ig/StructureDefinition/no-basis-Procedure"^^xsd:anyURI ;
+       fhir:l <http://hl7.no/fhir/ig/StructureDefinition/no-basis-Procedure>
      ] )
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Procedure no-basis-Procedure-example</b></p><a name=\"no-basis-Procedure-example\"> </a><a name=\"hcno-basis-Procedure-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <code>http://hl7.no/fhir/StructureDefinition/no-basis-Procedure</code></p></div><p><b>status</b>: Completed</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 73761001}\">Colonoscopy (procedure)</span></p><p><b>subject</b>: <a href=\"Patient/example\">Patient/example</a></p><h3>Performers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Function</b></td><td><b>Actor</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 8921000202108}\">Primary performing endoscopist (person)</span></td><td><a href=\"Practitioner/example\">Practitioner/example</a></td></tr></table><p><b>bodySite</b>: <span title=\"Codes:{http://snomed.info/sct 485005}\">TC - Transverse colon</span></p></div>"^^rdf:XMLLiteral ]
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Procedure no-basis-Procedure-example</b></p><a name=\"no-basis-Procedure-example\"> </a><a name=\"hcno-basis-Procedure-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-no-basis-Procedure.html\">no-basis-Procedure</a></p></div><p><b>status</b>: Completed</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 73761001}\">Colonoscopy (procedure)</span></p><p><b>subject</b>: <a href=\"Patient-PatientExample.html\">Peter James Chalmers (official) (no stated gender), DoB Unknown</a></p><h3>Performers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Function</b></td><td><b>Actor</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 8921000202108}\">Primary performing endoscopist (person)</span></td><td><a href=\"Practitioner-Magnar-Komann-Practitioner.html\">Practitioner Magnar Koman </a></td></tr></table><p><b>bodySite</b>: <span title=\"Codes:{http://snomed.info/sct 485005}\">TC - Transverse colon</span></p></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:status [ fhir:v "completed"] ; # 
   fhir:code [
@@ -33,8 +33,8 @@
      ] )
   ] ; # 
   fhir:subject [
-     fhir:l <http://hl7.no/fhir/ig/Patient/example> ;
-     fhir:reference [ fhir:v "Patient/example" ]
+     fhir:l <http://hl7.no/fhir/ig/Patient/PatientExample> ;
+     fhir:reference [ fhir:v "Patient/PatientExample" ]
   ] ; # 
   fhir:performer ( [
      fhir:function [
@@ -49,8 +49,8 @@
        ] )
      ] ;
      fhir:actor [
-       fhir:l <http://hl7.no/fhir/ig/Practitioner/example> ;
-       fhir:reference [ fhir:v "Practitioner/example" ]
+       fhir:l <http://hl7.no/fhir/ig/Practitioner/Magnar-Komann-Practitioner> ;
+       fhir:reference [ fhir:v "Practitioner/Magnar-Komann-Practitioner" ]
      ]
   ] ) ; # 
   fhir:bodySite ( [

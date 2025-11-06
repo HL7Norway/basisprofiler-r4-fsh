@@ -35,6 +35,13 @@
     "name" : "NoBasisMiddlename"
   },
   {
+    "id" : "no-basis-address-official",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.no/fhir/StructureDefinition/no-basis-address-official",
+    "version" : "2.2.3-test",
+    "name" : "NoBasisAddressOfficial"
+  },
+  {
     "id" : "no-basis-middlename",
     "type" : "StructureDefinition",
     "url" : "http://hl7.no/fhir/StructureDefinition/no-basis-middlename",
@@ -313,13 +320,6 @@
     "url" : "http://hl7.no/fhir/ig/StructureDefinition/no-basis-Substance",
     "version" : "2.2.3-test",
     "name" : "NoBasisSubstance"
-  },
-  {
-    "id" : "no-basis-address-official",
-    "type" : "StructureDefinition",
-    "url" : "http://hl7.no/fhir/ig/StructureDefinition/no-basis-address-official",
-    "version" : "2.2.3-test",
-    "name" : "NoBasisAddressOfficial"
   },
   {
     "id" : "no-basis-group",

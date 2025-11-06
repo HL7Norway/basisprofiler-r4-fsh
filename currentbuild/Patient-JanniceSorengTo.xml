@@ -46,7 +46,7 @@
         </valueCoding>
       </extension>
     </extension>
-    <extension url="http://hl7.no/fhir/ig/StructureDefinition/no-basis-address-official">
+    <extension url="http://hl7.no/fhir/StructureDefinition/no-basis-address-official">
       <valueBoolean value="true"/>
     </extension>
     <use value="home"/>

@@ -125,6 +125,7 @@ These are example instances that show what data produced and consumed by systems
 | [JanniceSoreng](Patient-JanniceSoreng.md) | Eksempel på pasient med fødselsnummer, navn, telefonnummer, adresse, sivilstand og fastlege. |
 | [JanniceSorengTo](Patient-JanniceSorengTo.md) | Eksempel på pasient med fødselsnummer, navn, telefonnummer, adresse, sivilstand og fastlege. |
 | [Magnar-Komann-Practitioner](Practitioner-Magnar-Komann-Practitioner.md) | Eksempel på helsepersonell med identifikator, navn, telefonnummer, adresse og kvalifikasjoner. |
+| [No Basis Procedure Example](Procedure-no-basis-Procedure-example.md) | Example of a colonoscopy procedure using no-basis profile |
 | [Pasient-1](Patient-Pasient-1.md) | Eksempel på pasient med navn og fødselsnummer |
 | [Pasient-Middle-Name-1](Patient-Pasient-Middle-Name-1.md) | Eksempel på pasient med navn (inkl. mellomnavn) og fødselsnummer |
 | [Patient Appointment Response Example](AppointmentResponse-PatientAppointmentResponseExample.md) | Example of Patient response to an appointment using no-basis profile. The profile is identical to the basis profile except there is an extension that can be used for patient to signal if the patient can come on short notice to an appointment. The example is similar to http://hl7.org/fhir/R4/appointmentresponse-example.json.html with addition for the extension. |
@@ -132,5 +133,4 @@ These are example instances that show what data produced and consumed by systems
 | [Solid-Aresdoktor-RelatedPerson](RelatedPerson-Solid-Aresdoktor-RelatedPerson.md) | Eksempel på pårørende med fødselsnummer, navn, telefonnummer, adresse, sivilstand og relasjon til pasient. |
 | [Sorgard-Erlend-RelatedPerson](RelatedPerson-Sorgard-Erlend-RelatedPerson.md) | Eksempel på pårørende med fødselsnummer, navn, telefonnummer, adresse, sivilstand og relasjon til pasient. |
 | [no-basis-HealthcareService-example](HealthcareService-no-basis-HealthcareService-example.md) |  |
-| [no-basis-Procedure-example](Procedure-no-basis-Procedure-example.md) |  |
 

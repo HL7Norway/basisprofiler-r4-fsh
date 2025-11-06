@@ -87,8 +87,8 @@
        ]
      ] [
        fhir:url [
-         fhir:v "http://hl7.no/fhir/ig/StructureDefinition/no-basis-address-official"^^xsd:anyURI ;
-         fhir:l <http://hl7.no/fhir/ig/StructureDefinition/no-basis-address-official>
+         fhir:v "http://hl7.no/fhir/StructureDefinition/no-basis-address-official"^^xsd:anyURI ;
+         fhir:l <http://hl7.no/fhir/StructureDefinition/no-basis-address-official>
        ] ;
        fhir:value [
          a fhir:Boolean ;

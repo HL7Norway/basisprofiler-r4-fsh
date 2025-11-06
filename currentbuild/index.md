@@ -41,7 +41,7 @@ The model under visualizes the role of Norwegian base profiles. On top are the F
   "version" : "2.2.3-test",
   "name" : "NoBasis",
   "status" : "active",
-  "date" : "2025-11-06T16:15:20+00:00",
+  "date" : "2025-11-06T18:07:46+00:00",
   "jurisdiction" : [
     {
       "coding" : [
@@ -842,6 +842,20 @@ The model under visualizes the role of Norwegian base profiles. On top are the F
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Procedure"
+          }
+        ],
+        "reference" : {
+          "reference" : "Procedure/no-basis-Procedure-example"
+        },
+        "name" : "No Basis Procedure Example",
+        "description" : "Example of a colonoscopy procedure using no-basis profile",
+        "exampleCanonical" : "http://hl7.no/fhir/ig/StructureDefinition/no-basis-Procedure"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "ValueSet"
           }
         ],
@@ -1466,19 +1480,6 @@ The model under visualizes the role of Norwegian base profiles. On top are the F
         "name" : "no-basis-Procedure",
         "description" : "Basis profile for a procedure, to be used in Norway. The profile is adapted to include norwegian specific features and constraints.",
         "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "Procedure"
-          }
-        ],
-        "reference" : {
-          "reference" : "Procedure/no-basis-Procedure-example"
-        },
-        "name" : "no-basis-Procedure-example",
-        "exampleBoolean" : true
       },
       {
         "extension" : [

@@ -5,6 +5,13 @@
   "jurisdiction": "NO",
   "extensions": [
     {
+      "url": "http://hl7.no/fhir/StructureDefinition/no-basis-address-official",
+      "title": "no-basis-address-official",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
       "url": "http://hl7.no/fhir/StructureDefinition/no-basis-middlename",
       "title": "no-basis-middlename",
       "types": [
@@ -74,13 +81,6 @@
       "title": "no-basis-relatedperson-person-reference",
       "types": [
         "Reference"
-      ]
-    },
-    {
-      "url": "http://hl7.no/fhir/ig/StructureDefinition/no-basis-address-official",
-      "title": "no-basis-address-official",
-      "types": [
-        "boolean"
       ]
     },
     {
@@ -498,6 +498,7 @@
   },
   "usage": {
     "http://hl7.no/fhir/StructureDefinition/no-basis-address-official": [
+      "Address",
       "Organization.address",
       "Patient.address",
       "RelatedPerson.address"
@@ -520,10 +521,6 @@
     ],
     "http://hl7.no/fhir/StructureDefinition/no-basis-relatedperson-person-reference": [
       "RelatedPerson.patient"
-    ],
-    "http://hl7.no/fhir/ig/StructureDefinition/no-basis-address-official": [
-      "Address",
-      "Patient.address"
     ],
     "http://hl7.no/fhir/ig/StructureDefinition/no-basis-group": [
       "Appointment"

@@ -103,7 +103,7 @@ Other representations of profile: [CSV](StructureDefinition-no-basis-Address.csv
           {
             "code" : "Extension",
             "profile" : [
-              "http://hl7.no/fhir/ig/StructureDefinition/no-basis-address-official"
+              "http://hl7.no/fhir/StructureDefinition/no-basis-address-official"
             ]
           }
         ]

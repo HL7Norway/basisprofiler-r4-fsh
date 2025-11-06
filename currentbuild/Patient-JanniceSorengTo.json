@@ -51,7 +51,7 @@
       "url" : "http://hl7.no/fhir/ig/StructureDefinition/no-basis-propertyinformation"
     },
     {
-      "url" : "http://hl7.no/fhir/ig/StructureDefinition/no-basis-address-official",
+      "url" : "http://hl7.no/fhir/StructureDefinition/no-basis-address-official",
       "valueBoolean" : true
     }],
     "use" : "home",

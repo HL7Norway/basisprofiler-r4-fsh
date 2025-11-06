@@ -9,7 +9,7 @@
   <version value="2.2.3-test"/>
   <name value="NoBasis"/>
   <status value="active"/>
-  <date value="2025-11-06T16:15:20+00:00"/>
+  <date value="2025-11-06T18:07:46+00:00"/>
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166"/>
@@ -519,6 +519,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Procedure"/>
+      </extension>
+      <reference>
+        <reference value="Procedure/no-basis-Procedure-example"/>
+      </reference>
+      <name value="No Basis Procedure Example"/>
+      <description value="Example of a colonoscopy procedure using no-basis profile"/>
+      <exampleCanonical value="http://hl7.no/fhir/ig/StructureDefinition/no-basis-Procedure"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
@@ -1010,16 +1021,6 @@
       <name value="no-basis-Procedure"/>
       <description value="Basis profile for a procedure, to be used in Norway. The profile is adapted to include norwegian specific features and constraints."/>
       <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Procedure"/>
-      </extension>
-      <reference>
-        <reference value="Procedure/no-basis-Procedure-example"/>
-      </reference>
-      <name value="no-basis-Procedure-example"/>
-      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

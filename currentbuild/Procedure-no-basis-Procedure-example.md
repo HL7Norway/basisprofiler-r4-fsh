@@ -1,25 +1,25 @@
-# no-basis-Procedure-example - v2.2.3-test
+# No Basis Procedure Example - v2.2.3-test
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **no-basis-Procedure-example**
+* **No Basis Procedure Example**
 
-## Example Procedure: no-basis-Procedure-example
+## Example Procedure: No Basis Procedure Example
 
-Profile: `http://hl7.no/fhir/StructureDefinition/no-basis-Procedure`
+Profile: [no-basis-Procedure](StructureDefinition-no-basis-Procedure.md)
 
 **status**: Completed
 
 **code**: Colonoscopy (procedure)
 
-**subject**: [Patient/example](Patient/example)
+**subject**: [Peter James Chalmers (official) (no stated gender), DoB Unknown](Patient-PatientExample.md)
 
 ### Performers
 
 | | | |
 | :--- | :--- | :--- |
 | - | **Function** | **Actor** |
-| * | Primary performing endoscopist (person) | [Practitioner/example](Practitioner/example) |
+| * | Primary performing endoscopist (person) | [Practitioner Magnar Koman](Practitioner-Magnar-Komann-Practitioner.md) |
 
 **bodySite**: TC - Transverse colon
 
@@ -32,7 +32,9 @@ Profile: `http://hl7.no/fhir/StructureDefinition/no-basis-Procedure`
   "resourceType" : "Procedure",
   "id" : "no-basis-Procedure-example",
   "meta" : {
-    "profile" : ["http://hl7.no/fhir/StructureDefinition/no-basis-Procedure"]
+    "profile" : [
+      "http://hl7.no/fhir/ig/StructureDefinition/no-basis-Procedure"
+    ]
   },
   "status" : "completed",
   "code" : {
@@ -45,7 +47,7 @@ Profile: `http://hl7.no/fhir/StructureDefinition/no-basis-Procedure`
     ]
   },
   "subject" : {
-    "reference" : "Patient/example"
+    "reference" : "Patient/PatientExample"
   },
   "performer" : [
     {
@@ -59,7 +61,7 @@ Profile: `http://hl7.no/fhir/StructureDefinition/no-basis-Procedure`
         ]
       },
       "actor" : {
-        "reference" : "Practitioner/example"
+        "reference" : "Practitioner/Magnar-Komann-Practitioner"
       }
     }
   ],
