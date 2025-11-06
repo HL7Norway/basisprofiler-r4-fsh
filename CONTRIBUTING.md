@@ -11,7 +11,7 @@ Plan for utvikling av no-basis R4 basert på FHIR Shorthand (FSH)
 
 ### Pågående oppgaver
 
-1. ✅ Tilrettelegge no-basis for FHIR Shorthand (FSH)
+1. 🟥 Tilrettelegge no-basis for FHIR Shorthand (FSH)
 2. Full kvalitetssikring av alle profiler, extensions, valuesets og codesystems
 3. Kontinuerlig validering og testing
 4. Forbedring av dokumentasjon
