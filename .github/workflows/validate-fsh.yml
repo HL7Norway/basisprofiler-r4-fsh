@@ -15,6 +15,11 @@ on:
         required: false
         default: false
         type: boolean
+      generate_analysis_log:
+        description: 'Generate comprehensive analysis log for AI review'
+        required: false
+        default: true
+        type: boolean
 #  pull_request:
 #    paths:
 #      - 'no-basis/input/fsh/**'
@@ -168,7 +173,7 @@ jobs:
         fi
 
     - name: Generate comprehensive analysis log
-      if: always()
+      if: ${{ always() && github.event.inputs.generate_analysis_log == 'true' }}
       run: |
         ANALYSIS_LOG="${{ github.workspace }}/validation-analysis-${{ github.run_id }}.md"
         
@@ -187,6 +192,7 @@ jobs:
         echo "" >> "$ANALYSIS_LOG"
         echo "- **SUSHI Validation:** ${{ github.event.inputs.run_sushi_validation || 'false' }}" >> "$ANALYSIS_LOG"
         echo "- **Fail on SUSHI Errors:** ${{ github.event.inputs.fail_on_sushi_errors || 'false' }}" >> "$ANALYSIS_LOG"
+        echo "- **Generate Analysis Log:** ${{ github.event.inputs.generate_analysis_log || 'true' }}" >> "$ANALYSIS_LOG"
         echo "- **IG Short Name:** ${{ env.IG_SHORTNAME }}" >> "$ANALYSIS_LOG"
         echo "" >> "$ANALYSIS_LOG"
         
@@ -339,7 +345,7 @@ jobs:
       with:
         name: fsh-validation-results-${{ github.run_id }}
         path: |
-          ${{ github.workspace }}/validation-analysis-${{ github.run_id }}.md
+          ${{ github.event.inputs.generate_analysis_log == 'true' && format('{0}/validation-analysis-{1}.md', github.workspace, github.run_id) || '' }}
           ${{ env.IG_SHORTNAME }}/input/fsh/fsh-validator.log
           ${{ env.IG_SHORTNAME }}/sushi-validation.log
           ${{ env.IG_SHORTNAME }}/fsh-generated/resources/*.json
