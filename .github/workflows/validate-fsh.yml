@@ -77,12 +77,25 @@ jobs:
       run: |
         cd ${{ env.IG_SHORTNAME }}
         echo "🍣 Running SUSHI build validation..."
+        echo "Working directory: $(pwd)"
+        echo "Contents before SUSHI:"
+        ls -la
         # Try with --require-latest first, fallback without if it fails
         if timeout 300 sushi . --require-latest 2>&1 | tee sushi-validation.log; then
           echo "✅ SUSHI validation completed successfully"
         else
           echo "⚠️  SUSHI with --require-latest failed, trying without flag..."
           timeout 300 sushi . 2>&1 | tee -a sushi-validation.log || true
+        fi
+        echo "Contents after SUSHI:"
+        ls -la
+        if [ -d "fsh-generated/resources" ]; then
+          echo "✅ Generated resources found:"
+          ls -la fsh-generated/resources/ | head -20
+          resource_count=$(ls -1 fsh-generated/resources/*.json 2>/dev/null | wc -l)
+          echo "📊 Total generated resources: $resource_count"
+        else
+          echo "⚠️  Warning: fsh-generated/resources directory not found"
         fi
         echo "✅ SUSHI validation step completed (check logs for details)"
         
@@ -155,6 +168,7 @@ jobs:
         path: |
           ${{ env.IG_SHORTNAME }}/input/fsh/fsh-validator.log
           ${{ env.IG_SHORTNAME }}/sushi-validation.log
+          ${{ env.IG_SHORTNAME }}/fsh-generated/resources/*.json
           ${{ env.IG_SHORTNAME }}/input/fsh/**/*.fsh
           
     - name: Generate job summary
