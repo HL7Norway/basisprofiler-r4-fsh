@@ -1,21 +1,28 @@
 ## Plan
 
-Plan for pågående utviklingsprosjekt, ikke bare denne IG-malen
+Plan for utvikling av no-basis R4 basert på FHIR Shorthand (FSH)
 
-1. IGen skal være en mal som skal kunne være grunnlag for nye IGer.
-2. Malen skal gjøre det enkelt å følge beste praksis for IGer i henhold til nasjonal og internasjonal beste praksis
-   - Inkl FSH 
-4. Verktøystøtte, fortrinnsvis alt online
-   - Dokumentasjon av bruk for av verktøy: [documentation/index.md](documentation/index.md)
-   - [FSH-validator](https://github.com/HL7Norway/ig-mal/actions/workflows/validate-fsh.yml)
-5. Enkelt kunne publisere og distribuere IGen på en valgfri måte (egen www, Simplifier.net, etc) ved hjelp av pakker, herunder opprettholde versjoner/history
-6. Teste, teste, teste!
+### Hovedmål
 
-Oppgaver som må på startes/planlegges/utføres i parallell:
+1. Bruke FSH som master for basisprofiler R4
+2. Full QA av dagenes innhold høst 2025
+3. På et tidspunkt i fremtiden ta over som master for utvikling av no-basis R4
+4. Publisere på ny web for HL7 Norge
 
-1. Tilrettelegge no-basis for FHIR Shorthand (FSH)
-2. Ny publiseringsløsning / enkel konseptutredning
-3. Ny web-løsning for HL7 Norge (sammenheng med pkt 2.)
+### Pågående oppgaver
+
+1. ✅ Tilrettelegge no-basis for FHIR Shorthand (FSH)
+2. Full kvalitetssikring av alle profiler, extensions, valuesets og codesystems
+3. Kontinuerlig validering og testing
+4. Forbedring av dokumentasjon
+5. Ny publiseringsløsning / enkel konseptutredning
+6. Ny web-løsning for HL7 Norge
+
+### Verktøystøtte
+
+- [FSH-validator](https://github.com/HL7Norway/basisprofiler-r4-fsh/actions/workflows/validate-fsh.yml)
+- [SUSHI Build & Validate](https://github.com/HL7Norway/basisprofiler-r4-fsh/actions/workflows/sushi-build-validate.yml)
+- [IG Publisher & GitHub Pages](https://github.com/HL7Norway/basisprofiler-r4-fsh/actions/workflows/ig-gh-pages.yml)
 
 ### Publisering
 
