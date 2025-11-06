@@ -1,4 +1,4 @@
-ValueSet: NoBasisMaritalStatus
+ValueSet: NoBasisMaritalStatusVS
 Id: no-basis-marital-status.valueset
 Title: "no-basis-marital-status.valueset"
 Description: "Copy of Codes from Sivilstandstype defined by Skatteetaten"
