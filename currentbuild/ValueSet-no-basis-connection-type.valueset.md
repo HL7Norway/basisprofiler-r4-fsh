@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://hl7.no/fhir/ValueSet/no-basis-connection-type | *Version*:2.2.3-test |
-| Active as of 2019-03-13 | *Computable Name*:NoBasisConnectionType |
+| Active as of 2019-03-13 | *Computable Name*:NoBasisConnectionTypeVS |
 
  
 ValueSet for connection types used in Endpoint definition. Includes all Norwegian specific types (no-basis-connection-type) and the extensible HL7 CodeSystem for connection-type 
@@ -60,7 +60,7 @@ This value set contains 17 concepts
   },
   "url" : "http://hl7.no/fhir/ValueSet/no-basis-connection-type",
   "version" : "2.2.3-test",
-  "name" : "NoBasisConnectionType",
+  "name" : "NoBasisConnectionTypeVS",
   "title" : "no-basis-connection-type.valueset",
   "status" : "active",
   "experimental" : true,

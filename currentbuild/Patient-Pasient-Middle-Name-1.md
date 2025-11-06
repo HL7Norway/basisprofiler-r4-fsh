@@ -8,7 +8,7 @@
 
 Profile: [no-basis-Patient](StructureDefinition-no-basis-Patient.md)
 
-Grieg Edvard (no stated gender), DoB Unknown ( urn:oid:2.16.578.1.12.4.1.4.1#15064312345)
+Edvard Grieg (no stated gender), DoB Unknown ( urn:oid:2.16.578.1.12.4.1.4.1#15064312345)
 
 -------
 
@@ -37,8 +37,8 @@ Grieg Edvard (no stated gender), DoB Unknown ( urn:oid:2.16.578.1.12.4.1.4.1#150
           "valueString" : "Hagerup"
         }
       ],
-      "family" : "Edvard",
-      "given" : ["Grieg"]
+      "family" : "Grieg",
+      "given" : ["Edvard"]
     }
   ]
 }

@@ -16,7 +16,7 @@ Copy of Codes from Familierelasjon defined by Skatteetaten
 
  This Code system is referenced in the content logical definition of the following value sets: 
 
-* [NoBasisFamilyRelation](ValueSet-no-basis-family-relation.valueset.md)
+* [NoBasisFamilyRelationVS](ValueSet-no-basis-family-relation.valueset.md)
 
 
 

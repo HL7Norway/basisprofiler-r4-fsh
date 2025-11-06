@@ -11,7 +11,7 @@
   },
   "url" : "http://hl7.no/fhir/ValueSet/no-basis-parental-responsibility",
   "version" : "2.2.3-test",
-  "name" : "NoBasisParentalResponsibility",
+  "name" : "NoBasisParentalResponsibilityVS",
   "title" : "no-basis-parental-responsibility.valueset",
   "status" : "active",
   "experimental" : true,

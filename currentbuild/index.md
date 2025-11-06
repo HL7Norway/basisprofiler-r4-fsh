@@ -8,16 +8,13 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://hl7.no/fhir/ig/ImplementationGuide/hl7.fhir.no.basis | *Version*:2.2.3-test |
-| Active as of 2025-10-31 | *Computable Name*:NoBasis |
+| Active as of 2025-11-06 | *Computable Name*:NoBasis |
 
-# Introduction
+### This is a test of a new build pipeline for no-basis
 
-| | |
-| :--- | :--- |
-| Publish date | 2019-06-27 |
-| IG namespace | http://hl7.no/fhir/ImplementationGuide/no-basis-ImplementationGuide-v2015 |
-| Latest package definition | https://simplifier.net/packages/hl7.fhir.no.basis/2.0.17-alpha |
-| Last bugfix | 2021-06-21 |
+This repo is currently a test for running a new build pipeline for HL7 Norway's no-basis profiles.
+
+### About no-basis
 
 The Norwegian basisprofiles are developed by HL7 Norway and The Norwegian Directorate of eHealth in cooperation with the industry. The profiles are use-case independent and have several purposes:
 
@@ -44,7 +41,7 @@ The model under visualizes the role of Norwegian base profiles. On top are the F
   "version" : "2.2.3-test",
   "name" : "NoBasis",
   "status" : "active",
-  "date" : "2025-10-31T07:08:04+00:00",
+  "date" : "2025-11-06T08:50:45+00:00",
   "jurisdiction" : [
     {
       "coding" : [
@@ -751,7 +748,7 @@ The model under visualizes the role of Norwegian base profiles. On top are the F
           }
         ],
         "reference" : {
-          "reference" : "Appointment/d6c523ec-b520-4221-a8d6-c1c58911ce7a"
+          "reference" : "Appointment/AppointmentExample"
         },
         "name" : "AppointmentExample",
         "description" : "Discussion on the results of your recent MRI",
@@ -779,7 +776,7 @@ The model under visualizes the role of Norwegian base profiles. On top are the F
           }
         ],
         "reference" : {
-          "reference" : "Organization/a70f0ba2-44d8-4f14-9c3a-ff4c6ead7472"
+          "reference" : "Organization/Direktoratet-for-eHelse-Organization"
         },
         "name" : "Direktoratet-for-eHelse-Organization",
         "exampleCanonical" : "http://hl7.no/fhir/ig/StructureDefinition/no-basis-Organization"
@@ -875,7 +872,7 @@ The model under visualizes the role of Norwegian base profiles. On top are the F
           "reference" : "StructureDefinition/no-basis-address-official"
         },
         "name" : "no-basis-address-official",
-        "description" : "Defines the concept of an officialy registered address in Norway. Usually this will be the adress registered in \"Folkeregisteret\" for persons or \"Enhetsregisteret\" for organizations.",
+        "description" : "Defines the concept of an officially registered address in Norway. Usually this will be the address registered in \"Folkeregisteret\" for persons or \"Enhetsregisteret\" for organizations.",
         "exampleBoolean" : false
       },
       {
@@ -1653,7 +1650,7 @@ The model under visualizes the role of Norwegian base profiles. On top are the F
           }
         ],
         "reference" : {
-          "reference" : "Patient/e70f0ba2-44d8-4f14-9c3a-ff4c6ead7473"
+          "reference" : "Patient/PatientExample"
         },
         "name" : "PatientExample",
         "exampleBoolean" : true

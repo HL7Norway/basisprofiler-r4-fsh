@@ -7,7 +7,7 @@
   </text>
   <url value="http://hl7.no/fhir/ValueSet/no-basis-marital-status"/>
   <version value="2.2.3-test"/>
-  <name value="NoBasisMaritalStatus"/>
+  <name value="NoBasisMaritalStatusVS"/>
   <title value="no-basis-marital-status.valueset"/>
   <status value="active"/>
   <experimental value="true"/>

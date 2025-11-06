@@ -9,7 +9,7 @@
   <version value="2.2.3-test"/>
   <name value="NoBasis"/>
   <status value="active"/>
-  <date value="2025-10-31T07:08:04+00:00"/>
+  <date value="2025-11-06T08:50:45+00:00"/>
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166"/>
@@ -445,7 +445,7 @@
         <valueString value="Appointment"/>
       </extension>
       <reference>
-        <reference value="Appointment/d6c523ec-b520-4221-a8d6-c1c58911ce7a"/>
+        <reference value="Appointment/AppointmentExample"/>
       </reference>
       <name value="AppointmentExample"/>
       <description value="Discussion on the results of your recent MRI"/>
@@ -467,7 +467,7 @@
         <valueString value="Organization"/>
       </extension>
       <reference>
-        <reference value="Organization/a70f0ba2-44d8-4f14-9c3a-ff4c6ead7472"/>
+        <reference value="Organization/Direktoratet-for-eHelse-Organization"/>
       </reference>
       <name value="Direktoratet-for-eHelse-Organization"/>
       <exampleCanonical value="http://hl7.no/fhir/ig/StructureDefinition/no-basis-Organization"/>
@@ -542,7 +542,7 @@
         <reference value="StructureDefinition/no-basis-address-official"/>
       </reference>
       <name value="no-basis-address-official"/>
-      <description value="Defines the concept of an officialy registered address in Norway. Usually this will be the adress registered in &quot;Folkeregisteret&quot; for persons or &quot;Enhetsregisteret&quot; for organizations."/>
+      <description value="Defines the concept of an officially registered address in Norway. Usually this will be the address registered in &quot;Folkeregisteret&quot; for persons or &quot;Enhetsregisteret&quot; for organizations."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1152,7 +1152,7 @@
         <valueString value="Patient"/>
       </extension>
       <reference>
-        <reference value="Patient/e70f0ba2-44d8-4f14-9c3a-ff4c6ead7473"/>
+        <reference value="Patient/PatientExample"/>
       </reference>
       <name value="PatientExample"/>
       <exampleBoolean value="true"/>

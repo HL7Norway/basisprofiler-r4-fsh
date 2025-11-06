@@ -16,7 +16,7 @@ Copy of Codes from Sivilstandstype defined by Skatteetaten
 
  This Code system is referenced in the content logical definition of the following value sets: 
 
-* [NoBasisMaritalStatus](ValueSet-no-basis-marital-status.valueset.md)
+* [NoBasisMaritalStatusVS](ValueSet-no-basis-marital-status.valueset.md)
 
 
 

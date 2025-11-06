@@ -59,7 +59,7 @@ These define constraints on FHIR data types for systems conforming to this imple
 
 | | |
 | :--- | :--- |
-| [no-basis-address-official](StructureDefinition-no-basis-address-official.md) | Defines the concept of an officialy registered address in Norway. Usually this will be the adress registered in "Folkeregisteret" for persons or "Enhetsregisteret" for organizations. |
+| [no-basis-address-official](StructureDefinition-no-basis-address-official.md) | Defines the concept of an officially registered address in Norway. Usually this will be the address registered in "Folkeregisteret" for persons or "Enhetsregisteret" for organizations. |
 | [no-basis-group](StructureDefinition-no-basis-group.md) | The appointment is a group session. |
 | [no-basis-middlename](StructureDefinition-no-basis-middlename.md) | The basis extension defines the Norwegian middlename wich is called "mellomnavn" and defined by Norwegian legislation (Lov om personnavn). |
 | [no-basis-municipalitycode](StructureDefinition-no-basis-municipalitycode.md) | Coded value for municipality/county Norwegian kommune |
@@ -119,8 +119,8 @@ These are example instances that show what data produced and consumed by systems
 
 | | |
 | :--- | :--- |
-| [AppointmentExample](Appointment-d6c523ec-b520-4221-a8d6-c1c58911ce7a.md) | Discussion on the results of your recent MRI |
-| [Direktoratet-for-eHelse-Organization](Organization-a70f0ba2-44d8-4f14-9c3a-ff4c6ead7472.md) |  |
+| [AppointmentExample](Appointment-AppointmentExample.md) | Discussion on the results of your recent MRI |
+| [Direktoratet-for-eHelse-Organization](Organization-Direktoratet-for-eHelse-Organization.md) |  |
 | [EspenEksempel](Patient-EspenEksempel.md) |  |
 | [JanniceSoreng](Patient-JanniceSoreng.md) |  |
 | [JanniceSorengTo](Patient-JanniceSorengTo.md) |  |
@@ -128,7 +128,7 @@ These are example instances that show what data produced and consumed by systems
 | [Pasient-1](Patient-Pasient-1.md) | Eksempel på pasient med navn og fødselsnummer |
 | [Pasient-Middle-Name-1](Patient-Pasient-Middle-Name-1.md) | Eksempel på pasient med navn (inkl. mellomnavn) og fødselsnummer |
 | [PatientAppointmentResponseExample](AppointmentResponse-PatientAppointmentResponseExample.md) | Example of Patient response to an appointment using no-basis profile. The profile is identical to the basis profile axept there is a extension that can be used for patient to signal if the patient can come on short notice to an appointment. The example is similar to http://hl7.org/fhir/R4/appointmentresponse-example.json.html with adition for the extension. |
-| [PatientExample](Patient-e70f0ba2-44d8-4f14-9c3a-ff4c6ead7473.md) |  |
+| [PatientExample](Patient-PatientExample.md) |  |
 | [Solid-Aresdoktor-RelatedPerson](RelatedPerson-Solid-Aresdoktor-RelatedPerson.md) |  |
 | [Sorgard-Erlend-RelatedPerson](RelatedPerson-Sorgard-Erlend-RelatedPerson.md) |  |
 | [no-basis-HealthcareService-example](HealthcareService-no-basis-HealthcareService-example.md) |  |

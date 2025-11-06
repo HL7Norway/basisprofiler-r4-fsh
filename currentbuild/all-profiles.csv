@@ -185,7 +185,7 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "no-basis-Address","Address.extension:official","Address.extension","official","offisiell adresse
 user content","",0,1,"","","","Extension {[CanonicalType[http://hl7.no/fhir/ig/StructureDefinition/no-basis-address-official]]} {[]}
-","The concept of an officially registered address","Defines the concept of an officially registered address in Norway. Usually this will be the adress registered in ""Folkeregisteret"" for persons or ""Enhetsregisteret"" for organizations.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","The concept of an officially registered address","Defines the concept of an officially registered address in Norway. Usually this will be the address registered in ""Folkeregisteret"" for persons or ""Enhetsregisteret"" for organizations.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "no-basis-Address","Address.extension:urbanDistrict","Address.extension","urbanDistrict","bydel
 urban district","",0,1,"","","","Extension {[CanonicalType[http://hl7.no/fhir/ig/StructureDefinition/no-basis-urban-district]]} {[]}
@@ -3851,7 +3851,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Substance|4.0.1]]}","A component of the substance","Another substance that is a component of this substance.","","","","","","","","","",,"example","Substance Ingredient codes.","http://hl7.org/fhir/ValueSet/substance-code|4.0.1","",,,,"Substance.ingredient.substance[x]",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "no-basis-address-official","Extension","Extension","","","",0,1,"","","","null {[]} {[]}
-","The concept of an officially registered address","Defines the concept of an officially registered address in Norway. Usually this will be the adress registered in ""Folkeregisteret"" for persons or ""Enhetsregisteret"" for organizations.","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+","The concept of an officially registered address","Defines the concept of an officially registered address in Norway. Usually this will be the address registered in ""Folkeregisteret"" for persons or ""Enhetsregisteret"" for organizations.","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "no-basis-address-official","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}

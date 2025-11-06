@@ -195,7 +195,7 @@ In Norway this is af four digit number defined by the norwegian postal service."
       <path value="Address.extension"/>
       <sliceName value="official"/>
       <short value="The concept of an officially registered address"/>
-      <definition value="Defines the concept of an officially registered address in Norway. Usually this will be the adress registered in &quot;Folkeregisteret&quot; for persons or &quot;Enhetsregisteret&quot; for organizations."/>
+      <definition value="Defines the concept of an officially registered address in Norway. Usually this will be the address registered in &quot;Folkeregisteret&quot; for persons or &quot;Enhetsregisteret&quot; for organizations."/>
       <alias value="offisiell adresse"/>
       <alias value="user content"/>
       <min value="0"/>

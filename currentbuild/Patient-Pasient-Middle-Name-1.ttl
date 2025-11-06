@@ -17,7 +17,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Patient Pasient-Middle-Name-1</b></p><a name=\"Pasient-Middle-Name-1\"> </a><a name=\"hcPasient-Middle-Name-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-no-basis-Patient.html\">no-basis-Patient</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Grieg Edvard  (no stated gender), DoB Unknown ( urn:oid:2.16.578.1.12.4.1.4.1#15064312345)</p><hr/></div>"^^rdf:XMLLiteral ]
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Patient Pasient-Middle-Name-1</b></p><a name=\"Pasient-Middle-Name-1\"> </a><a name=\"hcPasient-Middle-Name-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-no-basis-Patient.html\">no-basis-Patient</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Edvard Grieg  (no stated gender), DoB Unknown ( urn:oid:2.16.578.1.12.4.1.4.1#15064312345)</p><hr/></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:identifier ( [
      fhir:system [
@@ -37,8 +37,8 @@
          fhir:v "Hagerup"
        ]
      ] ) ;
-     fhir:family [ fhir:v "Edvard" ] ;
-     fhir:given ( [ fhir:v "Grieg" ] )
+     fhir:family [ fhir:v "Grieg" ] ;
+     fhir:given ( [ fhir:v "Edvard" ] )
   ] ) . # 
 
 # -------------------------------------------------------------------------------------

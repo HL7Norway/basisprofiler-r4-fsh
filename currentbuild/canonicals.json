@@ -53,7 +53,7 @@
     "type" : "ValueSet",
     "url" : "http://hl7.no/fhir/ValueSet/no-basis-connection-type",
     "version" : "2.2.3-test",
-    "name" : "NoBasisConnectionType"
+    "name" : "NoBasisConnectionTypeVS"
   },
   {
     "id" : "no-basis-documentreference-type.valueset",
@@ -67,21 +67,21 @@
     "type" : "ValueSet",
     "url" : "http://hl7.no/fhir/ValueSet/no-basis-family-relation",
     "version" : "2.2.3-test",
-    "name" : "NoBasisFamilyRelation"
+    "name" : "NoBasisFamilyRelationVS"
   },
   {
     "id" : "no-basis-marital-status.valueset",
     "type" : "ValueSet",
     "url" : "http://hl7.no/fhir/ValueSet/no-basis-marital-status",
     "version" : "2.2.3-test",
-    "name" : "NoBasisMaritalStatus"
+    "name" : "NoBasisMaritalStatusVS"
   },
   {
     "id" : "no-basis-parental-responsibility.valueset",
     "type" : "ValueSet",
     "url" : "http://hl7.no/fhir/ValueSet/no-basis-parental-responsibility",
     "version" : "2.2.3-test",
-    "name" : "NoBasisParentalResponsibility"
+    "name" : "NoBasisParentalResponsibilityVS"
   },
   {
     "id" : "no-basis-service-type.valueset",

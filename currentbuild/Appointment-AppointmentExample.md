@@ -25,7 +25,7 @@ Profile: [no-basis-Appointment](StructureDefinition-no-basis-Appointment.md)
 | | | | |
 | :--- | :--- | :--- | :--- |
 | - | **Actor** | **Required** | **Status** |
-| * | [Peter James Chalmers](Patient-e70f0ba2-44d8-4f14-9c3a-ff4c6ead7473.md) | Required | Accepted |
+| * | [Peter James Chalmers](Patient-PatientExample.md) | Required | Accepted |
 
 
 
@@ -34,7 +34,7 @@ Profile: [no-basis-Appointment](StructureDefinition-no-basis-Appointment.md)
 ```json
 {
   "resourceType" : "Appointment",
-  "id" : "d6c523ec-b520-4221-a8d6-c1c58911ce7a",
+  "id" : "AppointmentExample",
   "meta" : {
     "profile" : [
       "http://hl7.no/fhir/ig/StructureDefinition/no-basis-Appointment"
@@ -60,7 +60,7 @@ Profile: [no-basis-Appointment](StructureDefinition-no-basis-Appointment.md)
   "participant" : [
     {
       "actor" : {
-        "reference" : "Patient/e70f0ba2-44d8-4f14-9c3a-ff4c6ead7473",
+        "reference" : "Patient/PatientExample",
         "display" : "Peter James Chalmers"
       },
       "required" : "required",

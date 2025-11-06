@@ -11,7 +11,7 @@
 | *Official URL*:http://hl7.no/fhir/ig/StructureDefinition/no-basis-address-official | *Version*:2.2.3-test |
 | Active as of 2019-05-15 | *Computable Name*:NoBasisAddressOfficial |
 
-Defines the concept of an officialy registered address in Norway. Usually this will be the adress registered in "Folkeregisteret" for persons or "Enhetsregisteret" for organizations.
+Defines the concept of an officially registered address in Norway. Usually this will be the address registered in "Folkeregisteret" for persons or "Enhetsregisteret" for organizations.
 
 **Context of Use**
 
@@ -53,7 +53,7 @@ Other representations of profile: [CSV](StructureDefinition-no-basis-address-off
   "status" : "active",
   "experimental" : false,
   "date" : "2019-05-15",
-  "description" : "Defines the concept of an officialy registered address in Norway. Usually this will be the adress registered in \"Folkeregisteret\" for persons or \"Enhetsregisteret\" for organizations.",
+  "description" : "Defines the concept of an officially registered address in Norway. Usually this will be the address registered in \"Folkeregisteret\" for persons or \"Enhetsregisteret\" for organizations.",
   "jurisdiction" : [
     {
       "coding" : [
@@ -90,7 +90,7 @@ Other representations of profile: [CSV](StructureDefinition-no-basis-address-off
         "id" : "Extension",
         "path" : "Extension",
         "short" : "The concept of an officially registered address",
-        "definition" : "Defines the concept of an officially registered address in Norway. Usually this will be the adress registered in \"Folkeregisteret\" for persons or \"Enhetsregisteret\" for organizations.",
+        "definition" : "Defines the concept of an officially registered address in Norway. Usually this will be the address registered in \"Folkeregisteret\" for persons or \"Enhetsregisteret\" for organizations.",
         "max" : "1"
       },
       {

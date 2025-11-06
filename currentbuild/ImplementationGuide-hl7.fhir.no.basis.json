@@ -9,7 +9,7 @@
   "version" : "2.2.3-test",
   "name" : "NoBasis",
   "status" : "active",
-  "date" : "2025-10-31T07:08:04+00:00",
+  "date" : "2025-11-06T08:50:45+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -601,7 +601,7 @@
         "valueString" : "Appointment"
       }],
       "reference" : {
-        "reference" : "Appointment/d6c523ec-b520-4221-a8d6-c1c58911ce7a"
+        "reference" : "Appointment/AppointmentExample"
       },
       "name" : "AppointmentExample",
       "description" : "Discussion on the results of your recent MRI",
@@ -625,7 +625,7 @@
         "valueString" : "Organization"
       }],
       "reference" : {
-        "reference" : "Organization/a70f0ba2-44d8-4f14-9c3a-ff4c6ead7472"
+        "reference" : "Organization/Direktoratet-for-eHelse-Organization"
       },
       "name" : "Direktoratet-for-eHelse-Organization",
       "exampleCanonical" : "http://hl7.no/fhir/ig/StructureDefinition/no-basis-Organization"
@@ -707,7 +707,7 @@
         "reference" : "StructureDefinition/no-basis-address-official"
       },
       "name" : "no-basis-address-official",
-      "description" : "Defines the concept of an officialy registered address in Norway. Usually this will be the adress registered in \"Folkeregisteret\" for persons or \"Enhetsregisteret\" for organizations.",
+      "description" : "Defines the concept of an officially registered address in Norway. Usually this will be the address registered in \"Folkeregisteret\" for persons or \"Enhetsregisteret\" for organizations.",
       "exampleBoolean" : false
     },
     {
@@ -1373,7 +1373,7 @@
         "valueString" : "Patient"
       }],
       "reference" : {
-        "reference" : "Patient/e70f0ba2-44d8-4f14-9c3a-ff4c6ead7473"
+        "reference" : "Patient/PatientExample"
       },
       "name" : "PatientExample",
       "exampleBoolean" : true

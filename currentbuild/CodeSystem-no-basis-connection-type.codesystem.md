@@ -16,7 +16,7 @@ Codes to describe Norwegian message based communication protocols.
 
  This Code system is referenced in the content logical definition of the following value sets: 
 
-* [NoBasisConnectionType](ValueSet-no-basis-connection-type.valueset.md)
+* [NoBasisConnectionTypeVS](ValueSet-no-basis-connection-type.valueset.md)
 
 
 

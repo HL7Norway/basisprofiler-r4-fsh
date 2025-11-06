@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://hl7.no/fhir/SearchParameter/no-basis-middlename | *Version*:2.2.3-test |
-| Active as of 2025-10-31 | *Computable Name*:NoBasisMiddlename |
+| Active as of 2025-11-06 | *Computable Name*:NoBasisMiddlename |
 
  
 SearchParameter for the Norwegian middlename extension http://hl7.no/fhir/StructureDefinition/no-basis-middlename 
@@ -42,7 +42,7 @@ SearchParameter for the Norwegian middlename extension http://hl7.no/fhir/Struct
   "version" : "2.2.3-test",
   "name" : "NoBasisMiddlename",
   "status" : "active",
-  "date" : "2025-10-31T07:08:04+00:00",
+  "date" : "2025-11-06T08:50:45+00:00",
   "description" : "SearchParameter for the Norwegian middlename extension http://hl7.no/fhir/StructureDefinition/no-basis-middlename",
   "jurisdiction" : [
     {

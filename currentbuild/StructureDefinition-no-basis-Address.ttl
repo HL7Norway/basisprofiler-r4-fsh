@@ -225,7 +225,7 @@
        fhir:path [ fhir:v "Address.extension" ] ;
        fhir:sliceName [ fhir:v "official" ] ;
        fhir:short [ fhir:v "The concept of an officially registered address" ] ;
-       fhir:definition [ fhir:v "Defines the concept of an officially registered address in Norway. Usually this will be the adress registered in \"Folkeregisteret\" for persons or \"Enhetsregisteret\" for organizations." ] ;
+       fhir:definition [ fhir:v "Defines the concept of an officially registered address in Norway. Usually this will be the address registered in \"Folkeregisteret\" for persons or \"Enhetsregisteret\" for organizations." ] ;
        fhir:alias ( [ fhir:v "offisiell adresse" ] [ fhir:v "user content" ] ) ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ] ;

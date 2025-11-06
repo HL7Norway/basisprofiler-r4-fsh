@@ -3,9 +3,9 @@ NoBasis : Validation Results
 
 err = 75, warn = 162, info = 40
 IG Publisher Version: 2.0.25
-Generated Fri Oct 31 07:10:16 UTC 2025. FHIR version 4.0.1 for hl7.fhir.no.basis#2.2.3-test (canonical = http://hl7.no/fhir/ig)
+Generated Thu Nov 06 08:53:04 UTC 2025. FHIR version 4.0.1 for hl7.fhir.no.basis#2.2.3-test (canonical = http://hl7.no/fhir/ig)
  Build Errors : 2 / 35 / 0
- /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/Appointment-d6c523ec-b520-4221-a8d6-c1c58911ce7a : 0 / 1 / 3
+ /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/Appointment-AppointmentExample : 0 / 1 / 3
  /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/AppointmentResponse-PatientAppointmentResponseExample : 1 / 0 / 1
  /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/CodeSystem-no-basis-connection-type.codesystem : 4 / 0 / 2
  /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/CodeSystem-no-basis-family-relation.codesystem : 4 / 1 / 2
@@ -20,13 +20,13 @@ Generated Fri Oct 31 07:10:16 UTC 2025. FHIR version 4.0.1 for hl7.fhir.no.basis
  /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/NamingSystem-no-basis-foedselsnummer : 0 / 0 / 1
  /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/NamingSystem-no-basis-helsepersonellnummer : 0 / 0 / 1
  /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/NamingSystem-no-basis-kommunenummer : 0 / 0 / 1
- /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/Organization-a70f0ba2-44d8-4f14-9c3a-ff4c6ead7472 : 2 / 3 / 3
+ /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/Organization-Direktoratet-for-eHelse-Organization : 2 / 3 / 3
  /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/Patient-EspenEksempel : 3 / 4 / 5
  /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/Patient-JanniceSoreng : 5 / 7 / 9
  /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/Patient-JanniceSorengTo : 3 / 6 / 7
  /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/Patient-Pasient-1 : 0 / 0 / 1
  /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/Patient-Pasient-Middle-Name-1 : 0 / 0 / 1
- /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/Patient-e70f0ba2-44d8-4f14-9c3a-ff4c6ead7473 : 0 / 0 / 1
+ /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/Patient-PatientExample : 0 / 0 / 1
  /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/Practitioner-Magnar-Komann-Practitioner : 0 / 8 / 4
  /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/RelatedPerson-Solid-Aresdoktor-RelatedPerson : 3 / 3 / 5
  /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/RelatedPerson-Sorgard-Erlend-RelatedPerson : 2 / 2 / 2
@@ -96,12 +96,12 @@ WARNING: Practitioner.qualification.code.coding: The reference urn:oid:2.16.578.
 WARNING: PractitionerRole.code: The reference urn:oid:2.16.578.1.12.4.1.1.9034 could not be resolved
 WARNING: Extension.extension.value: The reference urn:oid:2.16.578.1.12.4.1.1.3402 could not be resolved
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/no-basis-documentreference-type.valueset.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Organization/a70f0ba2-44d8-4f14-9c3a-ff4c6ead7472.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Organization/Direktoratet-for-eHelse-Organization.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/EspenEksempel.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/JanniceSoreng.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/JanniceSorengTo.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Practitioner/Magnar-Komann-Practitioner.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/e70f0ba2-44d8-4f14-9c3a-ff4c6ead7473.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/PatientExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource RelatedPerson/Solid-Aresdoktor-RelatedPerson.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource RelatedPerson/Sorgard-Erlend-RelatedPerson.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource HealthcareService/no-basis-HealthcareService-example.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
@@ -113,10 +113,10 @@ WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-v
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
 WARNING: IG: The IG is not for the international realm, and it uses SNOMED CT, so it should fix the SCT edition in the expansion parameters
-== fsh-generated/resources/Appointment-d6c523ec-b520-4221-a8d6-c1c58911ce7a.json ==
-WARNING: Appointment/d6c523ec-b520-4221-a8d6-c1c58911ce7a: Appointment.appointmentType.coding[1].system: A definition for CodeSystem 'urn:oid:2.16.578.1.12.4.1.1.7617' could not be found, so the code cannot be validated
-INFORMATION: Appointment/d6c523ec-b520-4221-a8d6-c1c58911ce7a: Appointment.appointmentType.coding[0]: This element does not match any known slice defined in the profile http://hl7.no/fhir/ig/StructureDefinition/no-basis-Appointment|2.2.3-test (this may not be a problem, but you should check that it's not intended to match a slice)
-INFORMATION: Appointment/d6c523ec-b520-4221-a8d6-c1c58911ce7a: Appointment.appointmentType.coding[1]: This element does not match any known slice defined in the profile http://hl7.no/fhir/ig/StructureDefinition/no-basis-Appointment|2.2.3-test (this may not be a problem, but you should check that it's not intended to match a slice)
+== fsh-generated/resources/Appointment-AppointmentExample.json ==
+WARNING: Appointment/AppointmentExample: Appointment.appointmentType.coding[1].system: A definition for CodeSystem 'urn:oid:2.16.578.1.12.4.1.1.7617' could not be found, so the code cannot be validated
+INFORMATION: Appointment/AppointmentExample: Appointment.appointmentType.coding[0]: This element does not match any known slice defined in the profile http://hl7.no/fhir/ig/StructureDefinition/no-basis-Appointment|2.2.3-test (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Appointment/AppointmentExample: Appointment.appointmentType.coding[1]: This element does not match any known slice defined in the profile http://hl7.no/fhir/ig/StructureDefinition/no-basis-Appointment|2.2.3-test (this may not be a problem, but you should check that it's not intended to match a slice)
 == fsh-generated/resources/AppointmentResponse-PatientAppointmentResponseExample.json ==
 ERROR: AppointmentResponse/PatientAppointmentResponseExample: AppointmentResponse: Constraint failed: shortnotice-inv-1: 'The 'shortNotice' extension can only be used when the 'actor' is of type 'Patient'.' (defined in http://hl7.no/fhir/ig/StructureDefinition/no-basis-AppointmentResponse)
 == fsh-generated/resources/CodeSystem-no-basis-connection-type.codesystem.json ==
@@ -163,14 +163,14 @@ WARNING: HealthcareService/no-basis-HealthcareService-example: HealthcareService
 == fsh-generated/resources/NamingSystem-no-basis-foedselsnummer.json ==
 == fsh-generated/resources/NamingSystem-no-basis-helsepersonellnummer.json ==
 == fsh-generated/resources/NamingSystem-no-basis-kommunenummer.json ==
-== fsh-generated/resources/Organization-a70f0ba2-44d8-4f14-9c3a-ff4c6ead7472.json ==
-WARNING: Organization/a70f0ba2-44d8-4f14-9c3a-ff4c6ead7472: Organization.identifier[0].system: No definition could be found for URL value 'urn:oid:2.16.578.1.12.4.1.4.101'
-INFORMATION: Organization/a70f0ba2-44d8-4f14-9c3a-ff4c6ead7472: Organization.address[0].extension[0]: This element does not match any known slice defined in the profile http://hl7.no/fhir/ig/StructureDefinition/no-basis-Address|2.2.3-test (this may not be a problem, but you should check that it's not intended to match a slice)
-ERROR: Organization/a70f0ba2-44d8-4f14-9c3a-ff4c6ead7472: Organization.address[0].extension[0]: The extension http://hl7.no/fhir/StructureDefinition/no-basis-address-official could not be found so is not allowed here
-WARNING: Organization/a70f0ba2-44d8-4f14-9c3a-ff4c6ead7472: Organization.address[0].extension[0].url: No definition could be found for URL value 'http://hl7.no/fhir/StructureDefinition/no-basis-address-official'
-INFORMATION: Organization/a70f0ba2-44d8-4f14-9c3a-ff4c6ead7472: Organization.address[1].extension[0]: This element does not match any known slice defined in the profile http://hl7.no/fhir/ig/StructureDefinition/no-basis-Address|2.2.3-test (this may not be a problem, but you should check that it's not intended to match a slice)
-ERROR: Organization/a70f0ba2-44d8-4f14-9c3a-ff4c6ead7472: Organization.address[1].extension[0]: The extension http://hl7.no/fhir/StructureDefinition/no-basis-address-official could not be found so is not allowed here
-WARNING: Organization/a70f0ba2-44d8-4f14-9c3a-ff4c6ead7472: Organization.address[1].extension[0].url: No definition could be found for URL value 'http://hl7.no/fhir/StructureDefinition/no-basis-address-official'
+== fsh-generated/resources/Organization-Direktoratet-for-eHelse-Organization.json ==
+WARNING: Organization/Direktoratet-for-eHelse-Organization: Organization.identifier[0].system: No definition could be found for URL value 'urn:oid:2.16.578.1.12.4.1.4.101'
+INFORMATION: Organization/Direktoratet-for-eHelse-Organization: Organization.address[0].extension[0]: This element does not match any known slice defined in the profile http://hl7.no/fhir/ig/StructureDefinition/no-basis-Address|2.2.3-test (this may not be a problem, but you should check that it's not intended to match a slice)
+ERROR: Organization/Direktoratet-for-eHelse-Organization: Organization.address[0].extension[0]: The extension http://hl7.no/fhir/StructureDefinition/no-basis-address-official could not be found so is not allowed here
+WARNING: Organization/Direktoratet-for-eHelse-Organization: Organization.address[0].extension[0].url: No definition could be found for URL value 'http://hl7.no/fhir/StructureDefinition/no-basis-address-official'
+INFORMATION: Organization/Direktoratet-for-eHelse-Organization: Organization.address[1].extension[0]: This element does not match any known slice defined in the profile http://hl7.no/fhir/ig/StructureDefinition/no-basis-Address|2.2.3-test (this may not be a problem, but you should check that it's not intended to match a slice)
+ERROR: Organization/Direktoratet-for-eHelse-Organization: Organization.address[1].extension[0]: The extension http://hl7.no/fhir/StructureDefinition/no-basis-address-official could not be found so is not allowed here
+WARNING: Organization/Direktoratet-for-eHelse-Organization: Organization.address[1].extension[0].url: No definition could be found for URL value 'http://hl7.no/fhir/StructureDefinition/no-basis-address-official'
 == fsh-generated/resources/Patient-EspenEksempel.json ==
 WARNING: Patient/EspenEksempel: Patient.extension[0].extension[0].value.ofType(CodeableConcept): ValueSet 'http://hl7.org/fhir/ValueSet/country' not found
 ERROR: Patient/EspenEksempel: Patient.extension[0].extension[0].value.ofType(CodeableConcept): Found a reference to a CodeSystem 'urn:iso:std:iso:3166' where a ValueSet belongs
@@ -222,7 +222,7 @@ WARNING: Patient/JanniceSorengTo: Patient.contact[0].name.extension[0].url: No d
 WARNING: Patient/JanniceSorengTo: Patient.generalPractitioner[0].identifier.system: No definition could be found for URL value 'urn:oid:2.16.578.1.12.4.1.2'
 == fsh-generated/resources/Patient-Pasient-1.json ==
 == fsh-generated/resources/Patient-Pasient-Middle-Name-1.json ==
-== fsh-generated/resources/Patient-e70f0ba2-44d8-4f14-9c3a-ff4c6ead7473.json ==
+== fsh-generated/resources/Patient-PatientExample.json ==
 == fsh-generated/resources/Practitioner-Magnar-Komann-Practitioner.json ==
 WARNING: Practitioner/Magnar-Komann-Practitioner: Practitioner.qualification[0].code.coding[0].system: A definition for CodeSystem 'urn:oid:2.16.578.1.12.4.1.1.9060' could not be found, so the code cannot be validated
 WARNING: Practitioner/Magnar-Komann-Practitioner: Practitioner.qualification[0].code.coding[0]: ValueSet 'urn:oid:2.16.578.1.12.4.1.1.9060' not found

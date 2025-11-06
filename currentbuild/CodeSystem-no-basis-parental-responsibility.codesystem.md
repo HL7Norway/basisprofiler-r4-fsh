@@ -16,7 +16,7 @@ Copy of Codes from Foreldreansvar defined by Skatteetaten
 
  This Code system is referenced in the content logical definition of the following value sets: 
 
-* [NoBasisParentalResponsibility](ValueSet-no-basis-parental-responsibility.valueset.md)
+* [NoBasisParentalResponsibilityVS](ValueSet-no-basis-parental-responsibility.valueset.md)
 
 
 

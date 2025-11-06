@@ -4,7 +4,7 @@
       "url" : "http://hl7.no/fhir/ValueSet/no-basis-connection-type",
       "version" : "2.2.3-test",
       "status" : "active",
-      "name" : "NoBasisConnectionType",
+      "name" : "NoBasisConnectionTypeVS",
       "title" : "no-basis-connection-type.valueset",
       "description" : "ValueSet for connection types used in Endpoint definition. Includes all Norwegian specific types (no-basis-connection-type) and the extensible HL7 CodeSystem for connection-type",
       "systems" : [
@@ -25,7 +25,7 @@
       "url" : "http://hl7.no/fhir/ValueSet/no-basis-family-relation",
       "version" : "2.2.3-test",
       "status" : "active",
-      "name" : "NoBasisFamilyRelation",
+      "name" : "NoBasisFamilyRelationVS",
       "title" : "no-basis-family-relation.valueset",
       "description" : "Copy of Codes from Familierelasjon defined by Skatteetaten",
       "systems" : ["http://hl7.no/fhir/CodeSystem/no-basis-family-relation"]
@@ -34,7 +34,7 @@
       "url" : "http://hl7.no/fhir/ValueSet/no-basis-marital-status",
       "version" : "2.2.3-test",
       "status" : "active",
-      "name" : "NoBasisMaritalStatus",
+      "name" : "NoBasisMaritalStatusVS",
       "title" : "no-basis-marital-status.valueset",
       "description" : "Copy of Codes from Sivilstandstype defined by Skatteetaten",
       "systems" : ["http://hl7.no/fhir/CodeSystem/no-basis-marital-status"]
@@ -43,7 +43,7 @@
       "url" : "http://hl7.no/fhir/ValueSet/no-basis-parental-responsibility",
       "version" : "2.2.3-test",
       "status" : "active",
-      "name" : "NoBasisParentalResponsibility",
+      "name" : "NoBasisParentalResponsibilityVS",
       "title" : "no-basis-parental-responsibility.valueset",
       "description" : "Copy of Codes from Foreldreansvar defined by Skatteetaten",
       "systems" : [

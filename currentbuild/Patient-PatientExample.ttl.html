@@ -1,5 +1,3 @@
-<!-- layouts\layout-changehistory.html -->
-<!-- get modelType -->
 
 
 <?xml version="1.0" encoding="UTF-8"?>
@@ -7,7 +5,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title> -  v2.2.3-test</title>
+    <title>PatientExample - TTL Representation -  v2.2.3-test</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -47,8 +45,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:""}
-    h3,h4,h5,h6{--heading-prefix:""}</style>
+    <style type="text/css">h2{--heading-prefix:"5.66"}
+    h3,h4,h5,h6{--heading-prefix:"5.66"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -173,7 +171,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>PatientExample</b></li>
 
         </ul>
       </div>  <!-- /container -->
@@ -185,10 +183,9 @@
         <div class="row">
           <div class="inner-wrapper">
 
+<div style="counter-reset: section 9" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">NoBasis - Local Development build (v2.2.3-test) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://hl7.no/fhir/ig/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
 
-<div style="counter-reset: section 10" class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">NoBasis - Local Development build (v2.2.3-test) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://hl7.no/fhir/ig/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
-  
 
 
 
@@ -200,28 +197,28 @@
 <ul class="nav nav-tabs">
 
   <li>
-    <a href="Appointment-d6c523ec-b520-4221-a8d6-c1c58911ce7a.html">Narrative Content</a>
+    <a href="Patient-PatientExample.html">Narrative Content</a>
   </li>
 
 
 
   
     <li>
-      <a href="Appointment-d6c523ec-b520-4221-a8d6-c1c58911ce7a.xml.html">XML</a>
+      <a href="Patient-PatientExample.xml.html">XML</a>
     </li>
   
 
 
   
     <li>
-      <a href="Appointment-d6c523ec-b520-4221-a8d6-c1c58911ce7a.json.html">JSON</a>
+      <a href="Patient-PatientExample.json.html">JSON</a>
     </li>
   
 
 
   
-    <li>
-      <a href="Appointment-d6c523ec-b520-4221-a8d6-c1c58911ce7a.ttl.html">TTL</a>
+    <li class="active">
+      <a href="#">TTL</a>
     </li>
   
 
@@ -230,14 +227,51 @@
 </ul>
 
 
-  <a name="root"> </a>
-  <h2 id="root">: Appointment/d6c523ec-b520-4221-a8d6-c1c58911ce7a - Change History</h2>
-  <p>History of changes for d6c523ec-b520-4221-a8d6-c1c58911ce7a .</p>
+<a name="root"> </a>
 
+
+<h2 id="root">: PatientExample - TTL Representation</h2>
+
+
+<p><a href="Patient-PatientExample.ttl" no-download="true">Raw ttl</a> | <a href="Patient-PatientExample.ttl" download>Download</a></p>
+
+  <!-- insert intro if present -->
   
 
-</div>
 
+
+  <pre class="rdf" data-fhir="generated" style="white-space: pre; overflow: hidden"><code class="language-turtle">
+@prefix fhir: &lt;http://hl7.org/fhir/&gt; .
+@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+@prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+# - resource -------------------------------------------------------------------
+
+ a fhir:Patient ;
+  <a href="http://hl7.org/fhir/R4/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot ;
+  <a href="http://hl7.org/fhir/R4/patient.html#Patient.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;PatientExample&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/patient.html#Patient.text">fhir:text</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">fhir:div</a> [ <a href="http://hl7.org/fhir/R4/narrative.html#xhtml">fhir:v</a> &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Patient PatientExample&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;PatientExample\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcPatientExample\&quot;&gt; &lt;/a&gt;&lt;p style=\&quot;border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\&quot;&gt;Peter James Chalmers (official) (no stated gender), DoB Unknown&lt;/p&gt;&lt;hr/&gt;&lt;/div&gt;&quot;^^rdf:XMLLiteral ]
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/patient.html#Patient.name">fhir:name</a> ( [
+<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.use">fhir:use</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;official&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.family">fhir:family</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Chalmers&quot; ] ;
+    ( <a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.given">fhir:given</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Peter James&quot; ] )
+  ] ) . # 
+
+</code></pre>
+
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
         </div>  <!-- /inner-wrapper -->
       </div>  <!-- /row -->
     </div>  <!-- /container -->
@@ -246,8 +280,6 @@
   <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
 
-  <script type="text/javascript" src="assets/js/tabs.js"> </script>
-
   <script type="text/javascript" src="assets/js/window-hash.js"> </script>
   <a name="bottom"> </a>
   <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
@@ -255,7 +287,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href=""></a>.  Package hl7.fhir.no.basis#2.2.3-test based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Oct 31, 2025 07:08+0000">2025-10-31</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href=""></a>.  Package hl7.fhir.no.basis#2.2.3-test based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Nov 6, 2025 08:50+0000">2025-11-06</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

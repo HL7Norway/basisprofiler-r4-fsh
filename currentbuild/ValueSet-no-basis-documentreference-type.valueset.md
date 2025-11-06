@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://hl7.no/fhir/ValueSet/no-basis-documentreference-type | *Version*:2.2.3-test |
-| Active as of 2025-10-31 | *Computable Name*:NoBasisDocumentReferenceType |
+| Active as of 2025-11-06 | *Computable Name*:NoBasisDocumentReferenceType |
 
  **References** 
 
@@ -50,7 +50,7 @@ No Expansion for this valueset (not supported by Publication Tooling)
   "name" : "NoBasisDocumentReferenceType",
   "title" : "no-basis-documentreference-type.valueset",
   "status" : "active",
-  "date" : "2025-10-31T07:08:04+00:00",
+  "date" : "2025-11-06T08:50:45+00:00",
   "jurisdiction" : [
     {
       "coding" : [

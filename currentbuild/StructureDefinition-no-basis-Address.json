@@ -176,7 +176,7 @@
       "path" : "Address.extension",
       "sliceName" : "official",
       "short" : "The concept of an officially registered address",
-      "definition" : "Defines the concept of an officially registered address in Norway. Usually this will be the adress registered in \"Folkeregisteret\" for persons or \"Enhetsregisteret\" for organizations.",
+      "definition" : "Defines the concept of an officially registered address in Norway. Usually this will be the address registered in \"Folkeregisteret\" for persons or \"Enhetsregisteret\" for organizations.",
       "alias" : ["offisiell adresse",
       "user content"],
       "min" : 0,

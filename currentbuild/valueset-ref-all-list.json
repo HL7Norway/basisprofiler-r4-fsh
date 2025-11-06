@@ -4,7 +4,7 @@
       "url" : "http://hl7.no/fhir/ValueSet/no-basis-connection-type",
       "version" : "2.2.3-test",
       "status" : "active",
-      "name" : "NoBasisConnectionType",
+      "name" : "NoBasisConnectionTypeVS",
       "title" : "no-basis-connection-type.valueset",
       "description" : "ValueSet for connection types used in Endpoint definition. Includes all Norwegian specific types (no-basis-connection-type) and the extensible HL7 CodeSystem for connection-type",
       "systems" : [
@@ -32,7 +32,7 @@
       "url" : "http://hl7.no/fhir/ValueSet/no-basis-family-relation",
       "version" : "2.2.3-test",
       "status" : "active",
-      "name" : "NoBasisFamilyRelation",
+      "name" : "NoBasisFamilyRelationVS",
       "title" : "no-basis-family-relation.valueset",
       "description" : "Copy of Codes from Familierelasjon defined by Skatteetaten",
       "systems" : ["http://hl7.no/fhir/CodeSystem/no-basis-family-relation"],
@@ -44,7 +44,7 @@
       "url" : "http://hl7.no/fhir/ValueSet/no-basis-marital-status",
       "version" : "2.2.3-test",
       "status" : "active",
-      "name" : "NoBasisMaritalStatus",
+      "name" : "NoBasisMaritalStatusVS",
       "title" : "no-basis-marital-status.valueset",
       "description" : "Copy of Codes from Sivilstandstype defined by Skatteetaten",
       "systems" : ["http://hl7.no/fhir/CodeSystem/no-basis-marital-status"],
@@ -56,7 +56,7 @@
       "url" : "http://hl7.no/fhir/ValueSet/no-basis-parental-responsibility",
       "version" : "2.2.3-test",
       "status" : "active",
-      "name" : "NoBasisParentalResponsibility",
+      "name" : "NoBasisParentalResponsibilityVS",
       "title" : "no-basis-parental-responsibility.valueset",
       "description" : "Copy of Codes from Foreldreansvar defined by Skatteetaten",
       "systems" : [
@@ -139,11 +139,11 @@
       "sources" : ["2.16.840.1.113883.4.642.3.1"],
       "uses" : {
       },
-      "StructureDefinition-no-basis-Patient.html" : "no-basis-Patient",
-      "StructureDefinition-no-basis-Person.html" : "no-basis-Person",
-      "StructureDefinition-derived-Person.html" : "derived-Person",
       "StructureDefinition-no-basis-RelatedPerson.html" : "no-basis-RelatedPerson",
-      "StructureDefinition-no-basis-Practitioner.html" : "no-basis-Practitioner"
+      "StructureDefinition-no-basis-Patient.html" : "no-basis-Patient",
+      "StructureDefinition-no-basis-Practitioner.html" : "no-basis-Practitioner",
+      "StructureDefinition-no-basis-Person.html" : "no-basis-Person",
+      "StructureDefinition-derived-Person.html" : "derived-Person"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/allergy-intolerance-category",
@@ -303,9 +303,9 @@
       "sources" : ["2.16.840.1.113883.3.88.12.80.72"],
       "uses" : {
       },
-      "StructureDefinition-no-basis-Appointment.html" : "no-basis-Appointment",
-      "StructureDefinition-no-basis-DocumentReference.html" : "no-basis-DocumentReference",
       "StructureDefinition-no-basis-PractitionerRole.html" : "no-basis-PractitionerRole",
+      "StructureDefinition-no-basis-DocumentReference.html" : "no-basis-DocumentReference",
+      "StructureDefinition-no-basis-Appointment.html" : "no-basis-Appointment",
       "StructureDefinition-no-basis-HealthcareService.html" : "no-basis-HealthcareService"
     },
     {
@@ -363,8 +363,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.161"],
       "uses" : {
       },
-      "StructureDefinition-no-basis-MedicationStatement.html" : "no-basis-MedicationStatement",
-      "StructureDefinition-no-basis-Procedure.html" : "no-basis-Procedure"
+      "StructureDefinition-no-basis-Procedure.html" : "no-basis-Procedure",
+      "StructureDefinition-no-basis-MedicationStatement.html" : "no-basis-MedicationStatement"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/contactentity-type",
@@ -392,8 +392,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.512"],
       "uses" : {
       },
-      "StructureDefinition-no-basis-Location.html" : "no-basis-Location",
       "StructureDefinition-no-basis-PractitionerRole.html" : "no-basis-PractitionerRole",
+      "StructureDefinition-no-basis-Location.html" : "no-basis-Location",
       "StructureDefinition-no-basis-HealthcareService.html" : "no-basis-HealthcareService"
     },
     {
@@ -497,8 +497,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.250"],
       "uses" : {
       },
-      "StructureDefinition-no-basis-Appointment.html" : "no-basis-Appointment",
-      "StructureDefinition-no-basis-AppointmentResponse.html" : "no-basis-AppointmentResponse"
+      "StructureDefinition-no-basis-AppointmentResponse.html" : "no-basis-AppointmentResponse",
+      "StructureDefinition-no-basis-Appointment.html" : "no-basis-Appointment"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/encounter-reason",
@@ -585,13 +585,13 @@
       "sources" : ["2.16.840.1.113883.4.642.3.45"],
       "uses" : {
       },
+      "StructureDefinition-no-basis-RelatedPerson.html" : "no-basis-RelatedPerson",
       "StructureDefinition-no-basis-Organization.html" : "no-basis-Organization",
       "StructureDefinition-no-basis-Patient.html" : "no-basis-Patient",
+      "StructureDefinition-no-basis-Practitioner.html" : "no-basis-Practitioner",
       "StructureDefinition-no-basis-Person.html" : "no-basis-Person",
-      "StructureDefinition-no-basis-MedicationStatement.html" : "no-basis-MedicationStatement",
       "StructureDefinition-derived-Person.html" : "derived-Person",
-      "StructureDefinition-no-basis-RelatedPerson.html" : "no-basis-RelatedPerson",
-      "StructureDefinition-no-basis-Practitioner.html" : "no-basis-Practitioner"
+      "StructureDefinition-no-basis-MedicationStatement.html" : "no-basis-MedicationStatement"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
@@ -605,13 +605,13 @@
       "sources" : ["2.16.840.1.113883.4.642.3.57"],
       "uses" : {
       },
+      "StructureDefinition-no-basis-RelatedPerson.html" : "no-basis-RelatedPerson",
       "StructureDefinition-no-basis-Organization.html" : "no-basis-Organization",
       "StructureDefinition-no-basis-Patient.html" : "no-basis-Patient",
+      "StructureDefinition-no-basis-Practitioner.html" : "no-basis-Practitioner",
       "StructureDefinition-no-basis-Person.html" : "no-basis-Person",
-      "StructureDefinition-no-basis-MedicationStatement.html" : "no-basis-MedicationStatement",
       "StructureDefinition-derived-Person.html" : "derived-Person",
-      "StructureDefinition-no-basis-RelatedPerson.html" : "no-basis-RelatedPerson",
-      "StructureDefinition-no-basis-Practitioner.html" : "no-basis-Practitioner"
+      "StructureDefinition-no-basis-MedicationStatement.html" : "no-basis-MedicationStatement"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/identity-assuranceLevel",
@@ -640,25 +640,25 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-no-basis-Patient.html" : "no-basis-Patient",
-      "StructureDefinition-no-basis-Appointment.html" : "no-basis-Appointment",
-      "StructureDefinition-no-basis-MedicationStatement.html" : "no-basis-MedicationStatement",
-      "StructureDefinition-no-basis-Endpoint.html" : "no-basis-Endpoint",
-      "StructureDefinition-no-basis-Medication.html" : "no-basis-Medication",
       "StructureDefinition-no-basis-RelatedPerson.html" : "no-basis-RelatedPerson",
-      "StructureDefinition-no-basis-Substance.html" : "no-basis-Substance",
       "StructureDefinition-no-basis-Procedure.html" : "no-basis-Procedure",
       "StructureDefinition-no-basis-Organization.html" : "no-basis-Organization",
-      "StructureDefinition-no-basis-Location.html" : "no-basis-Location",
-      "StructureDefinition-no-basis-Person.html" : "no-basis-Person",
-      "StructureDefinition-no-basis-AllergyIntolerance.html" : "no-basis-AllergyIntolerance",
+      "StructureDefinition-no-basis-Endpoint.html" : "no-basis-Endpoint",
+      "StructureDefinition-no-basis-Practitioner.html" : "no-basis-Practitioner",
+      "StructureDefinition-no-basis-Medication.html" : "no-basis-Medication",
       "StructureDefinition-no-basis-Composition.html" : "no-basis-Composition",
-      "StructureDefinition-no-basis-DocumentReference.html" : "no-basis-DocumentReference",
-      "StructureDefinition-derived-Person.html" : "derived-Person",
-      "StructureDefinition-no-basis-AppointmentResponse.html" : "no-basis-AppointmentResponse",
+      "StructureDefinition-no-basis-Person.html" : "no-basis-Person",
+      "StructureDefinition-no-basis-Appointment.html" : "no-basis-Appointment",
       "StructureDefinition-no-basis-PractitionerRole.html" : "no-basis-PractitionerRole",
+      "StructureDefinition-no-basis-Patient.html" : "no-basis-Patient",
+      "StructureDefinition-no-basis-Substance.html" : "no-basis-Substance",
+      "StructureDefinition-no-basis-DocumentReference.html" : "no-basis-DocumentReference",
+      "StructureDefinition-no-basis-Location.html" : "no-basis-Location",
+      "StructureDefinition-no-basis-AppointmentResponse.html" : "no-basis-AppointmentResponse",
+      "StructureDefinition-derived-Person.html" : "derived-Person",
       "StructureDefinition-no-basis-HealthcareService.html" : "no-basis-HealthcareService",
-      "StructureDefinition-no-basis-Practitioner.html" : "no-basis-Practitioner"
+      "StructureDefinition-no-basis-MedicationStatement.html" : "no-basis-MedicationStatement",
+      "StructureDefinition-no-basis-AllergyIntolerance.html" : "no-basis-AllergyIntolerance"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/link-type",
@@ -789,8 +789,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.375"],
       "uses" : {
       },
-      "StructureDefinition-no-basis-MedicationStatement.html" : "no-basis-MedicationStatement",
-      "StructureDefinition-no-basis-Medication.html" : "no-basis-Medication"
+      "StructureDefinition-no-basis-Medication.html" : "no-basis-Medication",
+      "StructureDefinition-no-basis-MedicationStatement.html" : "no-basis-MedicationStatement"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/medication-form-codes",
@@ -904,8 +904,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.486"],
       "uses" : {
       },
-      "StructureDefinition-no-basis-Appointment.html" : "no-basis-Appointment",
-      "StructureDefinition-no-basis-AppointmentResponse.html" : "no-basis-AppointmentResponse"
+      "StructureDefinition-no-basis-AppointmentResponse.html" : "no-basis-AppointmentResponse",
+      "StructureDefinition-no-basis-Appointment.html" : "no-basis-Appointment"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/patient-contactrelationship",
@@ -1230,8 +1230,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.473"],
       "uses" : {
       },
-      "StructureDefinition-no-basis-AllergyIntolerance.html" : "no-basis-AllergyIntolerance",
-      "StructureDefinition-no-basis-Substance.html" : "no-basis-Substance"
+      "StructureDefinition-no-basis-Substance.html" : "no-basis-Substance",
+      "StructureDefinition-no-basis-AllergyIntolerance.html" : "no-basis-AllergyIntolerance"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/substance-status",

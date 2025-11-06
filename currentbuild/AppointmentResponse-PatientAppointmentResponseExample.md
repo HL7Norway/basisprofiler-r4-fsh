@@ -10,9 +10,9 @@ Profile: [no-basis-AppointmentResponse](StructureDefinition-no-basis-Appointment
 
 **no-basis-shortnotice**: true
 
-**appointment**: [MRI results discussion](Appointment-d6c523ec-b520-4221-a8d6-c1c58911ce7a.md)
+**appointment**: [MRI results discussion](Appointment-AppointmentExample.md)
 
-**actor**: [Peter James Chalmers](Patient-e70f0ba2-44d8-4f14-9c3a-ff4c6ead7473.md)
+**actor**: [Peter James Chalmers](Patient-PatientExample.md)
 
 **participantStatus**: Accepted
 
@@ -36,11 +36,11 @@ Profile: [no-basis-AppointmentResponse](StructureDefinition-no-basis-Appointment
     }
   ],
   "appointment" : {
-    "reference" : "Appointment/d6c523ec-b520-4221-a8d6-c1c58911ce7a",
+    "reference" : "Appointment/AppointmentExample",
     "display" : "MRI results discussion"
   },
   "actor" : {
-    "reference" : "Patient/e70f0ba2-44d8-4f14-9c3a-ff4c6ead7473",
+    "reference" : "Patient/PatientExample",
     "type" : "Patient",
     "display" : "Peter James Chalmers"
   },

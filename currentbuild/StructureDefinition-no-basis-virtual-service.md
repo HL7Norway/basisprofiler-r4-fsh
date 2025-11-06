@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://hl7.no/fhir/ig/StructureDefinition/no-basis-virtual-service | *Version*:2.2.3-test |
-| Active as of 2025-10-31 | *Computable Name*:NoBasisVirtualService |
+| Active as of 2025-11-06 | *Computable Name*:NoBasisVirtualService |
 
 The VirtualService is based on VirtualServiceDetail structure from R5 and defines details of a virtual communication capability, such as a web conference call.
 
@@ -48,7 +48,7 @@ Other representations of profile: [CSV](StructureDefinition-no-basis-virtual-ser
   "name" : "NoBasisVirtualService",
   "title" : "no-basis-virtual-service",
   "status" : "active",
-  "date" : "2025-10-31T07:08:04+00:00",
+  "date" : "2025-11-06T08:50:45+00:00",
   "description" : "The VirtualService is based on VirtualServiceDetail structure from R5 and defines details of a virtual communication capability, such as a web conference call.",
   "jurisdiction" : [
     {
