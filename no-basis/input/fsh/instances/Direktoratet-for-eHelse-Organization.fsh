@@ -1,6 +1,7 @@
 Instance: Direktoratet-for-eHelse-Organization
 InstanceOf: NoBasisOrganization
 Usage: #example
+Description: "Example of an organization using no-basis profile. The profile is identical to the basis profile except there is an extension that can be used for official addresses."
 * identifier.system = "urn:oid:2.16.578.1.12.4.1.4.101"
 * identifier.value = "915933149"
 * name = "Direktoratet for e-Helse"
