@@ -82,8 +82,8 @@
          ]
        ] ) ;
        fhir:url [
-         fhir:v "http://hl7.no/fhir/ig/StructureDefinition/no-basis-propertyinformation"^^xsd:anyURI ;
-         fhir:l <http://hl7.no/fhir/ig/StructureDefinition/no-basis-propertyinformation>
+         fhir:v "http://hl7.no/fhir/StructureDefinition/no-basis-propertyinformation"^^xsd:anyURI ;
+         fhir:l <http://hl7.no/fhir/StructureDefinition/no-basis-propertyinformation>
        ]
      ] [
        fhir:url [

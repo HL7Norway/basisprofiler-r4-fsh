@@ -95,7 +95,7 @@ Jannice SørengTo Female, DoB Unknown ( urn:oid:2.16.578.1.12.4.1.4.1#2103055023
               }
             }
           ],
-          "url" : "http://hl7.no/fhir/ig/StructureDefinition/no-basis-propertyinformation"
+          "url" : "http://hl7.no/fhir/StructureDefinition/no-basis-propertyinformation"
         },
         {
           "url" : "http://hl7.no/fhir/StructureDefinition/no-basis-address-official",

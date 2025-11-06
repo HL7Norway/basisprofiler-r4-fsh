@@ -49,11 +49,25 @@
     "name" : "NoBasisMiddlename"
   },
   {
+    "id" : "no-basis-municipalitycode",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.no/fhir/StructureDefinition/no-basis-municipalitycode",
+    "version" : "2.2.3-test",
+    "name" : "NoBasisMunicipalitycode"
+  },
+  {
     "id" : "no-basis-person-citizenship",
     "type" : "StructureDefinition",
     "url" : "http://hl7.no/fhir/StructureDefinition/no-basis-person-citizenship",
     "version" : "2.2.3-test",
     "name" : "NoBasisPersonCitizenship"
+  },
+  {
+    "id" : "no-basis-propertyinformation",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.no/fhir/StructureDefinition/no-basis-propertyinformation",
+    "version" : "2.2.3-test",
+    "name" : "NoBasisPropertyinformation"
   },
   {
     "id" : "no-basis-relatedperson-person-reference",
@@ -329,13 +343,6 @@
     "name" : "NoBasisGroup"
   },
   {
-    "id" : "no-basis-municipalitycode",
-    "type" : "StructureDefinition",
-    "url" : "http://hl7.no/fhir/ig/StructureDefinition/no-basis-municipalitycode",
-    "version" : "2.2.3-test",
-    "name" : "NoBasisMunicipalitycode"
-  },
-  {
     "id" : "no-basis-partof",
     "type" : "StructureDefinition",
     "url" : "http://hl7.no/fhir/ig/StructureDefinition/no-basis-partof",
@@ -348,13 +355,6 @@
     "url" : "http://hl7.no/fhir/ig/StructureDefinition/no-basis-prescriptiongroup",
     "version" : "2.2.3-test",
     "name" : "NoBasisPrescriptiongroup"
-  },
-  {
-    "id" : "no-basis-propertyinformation",
-    "type" : "StructureDefinition",
-    "url" : "http://hl7.no/fhir/ig/StructureDefinition/no-basis-propertyinformation",
-    "version" : "2.2.3-test",
-    "name" : "NoBasisPropertyinformation"
   },
   {
     "id" : "no-basis-shortnotice",

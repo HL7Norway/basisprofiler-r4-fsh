@@ -19,11 +19,86 @@
       ]
     },
     {
+      "url": "http://hl7.no/fhir/StructureDefinition/no-basis-municipalitycode",
+      "title": "no-basis-municipalitycode",
+      "types": [
+        "Coding",
+        "string",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean"
+      ]
+    },
+    {
       "url": "http://hl7.no/fhir/StructureDefinition/no-basis-person-citizenship",
       "title": "no-basis-person-citizenship",
       "types": [
         "CodeableConcept",
         "Period",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://hl7.no/fhir/StructureDefinition/no-basis-propertyinformation",
+      "title": "no-basis-propertyinformation",
+      "types": [
+        "integer",
+        "integer",
+        "integer",
+        "integer",
+        "Coding",
         "base64Binary",
         "boolean",
         "canonical",
@@ -91,20 +166,6 @@
       ]
     },
     {
-      "url": "http://hl7.no/fhir/ig/StructureDefinition/no-basis-municipalitycode",
-      "title": "no-basis-municipalitycode",
-      "types": [
-        "Coding",
-        "string",
-        "Extension",
-        "uri",
-        "string",
-        "code",
-        "string",
-        "boolean"
-      ]
-    },
-    {
       "url": "http://hl7.no/fhir/ig/StructureDefinition/no-basis-partof",
       "title": "no-basis-partof",
       "types": [
@@ -127,67 +188,6 @@
         "string",
         "boolean",
         "string",
-        "base64Binary",
-        "boolean",
-        "canonical",
-        "code",
-        "date",
-        "dateTime",
-        "decimal",
-        "id",
-        "instant",
-        "integer",
-        "markdown",
-        "oid",
-        "positiveInt",
-        "string",
-        "time",
-        "unsignedInt",
-        "uri",
-        "url",
-        "uuid",
-        "Address",
-        "Age",
-        "Annotation",
-        "Attachment",
-        "CodeableConcept",
-        "Coding",
-        "ContactPoint",
-        "Count",
-        "Distance",
-        "Duration",
-        "HumanName",
-        "Identifier",
-        "Money",
-        "Period",
-        "Quantity",
-        "Range",
-        "Ratio",
-        "Reference",
-        "SampledData",
-        "Signature",
-        "Timing",
-        "ContactDetail",
-        "Contributor",
-        "DataRequirement",
-        "Expression",
-        "ParameterDefinition",
-        "RelatedArtifact",
-        "TriggerDefinition",
-        "UsageContext",
-        "Dosage",
-        "Meta"
-      ]
-    },
-    {
-      "url": "http://hl7.no/fhir/ig/StructureDefinition/no-basis-propertyinformation",
-      "title": "no-basis-propertyinformation",
-      "types": [
-        "integer",
-        "integer",
-        "integer",
-        "integer",
-        "Coding",
         "base64Binary",
         "boolean",
         "canonical",
@@ -510,12 +510,14 @@
       "RelatedPerson.name"
     ],
     "http://hl7.no/fhir/StructureDefinition/no-basis-municipalitycode": [
+      "Address.district",
       "Patient.address.district"
     ],
     "http://hl7.no/fhir/StructureDefinition/no-basis-person-citizenship": [
       "RelatedPerson"
     ],
     "http://hl7.no/fhir/StructureDefinition/no-basis-propertyinformation": [
+      "Address",
       "Patient.address",
       "RelatedPerson.address"
     ],
@@ -525,18 +527,11 @@
     "http://hl7.no/fhir/ig/StructureDefinition/no-basis-group": [
       "Appointment"
     ],
-    "http://hl7.no/fhir/ig/StructureDefinition/no-basis-municipalitycode": [
-      "Address.district"
-    ],
     "http://hl7.no/fhir/ig/StructureDefinition/no-basis-partof": [
       "Appointment"
     ],
     "http://hl7.no/fhir/ig/StructureDefinition/no-basis-prescriptiongroup": [
       "Medication"
-    ],
-    "http://hl7.no/fhir/ig/StructureDefinition/no-basis-propertyinformation": [
-      "Address",
-      "Patient.address"
     ],
     "http://hl7.no/fhir/ig/StructureDefinition/no-basis-shortnotice": [
       "AppointmentResponse"

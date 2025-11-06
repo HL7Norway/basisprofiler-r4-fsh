@@ -137,7 +137,7 @@ Other representations of profile: [CSV](StructureDefinition-no-basis-Address.csv
           {
             "code" : "Extension",
             "profile" : [
-              "http://hl7.no/fhir/ig/StructureDefinition/no-basis-propertyinformation"
+              "http://hl7.no/fhir/StructureDefinition/no-basis-propertyinformation"
             ]
           }
         ]
@@ -191,7 +191,7 @@ Other representations of profile: [CSV](StructureDefinition-no-basis-Address.csv
           {
             "code" : "Extension",
             "profile" : [
-              "http://hl7.no/fhir/ig/StructureDefinition/no-basis-municipalitycode"
+              "http://hl7.no/fhir/StructureDefinition/no-basis-municipalitycode"
             ]
           }
         ]

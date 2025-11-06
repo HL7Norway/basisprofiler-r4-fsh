@@ -1,7 +1,7 @@
 NoBasis : Validation Results
 =========================================
 
-err = 56, warn = 142, info = 27
+err = 55, warn = 141, info = 22
 $--
 Generated $--. FHIR version $-- for hl7.fhir.no.basis#$-- (canonical = http://hl7.no/fhir/ig)
  Build Errors : 0 / 26 / 0
@@ -22,15 +22,15 @@ Generated $--. FHIR version $-- for hl7.fhir.no.basis#$-- (canonical = http://hl
  /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/NamingSystem-no-basis-icpc-2 : 0 / 0 / 1
  /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/NamingSystem-no-basis-kommunenummer : 0 / 0 / 1
  /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/Organization-Direktoratet-for-eHelse-Organization : 0 / 1 / 1
- /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/Patient-EspenEksempel : 2 / 3 / 4
- /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/Patient-JanniceSoreng : 3 / 5 / 7
- /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/Patient-JanniceSorengTo : 2 / 5 / 6
+ /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/Patient-EspenEksempel : 1 / 3 / 3
+ /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/Patient-JanniceSoreng : 1 / 5 / 5
+ /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/Patient-JanniceSorengTo : 1 / 5 / 5
  /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/Patient-Pasient-1 : 0 / 0 / 1
  /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/Patient-Pasient-Middle-Name-1 : 0 / 0 / 1
  /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/Patient-PatientExample : 0 / 0 / 1
  /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/Practitioner-Magnar-Komann-Practitioner : 0 / 8 / 4
  /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/Procedure-no-basis-Procedure-example : 4 / 0 / 3
- /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/RelatedPerson-Solid-Aresdoktor-RelatedPerson : 1 / 1 / 3
+ /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/RelatedPerson-Solid-Aresdoktor-RelatedPerson : 0 / 1 / 2
  /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/RelatedPerson-Sorgard-Erlend-RelatedPerson : 0 / 0 / 1
  /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/SearchParameter-no-basis-middlename : 3 / 0 / 1
  /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/StructureDefinition-derived-Person : 0 / 1 / 2
@@ -57,11 +57,11 @@ Generated $--. FHIR version $-- for hl7.fhir.no.basis#$-- (canonical = http://hl
  /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/StructureDefinition-no-basis-address-official : 2 / 0 / 1
  /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/StructureDefinition-no-basis-group : 0 / 1 / 1
  /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/StructureDefinition-no-basis-middlename : 2 / 0 / 1
- /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/StructureDefinition-no-basis-municipalitycode : 0 / 1 / 1
+ /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/StructureDefinition-no-basis-municipalitycode : 2 / 0 / 1
  /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/StructureDefinition-no-basis-partof : 0 / 1 / 1
  /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/StructureDefinition-no-basis-person-citizenship : 2 / 0 / 1
  /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/StructureDefinition-no-basis-prescriptiongroup : 0 / 1 / 1
- /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/StructureDefinition-no-basis-propertyinformation : 1 / 0 / 1
+ /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/StructureDefinition-no-basis-propertyinformation : 3 / 0 / 1
  /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/StructureDefinition-no-basis-relatedperson-person-reference : 2 / 0 / 1
  /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/StructureDefinition-no-basis-shortnotice : 0 / 0 / 1
  /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/StructureDefinition-no-basis-sourceofinformation : 0 / 1 / 1
@@ -146,10 +146,8 @@ WARNING: Organization/Direktoratet-for-eHelse-Organization: Organization.identif
 == fsh-generated/resources/Patient-EspenEksempel.json ==
 WARNING: Patient/EspenEksempel: Patient.extension[0].extension[0].value.ofType(CodeableConcept): ValueSet 'http://hl7.org/fhir/ValueSet/country' not found
 ERROR: Patient/EspenEksempel: Patient.extension[0].extension[0].value.ofType(CodeableConcept): Found a reference to a CodeSystem 'urn:iso:std:iso:3166' where a ValueSet belongs
-INFORMATION: Patient/EspenEksempel: Patient.address[0].extension[0]: This element does not match any known slice defined in the profile http://hl7.no/fhir/ig/StructureDefinition/no-basis-Address|2.2.3-test (this may not be a problem, but you should check that it's not intended to match a slice)
-ERROR: Patient/EspenEksempel: Patient.address[0].extension[0]: The extension http://hl7.no/fhir/StructureDefinition/no-basis-propertyinformation could not be found so is not allowed here
 INFORMATION: Patient/EspenEksempel: Patient.address[0].extension[0].extension[0].value.ofType(Coding): A definition for CodeSystem 'urn:oid:2.16.578.1.12.4.1.1.3402' could not be found, so the code cannot be validated
-WARNING: Patient/EspenEksempel: Patient.address[0].extension[0].url: No definition could be found for URL value 'http://hl7.no/fhir/StructureDefinition/no-basis-propertyinformation'
+WARNING: Patient/EspenEksempel: Patient.address[0].extension[0].extension[0].value.ofType(Coding): ValueSet 'urn:oid:2.16.578.1.12.4.1.1.3402' not found
 INFORMATION: Patient/EspenEksempel: Patient.maritalStatus.coding[0].display: 'unmarried' is the default display; the code system http://terminology.hl7.org/CodeSystem/v3-MaritalStatus has no Display Names for the language no-NO
 WARNING: Patient/EspenEksempel: Patient.generalPractitioner[0].identifier.system: No definition could be found for URL value 'urn:oid:2.16.578.1.12.4.1.2'
 == fsh-generated/resources/Patient-JanniceSoreng.json ==
@@ -157,14 +155,10 @@ INFORMATION: Patient/JanniceSoreng: Patient.identifier[1]: This element does not
 WARNING: Patient/JanniceSoreng: Patient.extension[0].extension[0].value.ofType(CodeableConcept): ValueSet 'http://hl7.org/fhir/ValueSet/country' not found
 ERROR: Patient/JanniceSoreng: Patient.extension[0].extension[0].value.ofType(CodeableConcept): Found a reference to a CodeSystem 'urn:iso:std:iso:3166' where a ValueSet belongs
 WARNING: Patient/JanniceSoreng: Patient.identifier[1].system: No definition could be found for URL value 'http://profil.visma.no/lopenummer'
-INFORMATION: Patient/JanniceSoreng: Patient.address[0].extension[0]: This element does not match any known slice defined in the profile http://hl7.no/fhir/ig/StructureDefinition/no-basis-Address|2.2.3-test (this may not be a problem, but you should check that it's not intended to match a slice)
-ERROR: Patient/JanniceSoreng: Patient.address[0].extension[0]: The extension http://hl7.no/fhir/StructureDefinition/no-basis-propertyinformation could not be found so is not allowed here
 INFORMATION: Patient/JanniceSoreng: Patient.address[0].extension[0].extension[0].value.ofType(Coding): A definition for CodeSystem 'urn:oid:2.16.578.1.12.4.1.1.3402' could not be found, so the code cannot be validated
-WARNING: Patient/JanniceSoreng: Patient.address[0].extension[0].url: No definition could be found for URL value 'http://hl7.no/fhir/StructureDefinition/no-basis-propertyinformation'
-ERROR: Patient/JanniceSoreng: Patient.address[0].district.extension[0]: The extension http://hl7.no/fhir/StructureDefinition/no-basis-municipalitycode could not be found so is not allowed here
-WARNING: Patient/JanniceSoreng: Patient.address[0].district.extension[0].url: No definition could be found for URL value 'http://hl7.no/fhir/StructureDefinition/no-basis-municipalitycode'
+WARNING: Patient/JanniceSoreng: Patient.address[0].extension[0].extension[0].value.ofType(Coding): ValueSet 'urn:oid:2.16.578.1.12.4.1.1.3402' not found
+WARNING: Patient/JanniceSoreng: Patient.address[0].district.extension[0].value.ofType(Coding): ValueSet 'https://register.geonorge.no/subregister/sosi-kodelister/kartverket/kommunenummer-alle' not found
 INFORMATION: Patient/JanniceSoreng: Patient.address[0].district.extension[0].value.ofType(Coding): A definition for CodeSystem 'https://register.geonorge.no/subregister/sosi-kodelister/kartverket/kommunenummer-alle' could not be found, so the code cannot be validated
-INFORMATION: Patient/JanniceSoreng: Patient.address[0].district.extension[0]: This element does not match any known slice defined in the profile http://hl7.no/fhir/ig/StructureDefinition/no-basis-Address|2.2.3-test (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: Patient/JanniceSoreng: Patient.maritalStatus.coding[0].display: 'unmarried' is the default display; the code system http://terminology.hl7.org/CodeSystem/v3-MaritalStatus has no Display Names for the language no-NO
 WARNING: Patient/JanniceSoreng: Patient.generalPractitioner[0].identifier.system: No definition could be found for URL value 'urn:oid:2.16.578.1.12.4.1.2'
 == fsh-generated/resources/Patient-JanniceSorengTo.json ==
@@ -174,10 +168,8 @@ ERROR: Patient/JanniceSorengTo: Patient.extension[0].extension[0].value.ofType(C
 WARNING: Patient/JanniceSorengTo: Patient.identifier[1].system: No definition could be found for URL value 'http://profil.visma.no/lopenummer'
 INFORMATION: Patient/JanniceSorengTo: Patient.address[0].extension[0].extension[0].value.ofType(Coding): A definition for CodeSystem 'urn:oid:2.16.578.1.12.4.1.1.3402' could not be found, so the code cannot be validated
 WARNING: Patient/JanniceSorengTo: Patient.address[0].extension[0].extension[0].value.ofType(Coding): ValueSet 'urn:oid:2.16.578.1.12.4.1.1.3402' not found
-ERROR: Patient/JanniceSorengTo: Patient.address[0].district.extension[0]: The extension http://hl7.no/fhir/StructureDefinition/no-basis-municipalitycode could not be found so is not allowed here
-WARNING: Patient/JanniceSorengTo: Patient.address[0].district.extension[0].url: No definition could be found for URL value 'http://hl7.no/fhir/StructureDefinition/no-basis-municipalitycode'
+WARNING: Patient/JanniceSorengTo: Patient.address[0].district.extension[0].value.ofType(Coding): ValueSet 'https://register.geonorge.no/subregister/sosi-kodelister/kartverket/kommunenummer-alle' not found
 INFORMATION: Patient/JanniceSorengTo: Patient.address[0].district.extension[0].value.ofType(Coding): A definition for CodeSystem 'https://register.geonorge.no/subregister/sosi-kodelister/kartverket/kommunenummer-alle' could not be found, so the code cannot be validated
-INFORMATION: Patient/JanniceSorengTo: Patient.address[0].district.extension[0]: This element does not match any known slice defined in the profile http://hl7.no/fhir/ig/StructureDefinition/no-basis-Address|2.2.3-test (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: Patient/JanniceSorengTo: Patient.maritalStatus.coding[0].display: 'unmarried' is the default display; the code system http://terminology.hl7.org/CodeSystem/v3-MaritalStatus has no Display Names for the language no-NO
 WARNING: Patient/JanniceSorengTo: Patient.generalPractitioner[0].identifier.system: No definition could be found for URL value 'urn:oid:2.16.578.1.12.4.1.2'
 == fsh-generated/resources/Patient-Pasient-1.json ==
@@ -203,10 +195,8 @@ ERROR: Procedure/no-basis-Procedure-example: Procedure.code.coding[0]: Slicing c
 ERROR: Procedure/no-basis-Procedure-example: Procedure.performer[0].function.coding[0].code: Unknown code '8921000202108' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
 INFORMATION: Procedure/no-basis-Procedure-example: Procedure.bodySite[0].coding[0].display: 'TC - Transverse colon' is the default display; the code system http://snomed.info/sct has no Display Names for the language no-NO
 == fsh-generated/resources/RelatedPerson-Solid-Aresdoktor-RelatedPerson.json ==
-INFORMATION: RelatedPerson/Solid-Aresdoktor-RelatedPerson: RelatedPerson.address[0].extension[0]: This element does not match any known slice defined in the profile http://hl7.no/fhir/ig/StructureDefinition/no-basis-Address|2.2.3-test (this may not be a problem, but you should check that it's not intended to match a slice)
-ERROR: RelatedPerson/Solid-Aresdoktor-RelatedPerson: RelatedPerson.address[0].extension[0]: The extension http://hl7.no/fhir/StructureDefinition/no-basis-propertyinformation could not be found so is not allowed here
 INFORMATION: RelatedPerson/Solid-Aresdoktor-RelatedPerson: RelatedPerson.address[0].extension[0].extension[2].value.ofType(Coding): A definition for CodeSystem 'urn:oid:2.16.578.1.12.4.1.1.3402' could not be found, so the code cannot be validated
-WARNING: RelatedPerson/Solid-Aresdoktor-RelatedPerson: RelatedPerson.address[0].extension[0].url: No definition could be found for URL value 'http://hl7.no/fhir/StructureDefinition/no-basis-propertyinformation'
+WARNING: RelatedPerson/Solid-Aresdoktor-RelatedPerson: RelatedPerson.address[0].extension[0].extension[2].value.ofType(Coding): ValueSet 'urn:oid:2.16.578.1.12.4.1.1.3402' not found
 == fsh-generated/resources/RelatedPerson-Sorgard-Erlend-RelatedPerson.json ==
 == fsh-generated/resources/SearchParameter-no-basis-middlename.json ==
 ERROR: SearchParameter.where(url = 'http://hl7.no/fhir/SearchParameter/no-basis-middlename'): Conformance resource /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/SearchParameter-no-basis-middlename.json - the canonical URL (http://hl7.no/fhir/ig/SearchParameter/no-basis-middlename) does not match the URL (http://hl7.no/fhir/SearchParameter/no-basis-middlename). Use the special-url parameter if you really mean for it not to match
@@ -315,7 +305,8 @@ WARNING: StructureDefinition.where(url = 'http://hl7.no/fhir/ig/StructureDefinit
 ERROR: StructureDefinition.where(url = 'http://hl7.no/fhir/StructureDefinition/no-basis-middlename'): Conformance resource /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/StructureDefinition-no-basis-middlename.json - the canonical URL (http://hl7.no/fhir/ig/StructureDefinition/no-basis-middlename) does not match the URL (http://hl7.no/fhir/StructureDefinition/no-basis-middlename). Use the special-url parameter if you really mean for it not to match
 ERROR: /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/StructureDefinition-no-basis-middlename: URL Mismatch http://hl7.no/fhir/ig/StructureDefinition/no-basis-middlename vs http://hl7.no/fhir/StructureDefinition/no-basis-middlename
 == fsh-generated/resources/StructureDefinition-no-basis-municipalitycode.json ==
-WARNING: StructureDefinition.where(url = 'http://hl7.no/fhir/ig/StructureDefinition/no-basis-municipalitycode'): The Implementation Guide contains no examples for this extension
+ERROR: StructureDefinition.where(url = 'http://hl7.no/fhir/StructureDefinition/no-basis-municipalitycode'): Conformance resource /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/StructureDefinition-no-basis-municipalitycode.json - the canonical URL (http://hl7.no/fhir/ig/StructureDefinition/no-basis-municipalitycode) does not match the URL (http://hl7.no/fhir/StructureDefinition/no-basis-municipalitycode). Use the special-url parameter if you really mean for it not to match
+ERROR: /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/StructureDefinition-no-basis-municipalitycode: URL Mismatch http://hl7.no/fhir/ig/StructureDefinition/no-basis-municipalitycode vs http://hl7.no/fhir/StructureDefinition/no-basis-municipalitycode
 == fsh-generated/resources/StructureDefinition-no-basis-partof.json ==
 WARNING: StructureDefinition.where(url = 'http://hl7.no/fhir/ig/StructureDefinition/no-basis-partof'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-no-basis-person-citizenship.json ==
@@ -324,7 +315,9 @@ ERROR: /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/res
 == fsh-generated/resources/StructureDefinition-no-basis-prescriptiongroup.json ==
 WARNING: StructureDefinition.where(url = 'http://hl7.no/fhir/ig/StructureDefinition/no-basis-prescriptiongroup'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-no-basis-propertyinformation.json ==
+ERROR: StructureDefinition.where(url = 'http://hl7.no/fhir/StructureDefinition/no-basis-propertyinformation'): Conformance resource /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/StructureDefinition-no-basis-propertyinformation.json - the canonical URL (http://hl7.no/fhir/ig/StructureDefinition/no-basis-propertyinformation) does not match the URL (http://hl7.no/fhir/StructureDefinition/no-basis-propertyinformation). Use the special-url parameter if you really mean for it not to match
 ERROR: StructureDefinition/no-basis-propertyinformation: StructureDefinition.differential.element[17].binding: ElementDefinition.binding.strength: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ElementDefinition|4.0.1)
+ERROR: /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/StructureDefinition-no-basis-propertyinformation: URL Mismatch http://hl7.no/fhir/ig/StructureDefinition/no-basis-propertyinformation vs http://hl7.no/fhir/StructureDefinition/no-basis-propertyinformation
 == fsh-generated/resources/StructureDefinition-no-basis-relatedperson-person-reference.json ==
 ERROR: StructureDefinition.where(url = 'http://hl7.no/fhir/StructureDefinition/no-basis-relatedperson-person-reference'): Conformance resource /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/StructureDefinition-no-basis-relatedperson-person-reference.json - the canonical URL (http://hl7.no/fhir/ig/StructureDefinition/no-basis-relatedperson-person-reference) does not match the URL (http://hl7.no/fhir/StructureDefinition/no-basis-relatedperson-person-reference). Use the special-url parameter if you really mean for it not to match
 ERROR: /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/StructureDefinition-no-basis-relatedperson-person-reference: URL Mismatch http://hl7.no/fhir/ig/StructureDefinition/no-basis-relatedperson-person-reference vs http://hl7.no/fhir/StructureDefinition/no-basis-relatedperson-person-reference

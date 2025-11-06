@@ -37,7 +37,7 @@
   </telecom>
   <gender value="female"/>
   <address>
-    <extension url="http://hl7.no/fhir/ig/StructureDefinition/no-basis-propertyinformation">
+    <extension url="http://hl7.no/fhir/StructureDefinition/no-basis-propertyinformation">
       <extension url="municipality">
         <valueCoding>
           <system value="urn:oid:2.16.578.1.12.4.1.1.3402"/>
