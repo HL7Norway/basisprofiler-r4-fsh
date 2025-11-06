@@ -1,0 +1,1381 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="39bcdbde-2acc-4d3b-88ef-fe5acff6b8f6"/>
+  <meta>
+    <lastUpdated value="2025-11-06T10:34:36.616+00:00"/>
+  </meta>
+  <type value="collection"/>
+  <entry>
+    <fullUrl value="http://hl7.no/fhir/ValueSet/no-basis-connection-type"/>
+    <resource>
+      <ValueSet>
+        <meta>
+          <versionId value="1"/>
+          <lastUpdated value="2018-10-16T10:48:46.366+00:00"/>
+        </meta>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id"/>
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion performed internally based on:</p>
+              <ul>
+                <li>
+                  <a href="CodeSystem-no-basis-connection-type.codesystem.html">codesystem no-basis-connection-type.codesystem v2.2.3-test (CodeSystem)</a>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="http://hl7.no/fhir/CodeSystem/no-basis-connection-type|2.2.3-test" title="Click to Copy URL" class="btn-copy"> </button>
+                  </span>
+                </li>
+                <li>
+                  <a href="http://terminology.hl7.org/6.5.0/CodeSystem-endpoint-connection-type.html">codesystem Endpoint Connection Type v2.1.1 (CodeSystem)</a>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="http://terminology.hl7.org/CodeSystem/endpoint-connection-type|2.1.1" title="Click to Copy URL" class="btn-copy"> </button>
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <p>This value set contains 17 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (no)</b>
+                </td>
+                <td>
+                  <b>
+                    <a href="http://hl7.org/fhir/concept-properties#status">status</a>
+                  </b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.no/fhir/CodeSystem/no-basis-connection-type-no-ebxml-2"> </a>
+                  <code>http://hl7.no/fhir/CodeSystem/no-basis-connection-type</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-no-basis-connection-type.codesystem.html#no-basis-connection-type.codesystem-no-ebxml-2">no-ebxml-2</a>
+                </td>
+                <td/>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.no/fhir/CodeSystem/no-basis-connection-type&quot;, &quot;version&quot;: &quot;2.2.3-test&quot;, &quot;code&quot;: &quot;no-ebxml-2&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.no/fhir/CodeSystem/no-basis-connection-type&quot;&gt;&lt;version value=&quot;2.2.3-test&quot;&gt;&lt;code value=&quot;no-ebxml-2&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.no/fhir/CodeSystem/no-basis-connection-type-no-amqp"> </a>
+                  <code>http://hl7.no/fhir/CodeSystem/no-basis-connection-type</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-no-basis-connection-type.codesystem.html#no-basis-connection-type.codesystem-no-amqp">no-amqp</a>
+                </td>
+                <td/>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.no/fhir/CodeSystem/no-basis-connection-type&quot;, &quot;version&quot;: &quot;2.2.3-test&quot;, &quot;code&quot;: &quot;no-amqp&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.no/fhir/CodeSystem/no-basis-connection-type&quot;&gt;&lt;version value=&quot;2.2.3-test&quot;&gt;&lt;code value=&quot;no-amqp&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://terminology.hl7.org/CodeSystem/endpoint-connection-type-dicom-wado-rs"> </a>
+                  <code>http://terminology.hl7.org/CodeSystem/endpoint-connection-type</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://terminology.hl7.org/6.5.0/CodeSystem-endpoint-connection-type.html#endpoint-connection-type-dicom-wado-rs">dicom-wado-rs</a>
+                </td>
+                <td/>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/endpoint-connection-type&quot;, &quot;version&quot;: &quot;2.1.1&quot;, &quot;code&quot;: &quot;dicom-wado-rs&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/endpoint-connection-type&quot;&gt;&lt;version value=&quot;2.1.1&quot;&gt;&lt;code value=&quot;dicom-wado-rs&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://terminology.hl7.org/CodeSystem/endpoint-connection-type-dicom-qido-rs"> </a>
+                  <code>http://terminology.hl7.org/CodeSystem/endpoint-connection-type</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://terminology.hl7.org/6.5.0/CodeSystem-endpoint-connection-type.html#endpoint-connection-type-dicom-qido-rs">dicom-qido-rs</a>
+                </td>
+                <td/>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/endpoint-connection-type&quot;, &quot;version&quot;: &quot;2.1.1&quot;, &quot;code&quot;: &quot;dicom-qido-rs&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/endpoint-connection-type&quot;&gt;&lt;version value=&quot;2.1.1&quot;&gt;&lt;code value=&quot;dicom-qido-rs&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://terminology.hl7.org/CodeSystem/endpoint-connection-type-dicom-stow-rs"> </a>
+                  <code>http://terminology.hl7.org/CodeSystem/endpoint-connection-type</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://terminology.hl7.org/6.5.0/CodeSystem-endpoint-connection-type.html#endpoint-connection-type-dicom-stow-rs">dicom-stow-rs</a>
+                </td>
+                <td/>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/endpoint-connection-type&quot;, &quot;version&quot;: &quot;2.1.1&quot;, &quot;code&quot;: &quot;dicom-stow-rs&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/endpoint-connection-type&quot;&gt;&lt;version value=&quot;2.1.1&quot;&gt;&lt;code value=&quot;dicom-stow-rs&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://terminology.hl7.org/CodeSystem/endpoint-connection-type-dicom-wado-uri"> </a>
+                  <code>http://terminology.hl7.org/CodeSystem/endpoint-connection-type</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://terminology.hl7.org/6.5.0/CodeSystem-endpoint-connection-type.html#endpoint-connection-type-dicom-wado-uri">dicom-wado-uri</a>
+                </td>
+                <td/>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/endpoint-connection-type&quot;, &quot;version&quot;: &quot;2.1.1&quot;, &quot;code&quot;: &quot;dicom-wado-uri&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/endpoint-connection-type&quot;&gt;&lt;version value=&quot;2.1.1&quot;&gt;&lt;code value=&quot;dicom-wado-uri&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://terminology.hl7.org/CodeSystem/endpoint-connection-type-hl7-fhir-rest"> </a>
+                  <code>http://terminology.hl7.org/CodeSystem/endpoint-connection-type</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://terminology.hl7.org/6.5.0/CodeSystem-endpoint-connection-type.html#endpoint-connection-type-hl7-fhir-rest">hl7-fhir-rest</a>
+                </td>
+                <td/>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/endpoint-connection-type&quot;, &quot;version&quot;: &quot;2.1.1&quot;, &quot;code&quot;: &quot;hl7-fhir-rest&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/endpoint-connection-type&quot;&gt;&lt;version value=&quot;2.1.1&quot;&gt;&lt;code value=&quot;hl7-fhir-rest&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://terminology.hl7.org/CodeSystem/endpoint-connection-type-hl7-fhir-msg"> </a>
+                  <code>http://terminology.hl7.org/CodeSystem/endpoint-connection-type</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://terminology.hl7.org/6.5.0/CodeSystem-endpoint-connection-type.html#endpoint-connection-type-hl7-fhir-msg">hl7-fhir-msg</a>
+                </td>
+                <td/>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/endpoint-connection-type&quot;, &quot;version&quot;: &quot;2.1.1&quot;, &quot;code&quot;: &quot;hl7-fhir-msg&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/endpoint-connection-type&quot;&gt;&lt;version value=&quot;2.1.1&quot;&gt;&lt;code value=&quot;hl7-fhir-msg&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://terminology.hl7.org/CodeSystem/endpoint-connection-type-hl7v2-mllp"> </a>
+                  <code>http://terminology.hl7.org/CodeSystem/endpoint-connection-type</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://terminology.hl7.org/6.5.0/CodeSystem-endpoint-connection-type.html#endpoint-connection-type-hl7v2-mllp">hl7v2-mllp</a>
+                </td>
+                <td/>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/endpoint-connection-type&quot;, &quot;version&quot;: &quot;2.1.1&quot;, &quot;code&quot;: &quot;hl7v2-mllp&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/endpoint-connection-type&quot;&gt;&lt;version value=&quot;2.1.1&quot;&gt;&lt;code value=&quot;hl7v2-mllp&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://terminology.hl7.org/CodeSystem/endpoint-connection-type-secure-email"> </a>
+                  <code>http://terminology.hl7.org/CodeSystem/endpoint-connection-type</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://terminology.hl7.org/6.5.0/CodeSystem-endpoint-connection-type.html#endpoint-connection-type-secure-email">secure-email</a>
+                </td>
+                <td/>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/endpoint-connection-type&quot;, &quot;version&quot;: &quot;2.1.1&quot;, &quot;code&quot;: &quot;secure-email&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/endpoint-connection-type&quot;&gt;&lt;version value=&quot;2.1.1&quot;&gt;&lt;code value=&quot;secure-email&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://terminology.hl7.org/CodeSystem/endpoint-connection-type-direct-project"> </a>
+                  <code>http://terminology.hl7.org/CodeSystem/endpoint-connection-type</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://terminology.hl7.org/6.5.0/CodeSystem-endpoint-connection-type.html#endpoint-connection-type-direct-project">direct-project</a>
+                </td>
+                <td/>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/endpoint-connection-type&quot;, &quot;version&quot;: &quot;2.1.1&quot;, &quot;code&quot;: &quot;direct-project&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/endpoint-connection-type&quot;&gt;&lt;version value=&quot;2.1.1&quot;&gt;&lt;code value=&quot;direct-project&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://terminology.hl7.org/CodeSystem/endpoint-connection-type-cds-hooks-service"> </a>
+                  <code>http://terminology.hl7.org/CodeSystem/endpoint-connection-type</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://terminology.hl7.org/6.5.0/CodeSystem-endpoint-connection-type.html#endpoint-connection-type-cds-hooks-service">cds-hooks-service</a>
+                </td>
+                <td/>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/endpoint-connection-type&quot;, &quot;version&quot;: &quot;2.1.1&quot;, &quot;code&quot;: &quot;cds-hooks-service&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/endpoint-connection-type&quot;&gt;&lt;version value=&quot;2.1.1&quot;&gt;&lt;code value=&quot;cds-hooks-service&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr style="background-color: #ffeeee">
+                <td>
+                  <a name="x-http://terminology.hl7.org/CodeSystem/endpoint-connection-type-ihe-xcpd"> </a>
+                  <code>http://terminology.hl7.org/CodeSystem/endpoint-connection-type</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://terminology.hl7.org/6.5.0/CodeSystem-endpoint-connection-type.html#endpoint-connection-type-ihe-xcpd">ihe-xcpd</a>
+                </td>
+                <td/>
+                <td>deprecated</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/endpoint-connection-type&quot;, &quot;version&quot;: &quot;2.1.1&quot;, &quot;code&quot;: &quot;ihe-xcpd&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/endpoint-connection-type&quot;&gt;&lt;version value=&quot;2.1.1&quot;&gt;&lt;code value=&quot;ihe-xcpd&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr style="background-color: #ffeeee">
+                <td>
+                  <a name="x-http://terminology.hl7.org/CodeSystem/endpoint-connection-type-ihe-xca"> </a>
+                  <code>http://terminology.hl7.org/CodeSystem/endpoint-connection-type</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://terminology.hl7.org/6.5.0/CodeSystem-endpoint-connection-type.html#endpoint-connection-type-ihe-xca">ihe-xca</a>
+                </td>
+                <td/>
+                <td>deprecated</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/endpoint-connection-type&quot;, &quot;version&quot;: &quot;2.1.1&quot;, &quot;code&quot;: &quot;ihe-xca&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/endpoint-connection-type&quot;&gt;&lt;version value=&quot;2.1.1&quot;&gt;&lt;code value=&quot;ihe-xca&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr style="background-color: #ffeeee">
+                <td>
+                  <a name="x-http://terminology.hl7.org/CodeSystem/endpoint-connection-type-ihe-xdr"> </a>
+                  <code>http://terminology.hl7.org/CodeSystem/endpoint-connection-type</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://terminology.hl7.org/6.5.0/CodeSystem-endpoint-connection-type.html#endpoint-connection-type-ihe-xdr">ihe-xdr</a>
+                </td>
+                <td/>
+                <td>deprecated</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/endpoint-connection-type&quot;, &quot;version&quot;: &quot;2.1.1&quot;, &quot;code&quot;: &quot;ihe-xdr&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/endpoint-connection-type&quot;&gt;&lt;version value=&quot;2.1.1&quot;&gt;&lt;code value=&quot;ihe-xdr&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr style="background-color: #ffeeee">
+                <td>
+                  <a name="x-http://terminology.hl7.org/CodeSystem/endpoint-connection-type-ihe-xds"> </a>
+                  <code>http://terminology.hl7.org/CodeSystem/endpoint-connection-type</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://terminology.hl7.org/6.5.0/CodeSystem-endpoint-connection-type.html#endpoint-connection-type-ihe-xds">ihe-xds</a>
+                </td>
+                <td/>
+                <td>deprecated</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/endpoint-connection-type&quot;, &quot;version&quot;: &quot;2.1.1&quot;, &quot;code&quot;: &quot;ihe-xds&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/endpoint-connection-type&quot;&gt;&lt;version value=&quot;2.1.1&quot;&gt;&lt;code value=&quot;ihe-xds&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr style="background-color: #ffeeee">
+                <td>
+                  <a name="x-http://terminology.hl7.org/CodeSystem/endpoint-connection-type-ihe-iid"> </a>
+                  <code>http://terminology.hl7.org/CodeSystem/endpoint-connection-type</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://terminology.hl7.org/6.5.0/CodeSystem-endpoint-connection-type.html#endpoint-connection-type-ihe-iid">ihe-iid</a>
+                </td>
+                <td/>
+                <td>deprecated</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/endpoint-connection-type&quot;, &quot;version&quot;: &quot;2.1.1&quot;, &quot;code&quot;: &quot;ihe-iid&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/endpoint-connection-type&quot;&gt;&lt;version value=&quot;2.1.1&quot;&gt;&lt;code value=&quot;ihe-iid&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://hl7.no/fhir/ValueSet/no-basis-connection-type"/>
+        <version value="2.2.3-test"/>
+        <name value="NoBasisConnectionTypeVS"/>
+        <title value="no-basis-connection-type.valueset"/>
+        <status value="active"/>
+        <experimental value="true"/>
+        <date value="2019-03-13T10:48:45.936+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="NO"/>
+            <display value="Norway"/>
+          </coding>
+        </jurisdiction>
+        <immutable value="false"/>
+        <expansion>
+          <identifier value="urn:uuid:bef1e29a-395a-485c-9d58-93766803c970"/>
+          <timestamp value="2025-11-06T10:36:32+00:00"/>
+          <total value="17"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="no"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://hl7.no/fhir/CodeSystem/no-basis-connection-type|2.2.3-test"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://terminology.hl7.org/CodeSystem/endpoint-connection-type|2.1.1"/>
+          </parameter>
+          <property>
+            <code value="status"/>
+            <uri value="http://hl7.org/fhir/concept-properties#status"/>
+          </property>
+          <contains>
+            <system value="http://hl7.no/fhir/CodeSystem/no-basis-connection-type"/>
+            <code value="no-ebxml-2"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.no/fhir/CodeSystem/no-basis-connection-type"/>
+            <code value="no-amqp"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/endpoint-connection-type"/>
+            <code value="dicom-wado-rs"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/endpoint-connection-type"/>
+            <code value="dicom-qido-rs"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/endpoint-connection-type"/>
+            <code value="dicom-stow-rs"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/endpoint-connection-type"/>
+            <code value="dicom-wado-uri"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/endpoint-connection-type"/>
+            <code value="hl7-fhir-rest"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/endpoint-connection-type"/>
+            <code value="hl7-fhir-msg"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/endpoint-connection-type"/>
+            <code value="hl7v2-mllp"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/endpoint-connection-type"/>
+            <code value="secure-email"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/endpoint-connection-type"/>
+            <code value="direct-project"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/endpoint-connection-type"/>
+            <code value="cds-hooks-service"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/endpoint-connection-type"/>
+            <code value="ihe-xcpd"/>
+            <property>
+              <code value="status"/>
+              <valueCode value="deprecated"/>
+            </property>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/endpoint-connection-type"/>
+            <code value="ihe-xca"/>
+            <property>
+              <code value="status"/>
+              <valueCode value="deprecated"/>
+            </property>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/endpoint-connection-type"/>
+            <code value="ihe-xdr"/>
+            <property>
+              <code value="status"/>
+              <valueCode value="deprecated"/>
+            </property>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/endpoint-connection-type"/>
+            <code value="ihe-xds"/>
+            <property>
+              <code value="status"/>
+              <valueCode value="deprecated"/>
+            </property>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/endpoint-connection-type"/>
+            <code value="ihe-iid"/>
+            <property>
+              <code value="status"/>
+              <valueCode value="deprecated"/>
+            </property>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://hl7.no/fhir/ValueSet/no-basis-family-relation"/>
+    <resource>
+      <ValueSet>
+        <meta>
+          <versionId value="1"/>
+          <lastUpdated value="2018-10-16T10:48:46.366+00:00"/>
+        </meta>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-no-basis-family-relation.codesystem.html">codesystem no-basis-family-relation.codesystem v2.2.3-test (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://hl7.no/fhir/CodeSystem/no-basis-family-relation|2.2.3-test" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 7 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (no)</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.no/fhir/CodeSystem/no-basis-family-relation-mor"> </a>
+                  <code>http://hl7.no/fhir/CodeSystem/no-basis-family-relation</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-no-basis-family-relation.codesystem.html#no-basis-family-relation.codesystem-mor">mor</a>
+                </td>
+                <td/>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.no/fhir/CodeSystem/no-basis-family-relation&quot;, &quot;version&quot;: &quot;2.2.3-test&quot;, &quot;code&quot;: &quot;mor&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.no/fhir/CodeSystem/no-basis-family-relation&quot;&gt;&lt;version value=&quot;2.2.3-test&quot;&gt;&lt;code value=&quot;mor&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.no/fhir/CodeSystem/no-basis-family-relation-far"> </a>
+                  <code>http://hl7.no/fhir/CodeSystem/no-basis-family-relation</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-no-basis-family-relation.codesystem.html#no-basis-family-relation.codesystem-far">far</a>
+                </td>
+                <td/>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.no/fhir/CodeSystem/no-basis-family-relation&quot;, &quot;version&quot;: &quot;2.2.3-test&quot;, &quot;code&quot;: &quot;far&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.no/fhir/CodeSystem/no-basis-family-relation&quot;&gt;&lt;version value=&quot;2.2.3-test&quot;&gt;&lt;code value=&quot;far&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.no/fhir/CodeSystem/no-basis-family-relation-medmor"> </a>
+                  <code>http://hl7.no/fhir/CodeSystem/no-basis-family-relation</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-no-basis-family-relation.codesystem.html#no-basis-family-relation.codesystem-medmor">medmor</a>
+                </td>
+                <td/>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.no/fhir/CodeSystem/no-basis-family-relation&quot;, &quot;version&quot;: &quot;2.2.3-test&quot;, &quot;code&quot;: &quot;medmor&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.no/fhir/CodeSystem/no-basis-family-relation&quot;&gt;&lt;version value=&quot;2.2.3-test&quot;&gt;&lt;code value=&quot;medmor&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.no/fhir/CodeSystem/no-basis-family-relation-barn"> </a>
+                  <code>http://hl7.no/fhir/CodeSystem/no-basis-family-relation</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-no-basis-family-relation.codesystem.html#no-basis-family-relation.codesystem-barn">barn</a>
+                </td>
+                <td/>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.no/fhir/CodeSystem/no-basis-family-relation&quot;, &quot;version&quot;: &quot;2.2.3-test&quot;, &quot;code&quot;: &quot;barn&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.no/fhir/CodeSystem/no-basis-family-relation&quot;&gt;&lt;version value=&quot;2.2.3-test&quot;&gt;&lt;code value=&quot;barn&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.no/fhir/CodeSystem/no-basis-family-relation-s|f8sken"> </a>
+                  <code>http://hl7.no/fhir/CodeSystem/no-basis-family-relation</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-no-basis-family-relation.codesystem.html#no-basis-family-relation.codesystem-s.248sken">søsken</a>
+                </td>
+                <td/>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.no/fhir/CodeSystem/no-basis-family-relation&quot;, &quot;version&quot;: &quot;2.2.3-test&quot;, &quot;code&quot;: &quot;søsken&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.no/fhir/CodeSystem/no-basis-family-relation&quot;&gt;&lt;version value=&quot;2.2.3-test&quot;&gt;&lt;code value=&quot;søsken&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.no/fhir/CodeSystem/no-basis-family-relation-ektefelleEllerPartner"> </a>
+                  <code>http://hl7.no/fhir/CodeSystem/no-basis-family-relation</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-no-basis-family-relation.codesystem.html#no-basis-family-relation.codesystem-ektefelleEllerPartner">ektefelleEllerPartner</a>
+                </td>
+                <td/>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.no/fhir/CodeSystem/no-basis-family-relation&quot;, &quot;version&quot;: &quot;2.2.3-test&quot;, &quot;code&quot;: &quot;ektefelleEllerPartner&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.no/fhir/CodeSystem/no-basis-family-relation&quot;&gt;&lt;version value=&quot;2.2.3-test&quot;&gt;&lt;code value=&quot;ektefelleEllerPartner&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.no/fhir/CodeSystem/no-basis-family-relation-d|f8df|f8dtBarn"> </a>
+                  <code>http://hl7.no/fhir/CodeSystem/no-basis-family-relation</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-no-basis-family-relation.codesystem.html#no-basis-family-relation.codesystem-d.248df.248dtBarn">dødfødtBarn</a>
+                </td>
+                <td/>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.no/fhir/CodeSystem/no-basis-family-relation&quot;, &quot;version&quot;: &quot;2.2.3-test&quot;, &quot;code&quot;: &quot;dødfødtBarn&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.no/fhir/CodeSystem/no-basis-family-relation&quot;&gt;&lt;version value=&quot;2.2.3-test&quot;&gt;&lt;code value=&quot;dødfødtBarn&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://hl7.no/fhir/ValueSet/no-basis-family-relation"/>
+        <version value="2.2.3-test"/>
+        <name value="NoBasisFamilyRelationVS"/>
+        <title value="no-basis-family-relation.valueset"/>
+        <status value="active"/>
+        <experimental value="true"/>
+        <date value="2018-10-26T10:48:45.936+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="NO"/>
+            <display value="Norway"/>
+          </coding>
+        </jurisdiction>
+        <immutable value="false"/>
+        <expansion>
+          <identifier value="urn:uuid:dbae4ae2-ace0-4584-9b42-0a7be2eb37b6"/>
+          <timestamp value="2025-11-06T10:36:34+00:00"/>
+          <total value="7"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="no"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://hl7.no/fhir/CodeSystem/no-basis-family-relation|2.2.3-test"/>
+          </parameter>
+          <contains>
+            <system value="http://hl7.no/fhir/CodeSystem/no-basis-family-relation"/>
+            <code value="mor"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.no/fhir/CodeSystem/no-basis-family-relation"/>
+            <code value="far"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.no/fhir/CodeSystem/no-basis-family-relation"/>
+            <code value="medmor"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.no/fhir/CodeSystem/no-basis-family-relation"/>
+            <code value="barn"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.no/fhir/CodeSystem/no-basis-family-relation"/>
+            <code value="søsken"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.no/fhir/CodeSystem/no-basis-family-relation"/>
+            <code value="ektefelleEllerPartner"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.no/fhir/CodeSystem/no-basis-family-relation"/>
+            <code value="dødfødtBarn"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://hl7.no/fhir/ValueSet/no-basis-marital-status"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-no-basis-marital-status.codesystem.html">codesystem no-basis-marital-status.codesystem v2.2.3-test (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://hl7.no/fhir/CodeSystem/no-basis-marital-status|2.2.3-test" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 10 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (no)</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.no/fhir/CodeSystem/no-basis-marital-status-uoppgitt"> </a>
+                  <code>http://hl7.no/fhir/CodeSystem/no-basis-marital-status</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-no-basis-marital-status.codesystem.html#no-basis-marital-status.codesystem-uoppgitt">uoppgitt</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.no/fhir/CodeSystem/no-basis-marital-status&quot;, &quot;version&quot;: &quot;2.2.3-test&quot;, &quot;code&quot;: &quot;uoppgitt&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.no/fhir/CodeSystem/no-basis-marital-status&quot;&gt;&lt;version value=&quot;2.2.3-test&quot;&gt;&lt;code value=&quot;uoppgitt&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.no/fhir/CodeSystem/no-basis-marital-status-ugift"> </a>
+                  <code>http://hl7.no/fhir/CodeSystem/no-basis-marital-status</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-no-basis-marital-status.codesystem.html#no-basis-marital-status.codesystem-ugift">ugift</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.no/fhir/CodeSystem/no-basis-marital-status&quot;, &quot;version&quot;: &quot;2.2.3-test&quot;, &quot;code&quot;: &quot;ugift&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.no/fhir/CodeSystem/no-basis-marital-status&quot;&gt;&lt;version value=&quot;2.2.3-test&quot;&gt;&lt;code value=&quot;ugift&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.no/fhir/CodeSystem/no-basis-marital-status-gift"> </a>
+                  <code>http://hl7.no/fhir/CodeSystem/no-basis-marital-status</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-no-basis-marital-status.codesystem.html#no-basis-marital-status.codesystem-gift">gift</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.no/fhir/CodeSystem/no-basis-marital-status&quot;, &quot;version&quot;: &quot;2.2.3-test&quot;, &quot;code&quot;: &quot;gift&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.no/fhir/CodeSystem/no-basis-marital-status&quot;&gt;&lt;version value=&quot;2.2.3-test&quot;&gt;&lt;code value=&quot;gift&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.no/fhir/CodeSystem/no-basis-marital-status-enkeEllerEnkemann"> </a>
+                  <code>http://hl7.no/fhir/CodeSystem/no-basis-marital-status</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-no-basis-marital-status.codesystem.html#no-basis-marital-status.codesystem-enkeEllerEnkemann">enkeEllerEnkemann</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.no/fhir/CodeSystem/no-basis-marital-status&quot;, &quot;version&quot;: &quot;2.2.3-test&quot;, &quot;code&quot;: &quot;enkeEllerEnkemann&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.no/fhir/CodeSystem/no-basis-marital-status&quot;&gt;&lt;version value=&quot;2.2.3-test&quot;&gt;&lt;code value=&quot;enkeEllerEnkemann&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.no/fhir/CodeSystem/no-basis-marital-status-skilt"> </a>
+                  <code>http://hl7.no/fhir/CodeSystem/no-basis-marital-status</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-no-basis-marital-status.codesystem.html#no-basis-marital-status.codesystem-skilt">skilt</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.no/fhir/CodeSystem/no-basis-marital-status&quot;, &quot;version&quot;: &quot;2.2.3-test&quot;, &quot;code&quot;: &quot;skilt&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.no/fhir/CodeSystem/no-basis-marital-status&quot;&gt;&lt;version value=&quot;2.2.3-test&quot;&gt;&lt;code value=&quot;skilt&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.no/fhir/CodeSystem/no-basis-marital-status-separert"> </a>
+                  <code>http://hl7.no/fhir/CodeSystem/no-basis-marital-status</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-no-basis-marital-status.codesystem.html#no-basis-marital-status.codesystem-separert">separert</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.no/fhir/CodeSystem/no-basis-marital-status&quot;, &quot;version&quot;: &quot;2.2.3-test&quot;, &quot;code&quot;: &quot;separert&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.no/fhir/CodeSystem/no-basis-marital-status&quot;&gt;&lt;version value=&quot;2.2.3-test&quot;&gt;&lt;code value=&quot;separert&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.no/fhir/CodeSystem/no-basis-marital-status-registrertPartner"> </a>
+                  <code>http://hl7.no/fhir/CodeSystem/no-basis-marital-status</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-no-basis-marital-status.codesystem.html#no-basis-marital-status.codesystem-registrertPartner">registrertPartner</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.no/fhir/CodeSystem/no-basis-marital-status&quot;, &quot;version&quot;: &quot;2.2.3-test&quot;, &quot;code&quot;: &quot;registrertPartner&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.no/fhir/CodeSystem/no-basis-marital-status&quot;&gt;&lt;version value=&quot;2.2.3-test&quot;&gt;&lt;code value=&quot;registrertPartner&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.no/fhir/CodeSystem/no-basis-marital-status-separertPartner"> </a>
+                  <code>http://hl7.no/fhir/CodeSystem/no-basis-marital-status</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-no-basis-marital-status.codesystem.html#no-basis-marital-status.codesystem-separertPartner">separertPartner</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.no/fhir/CodeSystem/no-basis-marital-status&quot;, &quot;version&quot;: &quot;2.2.3-test&quot;, &quot;code&quot;: &quot;separertPartner&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.no/fhir/CodeSystem/no-basis-marital-status&quot;&gt;&lt;version value=&quot;2.2.3-test&quot;&gt;&lt;code value=&quot;separertPartner&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.no/fhir/CodeSystem/no-basis-marital-status-skiltPartner"> </a>
+                  <code>http://hl7.no/fhir/CodeSystem/no-basis-marital-status</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-no-basis-marital-status.codesystem.html#no-basis-marital-status.codesystem-skiltPartner">skiltPartner</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.no/fhir/CodeSystem/no-basis-marital-status&quot;, &quot;version&quot;: &quot;2.2.3-test&quot;, &quot;code&quot;: &quot;skiltPartner&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.no/fhir/CodeSystem/no-basis-marital-status&quot;&gt;&lt;version value=&quot;2.2.3-test&quot;&gt;&lt;code value=&quot;skiltPartner&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.no/fhir/CodeSystem/no-basis-marital-status-gjenlevende_partner"> </a>
+                  <code>http://hl7.no/fhir/CodeSystem/no-basis-marital-status</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-no-basis-marital-status.codesystem.html#no-basis-marital-status.codesystem-gjenlevende_partner">gjenlevende_partner</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.no/fhir/CodeSystem/no-basis-marital-status&quot;, &quot;version&quot;: &quot;2.2.3-test&quot;, &quot;code&quot;: &quot;gjenlevende_partner&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.no/fhir/CodeSystem/no-basis-marital-status&quot;&gt;&lt;version value=&quot;2.2.3-test&quot;&gt;&lt;code value=&quot;gjenlevende_partner&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://hl7.no/fhir/ValueSet/no-basis-marital-status"/>
+        <version value="2.2.3-test"/>
+        <name value="NoBasisMaritalStatusVS"/>
+        <title value="no-basis-marital-status.valueset"/>
+        <status value="active"/>
+        <experimental value="true"/>
+        <date value="2020-03-20T10:48:45.936+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="NO"/>
+            <display value="Norway"/>
+          </coding>
+        </jurisdiction>
+        <immutable value="false"/>
+        <expansion>
+          <identifier value="urn:uuid:696b0a49-517f-4b8a-9bd5-128623d9b377"/>
+          <timestamp value="2025-11-06T10:36:34+00:00"/>
+          <total value="10"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="no"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://hl7.no/fhir/CodeSystem/no-basis-marital-status|2.2.3-test"/>
+          </parameter>
+          <contains>
+            <system value="http://hl7.no/fhir/CodeSystem/no-basis-marital-status"/>
+            <code value="uoppgitt"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.no/fhir/CodeSystem/no-basis-marital-status"/>
+            <code value="ugift"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.no/fhir/CodeSystem/no-basis-marital-status"/>
+            <code value="gift"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.no/fhir/CodeSystem/no-basis-marital-status"/>
+            <code value="enkeEllerEnkemann"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.no/fhir/CodeSystem/no-basis-marital-status"/>
+            <code value="skilt"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.no/fhir/CodeSystem/no-basis-marital-status"/>
+            <code value="separert"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.no/fhir/CodeSystem/no-basis-marital-status"/>
+            <code value="registrertPartner"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.no/fhir/CodeSystem/no-basis-marital-status"/>
+            <code value="separertPartner"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.no/fhir/CodeSystem/no-basis-marital-status"/>
+            <code value="skiltPartner"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.no/fhir/CodeSystem/no-basis-marital-status"/>
+            <code value="gjenlevende_partner"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://hl7.no/fhir/ValueSet/no-basis-parental-responsibility"/>
+    <resource>
+      <ValueSet>
+        <meta>
+          <versionId value="1"/>
+          <lastUpdated value="2018-10-16T10:48:46.366+00:00"/>
+        </meta>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-no-basis-parental-responsibility.codesystem.html">codesystem no-basis-parental-responsibility.codesystem v2.2.3-test (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://hl7.no/fhir/CodeSystem/no-basis-parental-responsibility|2.2.3-test" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 6 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (no)</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.no/fhir/CodeSystem/no-basis-parental-responsibility-felles"> </a>
+                  <code>http://hl7.no/fhir/CodeSystem/no-basis-parental-responsibility</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-no-basis-parental-responsibility.codesystem.html#no-basis-parental-responsibility.codesystem-felles">felles</a>
+                </td>
+                <td/>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.no/fhir/CodeSystem/no-basis-parental-responsibility&quot;, &quot;version&quot;: &quot;2.2.3-test&quot;, &quot;code&quot;: &quot;felles&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.no/fhir/CodeSystem/no-basis-parental-responsibility&quot;&gt;&lt;version value=&quot;2.2.3-test&quot;&gt;&lt;code value=&quot;felles&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.no/fhir/CodeSystem/no-basis-parental-responsibility-mor"> </a>
+                  <code>http://hl7.no/fhir/CodeSystem/no-basis-parental-responsibility</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-no-basis-parental-responsibility.codesystem.html#no-basis-parental-responsibility.codesystem-mor">mor</a>
+                </td>
+                <td/>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.no/fhir/CodeSystem/no-basis-parental-responsibility&quot;, &quot;version&quot;: &quot;2.2.3-test&quot;, &quot;code&quot;: &quot;mor&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.no/fhir/CodeSystem/no-basis-parental-responsibility&quot;&gt;&lt;version value=&quot;2.2.3-test&quot;&gt;&lt;code value=&quot;mor&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.no/fhir/CodeSystem/no-basis-parental-responsibility-far"> </a>
+                  <code>http://hl7.no/fhir/CodeSystem/no-basis-parental-responsibility</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-no-basis-parental-responsibility.codesystem.html#no-basis-parental-responsibility.codesystem-far">far</a>
+                </td>
+                <td/>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.no/fhir/CodeSystem/no-basis-parental-responsibility&quot;, &quot;version&quot;: &quot;2.2.3-test&quot;, &quot;code&quot;: &quot;far&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.no/fhir/CodeSystem/no-basis-parental-responsibility&quot;&gt;&lt;version value=&quot;2.2.3-test&quot;&gt;&lt;code value=&quot;far&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.no/fhir/CodeSystem/no-basis-parental-responsibility-medmor"> </a>
+                  <code>http://hl7.no/fhir/CodeSystem/no-basis-parental-responsibility</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-no-basis-parental-responsibility.codesystem.html#no-basis-parental-responsibility.codesystem-medmor">medmor</a>
+                </td>
+                <td/>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.no/fhir/CodeSystem/no-basis-parental-responsibility&quot;, &quot;version&quot;: &quot;2.2.3-test&quot;, &quot;code&quot;: &quot;medmor&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.no/fhir/CodeSystem/no-basis-parental-responsibility&quot;&gt;&lt;version value=&quot;2.2.3-test&quot;&gt;&lt;code value=&quot;medmor&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.no/fhir/CodeSystem/no-basis-parental-responsibility-andre"> </a>
+                  <code>http://hl7.no/fhir/CodeSystem/no-basis-parental-responsibility</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-no-basis-parental-responsibility.codesystem.html#no-basis-parental-responsibility.codesystem-andre">andre</a>
+                </td>
+                <td/>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.no/fhir/CodeSystem/no-basis-parental-responsibility&quot;, &quot;version&quot;: &quot;2.2.3-test&quot;, &quot;code&quot;: &quot;andre&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.no/fhir/CodeSystem/no-basis-parental-responsibility&quot;&gt;&lt;version value=&quot;2.2.3-test&quot;&gt;&lt;code value=&quot;andre&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.no/fhir/CodeSystem/no-basis-parental-responsibility-ukjent"> </a>
+                  <code>http://hl7.no/fhir/CodeSystem/no-basis-parental-responsibility</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-no-basis-parental-responsibility.codesystem.html#no-basis-parental-responsibility.codesystem-ukjent">ukjent</a>
+                </td>
+                <td/>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.no/fhir/CodeSystem/no-basis-parental-responsibility&quot;, &quot;version&quot;: &quot;2.2.3-test&quot;, &quot;code&quot;: &quot;ukjent&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.no/fhir/CodeSystem/no-basis-parental-responsibility&quot;&gt;&lt;version value=&quot;2.2.3-test&quot;&gt;&lt;code value=&quot;ukjent&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://hl7.no/fhir/ValueSet/no-basis-parental-responsibility"/>
+        <version value="2.2.3-test"/>
+        <name value="NoBasisParentalResponsibilityVS"/>
+        <title value="no-basis-parental-responsibility.valueset"/>
+        <status value="active"/>
+        <experimental value="true"/>
+        <date value="2018-10-26T10:48:45.936+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="NO"/>
+            <display value="Norway"/>
+          </coding>
+        </jurisdiction>
+        <immutable value="false"/>
+        <expansion>
+          <identifier value="urn:uuid:3a961b16-b61f-4377-bf63-633752f904d4"/>
+          <timestamp value="2025-11-06T10:36:34+00:00"/>
+          <total value="6"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="no"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://hl7.no/fhir/CodeSystem/no-basis-parental-responsibility|2.2.3-test"/>
+          </parameter>
+          <contains>
+            <system value="http://hl7.no/fhir/CodeSystem/no-basis-parental-responsibility"/>
+            <code value="felles"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.no/fhir/CodeSystem/no-basis-parental-responsibility"/>
+            <code value="mor"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.no/fhir/CodeSystem/no-basis-parental-responsibility"/>
+            <code value="far"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.no/fhir/CodeSystem/no-basis-parental-responsibility"/>
+            <code value="medmor"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.no/fhir/CodeSystem/no-basis-parental-responsibility"/>
+            <code value="andre"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.no/fhir/CodeSystem/no-basis-parental-responsibility"/>
+            <code value="ukjent"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+</Bundle>

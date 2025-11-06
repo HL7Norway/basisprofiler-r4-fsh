@@ -1,0 +1,54 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "no-basis-service-type.valueset",
+  "meta" : {
+    "versionId" : "1",
+    "lastUpdated" : "2018-10-16T10:48:46.366+00:00"
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet no-basis-service-type.valueset</b></p><a name=\"no-basis-service-type.valueset\"> </a><a name=\"hcno-basis-service-type.valueset\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">version: 1; Last updated: 2018-10-16 10:48:46+0000</p></div><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <code>urn:oid:2.16.578.1.12.4.1.1.8660</code><span title=\"Version is not explicity stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span></li><li>Include all codes defined in <code>urn:oid:2.16.578.1.12.4.1.1.8668</code><span title=\"Version is not explicity stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span></li><li>Include all codes defined in <code>urn:oid:2.16.578.1.12.4.1.1.8669</code><span title=\"Version is not explicity stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span></li><li>Include all codes defined in <code>urn:oid:2.16.578.1.12.4.1.1.8658</code><span title=\"Version is not explicity stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span></li><li>Include all codes defined in <code>urn:oid:2.16.578.1.12.4.1.1.8659</code><span title=\"Version is not explicity stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span></li><li>Include all codes defined in <code>urn:oid:2.16.578.1.12.4.1.1.8663</code><span title=\"Version is not explicity stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span></li><li>Include all codes defined in <code>urn:oid:2.16.578.1.12.4.1.1.8664</code><span title=\"Version is not explicity stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span></li><li>Include all codes defined in <code>urn:oid:2.16.578.1.12.4.1.1.8666</code><span title=\"Version is not explicity stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span></li></ul></div>"
+  },
+  "url" : "http://hl7.no/fhir/ValueSet/no-basis-service-type",
+  "version" : "2.2.3-test",
+  "name" : "NoBasisServiceType",
+  "title" : "no-basis-service-type.valueset",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2018-10-26T10:48:45.936+00:00",
+  "description" : "ValueSet including all codes for service type (tjenestetype) allowed in the Adressergister",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "NO",
+      "display" : "Norway"
+    }]
+  }],
+  "immutable" : false,
+  "compose" : {
+    "include" : [{
+      "system" : "urn:oid:2.16.578.1.12.4.1.1.8660"
+    },
+    {
+      "system" : "urn:oid:2.16.578.1.12.4.1.1.8668"
+    },
+    {
+      "system" : "urn:oid:2.16.578.1.12.4.1.1.8669"
+    },
+    {
+      "system" : "urn:oid:2.16.578.1.12.4.1.1.8658"
+    },
+    {
+      "system" : "urn:oid:2.16.578.1.12.4.1.1.8659"
+    },
+    {
+      "system" : "urn:oid:2.16.578.1.12.4.1.1.8663"
+    },
+    {
+      "system" : "urn:oid:2.16.578.1.12.4.1.1.8664"
+    },
+    {
+      "system" : "urn:oid:2.16.578.1.12.4.1.1.8666"
+    }]
+  }
+}

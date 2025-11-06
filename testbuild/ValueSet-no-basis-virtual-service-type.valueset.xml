@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="no-basis-virtual-service-type.valueset"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet no-basis-virtual-service-type.valueset</b></p><a name="no-basis-virtual-service-type.valueset"> </a><a name="hcno-basis-virtual-service-type.valueset"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <code>urn:oid:2.16.840.1.113883.4.642.4.1809</code><span title="Version is not explicity stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span></li><li>Include all codes defined in <a href="http://hl7.org/fhir/R4/codesystem-contact-point-system.html"><code>http://hl7.org/fhir/contact-point-system</code></a><span title="Version is not explicitly stated, which means it is fixed to 4.0.1, the version found through the package references"> version &#x1F4E6;4.0.1</span></li></ul></div>
+  </text>
+  <url value="http://hl7.no/fhir/ValueSet/no-basis-virtual-service-type"/>
+  <version value="2.2.3-test"/>
+  <name value="NoBasisVirtualServiceType"/>
+  <title value="No Basis VirtualServiceType Value Set"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-10-05T21:14:02.936+00:00"/>
+  <contact>
+    <name value="Hl7 Norge"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://Hl7.no/"/>
+    </telecom>
+  </contact>
+  <description value="Example codes for virtual service connection types. Any other codes or codesystem should be added to this valueSet"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NO"/>
+      <display value="Norway"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="urn:oid:2.16.840.1.113883.4.642.4.1809"/>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/contact-point-system"/>
+    </include>
+  </compose>
+</ValueSet>
