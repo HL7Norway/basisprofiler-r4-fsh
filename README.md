@@ -4,7 +4,9 @@
 
 Prosjekt for å bruke FHIR Shorthand (FSH) som master for basisprofiler R4, og senere R6.
 
+EXPERIMENTAL - UNDER DEVELOPMENT
 
+[Use the official release on Simplifier -hl7.fhir.no.basis 2.2.2](https://simplifier.net/packages/hl7.fhir.no.basis/2.2.2 )
 
 # Plan
 
