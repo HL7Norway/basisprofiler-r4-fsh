@@ -10,4 +10,6 @@ EXPERIMENTAL - UNDER DEVELOPMENT
 
 # Plan
 
-Full QA av dagenes innhold høst 2025. 
+- Full QA av dagenes innhold høst 2025. 
+- På et dispunkt i fremtiden ta over som master for utvikling av no-basis R4
+- Publisere på ny web for HL7 Norge
