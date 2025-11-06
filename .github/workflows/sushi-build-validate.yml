@@ -221,6 +221,8 @@ jobs:
         
     - name: 🧪 Validate JSON structure
       if: always()
+      continue-on-error: true
+      id: json_validation
       run: |
         set -x  # Enable verbose debugging
         cd ${{ env.IG_SHORTNAME }}
@@ -233,6 +235,8 @@ jobs:
         ls -la
         echo ""
         
+        validation_failed=false
+        
         if [ -d "fsh-generated/resources" ]; then
           echo "✅ fsh-generated/resources directory exists"
           echo "DEBUG: Contents of fsh-generated/resources:"
@@ -240,7 +244,7 @@ jobs:
           echo ""
           
           # Count files
-          file_count=$(ls -1 fsh-generated/resources/*.json 2>/dev/null | wc -l)
+          file_count=$(ls -1 fsh-generated/resources/*.json 2>/dev/null | wc -l | tr -d ' ')
           echo "DEBUG: Number of JSON files found: $file_count"
           
           if [ "$file_count" -eq 0 ]; then
@@ -257,15 +261,20 @@ jobs:
           
           for file in fsh-generated/resources/*.json; do
             if [ -f "$file" ]; then
-              echo "Validating: $(basename "$file")"
-              if python3 -m json.tool "$file" > /dev/null 2>&1; then
+              filename=$(basename "$file")
+              echo "----------------------------------------"
+              echo "Validating: $filename"
+              
+              # Try to validate with detailed error output
+              if validation_output=$(python3 -m json.tool "$file" 2>&1 > /dev/null); then
                 ((valid_count++))
-                echo "  ✅ Valid"
+                echo "  ✅ Valid JSON"
               else
-                echo "  ❌ Invalid JSON: $(basename "$file")"
+                echo "  ❌ Invalid JSON"
                 echo "  Error details:"
-                python3 -m json.tool "$file" 2>&1 | head -5 | sed 's/^/    /'
+                echo "$validation_output" | head -10 | sed 's/^/    /'
                 ((invalid_count++))
+                validation_failed=true
               fi
             fi
           done
@@ -277,17 +286,25 @@ jobs:
           echo "  ❌ Invalid JSON files: $invalid_count"
           echo "========================================="
           
-          if [ $invalid_count -gt 0 ]; then
+          # Save result for later steps
+          echo "json_validation_failed=$validation_failed" >> $GITHUB_OUTPUT
+          
+          if [ "$validation_failed" = true ]; then
+            echo ""
             echo "❌ JSON validation FAILED - $invalid_count invalid file(s)"
+            echo "validation_status=failed" >> $GITHUB_OUTPUT
             exit 1
           else
+            echo ""
             echo "✅ All generated JSON files are valid"
+            echo "validation_status=success" >> $GITHUB_OUTPUT
           fi
         else
           echo "⚠️ fsh-generated/resources directory not found"
           echo "DEBUG: Contents of fsh-generated (if exists):"
           ls -la fsh-generated/ 2>/dev/null || echo "fsh-generated directory does not exist"
           echo "⚠️ Skipping JSON validation"
+          echo "validation_status=skipped" >> $GITHUB_OUTPUT
         fi
         
         set +x  # Disable verbose debugging
@@ -385,14 +402,24 @@ jobs:
         echo "===================="
         echo ""
         echo "DEBUG: Build status from SUSHI step: '${{ steps.sushi.outputs.build_status }}'"
+        echo "DEBUG: JSON validation status: '${{ steps.json_validation.outputs.validation_status }}'"
         echo "DEBUG: Error count from environment: '${error_count:-not set}'"
         echo ""
+        
+        has_errors=false
         
         # Check if SUSHI build failed
         if [ "${{ steps.sushi.outputs.build_status }}" != "success" ]; then
           echo "❌ Build failed - SUSHI returned non-zero exit code"
           echo "Check the 'Run SUSHI build' step above for details"
-          exit 1
+          has_errors=true
+        fi
+        
+        # Check if JSON validation failed
+        if [ "${{ steps.json_validation.outputs.validation_status }}" == "failed" ]; then
+          echo "❌ JSON validation failed - invalid JSON files found"
+          echo "Check the 'Validate JSON structure' step for details"
+          has_errors=true
         fi
         
         # Check if errors were detected (convert to number for comparison)
@@ -402,6 +429,15 @@ jobs:
         if [ "$error_num" -gt 0 ]; then
           echo "❌ Build completed but $error_num error(s) were found"
           echo "Check the 'Analyze SUSHI output' step for details"
+          has_errors=true
+        fi
+        
+        if [ "$has_errors" = true ]; then
+          echo ""
+          echo "❌ ================================="
+          echo "❌ Build FAILED - errors detected"
+          echo "❌ Review the steps above"
+          echo "❌ ================================="
           exit 1
         fi
         
