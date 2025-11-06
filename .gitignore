@@ -47,6 +47,9 @@ output/
 temp/
 template/
 
+# Debug and workflow logs
+debug/logs/
+
 # Build scripts
 _build.bat
 _build.sh

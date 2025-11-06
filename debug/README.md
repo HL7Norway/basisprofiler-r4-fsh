@@ -85,4 +85,22 @@ All generated files go to `debug/generated/`:
 **Important:** The `debug/generated/` folder is in `.gitignore` and will 
 never be committed to GitHub. These are for local testing only.
 
+## Workflow Analysis Logs
+
+When running the `validate-fsh.yml` GitHub Actions workflow with the
+"Generate comprehensive analysis log" option enabled, analysis logs are
+automatically saved to:
+
+- **Local:** `debug/logs/validation-analysis-YYYYMMDD-HHMMSS.md`
+- **GitHub Artifact:** Also uploaded for historical reference
+
+These logs are AI-optimized for review with Claude Sonnet and include:
+
+- Validation statistics and error breakdowns
+- Full FSH validator and SUSHI logs
+- Pattern analysis and recommendations
+- Workflow health checks
+
+The `debug/logs/` directory is in `.gitignore` to prevent committing logs.
+
 See [LOCAL_VALIDATION.md](LOCAL_VALIDATION.md) for detailed documentation.

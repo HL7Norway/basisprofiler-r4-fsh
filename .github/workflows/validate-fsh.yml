@@ -175,7 +175,16 @@ jobs:
     - name: Generate comprehensive analysis log
       if: ${{ always() && github.event.inputs.generate_analysis_log == 'true' }}
       run: |
-        ANALYSIS_LOG="${{ github.workspace }}/validation-analysis-${{ github.run_id }}.md"
+        # Create debug/logs directory if it doesn't exist
+        mkdir -p "${{ github.workspace }}/debug/logs"
+        
+        # Use timestamp for local log filename (more readable than run_id)
+        TIMESTAMP=$(date -u '+%Y%m%d-%H%M%S')
+        LOCAL_LOG="${{ github.workspace }}/debug/logs/validation-analysis-${TIMESTAMP}.md"
+        ARTIFACT_LOG="${{ github.workspace }}/validation-analysis-${{ github.run_id }}.md"
+        
+        # Write to the local log (primary destination)
+        ANALYSIS_LOG="$LOCAL_LOG"
         
         echo "# FSH Validation Analysis Report" > "$ANALYSIS_LOG"
         echo "" >> "$ANALYSIS_LOG"
@@ -335,9 +344,13 @@ jobs:
         echo "" >> "$ANALYSIS_LOG"
         echo "_Generated automatically by validate-fsh.yml workflow_" >> "$ANALYSIS_LOG"
         
-        # Display location
-        echo "📊 Comprehensive analysis log generated: $ANALYSIS_LOG"
-        echo "📁 This file will be uploaded as an artifact"
+        # Copy to artifact location for GitHub upload
+        cp "$LOCAL_LOG" "$ARTIFACT_LOG"
+        
+        # Display locations
+        echo "📊 Comprehensive analysis log generated:"
+        echo "   Local: debug/logs/validation-analysis-${TIMESTAMP}.md"
+        echo "   Artifact: validation-analysis-${{ github.run_id }}.md (will be uploaded)"
         
     - name: Upload validation artifacts
       uses: actions/upload-artifact@v5
