@@ -111,14 +111,20 @@ jobs:
           echo "=========================="
           cat fsh-validator.log
           
-          # Check if there are any errors
-          if grep -q "ERROR\|FATAL" fsh-validator.log; then
+          # Check if there are any errors (excluding "No instances defined" which is informational)
+          if grep -v "No instances defined" fsh-validator.log | grep -q "ERROR\|FATAL"; then
             echo "❌ FSH validation failed with errors"
             validation_failed=true
           elif grep -q "WARN" fsh-validator.log; then
             echo "⚠️  FSH validation completed with warnings"
           else
             echo "✅ FSH validation passed successfully"
+          fi
+          
+          # Count and report "No instances defined" messages separately as informational
+          instance_warnings=$(grep -c "No instances defined" fsh-validator.log || echo "0")
+          if [ "$instance_warnings" -gt 0 ]; then
+            echo "ℹ️  Note: $instance_warnings profile(s) have no example instances (informational only)"
           fi
         else
           echo "⚠️  No FSH validation log found"
@@ -182,13 +188,16 @@ jobs:
         
         FSH_LOG_PATH="${{ github.workspace }}/${{ env.IG_SHORTNAME }}/input/fsh/fsh-validator.log"
         if [ -f "$FSH_LOG_PATH" ]; then
-          fsh_error_count=$(grep -c "ERROR\|FATAL" "$FSH_LOG_PATH" || true)
-          fsh_warning_count=$(grep -c "WARN" "$FSH_LOG_PATH" || true)
+          # Exclude "No instances defined" from error count as it's informational
+          fsh_error_count=$(grep -v "No instances defined" "$FSH_LOG_PATH" | grep -c "ERROR\|FATAL" || echo "0")
+          fsh_warning_count=$(grep -c "WARN" "$FSH_LOG_PATH" || echo "0")
+          instance_info_count=$(grep -c "No instances defined" "$FSH_LOG_PATH" || echo "0")
           
           echo "| Metric | Count |" >> $GITHUB_STEP_SUMMARY
           echo "|--------|-------|" >> $GITHUB_STEP_SUMMARY
           echo "| FSH Errors | $fsh_error_count |" >> $GITHUB_STEP_SUMMARY
           echo "| FSH Warnings | $fsh_warning_count |" >> $GITHUB_STEP_SUMMARY
+          echo "| Profiles without instances (info) | $instance_info_count |" >> $GITHUB_STEP_SUMMARY
           
           if [ $fsh_error_count -gt 0 ]; then
             fsh_status="❌ **Failed**"
