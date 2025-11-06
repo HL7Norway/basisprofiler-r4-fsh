@@ -18,7 +18,7 @@ on:
       generate_analysis_log:
         description: 'Generate comprehensive analysis log for AI review'
         required: false
-        default: true
+        default: false
         type: boolean
 #  pull_request:
 #    paths:
