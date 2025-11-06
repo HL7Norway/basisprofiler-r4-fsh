@@ -57,14 +57,6 @@ jobs:
           ${{ runner.os }}-node-
           ${{ runner.os }}-
 
-    - name: Cache FHIR packages
-      uses: actions/cache@v4
-      with:
-        path: ~/.fhir/packages
-        key: ${{ runner.os }}-fhir-packages-${{ hashFiles('**/sushi-config.yaml') }}
-        restore-keys: |
-          ${{ runner.os }}-fhir-packages-
-
     - name: Install fsh-sushi
       run: npm install -g fsh-sushi
 
