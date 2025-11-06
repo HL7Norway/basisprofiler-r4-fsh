@@ -358,7 +358,7 @@ jobs:
       with:
         name: fsh-validation-results-${{ github.run_id }}
         path: |
-          ${{ github.event.inputs.generate_analysis_log == 'true' && format('{0}/validation-analysis-{1}.md', github.workspace, github.run_id) || '' }}
+          ${{ github.event.inputs.generate_analysis_log == 'true' && 'debug/logs/' || '' }}
           ${{ env.IG_SHORTNAME }}/input/fsh/fsh-validator.log
           ${{ env.IG_SHORTNAME }}/sushi-validation.log
           ${{ env.IG_SHORTNAME }}/fsh-generated/resources/*.json
