@@ -18,6 +18,12 @@ Plan for utvikling av no-basis R4 basert på FHIR Shorthand (FSH)
 5. Ny publiseringsløsning / enkel konseptutredning
 6. Ny web-løsning for HL7 Norge
 
+### Metode (= Espen sine tanker, ikke diskutert i TSK)
+
+I seg selv under utvikling, men nåværende hypotese er å på kort sikt utvikle en blanding av 1:1 mellom ny og eksisterende utgave og forslag til forbedringer av kodebasen. Nytt forslag vil da kunne sammenlignes med eksisterende utgave, profil for profil. Da vil man kunne avslå eller foreslå endringer i FSH-utgaven "linje for linje". 
+
+Det må også diskuteres hvor tilbakekompatilbel ny FSH-utgave skal være: 100%, v2.n+1, eller v3. 
+
 ### Verktøystøtte
 
 - [FSH-validator](https://github.com/HL7Norway/basisprofiler-r4-fsh/actions/workflows/validate-fsh.yml)
@@ -26,8 +32,6 @@ Plan for utvikling av no-basis R4 basert på FHIR Shorthand (FSH)
 
 
 ### Bidra? Ta kontakt!
-
-Thomas Tveit Rosenlund - Helsedirektoratet - Thomas . Tveit . Rosenlund @ helsedir . no
 
 Espen Stranger Seland - Vali / HL7 Norge - ess @ vali . no - [rockphotog](https://github.com/rockphotog)
 
