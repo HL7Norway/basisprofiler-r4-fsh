@@ -2,6 +2,7 @@ Extension: NoBasisPersonCitizenship
 Id: no-basis-person-citizenship
 Title: "no-basis-person-citizenship"
 Description: "The Person's legal status as citizen of a country."
+* ^url = "http://hl7.no/fhir/StructureDefinition/no-basis-person-citizenship"
 * ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
 * ^extension[=].valueCode = #pa
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
