@@ -8,11 +8,4 @@ Prosjekt for å bruke FHIR Shorthand (FSH) som master for basisprofiler R4, og s
 
 # Plan
 
-- [x] Lage repo basert på no-mal. 
-- [ ] Teste round-trip fra dagens profiler til FSH
-
-## Avklaringer / not to self
-
-- Hva slags støtte skal vi ha for R6? Veien til R6 må være kort. 
-- Kompabilitet med EHDS (ikke nødv. del av dette repo, send til egnet issue) 
-- Skal vi lage en no-basis-gruppe på GitHub?
+Full QA av dagenes innhold høst 2025. 
