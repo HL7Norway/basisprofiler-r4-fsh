@@ -1,9 +1,6 @@
 name: Validate FSH Files
 
-# CONFIGURATION: The "short name" of the IG and the folder must be the same
-env:
-  IG_SHORTNAME: no-basis
-  # IG: ${{ vars.IG_KORTNAVN }}
+
 
 on:
   workflow_dispatch:
@@ -20,13 +17,19 @@ on:
         type: boolean
   pull_request:
     paths:
-      - '${{ env.IG_SHORTNAME }}/input/fsh/**'
-      - '${{ env.IG_SHORTNAME }}/sushi-config.yaml'
+      - 'no-basis/input/fsh/**'
+      - 'no-basis/sushi-config.yaml'
   push:
     branches: [main]
     paths:
-      - '${{ env.IG_SHORTNAME }}/input/fsh/**'
-      - '${{ env.IG_SHORTNAME }}/sushi-config.yaml'
+      - 'no-basis/input/fsh/**'
+      - 'no-basis/sushi-config.yaml'
+
+# CONFIGURATION: The "short name" of the IG and the folder must be the same
+# NB: Manually check the paths over
+env:
+  IG_SHORTNAME: no-basis
+  # IG: ${{ vars.IG_KORTNAVN }}
 
 jobs:
   validate:
@@ -161,7 +164,7 @@ jobs:
       uses: actions/upload-artifact@v4
       if: always()
       with:
-        name: fsh-validation-results-${{ github.run_number }}
+        name: fsh-validation-results-${{ github.run_id }}
         path: |
           ${{ env.IG_SHORTNAME }}/input/fsh/fsh-validator.log
           ${{ env.IG_SHORTNAME }}/sushi-validation.log
