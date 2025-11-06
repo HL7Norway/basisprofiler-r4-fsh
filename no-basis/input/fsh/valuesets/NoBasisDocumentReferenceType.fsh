@@ -6,7 +6,7 @@ Title: "no-basis-documentreference-type.valueset"
 * ^status = #active
 * ^jurisdiction = urn:iso:std:iso:3166#NO "Norway"
 * ^experimental = false
-* ^date = "2023-10-26T10:48:45.936
+* ^date = "2023-10-26"
 * ^publisher = "Helsedirektoratet"
 * ^description = "Kodeverket er for å angi dokumenttype når man skal dele et dokument i en XDS-løsning. Kodeverket er også harmonert med eksisterende kodeverk for dokumenttyper og journalstruktur i den grad dette har vært mulig. Dette gjelder primært følgende kodeverk: - 9066 Kategori journalinformasjon - 9601 Emneorienterte sakstyper("Piene inndelingen")"
 * urn:oid:2.16.578.1.12.4.1.1.9602#A00-1 "Epikriser og sammenfatninger"

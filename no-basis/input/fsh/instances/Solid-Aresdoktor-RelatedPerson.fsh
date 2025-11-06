@@ -1,6 +1,7 @@
 Instance: Solid-Aresdoktor-RelatedPerson
 InstanceOf: NoBasisRelatedPerson
 Usage: #example
+Description: "Eksempel på pårørende med fødselsnummer, navn, telefonnummer, adresse, sivilstand og relasjon til pasient."
 * identifier.system = "urn:oid:2.16.578.1.12.4.1.4.1"
 * identifier.value = "15080050515"
 * patient.identifier.system = "urn:oid:2.16.578.1.12.4.1.4.1"

@@ -1,6 +1,7 @@
 Instance: JanniceSorengTo
 InstanceOf: NoBasisPatient
 Usage: #example
+Description: "Eksempel på pasient med fødselsnummer, navn, telefonnummer, adresse, sivilstand og fastlege."
 * extension.extension.url = "code"
 * extension.extension.valueCodeableConcept = urn:iso:std:iso:3166#NO
 * extension.url = "http://hl7.org/fhir/StructureDefinition/patient-citizenship"

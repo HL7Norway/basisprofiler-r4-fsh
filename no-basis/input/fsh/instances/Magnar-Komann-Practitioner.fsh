@@ -1,6 +1,7 @@
 Instance: Magnar-Komann-Practitioner
 InstanceOf: NoBasisPractitioner
 Usage: #example
+Description: "Eksempel på helsepersonell med identifikator, navn, telefonnummer, adresse og kvalifikasjoner."
 * identifier.system = "urn:oid:2.16.578.1.12.4.1.4.4"
 * identifier.value = "9144889"
 * name.family = "Koman"

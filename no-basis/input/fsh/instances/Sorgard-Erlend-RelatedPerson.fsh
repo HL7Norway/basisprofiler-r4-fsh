@@ -1,6 +1,7 @@
 Instance: Sorgard-Erlend-RelatedPerson
 InstanceOf: NoBasisRelatedPerson
 Usage: #example
+Description: "Eksempel på pårørende med fødselsnummer, navn, telefonnummer, adresse, sivilstand og relasjon til pasient."
 * extension.extension.url = "code"
 * extension.extension.valueCodeableConcept = urn:iso:std:iso:3166#NO
 * extension.url = "http://hl7.no/fhir/StructureDefinition/no-basis-person-citizenship"
