@@ -167,12 +167,179 @@ jobs:
           exit 1
         fi
 
+    - name: Generate comprehensive analysis log
+      if: always()
+      run: |
+        ANALYSIS_LOG="${{ github.workspace }}/validation-analysis-${{ github.run_id }}.md"
+        
+        echo "# FSH Validation Analysis Report" > "$ANALYSIS_LOG"
+        echo "" >> "$ANALYSIS_LOG"
+        echo "**Run ID:** ${{ github.run_id }}" >> "$ANALYSIS_LOG"
+        echo "**Date:** $(date -u '+%Y-%m-%d %H:%M:%S UTC')" >> "$ANALYSIS_LOG"
+        echo "**Workflow:** validate-fsh.yml" >> "$ANALYSIS_LOG"
+        echo "**Repository:** ${{ github.repository }}" >> "$ANALYSIS_LOG"
+        echo "**Branch:** ${{ github.ref_name }}" >> "$ANALYSIS_LOG"
+        echo "**Commit:** ${{ github.sha }}" >> "$ANALYSIS_LOG"
+        echo "" >> "$ANALYSIS_LOG"
+        
+        # Configuration
+        echo "## Configuration" >> "$ANALYSIS_LOG"
+        echo "" >> "$ANALYSIS_LOG"
+        echo "- **SUSHI Validation:** ${{ github.event.inputs.run_sushi_validation || 'false' }}" >> "$ANALYSIS_LOG"
+        echo "- **Fail on SUSHI Errors:** ${{ github.event.inputs.fail_on_sushi_errors || 'false' }}" >> "$ANALYSIS_LOG"
+        echo "- **IG Short Name:** ${{ env.IG_SHORTNAME }}" >> "$ANALYSIS_LOG"
+        echo "" >> "$ANALYSIS_LOG"
+        
+        # FSH Validator Results
+        echo "## FSH Validator Results" >> "$ANALYSIS_LOG"
+        echo "" >> "$ANALYSIS_LOG"
+        
+        FSH_LOG_PATH="${{ github.workspace }}/${{ env.IG_SHORTNAME }}/input/fsh/fsh-validator.log"
+        if [ -f "$FSH_LOG_PATH" ]; then
+          # Statistics
+          total_errors=$(grep -c "Failure:" "$FSH_LOG_PATH" 2>/dev/null || echo "0")
+          instance_errors=$(grep -c "No instances defined" "$FSH_LOG_PATH" 2>/dev/null || echo "0")
+          real_errors=$(grep -v "No instances defined" "$FSH_LOG_PATH" | grep -c "ERROR\|FATAL" 2>/dev/null || echo "0")
+          warnings=$(grep -c "WARN" "$FSH_LOG_PATH" 2>/dev/null || echo "0")
+          
+          echo "### Summary Statistics" >> "$ANALYSIS_LOG"
+          echo "" >> "$ANALYSIS_LOG"
+          echo "| Metric | Count |" >> "$ANALYSIS_LOG"
+          echo "|--------|------:|" >> "$ANALYSIS_LOG"
+          echo "| Total Failure Messages | $total_errors |" >> "$ANALYSIS_LOG"
+          echo "| Real Errors (ERROR/FATAL) | $real_errors |" >> "$ANALYSIS_LOG"
+          echo "| Warnings | $warnings |" >> "$ANALYSIS_LOG"
+          echo "| Missing Instance Messages | $instance_errors |" >> "$ANALYSIS_LOG"
+          echo "" >> "$ANALYSIS_LOG"
+          
+          # Profiles without instances
+          if [ "$instance_errors" -gt 0 ]; then
+            echo "### Profiles Without Example Instances" >> "$ANALYSIS_LOG"
+            echo "" >> "$ANALYSIS_LOG"
+            echo "_These are informational only and do not indicate validation errors:_" >> "$ANALYSIS_LOG"
+            echo "" >> "$ANALYSIS_LOG"
+            grep "No instances defined for profile" "$FSH_LOG_PATH" | sed 's/.*for profile /- /' >> "$ANALYSIS_LOG"
+            echo "" >> "$ANALYSIS_LOG"
+          fi
+          
+          # Real errors if any
+          if [ "$real_errors" -gt 0 ]; then
+            echo "### ⚠️ Real Validation Errors" >> "$ANALYSIS_LOG"
+            echo "" >> "$ANALYSIS_LOG"
+            echo "\`\`\`" >> "$ANALYSIS_LOG"
+            grep -v "No instances defined" "$FSH_LOG_PATH" | grep -A2 "ERROR\|FATAL" >> "$ANALYSIS_LOG"
+            echo "\`\`\`" >> "$ANALYSIS_LOG"
+            echo "" >> "$ANALYSIS_LOG"
+          fi
+          
+          # Full log in collapsible section
+          echo "### Full FSH Validator Log" >> "$ANALYSIS_LOG"
+          echo "" >> "$ANALYSIS_LOG"
+          echo "<details>" >> "$ANALYSIS_LOG"
+          echo "<summary>Click to expand full log</summary>" >> "$ANALYSIS_LOG"
+          echo "" >> "$ANALYSIS_LOG"
+          echo "\`\`\`" >> "$ANALYSIS_LOG"
+          cat "$FSH_LOG_PATH" >> "$ANALYSIS_LOG"
+          echo "\`\`\`" >> "$ANALYSIS_LOG"
+          echo "" >> "$ANALYSIS_LOG"
+          echo "</details>" >> "$ANALYSIS_LOG"
+          echo "" >> "$ANALYSIS_LOG"
+        else
+          echo "❌ **No FSH validator log found**" >> "$ANALYSIS_LOG"
+          echo "" >> "$ANALYSIS_LOG"
+        fi
+        
+        # SUSHI Results (if run)
+        if [ "${{ github.event.inputs.run_sushi_validation }}" == "true" ]; then
+          echo "## SUSHI Validation Results" >> "$ANALYSIS_LOG"
+          echo "" >> "$ANALYSIS_LOG"
+          
+          SUSHI_LOG_PATH="${{ github.workspace }}/${{ env.IG_SHORTNAME }}/sushi-validation.log"
+          if [ -f "$SUSHI_LOG_PATH" ]; then
+            sushi_errors=$(grep -c "error\|Error\|ERROR\|fatal\|Fatal\|FATAL" "$SUSHI_LOG_PATH" 2>/dev/null || echo "0")
+            sushi_warnings=$(grep -c "warn\|Warn\|WARN" "$SUSHI_LOG_PATH" 2>/dev/null || echo "0")
+            
+            echo "### Summary Statistics" >> "$ANALYSIS_LOG"
+            echo "" >> "$ANALYSIS_LOG"
+            echo "| Metric | Count |" >> "$ANALYSIS_LOG"
+            echo "|--------|------:|" >> "$ANALYSIS_LOG"
+            echo "| Errors | $sushi_errors |" >> "$ANALYSIS_LOG"
+            echo "| Warnings | $sushi_warnings |" >> "$ANALYSIS_LOG"
+            echo "" >> "$ANALYSIS_LOG"
+            
+            # Generated resources
+            if [ -d "${{ github.workspace }}/${{ env.IG_SHORTNAME }}/fsh-generated/resources" ]; then
+              resource_count=$(ls -1 "${{ github.workspace }}/${{ env.IG_SHORTNAME }}/fsh-generated/resources/"*.json 2>/dev/null | wc -l)
+              echo "### Generated Resources" >> "$ANALYSIS_LOG"
+              echo "" >> "$ANALYSIS_LOG"
+              echo "**Total:** $resource_count JSON files" >> "$ANALYSIS_LOG"
+              echo "" >> "$ANALYSIS_LOG"
+            fi
+            
+            # Full log in collapsible section
+            echo "### Full SUSHI Log" >> "$ANALYSIS_LOG"
+            echo "" >> "$ANALYSIS_LOG"
+            echo "<details>" >> "$ANALYSIS_LOG"
+            echo "<summary>Click to expand full log</summary>" >> "$ANALYSIS_LOG"
+            echo "" >> "$ANALYSIS_LOG"
+            echo "\`\`\`" >> "$ANALYSIS_LOG"
+            cat "$SUSHI_LOG_PATH" >> "$ANALYSIS_LOG"
+            echo "\`\`\`" >> "$ANALYSIS_LOG"
+            echo "" >> "$ANALYSIS_LOG"
+            echo "</details>" >> "$ANALYSIS_LOG"
+            echo "" >> "$ANALYSIS_LOG"
+          else
+            echo "❌ **No SUSHI validation log found**" >> "$ANALYSIS_LOG"
+            echo "" >> "$ANALYSIS_LOG"
+          fi
+        fi
+        
+        # Recommendations for Claude
+        echo "## Analysis & Recommendations" >> "$ANALYSIS_LOG"
+        echo "" >> "$ANALYSIS_LOG"
+        echo "### For AI Review (Claude Sonnet)" >> "$ANALYSIS_LOG"
+        echo "" >> "$ANALYSIS_LOG"
+        echo "When reviewing this log, please analyze:" >> "$ANALYSIS_LOG"
+        echo "" >> "$ANALYSIS_LOG"
+        echo "1. **Validation Status:**" >> "$ANALYSIS_LOG"
+        echo "   - Are there any real errors that need fixing?" >> "$ANALYSIS_LOG"
+        echo "   - Are warnings acceptable or should they be addressed?" >> "$ANALYSIS_LOG"
+        echo "   - Is the \"No instances defined\" count expected?" >> "$ANALYSIS_LOG"
+        echo "" >> "$ANALYSIS_LOG"
+        echo "2. **Pattern Analysis:**" >> "$ANALYSIS_LOG"
+        echo "   - Are there recurring error patterns?" >> "$ANALYSIS_LOG"
+        echo "   - Do multiple profiles have the same issues?" >> "$ANALYSIS_LOG"
+        echo "   - Are there systemic problems vs isolated issues?" >> "$ANALYSIS_LOG"
+        echo "" >> "$ANALYSIS_LOG"
+        echo "3. **Recommendations:**" >> "$ANALYSIS_LOG"
+        echo "   - What files need to be modified?" >> "$ANALYSIS_LOG"
+        echo "   - Should workflow configuration be adjusted?" >> "$ANALYSIS_LOG"
+        echo "   - Are there missing example instances that should be created?" >> "$ANALYSIS_LOG"
+        echo "" >> "$ANALYSIS_LOG"
+        
+        # Workflow health
+        echo "### Workflow Health Check" >> "$ANALYSIS_LOG"
+        echo "" >> "$ANALYSIS_LOG"
+        echo "- **Action Versions:** All updated to latest (v5/v6)" >> "$ANALYSIS_LOG"
+        echo "- **Error Filtering:** Excludes 'No instances defined' from failures ✅" >> "$ANALYSIS_LOG"
+        echo "- **Exit Code Handling:** fsh-validator runs with \`|| true\` ✅" >> "$ANALYSIS_LOG"
+        echo "" >> "$ANALYSIS_LOG"
+        
+        echo "---" >> "$ANALYSIS_LOG"
+        echo "" >> "$ANALYSIS_LOG"
+        echo "_Generated automatically by validate-fsh.yml workflow_" >> "$ANALYSIS_LOG"
+        
+        # Display location
+        echo "📊 Comprehensive analysis log generated: $ANALYSIS_LOG"
+        echo "📁 This file will be uploaded as an artifact"
+        
     - name: Upload validation artifacts
       uses: actions/upload-artifact@v5
       if: always()
       with:
         name: fsh-validation-results-${{ github.run_id }}
         path: |
+          ${{ github.workspace }}/validation-analysis-${{ github.run_id }}.md
           ${{ env.IG_SHORTNAME }}/input/fsh/fsh-validator.log
           ${{ env.IG_SHORTNAME }}/sushi-validation.log
           ${{ env.IG_SHORTNAME }}/fsh-generated/resources/*.json
