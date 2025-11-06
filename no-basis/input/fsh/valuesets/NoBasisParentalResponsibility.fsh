@@ -1,4 +1,4 @@
-ValueSet: NoBasisParentalResponsibilityVS
+ValueSet: NoBasisParentalResponsibility
 Id: no-basis-parental-responsibility.valueset
 Title: "no-basis-parental-responsibility.valueset"
 Description: "Copy of Codes from Foreldreansvar defined by Skatteetaten"

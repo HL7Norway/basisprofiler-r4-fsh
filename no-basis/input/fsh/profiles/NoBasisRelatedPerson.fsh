@@ -53,18 +53,18 @@ Typical use-case for no-basis-RelatedPerson involves information about relations
     maritalStatus 0..* and
     familyRelation 0..* and
     parental 0..*
-* relationship[maritalStatus] from NoBasisMaritalStatusVS (required)
+* relationship[maritalStatus] from NoBasisMaritalStatus (required)
 * relationship[maritalStatus] ^short = "marital status from Norwegian Person Index"
 * relationship[maritalStatus] ^definition = "Sivilstand as registered in the norwegian Person Index (folkeregisteret). \r\n\r\n• uoppgitt (kode i DSF: 0)\r\n• ugift (kode i DSF: 1)\r\n• gift (kode i DSF: 2)\r\n• enkeEllerEnkemann (enke eller enkemann) (kode i DSF: 3)\r\n• skilt (kode i DSF: 4)\r\n• separert (kode i DSF: 5)\r\n• registrertPartner(registrert partner) (kode i DSF: 6)\r\n• separertPartner (separert partner) (kode i DSF: 7)\r\n• skiltPartner (skilt partner) (kode i DSF: 8)\r\n• gjenlevendePartner (gjenlevende partner) (kode i DSF: 9)"
 * relationship[maritalStatus] ^alias[0] = "sivilstand"
 * relationship[maritalStatus].coding.system = "http://hl7.no/fhir/CodeSystem/no-basis-marital-status" (exactly)
-* relationship[familyRelation] from NoBasisFamilyRelationVS (required)
+* relationship[familyRelation] from NoBasisFamilyRelation (required)
 * relationship[familyRelation] ^short = "Family relationship from Norwegian Person Index"
 * relationship[familyRelation] ^definition = "Family relationship from Norwegian Person Index. \r\nThis is the role of the RelatedPerson instance in a familyrelation to the Person/Patient instance(relatertPersonsRolle).\r\n\r\nmor\r\nfar\r\nmedmor\r\nbarn\r\nsøsken\r\nektefelleEllerPartner\r\ndødfødtBarn"
 * relationship[familyRelation] ^alias[0] = "familierelasjon"
 * relationship[familyRelation] ^alias[+] = "relatertPersonsRolle"
 * relationship[familyRelation].coding.system = "http://hl7.no/fhir/CodeSystem/no-basis-family-relation" (exactly)
-* relationship[parental] from NoBasisParentalResponsibilityVS (required)
+* relationship[parental] from NoBasisParentalResponsibility (required)
 * relationship[parental] ^short = "Parental responsibility registered in Norwegian person index"
 * relationship[parental] ^definition = "Parental responsibility registered in Norwegian person index.\r\n\r\nbarnet har krav på omsut og omtanke frå dei som har foreldreansvaret. Dei har rett og plikt til å ta avgjerder for barnet i personlege tilhøve innanfor dei grensene som §§ 31 til 33 set. Foreldreansvaret skal utøvast ut frå barnet sine interesser og behov. Dei som har foreldreansvaret, er skyldige til å gje barnet forsvarleg oppseding og forsyting. Dei skal syte for at barnet får utdanning etter evne og givnad\r\nInneholder hvem som evt. har foreldremyndighet for en umyndig person.\r\nforeldremyndighet = myndighet til å inneha og utøve et foreldreansvar\r\n\r\nKodeverdier i Registeret i Freg:\r\n- felles\r\n- mor\r\n- far\r\n- medmor\r\n- andre\r\n- ukjent\r\nI Registeret vil ansvaret bli vist som en to-veis relasjon vha. identifikatorer eller identifiserende informasjon.\r\nDe gjeldende relasjonene til personer/barnevernsnemnd o.l. vil i praksis opphøre når personen ikke lenger er underlagt foreldreansvar, men de vil ikke opphøre i Registeret.\r\nNår informasjonen er migrert fra DSF vil Registeret være oppdatert i takt med DSF."
 * relationship[parental] ^alias[0] = "foreldreansvar"

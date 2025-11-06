@@ -1,4 +1,4 @@
-ValueSet: NoBasisFamilyRelationVS
+ValueSet: NoBasisFamilyRelation
 Id: no-basis-family-relation.valueset
 Title: "no-basis-family-relation.valueset"
 Description: "Copy of Codes from Familierelasjon defined by Skatteetaten"

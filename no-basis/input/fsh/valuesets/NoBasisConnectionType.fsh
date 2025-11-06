@@ -1,4 +1,4 @@
-ValueSet: NoBasisConnectionTypeVS
+ValueSet: NoBasisConnectionType
 Id: no-basis-connection-type.valueset
 Title: "no-basis-connection-type.valueset"
 Description: "ValueSet for connection types used in Endpoint definition. Includes all Norwegian specific types (no-basis-connection-type) and the extensible HL7 CodeSystem for connection-type"
