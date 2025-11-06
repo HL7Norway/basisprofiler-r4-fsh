@@ -267,13 +267,13 @@ jobs:
               
               # Try to validate with detailed error output
               if validation_output=$(python3 -m json.tool "$file" 2>&1 > /dev/null); then
-                ((valid_count++))
+                valid_count=$((valid_count + 1))
                 echo "  ✅ Valid JSON"
               else
                 echo "  ❌ Invalid JSON"
                 echo "  Error details:"
                 echo "$validation_output" | head -10 | sed 's/^/    /'
-                ((invalid_count++))
+                invalid_count=$((invalid_count + 1))
                 validation_failed=true
               fi
             fi
