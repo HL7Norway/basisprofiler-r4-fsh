@@ -6,9 +6,9 @@ Title: "Patient Appointment Response Example"
 Description: "Example of Patient response to an appointment using no-basis profile. The profile is identical to the basis profile except there is an extension that can be used for patient to signal if the patient can come on short notice to an appointment. The example is similar to http://hl7.org/fhir/R4/appointmentresponse-example.json.html with addition for the extension."
 * appointment = Reference(AppointmentExample) "MRI results discussion"
 * actor = Reference(PatientExample) "Peter James Chalmers"
+* actor.type = "Patient"
 * participantStatus = #accepted
 * extension[shortNotice].valueBoolean = true
-* actor.type = "Patient"
 
 
 Instance: PatientExample
