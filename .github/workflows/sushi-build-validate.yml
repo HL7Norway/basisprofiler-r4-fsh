@@ -1,0 +1,301 @@
+name: SUSHI Build & Validate
+
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - 'no-basis/input/fsh/**'
+      - 'no-basis/sushi-config.yaml'
+      - 'no-basis/ig.ini'
+  push:
+    branches: [main]
+    paths:
+      - 'no-basis/input/fsh/**'
+      - 'no-basis/sushi-config.yaml'
+      - 'no-basis/ig.ini'
+
+env:
+  IG_SHORTNAME: no-basis
+
+jobs:
+  build-and-validate:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: 📥 Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: 🖥️ Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+        
+    - name: 💾 Cache FHIR packages
+      uses: actions/cache@v4
+      with:
+        path: |
+          ~/.fhir/packages
+          ~/.npm
+        key: ${{ runner.os }}-fhir-${{ hashFiles('**/sushi-config.yaml') }}
+        restore-keys: |
+          ${{ runner.os }}-fhir-
+          ${{ runner.os }}-
+
+    - name: 📦 Install SUSHI
+      run: |
+        echo "📦 Installing SUSHI (FSH compiler)..."
+        npm install -g fsh-sushi
+        echo "✅ SUSHI version:"
+        sushi --version
+        
+    - name: 🔍 Display environment info
+      run: |
+        echo "🔍 Environment Information"
+        echo "=========================="
+        echo "Node version: $(node --version)"
+        echo "NPM version: $(npm --version)"
+        echo "Working directory: $(pwd)"
+        echo "IG directory: ${{ env.IG_SHORTNAME }}"
+        echo ""
+        echo "📂 Directory structure:"
+        ls -la ${{ env.IG_SHORTNAME }}/
+        echo ""
+        echo "📂 FSH input structure:"
+        ls -la ${{ env.IG_SHORTNAME }}/input/fsh/
+        
+    - name: 🍣 Run SUSHI build
+      id: sushi
+      run: |
+        cd ${{ env.IG_SHORTNAME }}
+        echo "🍣 Running SUSHI to compile FSH files..."
+        echo "Working directory: $(pwd)"
+        echo ""
+        
+        # Run SUSHI and capture output
+        if sushi . --require-latest 2>&1 | tee sushi-output.log; then
+          echo "✅ SUSHI build completed successfully"
+          echo "build_status=success" >> $GITHUB_OUTPUT
+        else
+          echo "⚠️ SUSHI build completed with errors"
+          echo "build_status=failed" >> $GITHUB_OUTPUT
+        fi
+        
+    - name: 📊 Analyze SUSHI output
+      if: always()
+      run: |
+        cd ${{ env.IG_SHORTNAME }}
+        
+        echo "📊 SUSHI Build Results"
+        echo "======================"
+        echo ""
+        
+        if [ -f sushi-output.log ]; then
+          # Count errors, warnings, and notes
+          error_count=$(grep -c "error" sushi-output.log || true)
+          warning_count=$(grep -c "warn" sushi-output.log || true)
+          
+          echo "📈 Statistics:"
+          echo "  - Errors: $error_count"
+          echo "  - Warnings: $warning_count"
+          echo ""
+          
+          # Extract SUSHI results box if present
+          if grep -q "SUSHI RESULTS" sushi-output.log; then
+            echo "📦 SUSHI Results Summary:"
+            sed -n '/SUSHI RESULTS/,/====/p' sushi-output.log
+          fi
+          
+          # Save counts for later steps
+          echo "error_count=$error_count" >> $GITHUB_ENV
+          echo "warning_count=$warning_count" >> $GITHUB_ENV
+        else
+          echo "⚠️ No SUSHI output log found"
+        fi
+        
+    - name: 🔎 Verify generated resources
+      if: always()
+      run: |
+        cd ${{ env.IG_SHORTNAME }}
+        
+        echo "🔎 Verifying Generated Resources"
+        echo "================================="
+        echo ""
+        
+        if [ -d "fsh-generated" ]; then
+          echo "✅ fsh-generated directory exists"
+          echo ""
+          
+          if [ -d "fsh-generated/resources" ]; then
+            echo "📂 Generated resources directory contents:"
+            ls -lh fsh-generated/resources/ | head -30
+            echo ""
+            
+            # Count generated files by type
+            profile_count=$(ls -1 fsh-generated/resources/StructureDefinition-*.json 2>/dev/null | wc -l)
+            valueset_count=$(ls -1 fsh-generated/resources/ValueSet-*.json 2>/dev/null | wc -l)
+            codesystem_count=$(ls -1 fsh-generated/resources/CodeSystem-*.json 2>/dev/null | wc -l)
+            instance_count=$(ls -1 fsh-generated/resources/*.json 2>/dev/null | grep -v "StructureDefinition\|ValueSet\|CodeSystem\|ImplementationGuide" | wc -l)
+            total_count=$(ls -1 fsh-generated/resources/*.json 2>/dev/null | wc -l)
+            
+            echo "📊 Resource counts:"
+            echo "  - Total resources: $total_count"
+            echo "  - Profiles/Extensions: $profile_count"
+            echo "  - ValueSets: $valueset_count"
+            echo "  - CodeSystems: $codesystem_count"
+            echo "  - Instances: $instance_count"
+            echo ""
+            
+            # Save for summary
+            echo "total_resources=$total_count" >> $GITHUB_ENV
+            echo "profile_count=$profile_count" >> $GITHUB_ENV
+            echo "valueset_count=$valueset_count" >> $GITHUB_ENV
+            echo "codesystem_count=$codesystem_count" >> $GITHUB_ENV
+            echo "instance_count=$instance_count" >> $GITHUB_ENV
+          else
+            echo "❌ fsh-generated/resources directory not found!"
+            exit 1
+          fi
+          
+          if [ -d "fsh-generated/includes" ]; then
+            echo "✅ Generated includes directory exists"
+            ls -lh fsh-generated/includes/
+          fi
+        else
+          echo "❌ fsh-generated directory not found!"
+          echo "SUSHI may have failed to generate resources"
+          exit 1
+        fi
+        
+    - name: 🧪 Validate JSON structure
+      if: always()
+      run: |
+        cd ${{ env.IG_SHORTNAME }}
+        
+        echo "🧪 Validating JSON Structure"
+        echo "============================="
+        echo ""
+        
+        if [ -d "fsh-generated/resources" ]; then
+          invalid_count=0
+          valid_count=0
+          
+          for file in fsh-generated/resources/*.json; do
+            if [ -f "$file" ]; then
+              if python3 -m json.tool "$file" > /dev/null 2>&1; then
+                ((valid_count++))
+              else
+                echo "❌ Invalid JSON: $file"
+                ((invalid_count++))
+              fi
+            fi
+          done
+          
+          echo "✅ Valid JSON files: $valid_count"
+          if [ $invalid_count -gt 0 ]; then
+            echo "❌ Invalid JSON files: $invalid_count"
+            exit 1
+          else
+            echo "✅ All generated JSON files are valid"
+          fi
+        fi
+        
+    - name: 📋 Check for specific issues
+      if: always()
+      run: |
+        cd ${{ env.IG_SHORTNAME }}
+        
+        echo "📋 Checking for Common Issues"
+        echo "=============================="
+        echo ""
+        
+        if [ -f sushi-output.log ]; then
+          # Check for specific error patterns
+          if grep -qi "could not be found" sushi-output.log; then
+            echo "⚠️ Found 'could not be found' errors:"
+            grep -i "could not be found" sushi-output.log || true
+            echo ""
+          fi
+          
+          if grep -qi "No instances defined" sushi-output.log; then
+            echo "ℹ️ Profiles without instances (informational):"
+            grep -i "No instances defined" sushi-output.log || true
+            echo ""
+          fi
+          
+          if grep -qi "duplicate" sushi-output.log; then
+            echo "⚠️ Found duplicate definitions:"
+            grep -i "duplicate" sushi-output.log || true
+            echo ""
+          fi
+          
+          if grep -qi "circular" sushi-output.log; then
+            echo "⚠️ Found circular dependencies:"
+            grep -i "circular" sushi-output.log || true
+            echo ""
+          fi
+        fi
+        
+    - name: 📤 Upload build artifacts
+      uses: actions/upload-artifact@v4
+      if: always()
+      with:
+        name: sushi-build-${{ github.run_id }}
+        path: |
+          ${{ env.IG_SHORTNAME }}/sushi-output.log
+          ${{ env.IG_SHORTNAME }}/fsh-generated/resources/*.json
+          ${{ env.IG_SHORTNAME }}/fsh-generated/includes/*
+          ${{ env.IG_SHORTNAME }}/fsh-generated/fsh-index.txt
+        retention-days: 30
+        
+    - name: 📊 Generate job summary
+      if: always()
+      run: |
+        echo "## 🍣 SUSHI Build & Validation Results" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        
+        # Build status
+        if [ "${{ steps.sushi.outputs.build_status }}" == "success" ]; then
+          echo "### ✅ Build Status: **SUCCESS**" >> $GITHUB_STEP_SUMMARY
+        else
+          echo "### ❌ Build Status: **FAILED**" >> $GITHUB_STEP_SUMMARY
+        fi
+        echo "" >> $GITHUB_STEP_SUMMARY
+        
+        # Statistics table
+        echo "### 📊 Build Statistics" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        echo "| Metric | Count |" >> $GITHUB_STEP_SUMMARY
+        echo "|--------|-------|" >> $GITHUB_STEP_SUMMARY
+        echo "| Errors | ${error_count:-0} |" >> $GITHUB_STEP_SUMMARY
+        echo "| Warnings | ${warning_count:-0} |" >> $GITHUB_STEP_SUMMARY
+        echo "| Total Resources | ${total_resources:-0} |" >> $GITHUB_STEP_SUMMARY
+        echo "| Profiles/Extensions | ${profile_count:-0} |" >> $GITHUB_STEP_SUMMARY
+        echo "| ValueSets | ${valueset_count:-0} |" >> $GITHUB_STEP_SUMMARY
+        echo "| CodeSystems | ${codesystem_count:-0} |" >> $GITHUB_STEP_SUMMARY
+        echo "| Instances | ${instance_count:-0} |" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        
+        # Full SUSHI output
+        cd ${{ env.IG_SHORTNAME }}
+        if [ -f sushi-output.log ]; then
+          echo "### 📝 SUSHI Output Log" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo '```' >> $GITHUB_STEP_SUMMARY
+          cat sushi-output.log >> $GITHUB_STEP_SUMMARY
+          echo '```' >> $GITHUB_STEP_SUMMARY
+        fi
+        
+    - name: ❌ Fail if errors found
+      if: always()
+      run: |
+        if [ "${{ steps.sushi.outputs.build_status }}" != "success" ]; then
+          echo "❌ Build failed - check logs above for details"
+          exit 1
+        fi
+        
+        if [ "${error_count:-0}" -gt 0 ]; then
+          echo "❌ Build completed but errors were found"
+          exit 1
+        fi
+        
+        echo "✅ Build completed successfully with no errors"
