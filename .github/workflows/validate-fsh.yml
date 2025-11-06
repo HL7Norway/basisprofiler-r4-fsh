@@ -15,15 +15,15 @@ on:
         required: false
         default: false
         type: boolean
-  pull_request:
-    paths:
-      - 'no-basis/input/fsh/**'
-      - 'no-basis/sushi-config.yaml'
-  push:
-    branches: [main]
-    paths:
-      - 'no-basis/input/fsh/**'
-      - 'no-basis/sushi-config.yaml'
+#  pull_request:
+#    paths:
+#      - 'no-basis/input/fsh/**'
+#      - 'no-basis/sushi-config.yaml'
+#  push:
+#    branches: [main]
+#    paths:
+#      - 'no-basis/input/fsh/**'
+#      - 'no-basis/sushi-config.yaml'
 
 # CONFIGURATION: The "short name" of the IG and the folder must be the same
 # NB: Manually check the paths over
@@ -56,6 +56,14 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-node-
           ${{ runner.os }}-
+
+    - name: Cache FHIR packages
+      uses: actions/cache@v4
+      with:
+        path: ~/.fhir/packages
+        key: ${{ runner.os }}-fhir-packages-${{ hashFiles('**/sushi-config.yaml') }}
+        restore-keys: |
+          ${{ runner.os }}-fhir-packages-
 
     - name: Install fsh-sushi
       run: npm install -g fsh-sushi
