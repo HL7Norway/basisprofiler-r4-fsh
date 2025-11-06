@@ -19,11 +19,6 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-
-      - name: Install 🔥 FHIR packages 🇳🇴
-        run: |
-          echo "NPM install fhir r4 core 4.0.1 from package registry"
-          npm --registry https://packages.simplifier.net install hl7.fhir.r4.core@4.0.1
          
       - name: Run 🔥 IG Publisher with 🍣 Sushi
         run: |
@@ -43,4 +38,4 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ${{ env.IG_SHORTNAME }}/output
           destination_dir: testbuild
-          commit_message: '${{ env.IG }}: ${{ github.event.head_commit.message }}' 
+          commit_message: 'Deploy IG testbuild' 
