@@ -90,9 +90,16 @@ jobs:
         echo ""
         
         if [ -f sushi-output.log ]; then
-          # Count errors, warnings, and notes
-          error_count=$(grep -c "error" sushi-output.log || true)
-          warning_count=$(grep -c "warn" sushi-output.log || true)
+          # Count errors and warnings more accurately
+          # Look for "X Errors" pattern from SUSHI summary
+          if grep -q "Errors" sushi-output.log; then
+            error_count=$(grep -oP '\d+(?= Errors)' sushi-output.log | tail -1 || echo "0")
+            warning_count=$(grep -oP '\d+(?= Warnings?)' sushi-output.log | tail -1 || echo "0")
+          else
+            # Fallback to line counting if summary not found
+            error_count=$(grep -ci "error" sushi-output.log || echo "0")
+            warning_count=$(grep -ci "warn" sushi-output.log || echo "0")
+          fi
           
           echo "📈 Statistics:"
           echo "  - Errors: $error_count"
@@ -110,6 +117,8 @@ jobs:
           echo "warning_count=$warning_count" >> $GITHUB_ENV
         else
           echo "⚠️ No SUSHI output log found"
+          echo "error_count=0" >> $GITHUB_ENV
+          echo "warning_count=0" >> $GITHUB_ENV
         fi
         
     - name: 🔎 Verify generated resources
@@ -176,6 +185,14 @@ jobs:
         echo ""
         
         if [ -d "fsh-generated/resources" ]; then
+          json_files=(fsh-generated/resources/*.json)
+          
+          # Check if any JSON files exist
+          if [ ! -e "${json_files[0]}" ]; then
+            echo "⚠️ No JSON files found in fsh-generated/resources/"
+            exit 0
+          fi
+          
           invalid_count=0
           valid_count=0
           
@@ -184,7 +201,8 @@ jobs:
               if python3 -m json.tool "$file" > /dev/null 2>&1; then
                 ((valid_count++))
               else
-                echo "❌ Invalid JSON: $file"
+                echo "❌ Invalid JSON: $(basename "$file")"
+                python3 -m json.tool "$file" 2>&1 | head -5
                 ((invalid_count++))
               fi
             fi
@@ -197,6 +215,8 @@ jobs:
           else
             echo "✅ All generated JSON files are valid"
           fi
+        else
+          echo "⚠️ fsh-generated/resources directory not found - skipping JSON validation"
         fi
         
     - name: 📋 Check for specific issues
@@ -288,13 +308,17 @@ jobs:
     - name: ❌ Fail if errors found
       if: always()
       run: |
+        # Check if SUSHI build failed
         if [ "${{ steps.sushi.outputs.build_status }}" != "success" ]; then
           echo "❌ Build failed - check logs above for details"
           exit 1
         fi
         
-        if [ "${error_count:-0}" -gt 0 ]; then
-          echo "❌ Build completed but errors were found"
+        # Check if errors were detected (convert to number for comparison)
+        error_num=$(echo "${error_count:-0}" | grep -oE '[0-9]+' || echo "0")
+        
+        if [ "$error_num" -gt 0 ]; then
+          echo "❌ Build completed but $error_num error(s) were found"
           exit 1
         fi
         
