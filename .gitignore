@@ -39,3 +39,39 @@ $RECYCLE.BIN/
 
 # Windows - Windows Installer files
 *.lnk
+
+# FHIR IG Publisher and SUSHI generated files
+fsh-generated/
+input-cache/
+output/
+temp/
+template/
+
+# Build scripts
+_build.bat
+_build.sh
+_gencontinuous.bat
+_gencontinuous.sh
+_genonce.bat
+_genonce.sh
+_updatePublisher.bat
+_updatePublisher.sh
+
+# Local validation logs
+*.log
+sushi-validation.log
+fsh-validator.log
+
+# Debug generated files (local testing only, never commit)
+debug/generated/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+.venv
