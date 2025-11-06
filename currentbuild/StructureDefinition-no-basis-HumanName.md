@@ -106,9 +106,7 @@ Other representations of profile: [CSV](StructureDefinition-no-basis-HumanName.c
         "type" : [
           {
             "code" : "Extension",
-            "profile" : [
-              "http://hl7.no/fhir/ig/StructureDefinition/no-basis-middlename"
-            ]
+            "profile" : ["http://hl7.no/fhir/StructureDefinition/no-basis-middlename"]
           }
         ]
       },

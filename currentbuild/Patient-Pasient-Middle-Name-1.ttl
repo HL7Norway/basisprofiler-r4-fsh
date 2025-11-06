@@ -29,8 +29,8 @@
   fhir:name ( [
      fhir:extension ( [
        fhir:url [
-         fhir:v "http://hl7.no/fhir/ig/StructureDefinition/no-basis-middlename"^^xsd:anyURI ;
-         fhir:l <http://hl7.no/fhir/ig/StructureDefinition/no-basis-middlename>
+         fhir:v "http://hl7.no/fhir/StructureDefinition/no-basis-middlename"^^xsd:anyURI ;
+         fhir:l <http://hl7.no/fhir/StructureDefinition/no-basis-middlename>
        ] ;
        fhir:value [
          a fhir:String ;

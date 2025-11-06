@@ -14,7 +14,7 @@
   }],
   "name" : [{
     "extension" : [{
-      "url" : "http://hl7.no/fhir/ig/StructureDefinition/no-basis-middlename",
+      "url" : "http://hl7.no/fhir/StructureDefinition/no-basis-middlename",
       "valueString" : "Hagerup"
     }],
     "family" : "Grieg",

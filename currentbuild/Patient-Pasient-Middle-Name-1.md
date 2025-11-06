@@ -33,7 +33,7 @@ Edvard Grieg (no stated gender), DoB Unknown ( urn:oid:2.16.578.1.12.4.1.4.1#150
     {
       "extension" : [
         {
-          "url" : "http://hl7.no/fhir/ig/StructureDefinition/no-basis-middlename",
+          "url" : "http://hl7.no/fhir/StructureDefinition/no-basis-middlename",
           "valueString" : "Hagerup"
         }
       ],

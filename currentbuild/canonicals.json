@@ -35,6 +35,20 @@
     "name" : "NoBasisMiddlename"
   },
   {
+    "id" : "no-basis-middlename",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.no/fhir/StructureDefinition/no-basis-middlename",
+    "version" : "2.2.3-test",
+    "name" : "NoBasisMiddlename"
+  },
+  {
+    "id" : "no-basis-person-citizenship",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.no/fhir/StructureDefinition/no-basis-person-citizenship",
+    "version" : "2.2.3-test",
+    "name" : "NoBasisPersonCitizenship"
+  },
+  {
     "id" : "no-basis-relatedperson-person-reference",
     "type" : "StructureDefinition",
     "url" : "http://hl7.no/fhir/StructureDefinition/no-basis-relatedperson-person-reference",
@@ -315,13 +329,6 @@
     "name" : "NoBasisGroup"
   },
   {
-    "id" : "no-basis-middlename",
-    "type" : "StructureDefinition",
-    "url" : "http://hl7.no/fhir/ig/StructureDefinition/no-basis-middlename",
-    "version" : "2.2.3-test",
-    "name" : "NoBasisMiddlename"
-  },
-  {
     "id" : "no-basis-municipalitycode",
     "type" : "StructureDefinition",
     "url" : "http://hl7.no/fhir/ig/StructureDefinition/no-basis-municipalitycode",
@@ -334,13 +341,6 @@
     "url" : "http://hl7.no/fhir/ig/StructureDefinition/no-basis-partof",
     "version" : "2.2.3-test",
     "name" : "NoBasisPartOf"
-  },
-  {
-    "id" : "no-basis-person-citizenship",
-    "type" : "StructureDefinition",
-    "url" : "http://hl7.no/fhir/ig/StructureDefinition/no-basis-person-citizenship",
-    "version" : "2.2.3-test",
-    "name" : "NoBasisPersonCitizenship"
   },
   {
     "id" : "no-basis-prescriptiongroup",

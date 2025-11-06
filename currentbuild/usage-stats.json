@@ -5,56 +5,14 @@
   "jurisdiction": "NO",
   "extensions": [
     {
-      "url": "http://hl7.no/fhir/StructureDefinition/no-basis-relatedperson-person-reference",
-      "title": "no-basis-relatedperson-person-reference",
-      "types": [
-        "Reference"
-      ]
-    },
-    {
-      "url": "http://hl7.no/fhir/ig/StructureDefinition/no-basis-address-official",
-      "title": "no-basis-address-official",
-      "types": [
-        "boolean"
-      ]
-    },
-    {
-      "url": "http://hl7.no/fhir/ig/StructureDefinition/no-basis-group",
-      "title": "no-basis-group",
-      "types": [
-        "boolean"
-      ]
-    },
-    {
-      "url": "http://hl7.no/fhir/ig/StructureDefinition/no-basis-middlename",
+      "url": "http://hl7.no/fhir/StructureDefinition/no-basis-middlename",
       "title": "no-basis-middlename",
       "types": [
         "string"
       ]
     },
     {
-      "url": "http://hl7.no/fhir/ig/StructureDefinition/no-basis-municipalitycode",
-      "title": "no-basis-municipalitycode",
-      "types": [
-        "Coding",
-        "string",
-        "Extension",
-        "uri",
-        "string",
-        "code",
-        "string",
-        "boolean"
-      ]
-    },
-    {
-      "url": "http://hl7.no/fhir/ig/StructureDefinition/no-basis-partof",
-      "title": "no-basis-partof",
-      "types": [
-        "Reference"
-      ]
-    },
-    {
-      "url": "http://hl7.no/fhir/ig/StructureDefinition/no-basis-person-citizenship",
+      "url": "http://hl7.no/fhir/StructureDefinition/no-basis-person-citizenship",
       "title": "no-basis-person-citizenship",
       "types": [
         "CodeableConcept",
@@ -109,6 +67,48 @@
         "UsageContext",
         "Dosage",
         "Meta"
+      ]
+    },
+    {
+      "url": "http://hl7.no/fhir/StructureDefinition/no-basis-relatedperson-person-reference",
+      "title": "no-basis-relatedperson-person-reference",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://hl7.no/fhir/ig/StructureDefinition/no-basis-address-official",
+      "title": "no-basis-address-official",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://hl7.no/fhir/ig/StructureDefinition/no-basis-group",
+      "title": "no-basis-group",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://hl7.no/fhir/ig/StructureDefinition/no-basis-municipalitycode",
+      "title": "no-basis-municipalitycode",
+      "types": [
+        "Coding",
+        "string",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://hl7.no/fhir/ig/StructureDefinition/no-basis-partof",
+      "title": "no-basis-partof",
+      "types": [
+        "Reference"
       ]
     },
     {
@@ -503,7 +503,9 @@
       "RelatedPerson.address"
     ],
     "http://hl7.no/fhir/StructureDefinition/no-basis-middlename": [
+      "HumanName",
       "Patient.contact.name",
+      "Patient.name",
       "RelatedPerson.name"
     ],
     "http://hl7.no/fhir/StructureDefinition/no-basis-municipalitycode": [
@@ -525,10 +527,6 @@
     ],
     "http://hl7.no/fhir/ig/StructureDefinition/no-basis-group": [
       "Appointment"
-    ],
-    "http://hl7.no/fhir/ig/StructureDefinition/no-basis-middlename": [
-      "HumanName",
-      "Patient.name"
     ],
     "http://hl7.no/fhir/ig/StructureDefinition/no-basis-municipalitycode": [
       "Address.district"

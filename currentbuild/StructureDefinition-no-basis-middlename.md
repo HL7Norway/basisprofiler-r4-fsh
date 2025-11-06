@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.no/fhir/ig/StructureDefinition/no-basis-middlename | *Version*:2.2.3-test |
+| *Official URL*:http://hl7.no/fhir/StructureDefinition/no-basis-middlename | *Version*:2.2.3-test |
 | Active as of 2019-09-23 | *Computable Name*:NoBasisMiddlename |
 
 The basis extension defines the Norwegian middlename wich is called "mellomnavn" and defined by Norwegian legislation (Lov om personnavn).
@@ -22,7 +22,7 @@ Specific usage of middle name as a specific part of official name standard where
 **Usages:**
 
 * Use this Extension: [no-basis-HumanName](StructureDefinition-no-basis-HumanName.md)
-* Examples for this Extension: [Patient/Pasient-Middle-Name-1](Patient-Pasient-Middle-Name-1.md)
+* Examples for this Extension: [Patient/JanniceSoreng](Patient-JanniceSoreng.md), [Patient/JanniceSorengTo](Patient-JanniceSorengTo.md), [Patient/Pasient-Middle-Name-1](Patient-Pasient-Middle-Name-1.md), [RelatedPerson/Solid-Aresdoktor-RelatedPerson](RelatedPerson-Solid-Aresdoktor-RelatedPerson.md) and [RelatedPerson/Sorgard-Erlend-RelatedPerson](RelatedPerson-Sorgard-Erlend-RelatedPerson.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.no.basis|current/StructureDefinition/no-basis-middlename)
 
@@ -48,7 +48,7 @@ Other representations of profile: [CSV](StructureDefinition-no-basis-middlename.
     "versionId" : "1",
     "lastUpdated" : "2018-06-13T12:23:00.348+00:00"
   },
-  "url" : "http://hl7.no/fhir/ig/StructureDefinition/no-basis-middlename",
+  "url" : "http://hl7.no/fhir/StructureDefinition/no-basis-middlename",
   "version" : "2.2.3-test",
   "name" : "NoBasisMiddlename",
   "title" : "no-basis-middlename",
@@ -75,7 +75,7 @@ Other representations of profile: [CSV](StructureDefinition-no-basis-middlename.
       "name" : "RIM Mapping"
     }
   ],
-  "kind" : "primitive-type",
+  "kind" : "complex-type",
   "abstract" : false,
   "context" : [
     {
@@ -104,7 +104,7 @@ Other representations of profile: [CSV](StructureDefinition-no-basis-middlename.
       {
         "id" : "Extension.url",
         "path" : "Extension.url",
-        "fixedUri" : "http://hl7.no/fhir/ig/StructureDefinition/no-basis-middlename"
+        "fixedUri" : "http://hl7.no/fhir/StructureDefinition/no-basis-middlename"
       },
       {
         "id" : "Extension.value[x]",

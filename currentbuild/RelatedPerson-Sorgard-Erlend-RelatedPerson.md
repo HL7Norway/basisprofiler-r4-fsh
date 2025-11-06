@@ -8,7 +8,7 @@
 
 Profile: [no-basis-RelatedPerson](StructureDefinition-no-basis-RelatedPerson.md)
 
-> **no/fhir/StructureDefinition/no-basis-person-citizenship**
+> **no-basis-person-citizenship**
 * code: Norway
 
 **identifier**: `urn:oid:2.16.578.1.12.4.1.4.1`/05073500186

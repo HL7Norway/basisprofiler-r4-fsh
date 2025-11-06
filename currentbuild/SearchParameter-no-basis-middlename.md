@@ -42,7 +42,7 @@ SearchParameter for the Norwegian middlename extension http://hl7.no/fhir/Struct
   "version" : "2.2.3-test",
   "name" : "NoBasisMiddlename",
   "status" : "active",
-  "date" : "2025-11-06T15:29:54+00:00",
+  "date" : "2025-11-06T15:57:23+00:00",
   "description" : "SearchParameter for the Norwegian middlename extension http://hl7.no/fhir/StructureDefinition/no-basis-middlename",
   "jurisdiction" : [
     {

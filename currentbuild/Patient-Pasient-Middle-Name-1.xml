@@ -13,7 +13,7 @@
     <value value="15064312345"/>
   </identifier>
   <name>
-    <extension url="http://hl7.no/fhir/ig/StructureDefinition/no-basis-middlename">
+    <extension url="http://hl7.no/fhir/StructureDefinition/no-basis-middlename">
       <valueString value="Hagerup"/>
     </extension>
     <family value="Grieg"/>

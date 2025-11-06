@@ -41,7 +41,7 @@ The model under visualizes the role of Norwegian base profiles. On top are the F
   "version" : "2.2.3-test",
   "name" : "NoBasis",
   "status" : "active",
-  "date" : "2025-11-06T15:29:54+00:00",
+  "date" : "2025-11-06T15:57:23+00:00",
   "jurisdiction" : [
     {
       "coding" : [
