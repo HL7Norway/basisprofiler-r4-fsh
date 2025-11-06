@@ -35,13 +35,6 @@
     "name" : "NoBasisMiddlename"
   },
   {
-    "id" : "no-basis-Procedure",
-    "type" : "StructureDefinition",
-    "url" : "http://hl7.no/fhir/StructureDefinition/no-basis-Procedure",
-    "version" : "2.2.3-test",
-    "name" : "NoBasisProcedure"
-  },
-  {
     "id" : "no-basis-relatedperson-person-reference",
     "type" : "StructureDefinition",
     "url" : "http://hl7.no/fhir/StructureDefinition/no-basis-relatedperson-person-reference",
@@ -53,7 +46,7 @@
     "type" : "ValueSet",
     "url" : "http://hl7.no/fhir/ValueSet/no-basis-connection-type",
     "version" : "2.2.3-test",
-    "name" : "NoBasisConnectionTypeVS"
+    "name" : "NoBasisConnectionType"
   },
   {
     "id" : "no-basis-documentreference-type.valueset",
@@ -67,21 +60,21 @@
     "type" : "ValueSet",
     "url" : "http://hl7.no/fhir/ValueSet/no-basis-family-relation",
     "version" : "2.2.3-test",
-    "name" : "NoBasisFamilyRelationVS"
+    "name" : "NoBasisFamilyRelation"
   },
   {
     "id" : "no-basis-marital-status.valueset",
     "type" : "ValueSet",
     "url" : "http://hl7.no/fhir/ValueSet/no-basis-marital-status",
     "version" : "2.2.3-test",
-    "name" : "NoBasisMaritalStatusVS"
+    "name" : "NoBasisMaritalStatus"
   },
   {
     "id" : "no-basis-parental-responsibility.valueset",
     "type" : "ValueSet",
     "url" : "http://hl7.no/fhir/ValueSet/no-basis-parental-responsibility",
     "version" : "2.2.3-test",
-    "name" : "NoBasisParentalResponsibilityVS"
+    "name" : "NoBasisParentalResponsibility"
   },
   {
     "id" : "no-basis-service-type.valueset",
@@ -285,6 +278,13 @@
     "url" : "http://hl7.no/fhir/ig/StructureDefinition/no-basis-PractitionerRole",
     "version" : "2.2.3-test",
     "name" : "NoBasisPractitionerRole"
+  },
+  {
+    "id" : "no-basis-Procedure",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.no/fhir/ig/StructureDefinition/no-basis-Procedure",
+    "version" : "2.2.3-test",
+    "name" : "NoBasisProcedure"
   },
   {
     "id" : "no-basis-RelatedPerson",

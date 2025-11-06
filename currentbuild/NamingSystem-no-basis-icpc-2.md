@@ -1,10 +1,10 @@
-# NoBasisICPC2 - v2.2.3-test
+# no-basis-icpc-2 - v2.2.3-test
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **NoBasisICPC2**
+* **no-basis-icpc-2**
 
-## NamingSystem: NoBasisICPC2 
+## NamingSystem: no-basis-icpc-2 
 
 | | |
 | :--- | :--- |

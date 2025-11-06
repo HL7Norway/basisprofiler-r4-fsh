@@ -21,7 +21,9 @@
   fhir:name [ fhir:v "NoBasisDocumentReferenceType"] ; # 
   fhir:title [ fhir:v "no-basis-documentreference-type.valueset"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-11-06T08:50:45+00:00"^^xsd:dateTime] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2023-10-26"^^xsd:date] ; # 
+  fhir:description [ fhir:v "Kodeverket er for å angi dokumenttype når man skal dele et dokument i en XDS-løsning. Kodeverket er også harmonert med eksisterende kodeverk for dokumenttyper og journalstruktur i den grad dette har vært mulig. Dette gjelder primært følgende kodeverk: - 9066 Kategori journalinformasjon - 9601 Emneorienterte sakstyper (Piene inndelingen)"] ; # 
   fhir:jurisdiction ( [
      fhir:coding ( [
        fhir:system [

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://hl7.no/fhir/ValueSet/no-basis-marital-status | *Version*:2.2.3-test |
-| Active as of 2020-03-20 | *Computable Name*:NoBasisMaritalStatusVS |
+| Active as of 2020-03-20 | *Computable Name*:NoBasisMaritalStatus |
 
  
 Copy of Codes from Sivilstandstype defined by Skatteetaten 
@@ -49,7 +49,7 @@ Copy of Codes from Sivilstandstype defined by Skatteetaten
   "id" : "no-basis-marital-status.valueset",
   "url" : "http://hl7.no/fhir/ValueSet/no-basis-marital-status",
   "version" : "2.2.3-test",
-  "name" : "NoBasisMaritalStatusVS",
+  "name" : "NoBasisMaritalStatus",
   "title" : "no-basis-marital-status.valueset",
   "status" : "active",
   "experimental" : true,

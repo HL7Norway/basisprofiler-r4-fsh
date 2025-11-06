@@ -6,14 +6,14 @@
   "status" : "active",
   "package-id" : "hl7.fhir.no.basis",
   "ig-ver" : "2.2.3-test",
-  "date" : "Thu, 06 Nov, 2025 08:50:45 +0000",
-  "dateISO8601" : "2025-11-06T08:50:45+00:00",
-  "errs" : 75,
-  "warnings" : 162,
-  "hints" : 40,
+  "date" : "Thu, 06 Nov, 2025 15:29:54 +0000",
+  "dateISO8601" : "2025-11-06T15:29:54+00:00",
+  "errs" : 63,
+  "warnings" : 157,
+  "hints" : 36,
   "suppressed-hints" : 0,
   "suppressed-warnings" : 0,
   "version" : "4.0.1",
   "tool" : "5.0.0 (3)",
-  "maxMemory" : 1317011456
+  "maxMemory" : 1809842176
 }

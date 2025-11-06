@@ -9,7 +9,7 @@
   <version value="2.2.3-test"/>
   <name value="NoBasis"/>
   <status value="active"/>
-  <date value="2025-11-06T08:50:45+00:00"/>
+  <date value="2025-11-06T15:29:54+00:00"/>
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166"/>
@@ -447,7 +447,7 @@
       <reference>
         <reference value="Appointment/AppointmentExample"/>
       </reference>
-      <name value="AppointmentExample"/>
+      <name value="Appointment Example"/>
       <description value="Discussion on the results of your recent MRI"/>
       <exampleCanonical value="http://hl7.no/fhir/ig/StructureDefinition/no-basis-Appointment"/>
     </resource>
@@ -470,6 +470,7 @@
         <reference value="Organization/Direktoratet-for-eHelse-Organization"/>
       </reference>
       <name value="Direktoratet-for-eHelse-Organization"/>
+      <description value="Example of an organization using no-basis profile. The profile is identical to the basis profile except there is an extension that can be used for official addresses."/>
       <exampleCanonical value="http://hl7.no/fhir/ig/StructureDefinition/no-basis-Organization"/>
     </resource>
     <resource>
@@ -480,6 +481,7 @@
         <reference value="Patient/EspenEksempel"/>
       </reference>
       <name value="EspenEksempel"/>
+      <description value="Eksempel på pasient med fødselsnummer, navn, telefonnummer, adresse, sivilstand og fastlege."/>
       <exampleCanonical value="http://hl7.no/fhir/ig/StructureDefinition/no-basis-Patient"/>
     </resource>
     <resource>
@@ -490,6 +492,7 @@
         <reference value="Patient/JanniceSoreng"/>
       </reference>
       <name value="JanniceSoreng"/>
+      <description value="Eksempel på pasient med fødselsnummer, navn, telefonnummer, adresse, sivilstand og fastlege."/>
       <exampleCanonical value="http://hl7.no/fhir/ig/StructureDefinition/no-basis-Patient"/>
     </resource>
     <resource>
@@ -500,6 +503,7 @@
         <reference value="Patient/JanniceSorengTo"/>
       </reference>
       <name value="JanniceSorengTo"/>
+      <description value="Eksempel på pasient med fødselsnummer, navn, telefonnummer, adresse, sivilstand og fastlege."/>
       <exampleCanonical value="http://hl7.no/fhir/ig/StructureDefinition/no-basis-Patient"/>
     </resource>
     <resource>
@@ -510,6 +514,7 @@
         <reference value="Practitioner/Magnar-Komann-Practitioner"/>
       </reference>
       <name value="Magnar-Komann-Practitioner"/>
+      <description value="Eksempel på helsepersonell med identifikator, navn, telefonnummer, adresse og kvalifikasjoner."/>
       <exampleCanonical value="http://hl7.no/fhir/ig/StructureDefinition/no-basis-Practitioner"/>
     </resource>
     <resource>
@@ -652,6 +657,7 @@
         <reference value="ValueSet/no-basis-documentreference-type.valueset"/>
       </reference>
       <name value="no-basis-documentreference-type.valueset"/>
+      <description value="Kodeverket er for å angi dokumenttype når man skal dele et dokument i en XDS-løsning. Kodeverket er også harmonert med eksisterende kodeverk for dokumenttyper og journalstruktur i den grad dette har vært mulig. Dette gjelder primært følgende kodeverk: - 9066 Kategori journalinformasjon - 9601 Emneorienterte sakstyper (Piene inndelingen)"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -772,6 +778,17 @@
       </reference>
       <name value="no-basis-HumanName"/>
       <description value="Basisprofil for Norwegian HumanName. Defined by The Norwegian Directorate of eHealth and HL7 Norway. The profile adds the concept of middlename and further explains of the use for the data-elements in a Norwegian context. The basis profile is open, but derived profiles should close down the information elements according to specification relevant to the use-case."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="NamingSystem"/>
+      </extension>
+      <reference>
+        <reference value="NamingSystem/no-basis-icpc-2"/>
+      </reference>
+      <name value="no-basis-icpc-2"/>
+      <description value="In Norway primary care uses ICPC-2 to document contact-reason, health related problem and diagnosis."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1002,7 +1019,7 @@
         <reference value="Procedure/no-basis-Procedure-example"/>
       </reference>
       <name value="no-basis-Procedure-example"/>
-      <exampleCanonical value="http://hl7.no/fhir/StructureDefinition/no-basis-Procedure"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1105,17 +1122,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="NamingSystem"/>
-      </extension>
-      <reference>
-        <reference value="NamingSystem/no-basis-icpc-2"/>
-      </reference>
-      <name value="NoBasisICPC2"/>
-      <description value="In Norway primary care uses ICPC-2 to document contact-reason, health related problem and diagnosis."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Patient"/>
       </extension>
       <reference>
@@ -1143,8 +1149,8 @@
       <reference>
         <reference value="AppointmentResponse/PatientAppointmentResponseExample"/>
       </reference>
-      <name value="PatientAppointmentResponseExample"/>
-      <description value="Example of Patient response to an appointment using no-basis profile. The profile is identical to the basis profile axept there is a extension that can be used for patient to signal if the patient can come on short notice to an appointment. The example is similar to http://hl7.org/fhir/R4/appointmentresponse-example.json.html with adition for the extension."/>
+      <name value="Patient Appointment Response Example"/>
+      <description value="Example of Patient response to an appointment using no-basis profile. The profile is identical to the basis profile except there is an extension that can be used for patient to signal if the patient can come on short notice to an appointment. The example is similar to http://hl7.org/fhir/R4/appointmentresponse-example.json.html with addition for the extension."/>
       <exampleCanonical value="http://hl7.no/fhir/ig/StructureDefinition/no-basis-AppointmentResponse"/>
     </resource>
     <resource>
@@ -1154,7 +1160,7 @@
       <reference>
         <reference value="Patient/PatientExample"/>
       </reference>
-      <name value="PatientExample"/>
+      <name value="Patient Example"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -1165,6 +1171,7 @@
         <reference value="RelatedPerson/Solid-Aresdoktor-RelatedPerson"/>
       </reference>
       <name value="Solid-Aresdoktor-RelatedPerson"/>
+      <description value="Eksempel på pårørende med fødselsnummer, navn, telefonnummer, adresse, sivilstand og relasjon til pasient."/>
       <exampleCanonical value="http://hl7.no/fhir/ig/StructureDefinition/no-basis-RelatedPerson"/>
     </resource>
     <resource>
@@ -1175,6 +1182,7 @@
         <reference value="RelatedPerson/Sorgard-Erlend-RelatedPerson"/>
       </reference>
       <name value="Sorgard-Erlend-RelatedPerson"/>
+      <description value="Eksempel på pårørende med fødselsnummer, navn, telefonnummer, adresse, sivilstand og relasjon til pasient."/>
       <exampleCanonical value="http://hl7.no/fhir/ig/StructureDefinition/no-basis-RelatedPerson"/>
     </resource>
     <page>

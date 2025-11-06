@@ -10,7 +10,9 @@
   <name value="NoBasisDocumentReferenceType"/>
   <title value="no-basis-documentreference-type.valueset"/>
   <status value="active"/>
-  <date value="2025-11-06T08:50:45+00:00"/>
+  <experimental value="false"/>
+  <date value="2023-10-26"/>
+  <description value="Kodeverket er for å angi dokumenttype når man skal dele et dokument i en XDS-løsning. Kodeverket er også harmonert med eksisterende kodeverk for dokumenttyper og journalstruktur i den grad dette har vært mulig. Dette gjelder primært følgende kodeverk: - 9066 Kategori journalinformasjon - 9601 Emneorienterte sakstyper (Piene inndelingen)"/>
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166"/>

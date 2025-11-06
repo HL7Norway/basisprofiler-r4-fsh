@@ -6,7 +6,7 @@
 
 ## Example Procedure: no-basis-Procedure-example
 
-Profile: [no-basis-Procedure](StructureDefinition-no-basis-Procedure.md)
+Profile: `http://hl7.no/fhir/StructureDefinition/no-basis-Procedure`
 
 **status**: Completed
 

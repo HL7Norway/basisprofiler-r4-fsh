@@ -7,7 +7,7 @@
   },
   "url" : "http://hl7.no/fhir/ValueSet/no-basis-marital-status",
   "version" : "2.2.3-test",
-  "name" : "NoBasisMaritalStatusVS",
+  "name" : "NoBasisMaritalStatus",
   "title" : "no-basis-marital-status.valueset",
   "status" : "active",
   "experimental" : true,

@@ -1,10 +1,10 @@
-# PatientExample - v2.2.3-test
+# Patient Example - v2.2.3-test
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **PatientExample**
+* **Patient Example**
 
-## Example Patient: PatientExample
+## Example Patient: Patient Example
 
 Peter James Chalmers (official) (no stated gender), DoB Unknown
 

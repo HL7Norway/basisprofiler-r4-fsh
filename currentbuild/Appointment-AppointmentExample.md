@@ -1,10 +1,10 @@
-# AppointmentExample - v2.2.3-test
+# Appointment Example - v2.2.3-test
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **AppointmentExample**
+* **Appointment Example**
 
-## Example Appointment: AppointmentExample
+## Example Appointment: Appointment Example
 
 Profile: [no-basis-Appointment](StructureDefinition-no-basis-Appointment.md)
 

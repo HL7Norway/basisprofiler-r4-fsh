@@ -8,15 +8,15 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.no/fhir/StructureDefinition/no-basis-Procedure | *Version*:2.2.3-test |
-| Active as of 2021-10-27 | *Computable Name*:NoBasisProcedure |
+| *Official URL*:http://hl7.no/fhir/ig/StructureDefinition/no-basis-Procedure | *Version*:2.2.3-test |
+| Draft as of 2021-10-27 | *Computable Name*:NoBasisProcedure |
 
  
 Basis profile for a procedure, to be used in Norway. The profile is adapted to include norwegian specific features and constraints. 
 
 **Usages:**
 
-* Examples for this Profile: [Procedure/no-basis-Procedure-example](Procedure-no-basis-Procedure-example.md)
+* This Profile is not used by any profiles in this Implementation Guide
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.no.basis|current/StructureDefinition/no-basis-Procedure)
 
@@ -36,15 +36,11 @@ Other representations of profile: [CSV](StructureDefinition-no-basis-Procedure.c
 {
   "resourceType" : "StructureDefinition",
   "id" : "no-basis-Procedure",
-  "meta" : {
-    "versionId" : "3",
-    "lastUpdated" : "2021-06-02T13:43:40.793+00:00"
-  },
-  "url" : "http://hl7.no/fhir/StructureDefinition/no-basis-Procedure",
+  "url" : "http://hl7.no/fhir/ig/StructureDefinition/no-basis-Procedure",
   "version" : "2.2.3-test",
   "name" : "NoBasisProcedure",
   "title" : "no-basis-Procedure",
-  "status" : "active",
+  "status" : "draft",
   "date" : "2021-10-27",
   "description" : "Basis profile for a procedure, to be used in Norway. The profile is adapted to include norwegian specific features and constraints.",
   "jurisdiction" : [
@@ -111,10 +107,13 @@ Other representations of profile: [CSV](StructureDefinition-no-basis-Procedure.c
         "sliceName" : "NKPK",
         "short" : "Codes defined by Norsk Klinisk Prosedyrekodeverk (NCMP, NCSP og NCRP)",
         "definition" : "A reference to a code defined by Norsk Klinisk Prosedyrekodeverk (NCMP, NCSP og NCRP)",
-        "max" : "1",
-        "patternCoding" : {
-          "system" : "urn:oid:2.16.578.1.12.4.1.1.7275"
-        }
+        "min" : 0,
+        "max" : "1"
+      },
+      {
+        "id" : "Procedure.code.coding:NKPK.system",
+        "path" : "Procedure.code.coding.system",
+        "fixedUri" : "urn:oid:2.16.578.1.12.4.1.1.7275"
       },
       {
         "id" : "Procedure.code.coding:SNOMED-CT",
@@ -122,10 +121,13 @@ Other representations of profile: [CSV](StructureDefinition-no-basis-Procedure.c
         "sliceName" : "SNOMED-CT",
         "short" : "Code defined by SNOMED CT",
         "definition" : "A reference to a code defined SNOMED CT.",
-        "max" : "1",
-        "patternCoding" : {
-          "system" : "http://snomed.info/sct"
-        }
+        "min" : 0,
+        "max" : "1"
+      },
+      {
+        "id" : "Procedure.code.coding:SNOMED-CT.system",
+        "path" : "Procedure.code.coding.system",
+        "fixedUri" : "http://snomed.info/sct"
       },
       {
         "id" : "Procedure.code.coding:ICPC-2",
@@ -133,16 +135,27 @@ Other representations of profile: [CSV](StructureDefinition-no-basis-Procedure.c
         "sliceName" : "ICPC-2",
         "short" : "Code defined by a ICPC-2",
         "definition" : "A reference to a code defined by ICPC-2",
-        "max" : "1",
-        "patternCoding" : {
-          "system" : "http://hl7.org/fhir/sid/icpc-2"
-        }
+        "min" : 0,
+        "max" : "1"
+      },
+      {
+        "id" : "Procedure.code.coding:ICPC-2.system",
+        "path" : "Procedure.code.coding.system",
+        "fixedUri" : "http://hl7.org/fhir/sid/icpc-2"
       },
       {
         "id" : "Procedure.bodySite",
         "path" : "Procedure.bodySite",
         "binding" : {
-          "strength" : "preferred"
+          "extension" : [
+            {
+              "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString" : "BodySite"
+            }
+          ],
+          "strength" : "preferred",
+          "description" : "Codes describing anatomical locations. May include laterality.",
+          "valueSet" : "http://hl7.org/fhir/ValueSet/body-site"
         }
       }
     ]

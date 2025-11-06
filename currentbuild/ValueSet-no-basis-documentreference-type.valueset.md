@@ -9,7 +9,10 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://hl7.no/fhir/ValueSet/no-basis-documentreference-type | *Version*:2.2.3-test |
-| Active as of 2025-11-06 | *Computable Name*:NoBasisDocumentReferenceType |
+| Active as of 2023-10-26 | *Computable Name*:NoBasisDocumentReferenceType |
+
+ 
+Kodeverket er for å angi dokumenttype når man skal dele et dokument i en XDS-løsning. Kodeverket er også harmonert med eksisterende kodeverk for dokumenttyper og journalstruktur i den grad dette har vært mulig. Dette gjelder primært følgende kodeverk: - 9066 Kategori journalinformasjon - 9601 Emneorienterte sakstyper (Piene inndelingen) 
 
  **References** 
 
@@ -50,7 +53,9 @@ No Expansion for this valueset (not supported by Publication Tooling)
   "name" : "NoBasisDocumentReferenceType",
   "title" : "no-basis-documentreference-type.valueset",
   "status" : "active",
-  "date" : "2025-11-06T08:50:45+00:00",
+  "experimental" : false,
+  "date" : "2023-10-26",
+  "description" : "Kodeverket er for å angi dokumenttype når man skal dele et dokument i en XDS-løsning. Kodeverket er også harmonert med eksisterende kodeverk for dokumenttyper og journalstruktur i den grad dette har vært mulig. Dette gjelder primært følgende kodeverk: - 9066 Kategori journalinformasjon - 9601 Emneorienterte sakstyper (Piene inndelingen)",
   "jurisdiction" : [
     {
       "coding" : [

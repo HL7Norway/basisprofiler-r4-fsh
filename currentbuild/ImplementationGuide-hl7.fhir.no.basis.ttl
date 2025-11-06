@@ -20,7 +20,7 @@
   fhir:version [ fhir:v "2.2.3-test"] ; # 
   fhir:name [ fhir:v "NoBasis"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-11-06T08:50:45+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-11-06T15:29:54+00:00"^^xsd:dateTime] ; # 
   fhir:jurisdiction ( [
      fhir:coding ( [
        fhir:system [
@@ -1297,7 +1297,7 @@
          fhir:l <http://hl7.no/fhir/ig/Appointment/AppointmentExample> ;
          fhir:reference [ fhir:v "Appointment/AppointmentExample" ]
        ] ;
-       fhir:name [ fhir:v "AppointmentExample" ] ;
+       fhir:name [ fhir:v "Appointment Example" ] ;
        fhir:description [ fhir:v "Discussion on the results of your recent MRI" ] ;
        fhir:example [
          a fhir:Canonical ;
@@ -1341,6 +1341,7 @@
          fhir:reference [ fhir:v "Organization/Direktoratet-for-eHelse-Organization" ]
        ] ;
        fhir:name [ fhir:v "Direktoratet-for-eHelse-Organization" ] ;
+       fhir:description [ fhir:v "Example of an organization using no-basis profile. The profile is identical to the basis profile except there is an extension that can be used for official addresses." ] ;
        fhir:example [
          a fhir:Canonical ;
          fhir:v "http://hl7.no/fhir/ig/StructureDefinition/no-basis-Organization"^^xsd:anyURI ;
@@ -1362,6 +1363,7 @@
          fhir:reference [ fhir:v "Patient/EspenEksempel" ]
        ] ;
        fhir:name [ fhir:v "EspenEksempel" ] ;
+       fhir:description [ fhir:v "Eksempel på pasient med fødselsnummer, navn, telefonnummer, adresse, sivilstand og fastlege." ] ;
        fhir:example [
          a fhir:Canonical ;
          fhir:v "http://hl7.no/fhir/ig/StructureDefinition/no-basis-Patient"^^xsd:anyURI ;
@@ -1383,6 +1385,7 @@
          fhir:reference [ fhir:v "Patient/JanniceSoreng" ]
        ] ;
        fhir:name [ fhir:v "JanniceSoreng" ] ;
+       fhir:description [ fhir:v "Eksempel på pasient med fødselsnummer, navn, telefonnummer, adresse, sivilstand og fastlege." ] ;
        fhir:example [
          a fhir:Canonical ;
          fhir:v "http://hl7.no/fhir/ig/StructureDefinition/no-basis-Patient"^^xsd:anyURI ;
@@ -1404,6 +1407,7 @@
          fhir:reference [ fhir:v "Patient/JanniceSorengTo" ]
        ] ;
        fhir:name [ fhir:v "JanniceSorengTo" ] ;
+       fhir:description [ fhir:v "Eksempel på pasient med fødselsnummer, navn, telefonnummer, adresse, sivilstand og fastlege." ] ;
        fhir:example [
          a fhir:Canonical ;
          fhir:v "http://hl7.no/fhir/ig/StructureDefinition/no-basis-Patient"^^xsd:anyURI ;
@@ -1425,6 +1429,7 @@
          fhir:reference [ fhir:v "Practitioner/Magnar-Komann-Practitioner" ]
        ] ;
        fhir:name [ fhir:v "Magnar-Komann-Practitioner" ] ;
+       fhir:description [ fhir:v "Eksempel på helsepersonell med identifikator, navn, telefonnummer, adresse og kvalifikasjoner." ] ;
        fhir:example [
          a fhir:Canonical ;
          fhir:v "http://hl7.no/fhir/ig/StructureDefinition/no-basis-Practitioner"^^xsd:anyURI ;
@@ -1698,6 +1703,7 @@
          fhir:reference [ fhir:v "ValueSet/no-basis-documentreference-type.valueset" ]
        ] ;
        fhir:name [ fhir:v "no-basis-documentreference-type.valueset" ] ;
+       fhir:description [ fhir:v "Kodeverket er for å angi dokumenttype når man skal dele et dokument i en XDS-løsning. Kodeverket er også harmonert med eksisterende kodeverk for dokumenttyper og journalstruktur i den grad dette har vært mulig. Dette gjelder primært følgende kodeverk: - 9066 Kategori journalinformasjon - 9601 Emneorienterte sakstyper (Piene inndelingen)" ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -1929,6 +1935,27 @@
        ] ;
        fhir:name [ fhir:v "no-basis-HumanName" ] ;
        fhir:description [ fhir:v "Basisprofil for Norwegian HumanName. Defined by The Norwegian Directorate of eHealth and HL7 Norway. The profile adds the concept of middlename and further explains of the use for the data-elements in a Norwegian context. The basis profile is open, but derived profiles should close down the information elements according to specification relevant to the use-case." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "NamingSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.no/fhir/ig/NamingSystem/no-basis-icpc-2> ;
+         fhir:reference [ fhir:v "NamingSystem/no-basis-icpc-2" ]
+       ] ;
+       fhir:name [ fhir:v "no-basis-icpc-2" ] ;
+       fhir:description [ fhir:v "In Norway primary care uses ICPC-2 to document contact-reason, health related problem and diagnosis." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -2370,9 +2397,8 @@
        ] ;
        fhir:name [ fhir:v "no-basis-Procedure-example" ] ;
        fhir:example [
-         a fhir:Canonical ;
-         fhir:v "http://hl7.no/fhir/StructureDefinition/no-basis-Procedure"^^xsd:anyURI ;
-         fhir:l <http://hl7.no/fhir/StructureDefinition/no-basis-Procedure>
+         a fhir:Boolean ;
+         fhir:v true
        ]
      ] [
        fhir:extension ( [
@@ -2571,27 +2597,6 @@
          ] ;
          fhir:value [
            a fhir:String ;
-           fhir:v "NamingSystem"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:l <http://hl7.no/fhir/ig/NamingSystem/no-basis-icpc-2> ;
-         fhir:reference [ fhir:v "NamingSystem/no-basis-icpc-2" ]
-       ] ;
-       fhir:name [ fhir:v "NoBasisICPC2" ] ;
-       fhir:description [ fhir:v "In Norway primary care uses ICPC-2 to document contact-reason, health related problem and diagnosis." ] ;
-       fhir:example [
-         a fhir:Boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
            fhir:v "Patient"
          ]
        ] ) ;
@@ -2643,8 +2648,8 @@
          fhir:l <http://hl7.no/fhir/ig/AppointmentResponse/PatientAppointmentResponseExample> ;
          fhir:reference [ fhir:v "AppointmentResponse/PatientAppointmentResponseExample" ]
        ] ;
-       fhir:name [ fhir:v "PatientAppointmentResponseExample" ] ;
-       fhir:description [ fhir:v "Example of Patient response to an appointment using no-basis profile. The profile is identical to the basis profile axept there is a extension that can be used for patient to signal if the patient can come on short notice to an appointment. The example is similar to http://hl7.org/fhir/R4/appointmentresponse-example.json.html with adition for the extension." ] ;
+       fhir:name [ fhir:v "Patient Appointment Response Example" ] ;
+       fhir:description [ fhir:v "Example of Patient response to an appointment using no-basis profile. The profile is identical to the basis profile except there is an extension that can be used for patient to signal if the patient can come on short notice to an appointment. The example is similar to http://hl7.org/fhir/R4/appointmentresponse-example.json.html with addition for the extension." ] ;
        fhir:example [
          a fhir:Canonical ;
          fhir:v "http://hl7.no/fhir/ig/StructureDefinition/no-basis-AppointmentResponse"^^xsd:anyURI ;
@@ -2665,7 +2670,7 @@
          fhir:l <http://hl7.no/fhir/ig/Patient/PatientExample> ;
          fhir:reference [ fhir:v "Patient/PatientExample" ]
        ] ;
-       fhir:name [ fhir:v "PatientExample" ] ;
+       fhir:name [ fhir:v "Patient Example" ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v true
@@ -2686,6 +2691,7 @@
          fhir:reference [ fhir:v "RelatedPerson/Solid-Aresdoktor-RelatedPerson" ]
        ] ;
        fhir:name [ fhir:v "Solid-Aresdoktor-RelatedPerson" ] ;
+       fhir:description [ fhir:v "Eksempel på pårørende med fødselsnummer, navn, telefonnummer, adresse, sivilstand og relasjon til pasient." ] ;
        fhir:example [
          a fhir:Canonical ;
          fhir:v "http://hl7.no/fhir/ig/StructureDefinition/no-basis-RelatedPerson"^^xsd:anyURI ;
@@ -2707,6 +2713,7 @@
          fhir:reference [ fhir:v "RelatedPerson/Sorgard-Erlend-RelatedPerson" ]
        ] ;
        fhir:name [ fhir:v "Sorgard-Erlend-RelatedPerson" ] ;
+       fhir:description [ fhir:v "Eksempel på pårørende med fødselsnummer, navn, telefonnummer, adresse, sivilstand og relasjon til pasient." ] ;
        fhir:example [
          a fhir:Canonical ;
          fhir:v "http://hl7.no/fhir/ig/StructureDefinition/no-basis-RelatedPerson"^^xsd:anyURI ;

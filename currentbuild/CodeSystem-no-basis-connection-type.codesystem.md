@@ -16,7 +16,7 @@ Codes to describe Norwegian message based communication protocols.
 
  This Code system is referenced in the content logical definition of the following value sets: 
 
-* [NoBasisConnectionTypeVS](ValueSet-no-basis-connection-type.valueset.md)
+* [NoBasisConnectionType](ValueSet-no-basis-connection-type.valueset.md)
 
 
 
@@ -31,6 +31,7 @@ Codes to describe Norwegian message based communication protocols.
   "name" : "NoBasisConnectionType",
   "title" : "no-basis-connection-type.codesystem",
   "status" : "active",
+  "experimental" : false,
   "date" : "2019-05-15T00:00:00+00:00",
   "description" : "Codes to describe Norwegian message based communication protocols.",
   "jurisdiction" : [
@@ -44,6 +45,7 @@ Codes to describe Norwegian message based communication protocols.
       ]
     }
   ],
+  "caseSensitive" : true,
   "content" : "complete",
   "count" : 2,
   "concept" : [

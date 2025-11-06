@@ -11,7 +11,7 @@
   },
   "url" : "http://hl7.no/fhir/ValueSet/no-basis-connection-type",
   "version" : "2.2.3-test",
-  "name" : "NoBasisConnectionTypeVS",
+  "name" : "NoBasisConnectionType",
   "title" : "no-basis-connection-type.valueset",
   "status" : "active",
   "experimental" : true,

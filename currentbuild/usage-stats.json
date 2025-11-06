@@ -387,12 +387,6 @@
     }
   ],
   "profiles": {
-    "Procedure": [
-      {
-        "url": "http://hl7.no/fhir/StructureDefinition/no-basis-Procedure",
-        "title": "no-basis-Procedure"
-      }
-    ],
     "Person": [
       {
         "url": "http://hl7.no/fhir/ig/StructureDefinition/no-basis-Person",
@@ -483,6 +477,12 @@
         "title": "no-basis-PractitionerRole"
       }
     ],
+    "Procedure": [
+      {
+        "url": "http://hl7.no/fhir/ig/StructureDefinition/no-basis-Procedure",
+        "title": "no-basis-Procedure"
+      }
+    ],
     "RelatedPerson": [
       {
         "url": "http://hl7.no/fhir/ig/StructureDefinition/no-basis-RelatedPerson",
@@ -568,6 +568,7 @@
       "StructureDefinition.snapshot.element.constraint"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.differential.element.binding",
       "StructureDefinition.snapshot.element.binding"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [

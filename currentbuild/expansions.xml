@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="118b0f6e-47bd-493e-897a-af6c5c44ef05"/>
+  <id value="5c773cc3-c81d-401a-8e64-2cd59ee2db2d"/>
   <meta>
-    <lastUpdated value="2025-11-06T08:50:45.618+00:00"/>
+    <lastUpdated value="2025-11-06T15:29:54.072+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -421,7 +421,7 @@
         </text>
         <url value="http://hl7.no/fhir/ValueSet/no-basis-connection-type"/>
         <version value="2.2.3-test"/>
-        <name value="NoBasisConnectionTypeVS"/>
+        <name value="NoBasisConnectionType"/>
         <title value="no-basis-connection-type.valueset"/>
         <status value="active"/>
         <experimental value="true"/>
@@ -435,8 +435,8 @@
         </jurisdiction>
         <immutable value="false"/>
         <expansion>
-          <identifier value="urn:uuid:f688f538-7900-4339-a155-ec07fb6ca34c"/>
-          <timestamp value="2025-11-06T08:52:19+00:00"/>
+          <identifier value="urn:uuid:9a1255c7-4d5c-434c-8a33-7296e9343c20"/>
+          <timestamp value="2025-11-06T15:31:28+00:00"/>
           <total value="17"/>
           <offset value="0"/>
           <parameter>
@@ -751,7 +751,7 @@
         </text>
         <url value="http://hl7.no/fhir/ValueSet/no-basis-family-relation"/>
         <version value="2.2.3-test"/>
-        <name value="NoBasisFamilyRelationVS"/>
+        <name value="NoBasisFamilyRelation"/>
         <title value="no-basis-family-relation.valueset"/>
         <status value="active"/>
         <experimental value="true"/>
@@ -765,8 +765,8 @@
         </jurisdiction>
         <immutable value="false"/>
         <expansion>
-          <identifier value="urn:uuid:91f5fbdd-2714-43d5-bab4-329a15c0a45a"/>
-          <timestamp value="2025-11-06T08:52:20+00:00"/>
+          <identifier value="urn:uuid:2e7d9c57-3fd2-4700-9b0c-9cde5dd4ed2d"/>
+          <timestamp value="2025-11-06T15:31:29+00:00"/>
           <total value="7"/>
           <offset value="0"/>
           <parameter>
@@ -1059,7 +1059,7 @@
         </text>
         <url value="http://hl7.no/fhir/ValueSet/no-basis-marital-status"/>
         <version value="2.2.3-test"/>
-        <name value="NoBasisMaritalStatusVS"/>
+        <name value="NoBasisMaritalStatus"/>
         <title value="no-basis-marital-status.valueset"/>
         <status value="active"/>
         <experimental value="true"/>
@@ -1073,8 +1073,8 @@
         </jurisdiction>
         <immutable value="false"/>
         <expansion>
-          <identifier value="urn:uuid:8efa4ce7-789c-4c64-aed3-d5299c6763ac"/>
-          <timestamp value="2025-11-06T08:52:20+00:00"/>
+          <identifier value="urn:uuid:d73a4595-9130-4791-90e9-b4b1d9b8c98a"/>
+          <timestamp value="2025-11-06T15:31:29+00:00"/>
           <total value="10"/>
           <offset value="0"/>
           <parameter>
@@ -1312,7 +1312,7 @@
         </text>
         <url value="http://hl7.no/fhir/ValueSet/no-basis-parental-responsibility"/>
         <version value="2.2.3-test"/>
-        <name value="NoBasisParentalResponsibilityVS"/>
+        <name value="NoBasisParentalResponsibility"/>
         <title value="no-basis-parental-responsibility.valueset"/>
         <status value="active"/>
         <experimental value="true"/>
@@ -1326,8 +1326,8 @@
         </jurisdiction>
         <immutable value="false"/>
         <expansion>
-          <identifier value="urn:uuid:0c8221de-f3ee-46d8-90da-965f9f3bbc7d"/>
-          <timestamp value="2025-11-06T08:52:20+00:00"/>
+          <identifier value="urn:uuid:abe250b2-245d-4eea-8550-1901213af29a"/>
+          <timestamp value="2025-11-06T15:31:29+00:00"/>
           <total value="6"/>
           <offset value="0"/>
           <parameter>

@@ -41,7 +41,7 @@ The model under visualizes the role of Norwegian base profiles. On top are the F
   "version" : "2.2.3-test",
   "name" : "NoBasis",
   "status" : "active",
-  "date" : "2025-11-06T08:50:45+00:00",
+  "date" : "2025-11-06T15:29:54+00:00",
   "jurisdiction" : [
     {
       "coding" : [
@@ -750,7 +750,7 @@ The model under visualizes the role of Norwegian base profiles. On top are the F
         "reference" : {
           "reference" : "Appointment/AppointmentExample"
         },
-        "name" : "AppointmentExample",
+        "name" : "Appointment Example",
         "description" : "Discussion on the results of your recent MRI",
         "exampleCanonical" : "http://hl7.no/fhir/ig/StructureDefinition/no-basis-Appointment"
       },
@@ -779,6 +779,7 @@ The model under visualizes the role of Norwegian base profiles. On top are the F
           "reference" : "Organization/Direktoratet-for-eHelse-Organization"
         },
         "name" : "Direktoratet-for-eHelse-Organization",
+        "description" : "Example of an organization using no-basis profile. The profile is identical to the basis profile except there is an extension that can be used for official addresses.",
         "exampleCanonical" : "http://hl7.no/fhir/ig/StructureDefinition/no-basis-Organization"
       },
       {
@@ -792,6 +793,7 @@ The model under visualizes the role of Norwegian base profiles. On top are the F
           "reference" : "Patient/EspenEksempel"
         },
         "name" : "EspenEksempel",
+        "description" : "Eksempel på pasient med fødselsnummer, navn, telefonnummer, adresse, sivilstand og fastlege.",
         "exampleCanonical" : "http://hl7.no/fhir/ig/StructureDefinition/no-basis-Patient"
       },
       {
@@ -805,6 +807,7 @@ The model under visualizes the role of Norwegian base profiles. On top are the F
           "reference" : "Patient/JanniceSoreng"
         },
         "name" : "JanniceSoreng",
+        "description" : "Eksempel på pasient med fødselsnummer, navn, telefonnummer, adresse, sivilstand og fastlege.",
         "exampleCanonical" : "http://hl7.no/fhir/ig/StructureDefinition/no-basis-Patient"
       },
       {
@@ -818,6 +821,7 @@ The model under visualizes the role of Norwegian base profiles. On top are the F
           "reference" : "Patient/JanniceSorengTo"
         },
         "name" : "JanniceSorengTo",
+        "description" : "Eksempel på pasient med fødselsnummer, navn, telefonnummer, adresse, sivilstand og fastlege.",
         "exampleCanonical" : "http://hl7.no/fhir/ig/StructureDefinition/no-basis-Patient"
       },
       {
@@ -831,6 +835,7 @@ The model under visualizes the role of Norwegian base profiles. On top are the F
           "reference" : "Practitioner/Magnar-Komann-Practitioner"
         },
         "name" : "Magnar-Komann-Practitioner",
+        "description" : "Eksempel på helsepersonell med identifikator, navn, telefonnummer, adresse og kvalifikasjoner.",
         "exampleCanonical" : "http://hl7.no/fhir/ig/StructureDefinition/no-basis-Practitioner"
       },
       {
@@ -1012,6 +1017,7 @@ The model under visualizes the role of Norwegian base profiles. On top are the F
           "reference" : "ValueSet/no-basis-documentreference-type.valueset"
         },
         "name" : "no-basis-documentreference-type.valueset",
+        "description" : "Kodeverket er for å angi dokumenttype når man skal dele et dokument i en XDS-løsning. Kodeverket er også harmonert med eksisterende kodeverk for dokumenttyper og journalstruktur i den grad dette har vært mulig. Dette gjelder primært følgende kodeverk: - 9066 Kategori journalinformasjon - 9601 Emneorienterte sakstyper (Piene inndelingen)",
         "exampleBoolean" : false
       },
       {
@@ -1165,6 +1171,20 @@ The model under visualizes the role of Norwegian base profiles. On top are the F
         },
         "name" : "no-basis-HumanName",
         "description" : "Basisprofil for Norwegian HumanName. Defined by The Norwegian Directorate of eHealth and HL7 Norway. The profile adds the concept of middlename and further explains of the use for the data-elements in a Norwegian context. The basis profile is open, but derived profiles should close down the information elements according to specification relevant to the use-case.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "NamingSystem"
+          }
+        ],
+        "reference" : {
+          "reference" : "NamingSystem/no-basis-icpc-2"
+        },
+        "name" : "no-basis-icpc-2",
+        "description" : "In Norway primary care uses ICPC-2 to document contact-reason, health related problem and diagnosis.",
         "exampleBoolean" : false
       },
       {
@@ -1458,7 +1478,7 @@ The model under visualizes the role of Norwegian base profiles. On top are the F
           "reference" : "Procedure/no-basis-Procedure-example"
         },
         "name" : "no-basis-Procedure-example",
-        "exampleCanonical" : "http://hl7.no/fhir/StructureDefinition/no-basis-Procedure"
+        "exampleBoolean" : true
       },
       {
         "extension" : [
@@ -1590,20 +1610,6 @@ The model under visualizes the role of Norwegian base profiles. On top are the F
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "NamingSystem"
-          }
-        ],
-        "reference" : {
-          "reference" : "NamingSystem/no-basis-icpc-2"
-        },
-        "name" : "NoBasisICPC2",
-        "description" : "In Norway primary care uses ICPC-2 to document contact-reason, health related problem and diagnosis.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "Patient"
           }
         ],
@@ -1638,8 +1644,8 @@ The model under visualizes the role of Norwegian base profiles. On top are the F
         "reference" : {
           "reference" : "AppointmentResponse/PatientAppointmentResponseExample"
         },
-        "name" : "PatientAppointmentResponseExample",
-        "description" : "Example of Patient response to an appointment using no-basis profile. The profile is identical to the basis profile axept there is a extension that can be used for patient to signal if the patient can come on short notice to an appointment. The example is similar to http://hl7.org/fhir/R4/appointmentresponse-example.json.html with adition for the extension.",
+        "name" : "Patient Appointment Response Example",
+        "description" : "Example of Patient response to an appointment using no-basis profile. The profile is identical to the basis profile except there is an extension that can be used for patient to signal if the patient can come on short notice to an appointment. The example is similar to http://hl7.org/fhir/R4/appointmentresponse-example.json.html with addition for the extension.",
         "exampleCanonical" : "http://hl7.no/fhir/ig/StructureDefinition/no-basis-AppointmentResponse"
       },
       {
@@ -1652,7 +1658,7 @@ The model under visualizes the role of Norwegian base profiles. On top are the F
         "reference" : {
           "reference" : "Patient/PatientExample"
         },
-        "name" : "PatientExample",
+        "name" : "Patient Example",
         "exampleBoolean" : true
       },
       {
@@ -1666,6 +1672,7 @@ The model under visualizes the role of Norwegian base profiles. On top are the F
           "reference" : "RelatedPerson/Solid-Aresdoktor-RelatedPerson"
         },
         "name" : "Solid-Aresdoktor-RelatedPerson",
+        "description" : "Eksempel på pårørende med fødselsnummer, navn, telefonnummer, adresse, sivilstand og relasjon til pasient.",
         "exampleCanonical" : "http://hl7.no/fhir/ig/StructureDefinition/no-basis-RelatedPerson"
       },
       {
@@ -1679,6 +1686,7 @@ The model under visualizes the role of Norwegian base profiles. On top are the F
           "reference" : "RelatedPerson/Sorgard-Erlend-RelatedPerson"
         },
         "name" : "Sorgard-Erlend-RelatedPerson",
+        "description" : "Eksempel på pårørende med fødselsnummer, navn, telefonnummer, adresse, sivilstand og relasjon til pasient.",
         "exampleCanonical" : "http://hl7.no/fhir/ig/StructureDefinition/no-basis-RelatedPerson"
       }
     ],

@@ -1,10 +1,10 @@
-# PatientAppointmentResponseExample - v2.2.3-test
+# Patient Appointment Response Example - v2.2.3-test
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **PatientAppointmentResponseExample**
+* **Patient Appointment Response Example**
 
-## Example AppointmentResponse: PatientAppointmentResponseExample
+## Example AppointmentResponse: Patient Appointment Response Example
 
 Profile: [no-basis-AppointmentResponse](StructureDefinition-no-basis-AppointmentResponse.md)
 

@@ -1,16 +1,16 @@
 NoBasis : Validation Results
 =========================================
 
-err = 75, warn = 162, info = 40
-IG Publisher Version: 2.0.25
-Generated Thu Nov 06 08:53:04 UTC 2025. FHIR version 4.0.1 for hl7.fhir.no.basis#2.2.3-test (canonical = http://hl7.no/fhir/ig)
- Build Errors : 2 / 35 / 0
+err = 63, warn = 157, info = 36
+IG Publisher Version: 2.0.26
+Generated Thu Nov 06 15:32:10 UTC 2025. FHIR version 4.0.1 for hl7.fhir.no.basis#2.2.3-test (canonical = http://hl7.no/fhir/ig)
+ Build Errors : 2 / 27 / 0
  /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/Appointment-AppointmentExample : 0 / 1 / 3
  /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/AppointmentResponse-PatientAppointmentResponseExample : 1 / 0 / 1
- /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/CodeSystem-no-basis-connection-type.codesystem : 4 / 0 / 2
- /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/CodeSystem-no-basis-family-relation.codesystem : 4 / 1 / 2
- /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/CodeSystem-no-basis-marital-status.codesystem : 4 / 0 / 2
- /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/CodeSystem-no-basis-parental-responsibility.codesystem : 4 / 1 / 2
+ /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/CodeSystem-no-basis-connection-type.codesystem : 2 / 0 / 1
+ /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/CodeSystem-no-basis-family-relation.codesystem : 2 / 1 / 1
+ /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/CodeSystem-no-basis-marital-status.codesystem : 2 / 0 / 1
+ /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/CodeSystem-no-basis-parental-responsibility.codesystem : 2 / 1 / 1
  /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/HealthcareService-no-basis-HealthcareService-example : 0 / 8 / 2
  /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/ImplementationGuide-hl7.fhir.no.basis : 0 / 0 / 1
  /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/NamingSystem-no-basis-bydelsnummer : 0 / 0 / 1
@@ -19,6 +19,7 @@ Generated Thu Nov 06 08:53:04 UTC 2025. FHIR version 4.0.1 for hl7.fhir.no.basis
  /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/NamingSystem-no-basis-felleshjelpenummer : 0 / 0 / 1
  /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/NamingSystem-no-basis-foedselsnummer : 0 / 0 / 1
  /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/NamingSystem-no-basis-helsepersonellnummer : 0 / 0 / 1
+ /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/NamingSystem-no-basis-icpc-2 : 0 / 0 / 1
  /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/NamingSystem-no-basis-kommunenummer : 0 / 0 / 1
  /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/Organization-Direktoratet-for-eHelse-Organization : 2 / 3 / 3
  /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/Patient-EspenEksempel : 3 / 4 / 5
@@ -49,6 +50,7 @@ Generated Thu Nov 06 08:53:04 UTC 2025. FHIR version 4.0.1 for hl7.fhir.no.basis
  /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/StructureDefinition-no-basis-Person : 0 / 1 / 1
  /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/StructureDefinition-no-basis-Practitioner : 0 / 6 / 1
  /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/StructureDefinition-no-basis-PractitionerRole : 0 / 5 / 1
+ /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/StructureDefinition-no-basis-Procedure : 0 / 1 / 1
  /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/StructureDefinition-no-basis-RelatedPerson : 0 / 6 / 1
  /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/StructureDefinition-no-basis-Substance : 0 / 1 / 1
  /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/StructureDefinition-no-basis-address-official : 0 / 0 / 1
@@ -65,15 +67,13 @@ Generated Thu Nov 06 08:53:04 UTC 2025. FHIR version 4.0.1 for hl7.fhir.no.basis
  /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/StructureDefinition-no-basis-urban-district : 0 / 1 / 1
  /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/StructureDefinition-no-basis-virtual-service : 0 / 1 / 1
  /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/ValueSet-no-basis-connection-type.valueset : 2 / 0 / 1
- /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/ValueSet-no-basis-documentreference-type.valueset : 5 / 1 / 2
+ /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/ValueSet-no-basis-documentreference-type.valueset : 3 / 1 / 2
  /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/ValueSet-no-basis-family-relation.valueset : 2 / 0 / 1
  /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/ValueSet-no-basis-marital-status.valueset : 2 / 0 / 1
  /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/ValueSet-no-basis-parental-responsibility.valueset : 2 / 0 / 1
  /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/ValueSet-no-basis-service-type.valueset : 3 / 8 / 1
  /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/ValueSet-no-basis-virtual-service-type.valueset : 3 / 1 / 1
- /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/input/examples/no-basis-Procedure-example : 5 / 0 / 3
- /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/input/profiles/no-basis-Procedure.StructureDefinition : 2 / 0 / 1
- /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/input/resources/no-basis-icpc-2.namingsystem : 0 / 0 / 1
+ /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/input/examples/no-basis-Procedure-example : 5 / 2 / 3
 </table>
 == n/a ==
 WARNING: Address.extension: The reference urn:oid:2.16.578.1.12.4.1.1.3403 could not be resolved
@@ -95,19 +95,11 @@ WARNING: Practitioner.qualification.code.coding: The reference urn:oid:2.16.578.
 WARNING: Practitioner.qualification.code.coding: The reference urn:oid:2.16.578.1.12.4.1.1.7426 could not be resolved
 WARNING: PractitionerRole.code: The reference urn:oid:2.16.578.1.12.4.1.1.9034 could not be resolved
 WARNING: Extension.extension.value: The reference urn:oid:2.16.578.1.12.4.1.1.3402 could not be resolved
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/no-basis-documentreference-type.valueset.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Organization/Direktoratet-for-eHelse-Organization.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/EspenEksempel.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/JanniceSoreng.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/JanniceSorengTo.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Practitioner/Magnar-Komann-Practitioner.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/PatientExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource RelatedPerson/Solid-Aresdoktor-RelatedPerson.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource RelatedPerson/Sorgard-Erlend-RelatedPerson.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource HealthcareService/no-basis-HealthcareService-example.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Procedure/no-basis-Procedure-example.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: Procedure-no-basis-Procedure-example.html#/html/body/div/div/div/div/div/div/p/a at Line 242, column 596: The link 'Patient/example' for "Patient/example" cannot be resolved
-ERROR: Procedure-no-basis-Procedure-example.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 242, column 924: The link 'Practitioner/example' for "Practitioner/example" cannot be resolved
+ERROR: Procedure-no-basis-Procedure-example.html#/html/body/div/div/div/div/div/div/p/a at Line 242, column 590: The link 'Patient/example' for "Patient/example" cannot be resolved
+ERROR: Procedure-no-basis-Procedure-example.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 242, column 918: The link 'Practitioner/example' for "Practitioner/example" cannot be resolved
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide
@@ -121,28 +113,16 @@ INFORMATION: Appointment/AppointmentExample: Appointment.appointmentType.coding[
 ERROR: AppointmentResponse/PatientAppointmentResponseExample: AppointmentResponse: Constraint failed: shortnotice-inv-1: 'The 'shortNotice' extension can only be used when the 'actor' is of type 'Patient'.' (defined in http://hl7.no/fhir/ig/StructureDefinition/no-basis-AppointmentResponse)
 == fsh-generated/resources/CodeSystem-no-basis-connection-type.codesystem.json ==
 ERROR: CodeSystem.where(url = 'http://hl7.no/fhir/CodeSystem/no-basis-connection-type'): Conformance resource /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/CodeSystem-no-basis-connection-type.codesystem.json - the canonical URL (http://hl7.no/fhir/ig/CodeSystem/no-basis-connection-type.codesystem) does not match the URL (http://hl7.no/fhir/CodeSystem/no-basis-connection-type). Use the special-url parameter if you really mean for it not to match
-INFORMATION: CodeSystem/no-basis-connection-type.codesystem: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
-ERROR: CodeSystem/no-basis-connection-type.codesystem: CodeSystem: Code systems published by HL7 SHALL conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
-ERROR: CodeSystem/no-basis-connection-type.codesystem: CodeSystem: Code systems published by HL7 SHALL conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
 ERROR: /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/CodeSystem-no-basis-connection-type.codesystem: URL Mismatch http://hl7.no/fhir/ig/CodeSystem/no-basis-connection-type.codesystem vs http://hl7.no/fhir/CodeSystem/no-basis-connection-type
 == fsh-generated/resources/CodeSystem-no-basis-family-relation.codesystem.json ==
 ERROR: CodeSystem.where(url = 'http://hl7.no/fhir/CodeSystem/no-basis-family-relation'): Conformance resource /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/CodeSystem-no-basis-family-relation.codesystem.json - the canonical URL (http://hl7.no/fhir/ig/CodeSystem/no-basis-family-relation.codesystem) does not match the URL (http://hl7.no/fhir/CodeSystem/no-basis-family-relation). Use the special-url parameter if you really mean for it not to match
-INFORMATION: CodeSystem/no-basis-family-relation.codesystem: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
-ERROR: CodeSystem/no-basis-family-relation.codesystem: CodeSystem: Code systems published by HL7 SHALL conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
-ERROR: CodeSystem/no-basis-family-relation.codesystem: CodeSystem: Code systems published by HL7 SHALL conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
 WARNING: CodeSystem/no-basis-family-relation.codesystem: CodeSystem.concept[0]: HL7 Defined CodeSystems should ensure that every concept has a definition
 ERROR: /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/CodeSystem-no-basis-family-relation.codesystem: URL Mismatch http://hl7.no/fhir/ig/CodeSystem/no-basis-family-relation.codesystem vs http://hl7.no/fhir/CodeSystem/no-basis-family-relation
 == fsh-generated/resources/CodeSystem-no-basis-marital-status.codesystem.json ==
 ERROR: CodeSystem.where(url = 'http://hl7.no/fhir/CodeSystem/no-basis-marital-status'): Conformance resource /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/CodeSystem-no-basis-marital-status.codesystem.json - the canonical URL (http://hl7.no/fhir/ig/CodeSystem/no-basis-marital-status.codesystem) does not match the URL (http://hl7.no/fhir/CodeSystem/no-basis-marital-status). Use the special-url parameter if you really mean for it not to match
-INFORMATION: CodeSystem/no-basis-marital-status.codesystem: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
-ERROR: CodeSystem/no-basis-marital-status.codesystem: CodeSystem: Code systems published by HL7 SHALL conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
-ERROR: CodeSystem/no-basis-marital-status.codesystem: CodeSystem: Code systems published by HL7 SHALL conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
 ERROR: /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/CodeSystem-no-basis-marital-status.codesystem: URL Mismatch http://hl7.no/fhir/ig/CodeSystem/no-basis-marital-status.codesystem vs http://hl7.no/fhir/CodeSystem/no-basis-marital-status
 == fsh-generated/resources/CodeSystem-no-basis-parental-responsibility.codesystem.json ==
 ERROR: CodeSystem.where(url = 'http://hl7.no/fhir/CodeSystem/no-basis-parental-responsibility'): Conformance resource /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/CodeSystem-no-basis-parental-responsibility.codesystem.json - the canonical URL (http://hl7.no/fhir/ig/CodeSystem/no-basis-parental-responsibility.codesystem) does not match the URL (http://hl7.no/fhir/CodeSystem/no-basis-parental-responsibility). Use the special-url parameter if you really mean for it not to match
-INFORMATION: CodeSystem/no-basis-parental-responsibility.codesystem: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
-ERROR: CodeSystem/no-basis-parental-responsibility.codesystem: CodeSystem: Code systems published by HL7 SHALL conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
-ERROR: CodeSystem/no-basis-parental-responsibility.codesystem: CodeSystem: Code systems published by HL7 SHALL conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
 WARNING: CodeSystem/no-basis-parental-responsibility.codesystem: CodeSystem.concept[0]: HL7 Defined CodeSystems should ensure that every concept has a definition
 ERROR: /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/CodeSystem-no-basis-parental-responsibility.codesystem: URL Mismatch http://hl7.no/fhir/ig/CodeSystem/no-basis-parental-responsibility.codesystem vs http://hl7.no/fhir/CodeSystem/no-basis-parental-responsibility
 == fsh-generated/resources/HealthcareService-no-basis-HealthcareService-example.json ==
@@ -162,6 +142,7 @@ WARNING: HealthcareService/no-basis-HealthcareService-example: HealthcareService
 == fsh-generated/resources/NamingSystem-no-basis-felleshjelpenummer.json ==
 == fsh-generated/resources/NamingSystem-no-basis-foedselsnummer.json ==
 == fsh-generated/resources/NamingSystem-no-basis-helsepersonellnummer.json ==
+== fsh-generated/resources/NamingSystem-no-basis-icpc-2.json ==
 == fsh-generated/resources/NamingSystem-no-basis-kommunenummer.json ==
 == fsh-generated/resources/Organization-Direktoratet-for-eHelse-Organization.json ==
 WARNING: Organization/Direktoratet-for-eHelse-Organization: Organization.identifier[0].system: No definition could be found for URL value 'urn:oid:2.16.578.1.12.4.1.4.101'
@@ -340,6 +321,8 @@ WARNING: StructureDefinition/no-basis-PractitionerRole: StructureDefinition.snap
 WARNING: StructureDefinition/no-basis-PractitionerRole: StructureDefinition.differential.element[2].binding.valueSet: A definition could not be found for Canonical URL 'urn:oid:2.16.578.1.12.4.1.1.9034'
 WARNING: StructureDefinition/no-basis-PractitionerRole: StructureDefinition.differential.element[6].binding.valueSet: A definition could not be found for Canonical URL 'urn:oid:2.16.578.1.12.4.1.1.8451'
 WARNING: StructureDefinition.where(url = 'http://hl7.no/fhir/ig/StructureDefinition/no-basis-PractitionerRole'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-no-basis-Procedure.json ==
+WARNING: StructureDefinition.where(url = 'http://hl7.no/fhir/ig/StructureDefinition/no-basis-Procedure'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-no-basis-RelatedPerson.json ==
 WARNING: StructureDefinition/no-basis-RelatedPerson: StructureDefinition.differential.element[10].binding: The definition for the element 'RelatedPerson.relationship' binds to the value set 'http://hl7.no/fhir/ValueSet/no-basis-marital-status' which is experimental, but this structure is not labeled as experimental
 WARNING: StructureDefinition/no-basis-RelatedPerson: StructureDefinition.differential.element[12].binding: The definition for the element 'RelatedPerson.relationship' binds to the value set 'http://hl7.no/fhir/ValueSet/no-basis-family-relation' which is experimental, but this structure is not labeled as experimental
@@ -382,8 +365,6 @@ ERROR: /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/res
 ERROR: ValueSet.where(url = 'http://hl7.no/fhir/ValueSet/no-basis-documentreference-type'): Conformance resource /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/ValueSet-no-basis-documentreference-type.valueset.json - the canonical URL (http://hl7.no/fhir/ig/ValueSet/no-basis-documentreference-type.valueset) does not match the URL (http://hl7.no/fhir/ValueSet/no-basis-documentreference-type). Use the special-url parameter if you really mean for it not to match
 WARNING: ValueSet/no-basis-documentreference-type.valueset: ValueSet.compose.include[0].system: No definition could be found for URL value 'urn:oid:2.16.578.1.12.4.1.1.9602'
 INFORMATION: ValueSet/no-basis-documentreference-type.valueset: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because the code system is not known, and no terminology service supports it
-ERROR: ValueSet/no-basis-documentreference-type.valueset: ValueSet: Value sets published by HL7 SHALL conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-ERROR: ValueSet/no-basis-documentreference-type.valueset: ValueSet: Value sets published by HL7 SHALL conform to the ShareableValueSet profile, which says that the element ValueSet.description is mandatory, but it is not present
 ERROR: ValueSet.where(id = 'no-basis-documentreference-type.valueset'): Error from https://tx.fhir.org/r4: A definition for CodeSystem 'urn:oid:2.16.578.1.12.4.1.1.9602' could not be found, so the value set cannot be expanded
 ERROR: /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/ValueSet-no-basis-documentreference-type.valueset: URL Mismatch http://hl7.no/fhir/ig/ValueSet/no-basis-documentreference-type.valueset vs http://hl7.no/fhir/ValueSet/no-basis-documentreference-type
 == fsh-generated/resources/ValueSet-no-basis-family-relation.valueset.json ==
@@ -413,14 +394,12 @@ WARNING: ValueSet/no-basis-virtual-service-type.valueset: ValueSet.compose.inclu
 ERROR: ValueSet.where(id = 'no-basis-virtual-service-type.valueset'): Error from https://tx.fhir.org/r4: A definition for CodeSystem 'urn:oid:2.16.840.1.113883.4.642.4.1809' could not be found, so the value set cannot be expanded
 ERROR: /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/ValueSet-no-basis-virtual-service-type.valueset: URL Mismatch http://hl7.no/fhir/ig/ValueSet/no-basis-virtual-service-type.valueset vs http://hl7.no/fhir/ValueSet/no-basis-virtual-service-type
 == input/examples/no-basis-Procedure-example.xml ==
+WARNING: Procedure/no-basis-Procedure-example: Procedure.meta.profile[0]: A definition could not be found for Canonical URL 'http://hl7.no/fhir/StructureDefinition/no-basis-Procedure'
 INFORMATION: Procedure/no-basis-Procedure-example: Procedure.code.coding[0].display: 'Colonoscopy (procedure)' is the default display; the code system http://snomed.info/sct has no Display Names for the language no-NO
 ERROR: Procedure/no-basis-Procedure-example: Procedure.subject: Unable to resolve resource with reference 'Patient/example'
 ERROR: Procedure/no-basis-Procedure-example: Procedure.performer[0].function.coding[0].code: Unknown code '8921000202108' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
 ERROR: Procedure/no-basis-Procedure-example: Procedure.performer[0].actor: Unable to resolve resource with reference 'Practitioner/example'
 INFORMATION: Procedure/no-basis-Procedure-example: Procedure.bodySite[0].coding[0].display: 'TC - Transverse colon' is the default display; the code system http://snomed.info/sct has no Display Names for the language no-NO
+WARNING: Procedure/no-basis-Procedure-example: Procedure.meta.profile[0]: Profile reference 'http://hl7.no/fhir/StructureDefinition/no-basis-Procedure' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles
 ERROR: Procedure.text.div: Hyperlink 'Patient/example' at 'div/p/a' for 'Patient/example' does not resolve
 ERROR: Procedure.text.div: Hyperlink 'Practitioner/example' at 'div/table/tr/td/a' for 'Practitioner/example' does not resolve
-== input/profiles/no-basis-Procedure.StructureDefinition.xml ==
-ERROR: StructureDefinition.where(url = 'http://hl7.no/fhir/StructureDefinition/no-basis-Procedure'): Conformance resource /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/input/profiles/no-basis-Procedure.StructureDefinition.xml - the canonical URL (http://hl7.no/fhir/ig/StructureDefinition/no-basis-Procedure) does not match the URL (http://hl7.no/fhir/StructureDefinition/no-basis-Procedure). Use the special-url parameter if you really mean for it not to match
-ERROR: /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/input/profiles/no-basis-Procedure.StructureDefinition: URL Mismatch http://hl7.no/fhir/ig/StructureDefinition/no-basis-Procedure vs http://hl7.no/fhir/StructureDefinition/no-basis-Procedure
-== input/resources/no-basis-icpc-2.namingsystem.xml ==

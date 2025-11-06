@@ -81,7 +81,7 @@ These define sets of codes used by systems conforming to this implementation gui
 | :--- | :--- |
 | [No Basis VirtualServiceType Value Set](ValueSet-no-basis-virtual-service-type.valueset.md) | Example codes for virtual service connection types. Any other codes or codesystem should be added to this valueSet |
 | [no-basis-connection-type.valueset](ValueSet-no-basis-connection-type.valueset.md) | ValueSet for connection types used in Endpoint definition. Includes all Norwegian specific types (no-basis-connection-type) and the extensible HL7 CodeSystem for connection-type |
-| [no-basis-documentreference-type.valueset](ValueSet-no-basis-documentreference-type.valueset.md) |  |
+| [no-basis-documentreference-type.valueset](ValueSet-no-basis-documentreference-type.valueset.md) | Kodeverket er for å angi dokumenttype når man skal dele et dokument i en XDS-løsning. Kodeverket er også harmonert med eksisterende kodeverk for dokumenttyper og journalstruktur i den grad dette har vært mulig. Dette gjelder primært følgende kodeverk: - 9066 Kategori journalinformasjon - 9601 Emneorienterte sakstyper (Piene inndelingen) |
 | [no-basis-family-relation.valueset](ValueSet-no-basis-family-relation.valueset.md) | Copy of Codes from Familierelasjon defined by Skatteetaten |
 | [no-basis-marital-status.valueset](ValueSet-no-basis-marital-status.valueset.md) | Copy of Codes from Sivilstandstype defined by Skatteetaten |
 | [no-basis-parental-responsibility.valueset](ValueSet-no-basis-parental-responsibility.valueset.md) | Copy of Codes from Foreldreansvar defined by Skatteetaten |
@@ -104,13 +104,13 @@ These define identifier and/or code system identities used by systems conforming
 
 | | |
 | :--- | :--- |
-| [NoBasisICPC2](NamingSystem-no-basis-icpc-2.md) | In Norway primary care uses ICPC-2 to document contact-reason, health related problem and diagnosis. |
 | [no-basis-bydelsnummer](NamingSystem-no-basis-bydelsnummer.md) | Nummerering av kommuner i henhold til SSB sin offisielle liste. Inneholder fremtidige, gyldige og utgåtte kommunenummer. |
 | [no-basis-dnummer](NamingSystem-no-basis-dnummer.md) | Personidentifikator for personer som ikke har fødselsnummer og som ikke skal registreres som bosatt i Norge. The D-nummer of the patient. (assigned by the norwegian Skatteetaten) |
 | [no-basis-dufnummer](NamingSystem-no-basis-dufnummer.md) | Et DUF-nummer er et tolvsifret nummer som blir gitt til alle som søker om opphold i Norge. |
 | [no-basis-felleshjelpenummer](NamingSystem-no-basis-felleshjelpenummer.md) | Felles hjelpenummer is one possible patient identification number administered by Norsk Helsenett. The norwegian felles hjelpenummer is a 11-digit number containing two control digits. The number shoud only be used when the Fødselsnummer and D-number is unknown. |
 | [no-basis-foedselsnummer](NamingSystem-no-basis-foedselsnummer.md) | Fødselsnummer is the official identification of a Norwegian citizen and is registered in the repository called folkeregisteret. Fødselsnummer is a 11-digit number containing 2 control digits. |
 | [no-basis-helsepersonellnummer](NamingSystem-no-basis-helsepersonellnummer.md) | In Norway all registered health care personnel is registered in the Helsepersonellregister (HPR) and is assigned a HPR-number that is used to identify the health care practitioner. Health care personnel not registered in HPR can use FNR for identification. |
+| [no-basis-icpc-2](NamingSystem-no-basis-icpc-2.md) | In Norway primary care uses ICPC-2 to document contact-reason, health related problem and diagnosis. |
 | [no-basis-kommunenummer](NamingSystem-no-basis-kommunenummer.md) | Nummerering av kommuner i henhold til SSB sin offisielle liste. Inneholder fremtidige, gyldige og utgåtte kommunenummer. |
 
 ### Example: Example Instances 
@@ -119,18 +119,18 @@ These are example instances that show what data produced and consumed by systems
 
 | | |
 | :--- | :--- |
-| [AppointmentExample](Appointment-AppointmentExample.md) | Discussion on the results of your recent MRI |
-| [Direktoratet-for-eHelse-Organization](Organization-Direktoratet-for-eHelse-Organization.md) |  |
-| [EspenEksempel](Patient-EspenEksempel.md) |  |
-| [JanniceSoreng](Patient-JanniceSoreng.md) |  |
-| [JanniceSorengTo](Patient-JanniceSorengTo.md) |  |
-| [Magnar-Komann-Practitioner](Practitioner-Magnar-Komann-Practitioner.md) |  |
+| [Appointment Example](Appointment-AppointmentExample.md) | Discussion on the results of your recent MRI |
+| [Direktoratet-for-eHelse-Organization](Organization-Direktoratet-for-eHelse-Organization.md) | Example of an organization using no-basis profile. The profile is identical to the basis profile except there is an extension that can be used for official addresses. |
+| [EspenEksempel](Patient-EspenEksempel.md) | Eksempel på pasient med fødselsnummer, navn, telefonnummer, adresse, sivilstand og fastlege. |
+| [JanniceSoreng](Patient-JanniceSoreng.md) | Eksempel på pasient med fødselsnummer, navn, telefonnummer, adresse, sivilstand og fastlege. |
+| [JanniceSorengTo](Patient-JanniceSorengTo.md) | Eksempel på pasient med fødselsnummer, navn, telefonnummer, adresse, sivilstand og fastlege. |
+| [Magnar-Komann-Practitioner](Practitioner-Magnar-Komann-Practitioner.md) | Eksempel på helsepersonell med identifikator, navn, telefonnummer, adresse og kvalifikasjoner. |
 | [Pasient-1](Patient-Pasient-1.md) | Eksempel på pasient med navn og fødselsnummer |
 | [Pasient-Middle-Name-1](Patient-Pasient-Middle-Name-1.md) | Eksempel på pasient med navn (inkl. mellomnavn) og fødselsnummer |
-| [PatientAppointmentResponseExample](AppointmentResponse-PatientAppointmentResponseExample.md) | Example of Patient response to an appointment using no-basis profile. The profile is identical to the basis profile axept there is a extension that can be used for patient to signal if the patient can come on short notice to an appointment. The example is similar to http://hl7.org/fhir/R4/appointmentresponse-example.json.html with adition for the extension. |
-| [PatientExample](Patient-PatientExample.md) |  |
-| [Solid-Aresdoktor-RelatedPerson](RelatedPerson-Solid-Aresdoktor-RelatedPerson.md) |  |
-| [Sorgard-Erlend-RelatedPerson](RelatedPerson-Sorgard-Erlend-RelatedPerson.md) |  |
+| [Patient Appointment Response Example](AppointmentResponse-PatientAppointmentResponseExample.md) | Example of Patient response to an appointment using no-basis profile. The profile is identical to the basis profile except there is an extension that can be used for patient to signal if the patient can come on short notice to an appointment. The example is similar to http://hl7.org/fhir/R4/appointmentresponse-example.json.html with addition for the extension. |
+| [Patient Example](Patient-PatientExample.md) |  |
+| [Solid-Aresdoktor-RelatedPerson](RelatedPerson-Solid-Aresdoktor-RelatedPerson.md) | Eksempel på pårørende med fødselsnummer, navn, telefonnummer, adresse, sivilstand og relasjon til pasient. |
+| [Sorgard-Erlend-RelatedPerson](RelatedPerson-Sorgard-Erlend-RelatedPerson.md) | Eksempel på pårørende med fødselsnummer, navn, telefonnummer, adresse, sivilstand og relasjon til pasient. |
 | [no-basis-HealthcareService-example](HealthcareService-no-basis-HealthcareService-example.md) |  |
 | [no-basis-Procedure-example](Procedure-no-basis-Procedure-example.md) |  |
 
