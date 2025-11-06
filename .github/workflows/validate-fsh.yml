@@ -1,5 +1,10 @@
 name: Validate FSH Files
 
+# CONFIGURATION: The "short name" of the IG and the folder must be the same
+env:
+  IG_SHORTNAME: no-basis
+  # IG: ${{ vars.IG_KORTNAVN }}
+
 on:
   workflow_dispatch:
     inputs:
@@ -22,11 +27,6 @@ on:
     paths:
       - '${{ env.IG_SHORTNAME }}/input/fsh/**'
       - '${{ env.IG_SHORTNAME }}/sushi-config.yaml'
-
-# CONFIGURATION: The "short name" of the IG and the folder must be the same
-env:
-  IG_SHORTNAME: no-basis
-  # IG: ${{ vars.IG_KORTNAVN }}
 
 jobs:
   validate:
