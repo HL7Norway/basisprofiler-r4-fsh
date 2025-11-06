@@ -66,19 +66,35 @@ jobs:
     - name: 🍣 Run SUSHI build
       id: sushi
       run: |
+        set -x  # Enable verbose debugging
         cd ${{ env.IG_SHORTNAME }}
         echo "🍣 Running SUSHI to compile FSH files..."
         echo "Working directory: $(pwd)"
+        echo "DEBUG: Directory contents before SUSHI:"
+        ls -la
+        echo ""
+        echo "DEBUG: FSH input files:"
+        find input/fsh -name "*.fsh" -type f | head -20
         echo ""
         
         # Run SUSHI and capture output
+        echo "Running: sushi . --require-latest"
         if sushi . --require-latest 2>&1 | tee sushi-output.log; then
-          echo "✅ SUSHI build completed successfully"
+          echo ""
+          echo "✅ SUSHI build completed successfully (exit code: 0)"
           echo "build_status=success" >> $GITHUB_OUTPUT
         else
-          echo "⚠️ SUSHI build completed with errors"
+          exit_code=$?
+          echo ""
+          echo "⚠️ SUSHI build completed with errors (exit code: $exit_code)"
           echo "build_status=failed" >> $GITHUB_OUTPUT
         fi
+        
+        echo ""
+        echo "DEBUG: Directory contents after SUSHI:"
+        ls -la
+        
+        set +x  # Disable verbose debugging
         
     - name: 📊 Analyze SUSHI output
       if: always()
@@ -123,28 +139,39 @@ jobs:
         
     - name: 🔎 Verify generated resources
       if: always()
+      continue-on-error: false
       run: |
+        set -x  # Enable verbose debugging
         cd ${{ env.IG_SHORTNAME }}
         
         echo "🔎 Verifying Generated Resources"
         echo "================================="
         echo ""
+        echo "DEBUG: Current directory: $(pwd)"
+        echo "DEBUG: Contents:"
+        ls -la
+        echo ""
         
         if [ -d "fsh-generated" ]; then
           echo "✅ fsh-generated directory exists"
+          echo "DEBUG: Contents of fsh-generated:"
+          ls -la fsh-generated/
           echo ""
           
           if [ -d "fsh-generated/resources" ]; then
-            echo "📂 Generated resources directory contents:"
+            echo "✅ fsh-generated/resources directory exists"
+            echo ""
+            echo "📂 Generated resources directory contents (first 30):"
             ls -lh fsh-generated/resources/ | head -30
             echo ""
             
             # Count generated files by type
-            profile_count=$(ls -1 fsh-generated/resources/StructureDefinition-*.json 2>/dev/null | wc -l)
-            valueset_count=$(ls -1 fsh-generated/resources/ValueSet-*.json 2>/dev/null | wc -l)
-            codesystem_count=$(ls -1 fsh-generated/resources/CodeSystem-*.json 2>/dev/null | wc -l)
-            instance_count=$(ls -1 fsh-generated/resources/*.json 2>/dev/null | grep -v "StructureDefinition\|ValueSet\|CodeSystem\|ImplementationGuide" | wc -l)
-            total_count=$(ls -1 fsh-generated/resources/*.json 2>/dev/null | wc -l)
+            echo "DEBUG: Counting resources by type..."
+            profile_count=$(ls -1 fsh-generated/resources/StructureDefinition-*.json 2>/dev/null | wc -l | tr -d ' ')
+            valueset_count=$(ls -1 fsh-generated/resources/ValueSet-*.json 2>/dev/null | wc -l | tr -d ' ')
+            codesystem_count=$(ls -1 fsh-generated/resources/CodeSystem-*.json 2>/dev/null | wc -l | tr -d ' ')
+            instance_count=$(ls -1 fsh-generated/resources/*.json 2>/dev/null | grep -v "StructureDefinition\|ValueSet\|CodeSystem\|ImplementationGuide" | wc -l | tr -d ' ')
+            total_count=$(ls -1 fsh-generated/resources/*.json 2>/dev/null | wc -l | tr -d ' ')
             
             echo "📊 Resource counts:"
             echo "  - Total resources: $total_count"
@@ -154,70 +181,116 @@ jobs:
             echo "  - Instances: $instance_count"
             echo ""
             
-            # Save for summary
-            echo "total_resources=$total_count" >> $GITHUB_ENV
-            echo "profile_count=$profile_count" >> $GITHUB_ENV
-            echo "valueset_count=$valueset_count" >> $GITHUB_ENV
-            echo "codesystem_count=$codesystem_count" >> $GITHUB_ENV
-            echo "instance_count=$instance_count" >> $GITHUB_ENV
+            # Save for summary (ensure they're not empty)
+            echo "total_resources=${total_count:-0}" >> $GITHUB_ENV
+            echo "profile_count=${profile_count:-0}" >> $GITHUB_ENV
+            echo "valueset_count=${valueset_count:-0}" >> $GITHUB_ENV
+            echo "codesystem_count=${codesystem_count:-0}" >> $GITHUB_ENV
+            echo "instance_count=${instance_count:-0}" >> $GITHUB_ENV
+            
+            if [ "$total_count" -eq 0 ]; then
+              echo "⚠️ WARNING: No resources were generated!"
+              echo "This might indicate a SUSHI build problem"
+            fi
           else
-            echo "❌ fsh-generated/resources directory not found!"
+            echo "❌ ERROR: fsh-generated/resources directory not found!"
+            echo "DEBUG: What exists in fsh-generated:"
+            find fsh-generated -type f 2>/dev/null || echo "Nothing found"
+            echo ""
+            echo "SUSHI may have failed to generate resources"
             exit 1
           fi
           
           if [ -d "fsh-generated/includes" ]; then
             echo "✅ Generated includes directory exists"
+            echo "DEBUG: Contents:"
             ls -lh fsh-generated/includes/
+          else
+            echo "⚠️ No includes directory generated"
           fi
         else
-          echo "❌ fsh-generated directory not found!"
-          echo "SUSHI may have failed to generate resources"
+          echo "❌ ERROR: fsh-generated directory not found!"
+          echo "DEBUG: Looking for any generated output..."
+          find . -name "*generated*" -type d 2>/dev/null || echo "No generated directories found"
+          echo ""
+          echo "SUSHI may have failed completely"
           exit 1
         fi
+        
+        set +x  # Disable verbose debugging
         
     - name: 🧪 Validate JSON structure
       if: always()
       run: |
+        set -x  # Enable verbose debugging
         cd ${{ env.IG_SHORTNAME }}
         
         echo "🧪 Validating JSON Structure"
         echo "============================="
         echo ""
+        echo "DEBUG: Current directory: $(pwd)"
+        echo "DEBUG: Listing current directory:"
+        ls -la
+        echo ""
         
         if [ -d "fsh-generated/resources" ]; then
-          json_files=(fsh-generated/resources/*.json)
+          echo "✅ fsh-generated/resources directory exists"
+          echo "DEBUG: Contents of fsh-generated/resources:"
+          ls -la fsh-generated/resources/
+          echo ""
           
-          # Check if any JSON files exist
-          if [ ! -e "${json_files[0]}" ]; then
+          # Count files
+          file_count=$(ls -1 fsh-generated/resources/*.json 2>/dev/null | wc -l)
+          echo "DEBUG: Number of JSON files found: $file_count"
+          
+          if [ "$file_count" -eq 0 ]; then
             echo "⚠️ No JSON files found in fsh-generated/resources/"
+            echo "This is not an error - continuing..."
             exit 0
           fi
           
           invalid_count=0
           valid_count=0
           
+          echo "Starting validation of $file_count JSON files..."
+          echo ""
+          
           for file in fsh-generated/resources/*.json; do
             if [ -f "$file" ]; then
+              echo "Validating: $(basename "$file")"
               if python3 -m json.tool "$file" > /dev/null 2>&1; then
                 ((valid_count++))
+                echo "  ✅ Valid"
               else
-                echo "❌ Invalid JSON: $(basename "$file")"
-                python3 -m json.tool "$file" 2>&1 | head -5
+                echo "  ❌ Invalid JSON: $(basename "$file")"
+                echo "  Error details:"
+                python3 -m json.tool "$file" 2>&1 | head -5 | sed 's/^/    /'
                 ((invalid_count++))
               fi
             fi
           done
           
-          echo "✅ Valid JSON files: $valid_count"
+          echo ""
+          echo "========================================="
+          echo "JSON Validation Summary:"
+          echo "  ✅ Valid JSON files: $valid_count"
+          echo "  ❌ Invalid JSON files: $invalid_count"
+          echo "========================================="
+          
           if [ $invalid_count -gt 0 ]; then
-            echo "❌ Invalid JSON files: $invalid_count"
+            echo "❌ JSON validation FAILED - $invalid_count invalid file(s)"
             exit 1
           else
             echo "✅ All generated JSON files are valid"
           fi
         else
-          echo "⚠️ fsh-generated/resources directory not found - skipping JSON validation"
+          echo "⚠️ fsh-generated/resources directory not found"
+          echo "DEBUG: Contents of fsh-generated (if exists):"
+          ls -la fsh-generated/ 2>/dev/null || echo "fsh-generated directory does not exist"
+          echo "⚠️ Skipping JSON validation"
         fi
+        
+        set +x  # Disable verbose debugging
         
     - name: 📋 Check for specific issues
       if: always()
@@ -308,18 +381,32 @@ jobs:
     - name: ❌ Fail if errors found
       if: always()
       run: |
+        echo "🔍 Final Error Check"
+        echo "===================="
+        echo ""
+        echo "DEBUG: Build status from SUSHI step: '${{ steps.sushi.outputs.build_status }}'"
+        echo "DEBUG: Error count from environment: '${error_count:-not set}'"
+        echo ""
+        
         # Check if SUSHI build failed
         if [ "${{ steps.sushi.outputs.build_status }}" != "success" ]; then
-          echo "❌ Build failed - check logs above for details"
+          echo "❌ Build failed - SUSHI returned non-zero exit code"
+          echo "Check the 'Run SUSHI build' step above for details"
           exit 1
         fi
         
         # Check if errors were detected (convert to number for comparison)
         error_num=$(echo "${error_count:-0}" | grep -oE '[0-9]+' || echo "0")
+        echo "DEBUG: Extracted error number: $error_num"
         
         if [ "$error_num" -gt 0 ]; then
           echo "❌ Build completed but $error_num error(s) were found"
+          echo "Check the 'Analyze SUSHI output' step for details"
           exit 1
         fi
         
-        echo "✅ Build completed successfully with no errors"
+        echo ""
+        echo "✅ ================================="
+        echo "✅ Build completed successfully!"
+        echo "✅ No errors found"
+        echo "✅ ================================="
