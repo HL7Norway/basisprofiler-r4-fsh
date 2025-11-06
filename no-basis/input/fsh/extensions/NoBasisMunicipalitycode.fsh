@@ -2,6 +2,7 @@ Extension: NoBasisMunicipalitycode
 Id: no-basis-municipalitycode
 Title: "no-basis-municipalitycode"
 Description: "Coded value for municipality/county Norwegian kommune"
+* ^url = "http://hl7.no/fhir/StructureDefinition/no-basis-municipalitycode"
 * ^version = "2.0.16"
 * ^date = "2021-04-09"
 * ^context.type = #element

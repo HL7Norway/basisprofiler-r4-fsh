@@ -2,6 +2,7 @@ Extension: NoBasisPropertyinformation
 Id: no-basis-propertyinformation
 Title: "no-basis-propertyinformation"
 Description: "This basis extension describes information identifying norwegian real property."
+* ^url = "http://hl7.no/fhir/StructureDefinition/no-basis-propertyinformation"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2018-06-13T12:21:26.15+00:00"
 * ^version = "2.0.8"
