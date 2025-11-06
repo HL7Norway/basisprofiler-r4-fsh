@@ -5,7 +5,7 @@ Description: "The basis extension defines the Norwegian middlename wich is calle
 * ^url = "http://hl7.no/fhir/StructureDefinition/no-basis-middlename"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2018-06-13T12:23:00.348+00:00"
-* ^version = "2.0.6"
+* ^version = "2.0.7"
 * ^date = "2019-09-23"
 * ^publisher = "Direktoratet for e-helse"
 * ^purpose = "Specific usage of middle name as a specific part of official name standard where name order is important"
