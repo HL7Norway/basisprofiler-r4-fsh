@@ -1,6 +1,9 @@
+Alias: $appointment-type = http://terminology.hl7.org/CodeSystem/v2-0276
+
 Instance: PatientAppointmentResponseExample
 InstanceOf: NoBasisAppointmentResponse
-Description: "Example of Patient response to an appointment using no-basis profile. The profile is identical to the basis profile axept there is a extension that can be used for patient to signal if the patient can come on short notice to an appointment. The example is similar to http://hl7.org/fhir/R4/appointmentresponse-example.json.html with adition for the extension."
+Title: "Patient Appointment Response Example"
+Description: "Example of Patient response to an appointment using no-basis profile. The profile is identical to the basis profile except there is an extension that can be used for patient to signal if the patient can come on short notice to an appointment. The example is similar to http://hl7.org/fhir/R4/appointmentresponse-example.json.html with addition for the extension."
 * appointment = Reference(AppointmentExample) "MRI results discussion"
 * actor = Reference(PatientExample) "Peter James Chalmers"
 * participantStatus = #accepted
@@ -10,15 +13,15 @@ Description: "Example of Patient response to an appointment using no-basis profi
 
 Instance: PatientExample
 InstanceOf: Patient
+Title: "Patient Example"
 Usage: #example
 * name.use = #official
 * name.family = "Chalmers"
 * name.given = "Peter James"
 
-Alias: $appointment-type = http://terminology.hl7.org/CodeSystem/v2-0276
-
 Instance: AppointmentExample
 InstanceOf: NoBasisAppointment
+Title: "Appointment Example"
 Usage: #example
 * status = #booked
 * appointmentType.coding[0] = $appointment-type#CHECKUP
