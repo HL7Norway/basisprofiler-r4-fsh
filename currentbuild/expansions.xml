@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="eceb27be-f322-40dc-aa3a-bd30fa12a3fd"/>
+  <id value="57da15d7-de25-42cb-b4fe-a12bfe596a0f"/>
   <meta>
-    <lastUpdated value="2025-11-06T18:36:55.923+00:00"/>
+    <lastUpdated value="2025-12-09T12:52:56.902+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -16,7 +16,7 @@
         </meta>
         <text>
           <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
             <p class="res-header-id"/>
             <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
               <p>Expansion performed internally based on:</p>
@@ -28,7 +28,7 @@
                   </span>
                 </li>
                 <li>
-                  <a href="http://terminology.hl7.org/6.5.0/CodeSystem-endpoint-connection-type.html">codesystem Endpoint Connection Type v2.1.1 (CodeSystem)</a>
+                  <a href="http://terminology.hl7.org/7.0.0/CodeSystem-endpoint-connection-type.html">codesystem Endpoint Connection Type v2.1.1 (CodeSystem)</a>
                   <span class="copy-text-inline">
                     <button data-clipboard-text="http://terminology.hl7.org/CodeSystem/endpoint-connection-type|2.1.1" title="Click to Copy URL" class="btn-copy"> </button>
                   </span>
@@ -46,6 +46,9 @@
                 </td>
                 <td>
                   <b>Display (no)</b>
+                </td>
+                <td>
+                  <b>Definition</b>
                 </td>
                 <td>
                   <b>
@@ -68,6 +71,7 @@
                   <a href="CodeSystem-no-basis-connection-type.codesystem.html#no-basis-connection-type.codesystem-no-ebxml-2">no-ebxml-2</a>
                 </td>
                 <td/>
+                <td>ebXML messaging as described in the Norwegian profile HIS 1037:2011 based on OASIS ebMS 2.0 specification</td>
                 <td/>
                 <td>
                   <span class="copy-text-inline">
@@ -89,6 +93,7 @@
                   <a href="CodeSystem-no-basis-connection-type.codesystem.html#no-basis-connection-type.codesystem-no-amqp">no-amqp</a>
                 </td>
                 <td/>
+                <td>AMQP based synchronuous and asynchronus message delivery</td>
                 <td/>
                 <td>
                   <span class="copy-text-inline">
@@ -107,9 +112,10 @@
                   <code>http://terminology.hl7.org/CodeSystem/endpoint-connection-type</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://terminology.hl7.org/6.5.0/CodeSystem-endpoint-connection-type.html#endpoint-connection-type-dicom-wado-rs">dicom-wado-rs</a>
+                  <a href="http://terminology.hl7.org/7.0.0/CodeSystem-endpoint-connection-type.html#endpoint-connection-type-dicom-wado-rs">dicom-wado-rs</a>
                 </td>
                 <td/>
+                <td>DICOMweb RESTful Image Retrieve - http://dicom.nema.org/medical/dicom/current/output/chtml/part18/sect_6.5.html</td>
                 <td/>
                 <td>
                   <span class="copy-text-inline">
@@ -128,9 +134,10 @@
                   <code>http://terminology.hl7.org/CodeSystem/endpoint-connection-type</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://terminology.hl7.org/6.5.0/CodeSystem-endpoint-connection-type.html#endpoint-connection-type-dicom-qido-rs">dicom-qido-rs</a>
+                  <a href="http://terminology.hl7.org/7.0.0/CodeSystem-endpoint-connection-type.html#endpoint-connection-type-dicom-qido-rs">dicom-qido-rs</a>
                 </td>
                 <td/>
+                <td>DICOMweb RESTful Image query - http://dicom.nema.org/medical/dicom/current/output/chtml/part18/sect_6.7.html</td>
                 <td/>
                 <td>
                   <span class="copy-text-inline">
@@ -149,9 +156,10 @@
                   <code>http://terminology.hl7.org/CodeSystem/endpoint-connection-type</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://terminology.hl7.org/6.5.0/CodeSystem-endpoint-connection-type.html#endpoint-connection-type-dicom-stow-rs">dicom-stow-rs</a>
+                  <a href="http://terminology.hl7.org/7.0.0/CodeSystem-endpoint-connection-type.html#endpoint-connection-type-dicom-stow-rs">dicom-stow-rs</a>
                 </td>
                 <td/>
+                <td>DICOMweb RESTful image sending and storage - http://dicom.nema.org/medical/dicom/current/output/chtml/part18/sect_6.6.html</td>
                 <td/>
                 <td>
                   <span class="copy-text-inline">
@@ -170,9 +178,10 @@
                   <code>http://terminology.hl7.org/CodeSystem/endpoint-connection-type</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://terminology.hl7.org/6.5.0/CodeSystem-endpoint-connection-type.html#endpoint-connection-type-dicom-wado-uri">dicom-wado-uri</a>
+                  <a href="http://terminology.hl7.org/7.0.0/CodeSystem-endpoint-connection-type.html#endpoint-connection-type-dicom-wado-uri">dicom-wado-uri</a>
                 </td>
                 <td/>
+                <td>DICOMweb Image Retrieve - http://dicom.nema.org/dicom/2013/output/chtml/part18/sect_6.3.html</td>
                 <td/>
                 <td>
                   <span class="copy-text-inline">
@@ -191,9 +200,10 @@
                   <code>http://terminology.hl7.org/CodeSystem/endpoint-connection-type</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://terminology.hl7.org/6.5.0/CodeSystem-endpoint-connection-type.html#endpoint-connection-type-hl7-fhir-rest">hl7-fhir-rest</a>
+                  <a href="http://terminology.hl7.org/7.0.0/CodeSystem-endpoint-connection-type.html#endpoint-connection-type-hl7-fhir-rest">hl7-fhir-rest</a>
                 </td>
                 <td/>
+                <td>Interact with the server interface using FHIR's RESTful interface. For details on its version/capabilities you should connect the value in Endpoint.address and retrieve the FHIR CapabilityStatement.</td>
                 <td/>
                 <td>
                   <span class="copy-text-inline">
@@ -212,9 +222,10 @@
                   <code>http://terminology.hl7.org/CodeSystem/endpoint-connection-type</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://terminology.hl7.org/6.5.0/CodeSystem-endpoint-connection-type.html#endpoint-connection-type-hl7-fhir-msg">hl7-fhir-msg</a>
+                  <a href="http://terminology.hl7.org/7.0.0/CodeSystem-endpoint-connection-type.html#endpoint-connection-type-hl7-fhir-msg">hl7-fhir-msg</a>
                 </td>
                 <td/>
+                <td>Use the servers FHIR Messaging interface. Details can be found on the messaging.html page in the FHIR Specification. The FHIR server's base address is specified in the Endpoint.address property.</td>
                 <td/>
                 <td>
                   <span class="copy-text-inline">
@@ -233,9 +244,10 @@
                   <code>http://terminology.hl7.org/CodeSystem/endpoint-connection-type</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://terminology.hl7.org/6.5.0/CodeSystem-endpoint-connection-type.html#endpoint-connection-type-hl7v2-mllp">hl7v2-mllp</a>
+                  <a href="http://terminology.hl7.org/7.0.0/CodeSystem-endpoint-connection-type.html#endpoint-connection-type-hl7v2-mllp">hl7v2-mllp</a>
                 </td>
                 <td/>
+                <td>HL7v2 messages over an LLP TCP connection</td>
                 <td/>
                 <td>
                   <span class="copy-text-inline">
@@ -254,9 +266,10 @@
                   <code>http://terminology.hl7.org/CodeSystem/endpoint-connection-type</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://terminology.hl7.org/6.5.0/CodeSystem-endpoint-connection-type.html#endpoint-connection-type-secure-email">secure-email</a>
+                  <a href="http://terminology.hl7.org/7.0.0/CodeSystem-endpoint-connection-type.html#endpoint-connection-type-secure-email">secure-email</a>
                 </td>
                 <td/>
+                <td>Email delivery using a digital certificate to encrypt the content using the public key, receiver must have the private key to decrypt the content</td>
                 <td/>
                 <td>
                   <span class="copy-text-inline">
@@ -275,9 +288,10 @@
                   <code>http://terminology.hl7.org/CodeSystem/endpoint-connection-type</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://terminology.hl7.org/6.5.0/CodeSystem-endpoint-connection-type.html#endpoint-connection-type-direct-project">direct-project</a>
+                  <a href="http://terminology.hl7.org/7.0.0/CodeSystem-endpoint-connection-type.html#endpoint-connection-type-direct-project">direct-project</a>
                 </td>
                 <td/>
+                <td>Direct Project information - http://wiki.directproject.org/</td>
                 <td/>
                 <td>
                   <span class="copy-text-inline">
@@ -296,9 +310,10 @@
                   <code>http://terminology.hl7.org/CodeSystem/endpoint-connection-type</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://terminology.hl7.org/6.5.0/CodeSystem-endpoint-connection-type.html#endpoint-connection-type-cds-hooks-service">cds-hooks-service</a>
+                  <a href="http://terminology.hl7.org/7.0.0/CodeSystem-endpoint-connection-type.html#endpoint-connection-type-cds-hooks-service">cds-hooks-service</a>
                 </td>
                 <td/>
+                <td>A CDS Hooks Service connection. The address will be the base URL of the service as described in the CDS specification https://cds-hooks.hl7.org</td>
                 <td/>
                 <td>
                   <span class="copy-text-inline">
@@ -317,9 +332,10 @@
                   <code>http://terminology.hl7.org/CodeSystem/endpoint-connection-type</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://terminology.hl7.org/6.5.0/CodeSystem-endpoint-connection-type.html#endpoint-connection-type-ihe-xcpd">ihe-xcpd</a>
+                  <a href="http://terminology.hl7.org/7.0.0/CodeSystem-endpoint-connection-type.html#endpoint-connection-type-ihe-xcpd">ihe-xcpd</a>
                 </td>
                 <td/>
+                <td>IHE Cross Community Patient Discovery Profile (XCPD) - http://wiki.ihe.net/index.php/Cross-Community_Patient_Discovery</td>
                 <td>deprecated</td>
                 <td>
                   <span class="copy-text-inline">
@@ -338,9 +354,10 @@
                   <code>http://terminology.hl7.org/CodeSystem/endpoint-connection-type</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://terminology.hl7.org/6.5.0/CodeSystem-endpoint-connection-type.html#endpoint-connection-type-ihe-xca">ihe-xca</a>
+                  <a href="http://terminology.hl7.org/7.0.0/CodeSystem-endpoint-connection-type.html#endpoint-connection-type-ihe-xca">ihe-xca</a>
                 </td>
                 <td/>
+                <td>IHE Cross Community Access Profile (XCA) - http://wiki.ihe.net/index.php/Cross-Community_Access</td>
                 <td>deprecated</td>
                 <td>
                   <span class="copy-text-inline">
@@ -359,9 +376,10 @@
                   <code>http://terminology.hl7.org/CodeSystem/endpoint-connection-type</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://terminology.hl7.org/6.5.0/CodeSystem-endpoint-connection-type.html#endpoint-connection-type-ihe-xdr">ihe-xdr</a>
+                  <a href="http://terminology.hl7.org/7.0.0/CodeSystem-endpoint-connection-type.html#endpoint-connection-type-ihe-xdr">ihe-xdr</a>
                 </td>
                 <td/>
+                <td>IHE Cross-Enterprise Document Reliable Exchange (XDR) - http://wiki.ihe.net/index.php/Cross-enterprise_Document_Reliable_Interchange</td>
                 <td>deprecated</td>
                 <td>
                   <span class="copy-text-inline">
@@ -380,9 +398,10 @@
                   <code>http://terminology.hl7.org/CodeSystem/endpoint-connection-type</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://terminology.hl7.org/6.5.0/CodeSystem-endpoint-connection-type.html#endpoint-connection-type-ihe-xds">ihe-xds</a>
+                  <a href="http://terminology.hl7.org/7.0.0/CodeSystem-endpoint-connection-type.html#endpoint-connection-type-ihe-xds">ihe-xds</a>
                 </td>
                 <td/>
+                <td>IHE Cross-Enterprise Document Sharing (XDS) - http://wiki.ihe.net/index.php/Cross-Enterprise_Document_Sharing</td>
                 <td>deprecated</td>
                 <td>
                   <span class="copy-text-inline">
@@ -401,9 +420,10 @@
                   <code>http://terminology.hl7.org/CodeSystem/endpoint-connection-type</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://terminology.hl7.org/6.5.0/CodeSystem-endpoint-connection-type.html#endpoint-connection-type-ihe-iid">ihe-iid</a>
+                  <a href="http://terminology.hl7.org/7.0.0/CodeSystem-endpoint-connection-type.html#endpoint-connection-type-ihe-iid">ihe-iid</a>
                 </td>
                 <td/>
+                <td>IHE Invoke Image Display (IID) - http://wiki.ihe.net/index.php/Invoke_Image_Display</td>
                 <td>deprecated</td>
                 <td>
                   <span class="copy-text-inline">
@@ -435,8 +455,8 @@
         </jurisdiction>
         <immutable value="false"/>
         <expansion>
-          <identifier value="urn:uuid:9590f54a-82cc-4f6c-908d-08c357a66d25"/>
-          <timestamp value="2025-11-06T18:38:25+00:00"/>
+          <identifier value="urn:uuid:d16230fc-f2e7-4724-8b47-6b6c7240604f"/>
+          <timestamp value="2025-12-09T12:54:40+00:00"/>
           <total value="17"/>
           <offset value="0"/>
           <parameter>
@@ -569,7 +589,7 @@
         </meta>
         <text>
           <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
               <a href="CodeSystem-no-basis-family-relation.codesystem.html">codesystem no-basis-family-relation.codesystem v2.2.3-test (CodeSystem)</a>
@@ -590,9 +610,6 @@
                   <b>Display (no)</b>
                 </td>
                 <td>
-                  <b>Definition</b>
-                </td>
-                <td>
                   <b>JSON</b>
                 </td>
                 <td>
@@ -607,7 +624,6 @@
                 <td style="white-space:nowrap">  
                   <a href="CodeSystem-no-basis-family-relation.codesystem.html#no-basis-family-relation.codesystem-mor">mor</a>
                 </td>
-                <td/>
                 <td/>
                 <td>
                   <span class="copy-text-inline">
@@ -629,7 +645,6 @@
                   <a href="CodeSystem-no-basis-family-relation.codesystem.html#no-basis-family-relation.codesystem-far">far</a>
                 </td>
                 <td/>
-                <td/>
                 <td>
                   <span class="copy-text-inline">
                     <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.no/fhir/CodeSystem/no-basis-family-relation&quot;, &quot;version&quot;: &quot;2.2.3-test&quot;, &quot;code&quot;: &quot;far&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
@@ -649,7 +664,6 @@
                 <td style="white-space:nowrap">  
                   <a href="CodeSystem-no-basis-family-relation.codesystem.html#no-basis-family-relation.codesystem-medmor">medmor</a>
                 </td>
-                <td/>
                 <td/>
                 <td>
                   <span class="copy-text-inline">
@@ -671,7 +685,6 @@
                   <a href="CodeSystem-no-basis-family-relation.codesystem.html#no-basis-family-relation.codesystem-barn">barn</a>
                 </td>
                 <td/>
-                <td/>
                 <td>
                   <span class="copy-text-inline">
                     <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.no/fhir/CodeSystem/no-basis-family-relation&quot;, &quot;version&quot;: &quot;2.2.3-test&quot;, &quot;code&quot;: &quot;barn&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
@@ -691,7 +704,6 @@
                 <td style="white-space:nowrap">  
                   <a href="CodeSystem-no-basis-family-relation.codesystem.html#no-basis-family-relation.codesystem-s.248sken">søsken</a>
                 </td>
-                <td/>
                 <td/>
                 <td>
                   <span class="copy-text-inline">
@@ -713,7 +725,6 @@
                   <a href="CodeSystem-no-basis-family-relation.codesystem.html#no-basis-family-relation.codesystem-ektefelleEllerPartner">ektefelleEllerPartner</a>
                 </td>
                 <td/>
-                <td/>
                 <td>
                   <span class="copy-text-inline">
                     <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.no/fhir/CodeSystem/no-basis-family-relation&quot;, &quot;version&quot;: &quot;2.2.3-test&quot;, &quot;code&quot;: &quot;ektefelleEllerPartner&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
@@ -733,7 +744,6 @@
                 <td style="white-space:nowrap">  
                   <a href="CodeSystem-no-basis-family-relation.codesystem.html#no-basis-family-relation.codesystem-d.248df.248dtBarn">dødfødtBarn</a>
                 </td>
-                <td/>
                 <td/>
                 <td>
                   <span class="copy-text-inline">
@@ -765,8 +775,8 @@
         </jurisdiction>
         <immutable value="false"/>
         <expansion>
-          <identifier value="urn:uuid:f8ac90d6-7036-4f96-ab40-848fd339069c"/>
-          <timestamp value="2025-11-06T18:38:26+00:00"/>
+          <identifier value="urn:uuid:12f32f99-adde-4154-8d74-214f4cb8678b"/>
+          <timestamp value="2025-12-09T12:54:41+00:00"/>
           <total value="7"/>
           <offset value="0"/>
           <parameter>
@@ -827,7 +837,7 @@
       <ValueSet>
         <text>
           <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
               <a href="CodeSystem-no-basis-marital-status.codesystem.html">codesystem no-basis-marital-status.codesystem v2.2.3-test (CodeSystem)</a>
@@ -848,6 +858,9 @@
                   <b>Display (no)</b>
                 </td>
                 <td>
+                  <b>Definition</b>
+                </td>
+                <td>
                   <b>JSON</b>
                 </td>
                 <td>
@@ -863,6 +876,7 @@
                   <a href="CodeSystem-no-basis-marital-status.codesystem.html#no-basis-marital-status.codesystem-uoppgitt">uoppgitt</a>
                 </td>
                 <td/>
+                <td>sivilstand er ikke stadfestet med godkjent grunnlag</td>
                 <td>
                   <span class="copy-text-inline">
                     <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.no/fhir/CodeSystem/no-basis-marital-status&quot;, &quot;version&quot;: &quot;2.2.3-test&quot;, &quot;code&quot;: &quot;uoppgitt&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
@@ -883,6 +897,7 @@
                   <a href="CodeSystem-no-basis-marital-status.codesystem.html#no-basis-marital-status.codesystem-ugift">ugift</a>
                 </td>
                 <td/>
+                <td>person som aldri har inngått ekteskap</td>
                 <td>
                   <span class="copy-text-inline">
                     <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.no/fhir/CodeSystem/no-basis-marital-status&quot;, &quot;version&quot;: &quot;2.2.3-test&quot;, &quot;code&quot;: &quot;ugift&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
@@ -903,6 +918,7 @@
                   <a href="CodeSystem-no-basis-marital-status.codesystem.html#no-basis-marital-status.codesystem-gift">gift</a>
                 </td>
                 <td/>
+                <td>person som er i et ekteskap</td>
                 <td>
                   <span class="copy-text-inline">
                     <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.no/fhir/CodeSystem/no-basis-marital-status&quot;, &quot;version&quot;: &quot;2.2.3-test&quot;, &quot;code&quot;: &quot;gift&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
@@ -923,6 +939,7 @@
                   <a href="CodeSystem-no-basis-marital-status.codesystem.html#no-basis-marital-status.codesystem-enkeEllerEnkemann">enkeEllerEnkemann</a>
                 </td>
                 <td/>
+                <td>gjenlevende person fra et ekteskap</td>
                 <td>
                   <span class="copy-text-inline">
                     <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.no/fhir/CodeSystem/no-basis-marital-status&quot;, &quot;version&quot;: &quot;2.2.3-test&quot;, &quot;code&quot;: &quot;enkeEllerEnkemann&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
@@ -943,6 +960,7 @@
                   <a href="CodeSystem-no-basis-marital-status.codesystem.html#no-basis-marital-status.codesystem-skilt">skilt</a>
                 </td>
                 <td/>
+                <td>person som er lovlig skilt fra tidligere ektefelle</td>
                 <td>
                   <span class="copy-text-inline">
                     <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.no/fhir/CodeSystem/no-basis-marital-status&quot;, &quot;version&quot;: &quot;2.2.3-test&quot;, &quot;code&quot;: &quot;skilt&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
@@ -963,6 +981,7 @@
                   <a href="CodeSystem-no-basis-marital-status.codesystem.html#no-basis-marital-status.codesystem-separert">separert</a>
                 </td>
                 <td/>
+                <td>person som er i en separasjonsperiode fra sin ektefelle</td>
                 <td>
                   <span class="copy-text-inline">
                     <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.no/fhir/CodeSystem/no-basis-marital-status&quot;, &quot;version&quot;: &quot;2.2.3-test&quot;, &quot;code&quot;: &quot;separert&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
@@ -983,6 +1002,7 @@
                   <a href="CodeSystem-no-basis-marital-status.codesystem.html#no-basis-marital-status.codesystem-registrertPartner">registrertPartner</a>
                 </td>
                 <td/>
+                <td>person som er i et partnerskap iht partnerskapsloven</td>
                 <td>
                   <span class="copy-text-inline">
                     <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.no/fhir/CodeSystem/no-basis-marital-status&quot;, &quot;version&quot;: &quot;2.2.3-test&quot;, &quot;code&quot;: &quot;registrertPartner&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
@@ -1003,6 +1023,7 @@
                   <a href="CodeSystem-no-basis-marital-status.codesystem.html#no-basis-marital-status.codesystem-separertPartner">separertPartner</a>
                 </td>
                 <td/>
+                <td>person som er i en separasjonsperiode fra sin partner</td>
                 <td>
                   <span class="copy-text-inline">
                     <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.no/fhir/CodeSystem/no-basis-marital-status&quot;, &quot;version&quot;: &quot;2.2.3-test&quot;, &quot;code&quot;: &quot;separertPartner&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
@@ -1023,6 +1044,7 @@
                   <a href="CodeSystem-no-basis-marital-status.codesystem.html#no-basis-marital-status.codesystem-skiltPartner">skiltPartner</a>
                 </td>
                 <td/>
+                <td>person som er lovlig skilt fra tidligere partner</td>
                 <td>
                   <span class="copy-text-inline">
                     <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.no/fhir/CodeSystem/no-basis-marital-status&quot;, &quot;version&quot;: &quot;2.2.3-test&quot;, &quot;code&quot;: &quot;skiltPartner&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
@@ -1043,6 +1065,7 @@
                   <a href="CodeSystem-no-basis-marital-status.codesystem.html#no-basis-marital-status.codesystem-gjenlevende_partner">gjenlevende_partner</a>
                 </td>
                 <td/>
+                <td>gjenlevende person fra et partnerskap</td>
                 <td>
                   <span class="copy-text-inline">
                     <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.no/fhir/CodeSystem/no-basis-marital-status&quot;, &quot;version&quot;: &quot;2.2.3-test&quot;, &quot;code&quot;: &quot;gjenlevende_partner&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
@@ -1073,8 +1096,8 @@
         </jurisdiction>
         <immutable value="false"/>
         <expansion>
-          <identifier value="urn:uuid:a9bb8283-8dce-40d4-b247-7b293c7df1af"/>
-          <timestamp value="2025-11-06T18:38:26+00:00"/>
+          <identifier value="urn:uuid:afcd1292-f2be-4443-be85-1abbc681c61c"/>
+          <timestamp value="2025-12-09T12:54:41+00:00"/>
           <total value="10"/>
           <offset value="0"/>
           <parameter>
@@ -1151,7 +1174,7 @@
         </meta>
         <text>
           <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
               <a href="CodeSystem-no-basis-parental-responsibility.codesystem.html">codesystem no-basis-parental-responsibility.codesystem v2.2.3-test (CodeSystem)</a>
@@ -1172,9 +1195,6 @@
                   <b>Display (no)</b>
                 </td>
                 <td>
-                  <b>Definition</b>
-                </td>
-                <td>
                   <b>JSON</b>
                 </td>
                 <td>
@@ -1189,7 +1209,6 @@
                 <td style="white-space:nowrap">  
                   <a href="CodeSystem-no-basis-parental-responsibility.codesystem.html#no-basis-parental-responsibility.codesystem-felles">felles</a>
                 </td>
-                <td/>
                 <td/>
                 <td>
                   <span class="copy-text-inline">
@@ -1211,7 +1230,6 @@
                   <a href="CodeSystem-no-basis-parental-responsibility.codesystem.html#no-basis-parental-responsibility.codesystem-mor">mor</a>
                 </td>
                 <td/>
-                <td/>
                 <td>
                   <span class="copy-text-inline">
                     <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.no/fhir/CodeSystem/no-basis-parental-responsibility&quot;, &quot;version&quot;: &quot;2.2.3-test&quot;, &quot;code&quot;: &quot;mor&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
@@ -1231,7 +1249,6 @@
                 <td style="white-space:nowrap">  
                   <a href="CodeSystem-no-basis-parental-responsibility.codesystem.html#no-basis-parental-responsibility.codesystem-far">far</a>
                 </td>
-                <td/>
                 <td/>
                 <td>
                   <span class="copy-text-inline">
@@ -1253,7 +1270,6 @@
                   <a href="CodeSystem-no-basis-parental-responsibility.codesystem.html#no-basis-parental-responsibility.codesystem-medmor">medmor</a>
                 </td>
                 <td/>
-                <td/>
                 <td>
                   <span class="copy-text-inline">
                     <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.no/fhir/CodeSystem/no-basis-parental-responsibility&quot;, &quot;version&quot;: &quot;2.2.3-test&quot;, &quot;code&quot;: &quot;medmor&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
@@ -1274,7 +1290,6 @@
                   <a href="CodeSystem-no-basis-parental-responsibility.codesystem.html#no-basis-parental-responsibility.codesystem-andre">andre</a>
                 </td>
                 <td/>
-                <td/>
                 <td>
                   <span class="copy-text-inline">
                     <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.no/fhir/CodeSystem/no-basis-parental-responsibility&quot;, &quot;version&quot;: &quot;2.2.3-test&quot;, &quot;code&quot;: &quot;andre&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
@@ -1294,7 +1309,6 @@
                 <td style="white-space:nowrap">  
                   <a href="CodeSystem-no-basis-parental-responsibility.codesystem.html#no-basis-parental-responsibility.codesystem-ukjent">ukjent</a>
                 </td>
-                <td/>
                 <td/>
                 <td>
                   <span class="copy-text-inline">
@@ -1326,8 +1340,8 @@
         </jurisdiction>
         <immutable value="false"/>
         <expansion>
-          <identifier value="urn:uuid:35df2770-1557-4071-9589-045228eb36c5"/>
-          <timestamp value="2025-11-06T18:38:26+00:00"/>
+          <identifier value="urn:uuid:71bde688-f1ec-4f9a-b25a-ff9c8445db92"/>
+          <timestamp value="2025-12-09T12:54:41+00:00"/>
           <total value="6"/>
           <offset value="0"/>
           <parameter>

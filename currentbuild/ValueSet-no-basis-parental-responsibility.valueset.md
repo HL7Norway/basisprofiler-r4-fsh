@@ -20,10 +20,6 @@ Copy of Codes from Foreldreansvar defined by Skatteetaten
 
 ### Logical Definition (CLD)
 
-version: 1; Last updated: 2018-10-16 10:48:46+0000
-
-* Include all codes defined in [`http://hl7.no/fhir/CodeSystem/no-basis-parental-responsibility`](CodeSystem-no-basis-parental-responsibility.codesystem.md)version 📦2.2.3-test
-
  
 
 ### Expansion

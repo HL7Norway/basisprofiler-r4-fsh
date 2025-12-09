@@ -14,27 +14,6 @@
  
 Et DUF-nummer er et tolvsifret nummer som blir gitt til alle som søker om opphold i Norge. 
 
-version: 1.0
-
-### Summary
-
-| | |
-| :--- | :--- |
-| Defining URL | http://hl7.no/fhir/ig/NamingSystem/no-basis-dufnummer |
-| Version | 2.2.3-test |
-| Name | DUFnummer |
-| Status | active |
-| Definition | Et DUF-nummer er et tolvsifret nummer som blir gitt til alle som søker om opphold i Norge. |
-
-### Identifiers
-
-* **Type**: URI
-  * **Value**: http://hl7.no/fhir/NamingSystem/DUFN
-  * **Preferred**: false
-* **Type**: OID
-  * **Value**: 2.16.578.1.12.4.1.4.5
-  * **Preferred**: true
-
 
 
 ## Resource Content

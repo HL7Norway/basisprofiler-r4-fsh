@@ -14,30 +14,6 @@
  
 Nummerering av kommuner i henhold til SSB sin offisielle liste. Inneholder fremtidige, gyldige og utgåtte kommunenummer. 
 
-version: 1.0
-
-### Summary
-
-| | |
-| :--- | :--- |
-| Defining URL | http://hl7.no/fhir/ig/NamingSystem/no-basis-kommunenummer |
-| Version | 2.2.3-test |
-| Name | Kommunenummer |
-| Status | active |
-| Definition | Nummerering av kommuner i henhold til SSB sin offisielle liste. Inneholder fremtidige, gyldige og utgåtte kommunenummer. |
-
-### Identifiers
-
-* **Type**: URI
-  * **Value**: http://hl7.no/fhir/NamingSystem/kommunenummer
-  * **Preferred**: false
-* **Type**: URI
-  * **Value**: https://register.geonorge.no/subregister/sosi-kodelister/kartverket/kommunenummer-alle
-  * **Preferred**: true
-* **Type**: URI
-  * **Value**: urn:oid:2.16.578.1.12.4.1.1.3402
-  * **Preferred**: false
-
 
 
 ## Resource Content

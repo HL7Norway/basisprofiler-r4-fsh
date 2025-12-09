@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://hl7.no/fhir/ig/StructureDefinition/no-basis-shortnotice | *Version*:2.2.3-test |
-| Active as of 2025-11-06 | *Computable Name*:NoBasisShortNotice |
+| Active as of 2025-12-09 | *Computable Name*:NoBasisShortNotice |
 
 The basis extension defines a boolean concept that expresses the possibility to meet on short notice if the there are available appointment slots.
 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-no-basis-shortnotice
   "name" : "NoBasisShortNotice",
   "title" : "no-basis-shortnotice",
   "status" : "active",
-  "date" : "2025-11-06T18:36:55+00:00",
+  "date" : "2025-12-09T12:52:56+00:00",
   "description" : "The basis extension defines a boolean concept that expresses the possibility to meet on short notice if the there are available appointment slots.",
   "jurisdiction" : [
     {

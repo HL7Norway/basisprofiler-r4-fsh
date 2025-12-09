@@ -14,27 +14,6 @@
  
 Felles hjelpenummer is one possible patient identification number administered by Norsk Helsenett. The norwegian felles hjelpenummer is a 11-digit number containing two control digits. The number shoud only be used when the Fødselsnummer and D-number is unknown. 
 
-version: 1.0
-
-### Summary
-
-| | |
-| :--- | :--- |
-| Defining URL | http://hl7.no/fhir/ig/NamingSystem/no-basis-felleshjelpenummer |
-| Version | 2.2.3-test |
-| Name | FellesHjelpenummer |
-| Status | active |
-| Definition | Felles hjelpenummer is one possible patient identification number administered by Norsk Helsenett. The norwegian felles hjelpenummer is a 11-digit number containing two control digits. The number shoud only be used when the Fødselsnummer and D-number is unknown. |
-
-### Identifiers
-
-* **Type**: URI
-  * **Value**: http://hl7.no/fhir/NamingSystem/FHNR
-  * **Preferred**: false
-* **Type**: OID
-  * **Value**: 2.16.578.1.12.4.1.4.3
-  * **Preferred**: true
-
 
 
 ## Resource Content

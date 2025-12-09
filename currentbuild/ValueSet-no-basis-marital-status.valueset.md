@@ -20,8 +20,6 @@ Copy of Codes from Sivilstandstype defined by Skatteetaten
 
 ### Logical Definition (CLD)
 
-* Include all codes defined in [`http://hl7.no/fhir/CodeSystem/no-basis-marital-status`](CodeSystem-no-basis-marital-status.codesystem.md)version 📦2.2.3-test
-
  
 
 ### Expansion

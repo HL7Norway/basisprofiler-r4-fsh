@@ -14,27 +14,6 @@
  
 Fødselsnummer is the official identification of a Norwegian citizen and is registered in the repository called folkeregisteret. Fødselsnummer is a 11-digit number containing 2 control digits. 
 
-version: 1.0
-
-### Summary
-
-| | |
-| :--- | :--- |
-| Defining URL | http://hl7.no/fhir/ig/NamingSystem/no-basis-foedselsnummer |
-| Version | 2.2.3-test |
-| Name | Foedselsnummer |
-| Status | active |
-| Definition | Fødselsnummer is the official identification of a Norwegian citizen and is registered in the repository called folkeregisteret. Fødselsnummer is a 11-digit number containing 2 control digits. |
-
-### Identifiers
-
-* **Type**: URI
-  * **Value**: http://hl7.no/fhir/NamingSystem/FNR
-  * **Preferred**: false
-* **Type**: OID
-  * **Value**: 2.16.578.1.12.4.1.4.1
-  * **Preferred**: true
-
 
 
 ## Resource Content

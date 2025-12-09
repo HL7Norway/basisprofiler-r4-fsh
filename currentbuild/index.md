@@ -8,7 +8,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://hl7.no/fhir/ig/ImplementationGuide/hl7.fhir.no.basis | *Version*:2.2.3-test |
-| Active as of 2025-11-06 | *Computable Name*:NoBasis |
+| Active as of 2025-12-09 | *Computable Name*:NoBasis |
 
 ### This is a test of a new build pipeline for no-basis
 
@@ -41,7 +41,7 @@ The model under visualizes the role of Norwegian base profiles. On top are the F
   "version" : "2.2.3-test",
   "name" : "NoBasis",
   "status" : "active",
-  "date" : "2025-11-06T18:36:55+00:00",
+  "date" : "2025-12-09T12:52:56+00:00",
   "jurisdiction" : [
     {
       "coding" : [
@@ -67,7 +67,7 @@ The model under visualizes the role of Norwegian base profiles. On top are the F
       ],
       "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
       "packageId" : "hl7.terminology.r4",
-      "version" : "6.5.0"
+      "version" : "7.0.0"
     },
     {
       "id" : "hl7ext",

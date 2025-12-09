@@ -14,27 +14,6 @@
  
 In Norway all registered health care personnel is registered in the Helsepersonellregister (HPR) and is assigned a HPR-number that is used to identify the health care practitioner. Health care personnel not registered in HPR can use FNR for identification. 
 
-version: 1.0
-
-### Summary
-
-| | |
-| :--- | :--- |
-| Defining URL | http://hl7.no/fhir/ig/NamingSystem/no-basis-helsepersonellnummer |
-| Version | 2.2.3-test |
-| Name | HelsepersonellregisteretNummer |
-| Status | active |
-| Definition | In Norway all registered health care personnel is registered in the Helsepersonellregister (HPR) and is assigned a HPR-number that is used to identify the health care practitioner. Health care personnel not registered in HPR can use FNR for identification. |
-
-### Identifiers
-
-* **Type**: URI
-  * **Value**: http://hl7.no/fhir/NamingSystem/HPR
-  * **Preferred**: false
-* **Type**: OID
-  * **Value**: 2.16.578.1.12.4.1.4.4
-  * **Preferred**: true
-
 
 
 ## Resource Content

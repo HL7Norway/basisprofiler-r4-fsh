@@ -14,27 +14,6 @@
  
 Personidentifikator for personer som ikke har fødselsnummer og som ikke skal registreres som bosatt i Norge. The D-nummer of the patient. (assigned by the norwegian Skatteetaten) 
 
-version: 1.0
-
-### Summary
-
-| | |
-| :--- | :--- |
-| Defining URL | http://hl7.no/fhir/ig/NamingSystem/no-basis-dnummer |
-| Version | 2.2.3-test |
-| Name | Dnummer |
-| Status | active |
-| Definition | Personidentifikator for personer som ikke har fødselsnummer og som ikke skal registreres som bosatt i Norge. The D-nummer of the patient. (assigned by the norwegian Skatteetaten) |
-
-### Identifiers
-
-* **Type**: URI
-  * **Value**: http://hl7.no/fhir/NamingSystem/DNR
-  * **Preferred**: false
-* **Type**: OID
-  * **Value**: 2.16.578.1.12.4.1.4.2
-  * **Preferred**: true
-
 
 
 ## Resource Content

@@ -20,11 +20,6 @@ Example codes for virtual service connection types. Any other codes or codesyste
 
 ### Logical Definition (CLD)
 
-This value set includes codes based on the following rules:
-
-* Include all codes defined in `urn:oid:2.16.840.1.113883.4.642.4.1809`version Not Stated (use latest from terminology server)
-* Include all codes defined in [`http://hl7.org/fhir/contact-point-system`](http://hl7.org/fhir/R4/codesystem-contact-point-system.html)version 📦4.0.1
-
  
 
 ### Expansion

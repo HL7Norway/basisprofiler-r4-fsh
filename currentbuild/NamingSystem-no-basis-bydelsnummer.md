@@ -14,30 +14,6 @@
  
 Nummerering av kommuner i henhold til SSB sin offisielle liste. Inneholder fremtidige, gyldige og utgåtte kommunenummer. 
 
-version: 1.0
-
-### Summary
-
-| | |
-| :--- | :--- |
-| Defining URL | http://hl7.no/fhir/ig/NamingSystem/no-basis-bydelsnummer |
-| Version | 2.2.3-test |
-| Name | Bydelsnummer |
-| Status | active |
-| Definition | Nummerering av kommuner i henhold til SSB sin offisielle liste. Inneholder fremtidige, gyldige og utgåtte kommunenummer. |
-
-### Identifiers
-
-* **Type**: URI
-  * **Value**: http://hl7.no/fhir/NamingSystem/bydelsnummer
-  * **Preferred**: false
-* **Type**: URI
-  * **Value**: http://data.ssb.no/api/klass/v1/versions/919
-  * **Preferred**: true
-* **Type**: URI
-  * **Value**: urn:oid:2.16.578.1.12.4.1.1.3403
-  * **Preferred**: false
-
 
 
 ## Resource Content

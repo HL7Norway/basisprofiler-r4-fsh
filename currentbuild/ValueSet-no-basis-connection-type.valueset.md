@@ -20,18 +20,9 @@ ValueSet for connection types used in Endpoint definition. Includes all Norwegia
 
 ### Logical Definition (CLD)
 
-version: 1; Last updated: 2018-10-16 10:48:46+0000
-
-This value set includes codes based on the following rules:
-
-* Include all codes defined in [`http://hl7.no/fhir/CodeSystem/no-basis-connection-type`](CodeSystem-no-basis-connection-type.codesystem.md)version 📦2.2.3-test
-* Include all codes defined in [`http://terminology.hl7.org/CodeSystem/endpoint-connection-type`](http://terminology.hl7.org/6.5.0/CodeSystem-endpoint-connection-type.html)version 📦2.1.1
-
  
 
 ### Expansion
-
-This value set contains 17 concepts
 
 -------
 

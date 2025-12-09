@@ -20,19 +20,6 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
 
 ### Logical Definition (CLD)
 
-version: 1; Last updated: 2018-10-16 10:48:46+0000
-
-This value set includes codes based on the following rules:
-
-* Include all codes defined in `urn:oid:2.16.578.1.12.4.1.1.8660`version Not Stated (use latest from terminology server)
-* Include all codes defined in `urn:oid:2.16.578.1.12.4.1.1.8668`version Not Stated (use latest from terminology server)
-* Include all codes defined in `urn:oid:2.16.578.1.12.4.1.1.8669`version Not Stated (use latest from terminology server)
-* Include all codes defined in `urn:oid:2.16.578.1.12.4.1.1.8658`version Not Stated (use latest from terminology server)
-* Include all codes defined in `urn:oid:2.16.578.1.12.4.1.1.8659`version Not Stated (use latest from terminology server)
-* Include all codes defined in `urn:oid:2.16.578.1.12.4.1.1.8663`version Not Stated (use latest from terminology server)
-* Include all codes defined in `urn:oid:2.16.578.1.12.4.1.1.8664`version Not Stated (use latest from terminology server)
-* Include all codes defined in `urn:oid:2.16.578.1.12.4.1.1.8666`version Not Stated (use latest from terminology server)
-
  
 
 ### Expansion

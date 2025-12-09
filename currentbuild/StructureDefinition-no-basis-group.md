@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://hl7.no/fhir/ig/StructureDefinition/no-basis-group | *Version*:2.2.3-test |
-| Active as of 2025-11-06 | *Computable Name*:NoBasisGroup |
+| Active as of 2025-12-09 | *Computable Name*:NoBasisGroup |
 
 The appointment is a group session.
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-no-basis-group.csv),
   "name" : "NoBasisGroup",
   "title" : "no-basis-group",
   "status" : "active",
-  "date" : "2025-11-06T18:36:55+00:00",
+  "date" : "2025-12-09T12:52:56+00:00",
   "description" : "The appointment is a group session.",
   "jurisdiction" : [
     {

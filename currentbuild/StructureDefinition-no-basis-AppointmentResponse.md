@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://hl7.no/fhir/ig/StructureDefinition/no-basis-AppointmentResponse | *Version*:2.2.3-test |
-| Active as of 2025-11-06 | *Computable Name*:NoBasisAppointmentResponse |
+| Active as of 2025-12-09 | *Computable Name*:NoBasisAppointmentResponse |
 
  
 Basisprofil for Norwegian AppointmentResponse information. Defined by HL7 Norway. Should be used as a basis for further profiling in use-cases where specific appointment respons information is needed. The basis profile is open, but derived profiles should close down the information elements according to specification relevant to each use-case. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-no-basis-Appointment
   "name" : "NoBasisAppointmentResponse",
   "title" : "no-basis-AppointmentResponse",
   "status" : "active",
-  "date" : "2025-11-06T18:36:55+00:00",
+  "date" : "2025-12-09T12:52:56+00:00",
   "description" : "Basisprofil for Norwegian AppointmentResponse information. Defined by HL7 Norway. Should be used as a basis for further profiling in use-cases where specific appointment respons information is needed. The basis profile is open, but derived profiles should close down the information elements according to specification relevant to each use-case.",
   "jurisdiction" : [
     {

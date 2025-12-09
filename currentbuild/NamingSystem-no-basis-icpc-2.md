@@ -14,33 +14,6 @@
  
 In Norway primary care uses ICPC-2 to document contact-reason, health related problem and diagnosis. 
 
-version: 2.1.1
-
-### Summary
-
-| | |
-| :--- | :--- |
-| Defining URL | http://hl7.no/fhir/ig/NamingSystem/no-basis-icpc-2 |
-| Version | 2.2.3-test |
-| Name | NoBasisICPC2 |
-| Status | active |
-| Definition | In Norway primary care uses ICPC-2 to document contact-reason, health related problem and diagnosis. |
-
-### Identifiers
-
-* **Type**: URI
-  * **Value**: http://hl7.org/fhir/sid/icpc-2
-  * **Preferred**: true
-  * **Comment**: 
-* **Type**: OID
-  * **Value**: 2.16.840.1.113883.6.139
-  * **Preferred**: false
-  * **Comment**: 
-* **Type**: OID
-  * **Value**: 2.16.578.1.12.4.1.1.7170
-  * **Preferred**: false
-  * **Comment**: Volven oid for ICPC-2 codesystem for use in Norwegian legacy implementations.
-
 
 
 ## Resource Content
