@@ -1,0 +1,49 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.no/fhir/ig/AppointmentResponse/PatientAppointmentResponseExample> a fhir:AppointmentResponse ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "PatientAppointmentResponseExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.no/fhir/ig/StructureDefinition/no-basis-AppointmentResponse"^^xsd:anyURI ;
+       fhir:l <http://hl7.no/fhir/ig/StructureDefinition/no-basis-AppointmentResponse>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: AppointmentResponse PatientAppointmentResponseExample</b></p><a name=\"PatientAppointmentResponseExample\"> </a><a name=\"hcPatientAppointmentResponseExample\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-no-basis-AppointmentResponse.html\">no-basis-AppointmentResponse</a></p></div><p><b>no-basis-shortnotice</b>: true</p><p><b>appointment</b>: <a href=\"Appointment-AppointmentExample.html\">MRI results discussion</a></p><p><b>actor</b>: <a href=\"Patient-PatientExample.html\">Peter James Chalmers</a></p><p><b>participantStatus</b>: Accepted</p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "http://hl7.no/fhir/ig/StructureDefinition/no-basis-shortnotice"^^xsd:anyURI ;
+       fhir:l <http://hl7.no/fhir/ig/StructureDefinition/no-basis-shortnotice>
+     ] ;
+     fhir:value [
+       a fhir:Boolean ;
+       fhir:v true
+     ]
+  ] ) ; # 
+  fhir:appointment [
+     fhir:l <http://hl7.no/fhir/ig/Appointment/AppointmentExample> ;
+     fhir:reference [ fhir:v "Appointment/AppointmentExample" ] ;
+     fhir:display [ fhir:v "MRI results discussion" ]
+  ] ; # 
+  fhir:actor [
+     fhir:l <http://hl7.no/fhir/ig/Patient/PatientExample> ;
+     fhir:reference [ fhir:v "Patient/PatientExample" ] ;
+     fhir:type [
+       fhir:v "Patient"^^xsd:anyURI ;
+       fhir:l fhir:Patient
+     ] ;
+     fhir:display [ fhir:v "Peter James Chalmers" ]
+  ] ; # 
+  fhir:participantStatus [ fhir:v "accepted"] . # 
+
+# -------------------------------------------------------------------------------------
+
