@@ -8,7 +8,7 @@ fhirVersion: 4.0.1
 FSHOnly: false
 applyExtensionMetadataToRoot: false
 id: hl7.fhir.no.basis
-status: active
+status: draft
 version: 2.2.4-test
 releaseLabel: ci-build
 copyrightYear: 2021+
