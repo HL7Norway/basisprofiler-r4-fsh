@@ -64,160 +64,179 @@ jobs:
                   }
                   body {
                       font-family: Verdana, 'DejaVu Sans', sans-serif;
-                      line-height: 1.6;
-                      color: #333;
-                      background: #f5f5f5;
-                      min-height: 100vh;
-                      padding: 2rem;
+                      font-size: 13px;
+                      line-height: 1.5;
+                      color: #333333;
+                      background-color: #ffffff;
+                      margin: 0;
+                      padding: 0;
                   }
                   .container {
-                      max-width: 1000px;
+                      max-width: 1200px;
                       margin: 0 auto;
-                      background: white;
-                      border: 1px solid #ddd;
-                      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+                      background: #ffffff;
                   }
                   .header {
-                      background: #0d47a1;
-                      color: white;
-                      padding: 2rem 2rem 1.5rem;
-                      border-bottom: 3px solid #1976d2;
+                      background-color: #024a82;
+                      color: #ffffff;
+                      padding: 10px 20px;
+                      border-bottom: 1px solid #003d6b;
                   }
                   .header h1 {
-                      font-size: 2rem;
-                      margin-bottom: 0.5rem;
-                      font-weight: 600;
+                      font-size: 24px;
+                      font-weight: normal;
+                      margin: 5px 0;
+                      color: #ffffff;
                   }
                   .header p {
-                      font-size: 1rem;
-                      opacity: 0.95;
+                      font-size: 13px;
+                      margin: 3px 0 5px 0;
+                      color: #d4e6f1;
                   }
                   .content {
-                      padding: 2rem;
+                      padding: 20px;
+                      background-color: #ffffff;
                   }
                   .section {
-                      margin-bottom: 2rem;
+                      margin-bottom: 25px;
                   }
                   .section h2 {
-                      color: #0d47a1;
-                      margin-bottom: 1rem;
-                      font-size: 1.4rem;
-                      border-bottom: 2px solid #0d47a1;
-                      padding-bottom: 0.5rem;
-                      font-weight: 600;
+                      color: #024a82;
+                      font-size: 18px;
+                      font-weight: bold;
+                      margin-bottom: 10px;
+                      padding-bottom: 5px;
+                      border-bottom: 1px solid #cccccc;
                   }
                   .version-grid {
-                      display: grid;
-                      gap: 0.75rem;
-                      margin-top: 1rem;
+                      margin-top: 10px;
                   }
                   .version-card {
-                      background: #fff;
-                      border: 1px solid #ccc;
-                      border-left: 4px solid #0d47a1;
-                      padding: 1rem 1.25rem;
-                      transition: all 0.2s ease;
+                      background-color: #f9f9f9;
+                      border: 1px solid #cccccc;
+                      margin-bottom: 8px;
+                      padding: 10px 15px;
                       text-decoration: none;
-                      color: inherit;
+                      color: #333333;
                       display: block;
+                      transition: background-color 0.15s ease;
                   }
                   .version-card:hover {
-                      background: #f8f9fa;
-                      border-left-color: #1976d2;
-                      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+                      background-color: #e8f4f8;
+                      border-color: #024a82;
                   }
                   .version-card.current {
-                      background: #fff8e1;
-                      border-left-color: #f57c00;
+                      background-color: #fffacd;
+                      border-color: #ffd700;
                   }
                   .version-card.current:hover {
-                      background: #ffecb3;
+                      background-color: #fff8b0;
                   }
                   .version-card.latest {
-                      background: #e3f2fd;
-                      border-left-color: #1976d2;
-                      border-left-width: 5px;
+                      background-color: #e8f4f8;
+                      border: 2px solid #024a82;
+                      font-weight: bold;
                   }
                   .version-card.latest:hover {
-                      background: #bbdefb;
+                      background-color: #d4e6f1;
                   }
                   .version-title {
-                      font-size: 1.1rem;
-                      font-weight: 600;
-                      margin-bottom: 0.4rem;
-                      color: #0d47a1;
+                      font-size: 14px;
+                      font-weight: bold;
+                      color: #024a82;
+                      margin-bottom: 3px;
                   }
                   .latest .version-title {
-                      color: #01579b;
+                      color: #003d6b;
                   }
                   .version-badge {
                       display: inline-block;
-                      padding: 0.2rem 0.6rem;
-                      border-radius: 3px;
-                      font-size: 0.7rem;
-                      font-weight: 600;
+                      padding: 2px 6px;
+                      background-color: #024a82;
+                      color: #ffffff;
+                      font-size: 10px;
+                      font-weight: bold;
                       text-transform: uppercase;
-                      margin-left: 0.5rem;
+                      margin-left: 6px;
+                      border-radius: 2px;
                   }
                   .badge-latest {
-                      background: #1976d2;
-                      color: white;
+                      background-color: #003d6b;
                   }
                   .badge-stable {
-                      background: #0d47a1;
-                      color: white;
+                      background-color: #024a82;
                   }
                   .badge-dev {
-                      background: #f57c00;
-                      color: white;
+                      background-color: #cc9900;
                   }
                   .version-description {
-                      color: #555;
-                      font-size: 0.9rem;
-                      margin-top: 0.3rem;
+                      color: #666666;
+                      font-size: 12px;
+                      margin-top: 3px;
+                      line-height: 1.4;
                   }
                   .info-box {
-                      background: #e8f4f8;
-                      border-left: 4px solid #0d47a1;
-                      padding: 1rem 1.25rem;
-                      margin: 1.5rem 0;
+                      background-color: #e8f4f8;
+                      border: 1px solid #b3d9e6;
+                      border-left: 4px solid #024a82;
+                      padding: 12px 15px;
+                      margin: 15px 0;
                   }
                   .info-box p {
-                      margin: 0.5rem 0;
-                      color: #333;
+                      margin: 5px 0;
+                      font-size: 13px;
+                      color: #333333;
+                      line-height: 1.5;
                   }
                   .info-box strong {
-                      color: #0d47a1;
+                      color: #024a82;
+                      font-weight: bold;
+                  }
+                  .info-box a {
+                      color: #024a82;
+                      text-decoration: underline;
+                  }
+                  .info-box a:hover {
+                      color: #003d6b;
                   }
                   .footer {
                       text-align: center;
-                      padding: 1.5rem;
-                      background: #f5f5f5;
-                      color: #666;
-                      font-size: 0.85rem;
-                      border-top: 1px solid #ddd;
+                      padding: 15px 20px;
+                      background-color: #f5f5f5;
+                      color: #666666;
+                      font-size: 11px;
+                      border-top: 1px solid #cccccc;
+                      margin-top: 20px;
+                  }
+                  .footer p {
+                      margin: 3px 0;
                   }
                   .footer a {
-                      color: #0d47a1;
+                      color: #024a82;
                       text-decoration: none;
-                      font-weight: 600;
                   }
                   .footer a:hover {
                       text-decoration: underline;
-                      color: #1976d2;
+                  }
+                  table {
+                      border-collapse: collapse;
+                      width: 100%;
                   }
                   @media (max-width: 768px) {
                       body {
-                          padding: 0.5rem;
-                      }
-                      .header h1 {
-                          font-size: 1.5rem;
+                          font-size: 12px;
                       }
                       .header {
-                          padding: 1.5rem 1rem 1rem;
+                          padding: 8px 15px;
+                      }
+                      .header h1 {
+                          font-size: 20px;
                       }
                       .content {
-                          padding: 1rem;
+                          padding: 15px;
+                      }
+                      .section h2 {
+                          font-size: 16px;
                       }
                   }
               </style>
@@ -225,15 +244,15 @@ jobs:
           <body>
               <div class="container">
                   <div class="header">
-                      <h1>🏥 NoBasis FHIR IG</h1>
+                      <h1>no-basis</h1>
                       <p>Norwegian Base Profiles for FHIR R4</p>
                   </div>
                   
                   <div class="content">
                       <div class="info-box">
-                          <p><strong>About this Implementation Guide:</strong></p>
-                          <p>EXPERIMENTAL - DO NOT USE FOR IMPLEMENTATION!</p>
-                          <p>NoBasis defines the base FHIR profiles for healthcare IT systems in Norway. Choose a version below to view the complete implementation guide.</p>
+                          <p><strong>About this Implementation Guide</strong></p>
+                          <p><strong>EXPERIMENTAL - DO NOT USE FOR IMPLEMENTATION</strong></p>
+                          <p>NoBasis defines the base FHIR profiles for healthcare IT systems in Norway. Select a version below to view the complete implementation guide.</p>
                       </div>
           HTML_END
 
@@ -358,14 +377,14 @@ jobs:
           cat >> index.html << 'HTML_END'
                       
                       <div class="info-box">
-                          <p><strong>Need help?</strong></p>
-                          <p>Visit the <a href="https://github.com/HL7Norway/basisprofiler-r4-fsh" target="_blank">GitHub repository</a> for documentation, issues, and discussions.</p>
+                          <p><strong>Documentation and Support</strong></p>
+                          <p>For documentation, issues, and discussions, visit the <a href="https://github.com/HL7Norway/basisprofiler-r4-fsh" target="_blank">GitHub repository</a>.</p>
                       </div>
                   </div>
                   
                   <div class="footer">
                       <p>Published by <a href="https://www.hl7.no" target="_blank">HL7 Norway</a></p>
-                      <p>Implementation Guide built with <a href="https://github.com/HL7/fhir-ig-publisher" target="_blank">IG Publisher</a></p>
+                      <p>Implementation Guide built with <a href="https://github.com/HL7/fhir-ig-publisher" target="_blank">FHIR IG Publisher</a></p>
                   </div>
               </div>
           </body>
