@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://hl7.no/fhir/ig/StructureDefinition/no-basis-Address | *Version*:2.2.4-test |
-| Active as of 2019-05-15 | *Computable Name*:NoBasisAddress |
+| Draft as of 2019-05-15 | *Computable Name*:NoBasisAddress |
 
  
 Basisprofil for Norwegian Address information. Defined by The Norwegian Directorate of eHealth and HL7 Norway. The profile adds Norwegian specific property information, official use of address and further explanation of the use for the data-elements in a Norwegian address. The basis profile is open, but derived profiles should close down the information elements according to specification relevant to the use-case. 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-no-basis-Address.csv
   "version" : "2.2.4-test",
   "name" : "NoBasisAddress",
   "title" : "no-basis-Address",
-  "status" : "active",
+  "status" : "draft",
   "date" : "2019-05-15",
   "description" : "Basisprofil for Norwegian Address information. Defined by The Norwegian Directorate of eHealth and HL7 Norway. The profile adds Norwegian specific property information, official use of address and further explanation of the use for the data-elements in a Norwegian address. The basis profile is open, but derived profiles should close down the information elements according to specification relevant to the use-case.",
   "jurisdiction" : [

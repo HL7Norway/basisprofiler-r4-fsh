@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://hl7.no/fhir/StructureDefinition/no-basis-middlename | *Version*:2.2.4-test |
-| Active as of 2019-09-23 | *Computable Name*:NoBasisMiddlename |
+| Draft as of 2019-09-23 | *Computable Name*:NoBasisMiddlename |
 
 The basis extension defines the Norwegian middlename wich is called "mellomnavn" and defined by Norwegian legislation (Lov om personnavn).
 
@@ -52,7 +52,7 @@ Other representations of profile: [CSV](StructureDefinition-no-basis-middlename.
   "version" : "2.2.4-test",
   "name" : "NoBasisMiddlename",
   "title" : "no-basis-middlename",
-  "status" : "active",
+  "status" : "draft",
   "date" : "2019-09-23",
   "description" : "The basis extension defines the Norwegian middlename wich is called \"mellomnavn\" and defined by Norwegian legislation (Lov om personnavn).",
   "jurisdiction" : [

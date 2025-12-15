@@ -19,7 +19,7 @@ Name or identifier should be supplied in the RelatedPerson.patient element, in a
   <version value="2.2.4-test"/>
   <name value="NoBasisRelatedpersonPersonReference"/>
   <title value="no-basis-relatedperson-person-reference"/>
-  <status value="active"/>
+  <status value="draft"/>
   <date value="2021-04-07"/>
   <description value="If a person reference is needed in RelatedPerson.patient element, this optional extension should be used."/>
   <jurisdiction>

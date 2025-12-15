@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://hl7.no/fhir/ig/StructureDefinition/no-basis-prescriptiongroup | *Version*:2.2.4-test |
-| Active as of 2019-07-03 | *Computable Name*:NoBasisPrescriptiongroup |
+| Draft as of 2019-07-03 | *Computable Name*:NoBasisPrescriptiongroup |
 
 Part of norwegian standard for describing a prescription.
 
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-no-basis-prescriptio
   "version" : "2.2.4-test",
   "name" : "NoBasisPrescriptiongroup",
   "title" : "no-basis-prescriptiongroup",
-  "status" : "active",
+  "status" : "draft",
   "date" : "2019-07-03",
   "description" : "Part of norwegian standard for describing a prescription.",
   "jurisdiction" : [

@@ -9,7 +9,7 @@
   "version" : "2.2.4-test",
   "name" : "NoBasisMunicipalitycode",
   "title" : "no-basis-municipalitycode",
-  "status" : "active",
+  "status" : "draft",
   "date" : "2021-04-09",
   "description" : "Coded value for municipality/county Norwegian kommune",
   "jurisdiction" : [{

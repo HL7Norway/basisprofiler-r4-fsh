@@ -8,8 +8,8 @@
   <url value="http://hl7.no/fhir/ig/ImplementationGuide/hl7.fhir.no.basis"/>
   <version value="2.2.4-test"/>
   <name value="NoBasis"/>
-  <status value="active"/>
-  <date value="2025-12-15T09:35:25+00:00"/>
+  <status value="draft"/>
+  <date value="2025-12-15T10:29:31+00:00"/>
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166"/>

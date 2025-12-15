@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-no-basis-partof.csv)
   "name" : "NoBasisPartOf",
   "title" : "no-basis-partof",
   "status" : "active",
-  "date" : "2025-12-15T09:35:25+00:00",
+  "date" : "2025-12-15T10:29:31+00:00",
   "description" : "This basis extension mirrors the Encounter.partOF-attribute. The partOf-attribute enables booking of a set of related appointments with a set of sub-appointments being linked to the main appointment in the same way as encounters are being linked. A larger appointment of which this particular appointment is a component or step.",
   "jurisdiction" : [
     {

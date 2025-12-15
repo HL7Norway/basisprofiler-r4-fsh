@@ -19,7 +19,7 @@
   <version value="2.2.4-test"/>
   <name value="NoBasisPrescriptiongroup"/>
   <title value="no-basis-prescriptiongroup"/>
-  <status value="active"/>
+  <status value="draft"/>
   <date value="2019-07-03"/>
   <description value="Part of norwegian standard for describing a prescription."/>
   <jurisdiction>

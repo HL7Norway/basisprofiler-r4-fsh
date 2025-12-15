@@ -3,7 +3,7 @@ NoBasis : Validation Results
 
 err = 55, warn = 141, info = 78
 IG Publisher Version: 2.0.28
-Generated Mon Dec 15 09:37:41 UTC 2025. FHIR version 4.0.1 for hl7.fhir.no.basis#2.2.4-test (canonical = http://hl7.no/fhir/ig)
+Generated Mon Dec 15 10:31:51 UTC 2025. FHIR version 4.0.1 for hl7.fhir.no.basis#2.2.4-test (canonical = http://hl7.no/fhir/ig)
  Build Errors : 0 / 26 / 0
  /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/Appointment-AppointmentExample : 0 / 1 / 3
  /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/AppointmentResponse-PatientAppointmentResponseExample : 1 / 0 / 1

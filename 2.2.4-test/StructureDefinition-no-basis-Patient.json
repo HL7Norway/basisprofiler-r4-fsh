@@ -13,7 +13,7 @@
   "version" : "2.2.4-test",
   "name" : "NoBasisPatient",
   "title" : "no-basis-Patient",
-  "status" : "active",
+  "status" : "draft",
   "date" : "2019-05-20",
   "description" : "Basisprofil for Norwegian Patient information. Defined by The Norwegian Directorate of eHealth and HL7 Norway. Should be used as a basis for further profiling in use-cases where specific identity information is needed. The basis profile is open, but derived profiles should close down the information elements according to specification relevant to the use-case.",
   "jurisdiction" : [{

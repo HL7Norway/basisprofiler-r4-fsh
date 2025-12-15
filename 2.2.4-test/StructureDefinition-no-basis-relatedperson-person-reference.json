@@ -9,7 +9,7 @@
   "version" : "2.2.4-test",
   "name" : "NoBasisRelatedpersonPersonReference",
   "title" : "no-basis-relatedperson-person-reference",
-  "status" : "active",
+  "status" : "draft",
   "date" : "2021-04-07",
   "description" : "If a person reference is needed in RelatedPerson.patient element, this optional extension should be used.",
   "jurisdiction" : [{

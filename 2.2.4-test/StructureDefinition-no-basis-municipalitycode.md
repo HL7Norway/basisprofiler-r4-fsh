@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://hl7.no/fhir/StructureDefinition/no-basis-municipalitycode | *Version*:2.2.4-test |
-| Active as of 2021-04-09 | *Computable Name*:NoBasisMunicipalitycode |
+| Draft as of 2021-04-09 | *Computable Name*:NoBasisMunicipalitycode |
 
 Coded value for municipality/county Norwegian kommune
 
@@ -48,7 +48,7 @@ Other representations of profile: [CSV](StructureDefinition-no-basis-municipalit
   "version" : "2.2.4-test",
   "name" : "NoBasisMunicipalitycode",
   "title" : "no-basis-municipalitycode",
-  "status" : "active",
+  "status" : "draft",
   "date" : "2021-04-09",
   "description" : "Coded value for municipality/county Norwegian kommune",
   "jurisdiction" : [

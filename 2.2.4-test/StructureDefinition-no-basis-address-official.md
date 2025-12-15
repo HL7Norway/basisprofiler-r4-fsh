@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://hl7.no/fhir/StructureDefinition/no-basis-address-official | *Version*:2.2.4-test |
-| Active as of 2019-05-15 | *Computable Name*:NoBasisAddressOfficial |
+| Draft as of 2019-05-15 | *Computable Name*:NoBasisAddressOfficial |
 
 Defines the concept of an officially registered address in Norway. Usually this will be the address registered in "Folkeregisteret" for persons or "Enhetsregisteret" for organizations.
 
@@ -50,7 +50,7 @@ Other representations of profile: [CSV](StructureDefinition-no-basis-address-off
   "version" : "2.2.4-test",
   "name" : "NoBasisAddressOfficial",
   "title" : "no-basis-address-official",
-  "status" : "active",
+  "status" : "draft",
   "experimental" : false,
   "date" : "2019-05-15",
   "description" : "Defines the concept of an officially registered address in Norway. Usually this will be the address registered in \"Folkeregisteret\" for persons or \"Enhetsregisteret\" for organizations.",

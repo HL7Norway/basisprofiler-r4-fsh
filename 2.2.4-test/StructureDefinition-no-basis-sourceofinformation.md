@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://hl7.no/fhir/ig/StructureDefinition/no-basis-sourceofinformation | *Version*:2.2.4-test |
-| Active as of 2019-09-20 | *Computable Name*:NoBasisSourceofinformation |
+| Draft as of 2019-09-20 | *Computable Name*:NoBasisSourceofinformation |
 
 Part of norwegian KI standard.
 
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-no-basis-sourceofinf
   "version" : "2.2.4-test",
   "name" : "NoBasisSourceofinformation",
   "title" : "no-basis-sourceofinformation",
-  "status" : "active",
+  "status" : "draft",
   "date" : "2019-09-20",
   "description" : "Part of norwegian KI standard.",
   "jurisdiction" : [

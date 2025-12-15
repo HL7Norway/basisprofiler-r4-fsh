@@ -37,7 +37,7 @@
   <version value="2.2.4-test"/>
   <name value="NoBasisPropertyinformation"/>
   <title value="no-basis-propertyinformation"/>
-  <status value="active"/>
+  <status value="draft"/>
   <date value="2018-10-26"/>
   <description value="This basis extension describes information identifying norwegian real property."/>
   <jurisdiction>

@@ -17,7 +17,7 @@
   "version" : "2.2.4-test",
   "name" : "NoBasisPersonCitizenship",
   "title" : "no-basis-person-citizenship",
-  "status" : "active",
+  "status" : "draft",
   "date" : "2018-12-27T22:37:54+11:00",
   "description" : "The Person's legal status as citizen of a country.",
   "jurisdiction" : [{

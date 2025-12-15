@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://hl7.no/fhir/ig/StructureDefinition/no-basis-Patient | *Version*:2.2.4-test |
-| Active as of 2019-05-20 | *Computable Name*:NoBasisPatient |
+| Draft as of 2019-05-20 | *Computable Name*:NoBasisPatient |
 
  
 Basisprofil for Norwegian Patient information. Defined by The Norwegian Directorate of eHealth and HL7 Norway. Should be used as a basis for further profiling in use-cases where specific identity information is needed. The basis profile is open, but derived profiles should close down the information elements according to specification relevant to the use-case. 
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-no-basis-Patient.csv
   "version" : "2.2.4-test",
   "name" : "NoBasisPatient",
   "title" : "no-basis-Patient",
-  "status" : "active",
+  "status" : "draft",
   "date" : "2019-05-20",
   "description" : "Basisprofil for Norwegian Patient information. Defined by The Norwegian Directorate of eHealth and HL7 Norway. Should be used as a basis for further profiling in use-cases where specific identity information is needed. The basis profile is open, but derived profiles should close down the information elements according to specification relevant to the use-case.",
   "jurisdiction" : [

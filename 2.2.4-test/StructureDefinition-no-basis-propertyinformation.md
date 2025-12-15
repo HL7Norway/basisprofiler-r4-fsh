@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://hl7.no/fhir/StructureDefinition/no-basis-propertyinformation | *Version*:2.2.4-test |
-| Active as of 2018-10-26 | *Computable Name*:NoBasisPropertyinformation |
+| Draft as of 2018-10-26 | *Computable Name*:NoBasisPropertyinformation |
 
 This basis extension describes information identifying norwegian real property.
 
@@ -52,7 +52,7 @@ Other representations of profile: [CSV](StructureDefinition-no-basis-propertyinf
   "version" : "2.2.4-test",
   "name" : "NoBasisPropertyinformation",
   "title" : "no-basis-propertyinformation",
-  "status" : "active",
+  "status" : "draft",
   "date" : "2018-10-26",
   "description" : "This basis extension describes information identifying norwegian real property.",
   "jurisdiction" : [

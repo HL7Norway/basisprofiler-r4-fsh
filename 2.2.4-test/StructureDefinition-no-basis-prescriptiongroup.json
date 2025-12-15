@@ -9,7 +9,7 @@
   "version" : "2.2.4-test",
   "name" : "NoBasisPrescriptiongroup",
   "title" : "no-basis-prescriptiongroup",
-  "status" : "active",
+  "status" : "draft",
   "date" : "2019-07-03",
   "description" : "Part of norwegian standard for describing a prescription.",
   "jurisdiction" : [{

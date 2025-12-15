@@ -13,7 +13,7 @@
   "version" : "2.2.4-test",
   "name" : "NoBasisAddressOfficial",
   "title" : "no-basis-address-official",
-  "status" : "active",
+  "status" : "draft",
   "experimental" : false,
   "date" : "2019-05-15",
   "description" : "Defines the concept of an officially registered address in Norway. Usually this will be the address registered in \"Folkeregisteret\" for persons or \"Enhetsregisteret\" for organizations.",

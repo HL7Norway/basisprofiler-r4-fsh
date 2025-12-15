@@ -9,7 +9,7 @@
 | | | |
 | :--- | :--- | :--- |
 | *Official URL*:http://hl7.no/fhir/ig/StructureDefinition/no-basis-HumanName | *Version*:2.2.4-test | |
-| Active as of 2019-05-20 | [Maturity Level](http://hl7.org/fhir/versions.html#maturity): 1 | *Computable Name*:NoBasisHumanName |
+| Draft as of 2019-05-20 | [Maturity Level](http://hl7.org/fhir/versions.html#maturity): 1 | *Computable Name*:NoBasisHumanName |
 
  
 Basisprofil for Norwegian HumanName. Defined by The Norwegian Directorate of eHealth and HL7 Norway. The profile adds the concept of middlename and further explains of the use for the data-elements in a Norwegian context. The basis profile is open, but derived profiles should close down the information elements according to specification relevant to the use-case. 
@@ -50,7 +50,7 @@ Other representations of profile: [CSV](StructureDefinition-no-basis-HumanName.c
   "version" : "2.2.4-test",
   "name" : "NoBasisHumanName",
   "title" : "no-basis-HumanName",
-  "status" : "active",
+  "status" : "draft",
   "date" : "2019-05-20",
   "description" : "Basisprofil for Norwegian HumanName. Defined by The Norwegian Directorate of eHealth and HL7 Norway. The profile adds the concept of middlename and further explains of the use for the data-elements in a Norwegian context. The basis profile is open, but derived profiles should close down the information elements according to specification relevant to the use-case.",
   "jurisdiction" : [

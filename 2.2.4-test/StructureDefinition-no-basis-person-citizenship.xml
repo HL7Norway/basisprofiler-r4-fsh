@@ -27,7 +27,7 @@
   <version value="2.2.4-test"/>
   <name value="NoBasisPersonCitizenship"/>
   <title value="no-basis-person-citizenship"/>
-  <status value="active"/>
+  <status value="draft"/>
   <date value="2018-12-27T22:37:54+11:00"/>
   <description value="The Person's legal status as citizen of a country."/>
   <jurisdiction>

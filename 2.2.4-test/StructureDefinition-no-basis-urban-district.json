@@ -13,7 +13,7 @@
   "version" : "2.2.4-test",
   "name" : "NoBasisUrbanDistrict",
   "title" : "no-basis-urban-district",
-  "status" : "active",
+  "status" : "draft",
   "date" : "2018-10-26",
   "description" : "Simple extension containing information about what part of a norwegian city the patient is a resident. Administrative purpose.",
   "jurisdiction" : [{

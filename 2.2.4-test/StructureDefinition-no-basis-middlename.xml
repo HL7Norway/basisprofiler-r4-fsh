@@ -18,7 +18,7 @@ The middlename should be a norwegian middlename as defined by norwegian legislat
   <version value="2.2.4-test"/>
   <name value="NoBasisMiddlename"/>
   <title value="no-basis-middlename"/>
-  <status value="active"/>
+  <status value="draft"/>
   <date value="2019-09-23"/>
   <description value="The basis extension defines the Norwegian middlename wich is called &quot;mellomnavn&quot; and defined by Norwegian legislation (Lov om personnavn)."/>
   <jurisdiction>

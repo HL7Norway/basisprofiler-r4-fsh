@@ -15,7 +15,7 @@
   <version value="2.2.4-test"/>
   <name value="NoBasisMunicipalitycode"/>
   <title value="no-basis-municipalitycode"/>
-  <status value="active"/>
+  <status value="draft"/>
   <date value="2021-04-09"/>
   <description value="Coded value for municipality/county Norwegian kommune"/>
   <jurisdiction>

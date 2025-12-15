@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://hl7.no/fhir/ig/StructureDefinition/no-basis-urban-district | *Version*:2.2.4-test |
-| Active as of 2018-10-26 | *Computable Name*:NoBasisUrbanDistrict |
+| Draft as of 2018-10-26 | *Computable Name*:NoBasisUrbanDistrict |
 
 Simple extension containing information about what part of a norwegian city the patient is a resident. Administrative purpose.
 
@@ -51,7 +51,7 @@ Other representations of profile: [CSV](StructureDefinition-no-basis-urban-distr
   "version" : "2.2.4-test",
   "name" : "NoBasisUrbanDistrict",
   "title" : "no-basis-urban-district",
-  "status" : "active",
+  "status" : "draft",
   "date" : "2018-10-26",
   "description" : "Simple extension containing information about what part of a norwegian city the patient is a resident. Administrative purpose.",
   "jurisdiction" : [

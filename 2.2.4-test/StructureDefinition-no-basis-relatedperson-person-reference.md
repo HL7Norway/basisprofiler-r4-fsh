@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://hl7.no/fhir/StructureDefinition/no-basis-relatedperson-person-reference | *Version*:2.2.4-test |
-| Active as of 2021-04-07 | *Computable Name*:NoBasisRelatedpersonPersonReference |
+| Draft as of 2021-04-07 | *Computable Name*:NoBasisRelatedpersonPersonReference |
 
 If a person reference is needed in RelatedPerson.patient element, this optional extension should be used.
 
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-no-basis-relatedpers
   "version" : "2.2.4-test",
   "name" : "NoBasisRelatedpersonPersonReference",
   "title" : "no-basis-relatedperson-person-reference",
-  "status" : "active",
+  "status" : "draft",
   "date" : "2021-04-07",
   "description" : "If a person reference is needed in RelatedPerson.patient element, this optional extension should be used.",
   "jurisdiction" : [

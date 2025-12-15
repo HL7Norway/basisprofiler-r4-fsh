@@ -47,7 +47,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for NoBasis</h1>
- <p>Generated Mon Dec 15 09:37:41 UTC 2025, FHIR version 4.0.1 for hl7.fhir.no.basis#2.2.4-test (canonical = <a href="http://hl7.no/fhir/ig">http://hl7.no/fhir/ig</a> (<a href="http://hl7.no/fhir/ig/history.html">history</a>)). See <a href="qa.html">Full QA Report</a> &amp; <a href="qa-ipreview.html">IP</a></p>
+ <p>Generated Mon Dec 15 10:31:51 UTC 2025, FHIR version 4.0.1 for hl7.fhir.no.basis#2.2.4-test (canonical = <a href="http://hl7.no/fhir/ig">http://hl7.no/fhir/ig</a> (<a href="http://hl7.no/fhir/ig/history.html">history</a>)). See <a href="qa.html">Full QA Report</a> &amp; <a href="qa-ipreview.html">IP</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v2.0.28</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = hl7.fhir.no.basis, Canonical = http://hl7.no/fhir/ig</td></tr>
@@ -172,7 +172,7 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
 </ul>
 </td></tr>
  <tr><td>Modifier Extensions:</td><td><span style="color: grey">(none)</span></td></tr>
- <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://hl7.no/fhir/ig (Problem #1 with package-list.json at http://hl7.no/fhir/ig: Not Found)</td></tr>
+ <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://hl7.no/fhir/ig (Problem #1 with package-list.json at http://hl7.no/fhir/ig: www.hl7.no)</td></tr>
  <tr><td>IPA Comparison:</td><td> n/a</td></tr>
  <tr><td>IPS Comparison:</td><td> n/a</td></tr>
  <tr><td>Validation Flags:</td><td> On: autoLoad; Off: hintAboutNonMustSupport, anyExtensionsAllowed, checkAggregation, showReferenceMessages, noExperimentalContent, displayWarnings</td></tr>
@@ -635,7 +635,7 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>ImplementationGuide&#8203;.jurisdiction[0] (l1&#8203;/c719)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:3166|20210120</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span></td>
+     <td><b>ImplementationGuide&#8203;.jurisdiction[0] (l1&#8203;/c718)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:3166|20210120</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span></td>
    </tr>
 </table>
 <hr/>
@@ -979,15 +979,15 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffffe6">
      <td><b>Procedure&#8203;.bodySite[0]&#8203;.coding[0]&#8203;.display (l39&#8203;/c6)</b></td><td><b>information</b></td><td><b>'TC - Transverse colon' is the default display; the code system http://snomed.info/sct has no Display Names for the language no-NO</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l55">log</a>, or see <a href="#vmi380" onClick="document.getElementById('vmi380').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_LANG_NONE</span><div id="vmi380" style="display:none"><br/><pre>0 0 : start
-16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/body-site|4.0.1 for validation purposes
-16 0    : 0ms  : Parameters: disp-lang=no-NO, default-to-latest
-16 0    : 0ms  : Prepare include: "(http://snomed.info/sct)(concept<<442083009)"
-16 0    : 0ms  : CodeSystem found: "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
-16 0    : 0ms  : Validate "[http://snomed.info/sct#485005 ("TC - Transverse colon")]"
-16 0    : 0ms  : Check "http://snomed.info/sct#485005"
-16 0    : 0ms  : CodeSystem found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201 for http://snomed.info/sct
-16 0    : 0ms  : check code in (http://snomed.info/sct)(concept<<442083009) at CodeableConcept.coding[0]
-16 0    : 0ms  : Filter "concept<<442083009": Code "485005" found in http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201
+15 15   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/body-site|4.0.1 for validation purposes
+15 0    : 0ms  : Parameters: disp-lang=no-NO, default-to-latest
+15 0    : 0ms  : Prepare include: "(http://snomed.info/sct)(concept<<442083009)"
+15 0    : 0ms  : CodeSystem found: "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
+15 0    : 0ms  : Validate "[http://snomed.info/sct#485005 ("TC - Transverse colon")]"
+15 0    : 0ms  : Check "http://snomed.info/sct#485005"
+15 0    : 0ms  : CodeSystem found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201 for http://snomed.info/sct
+15 0    : 0ms  : check code in (http://snomed.info/sct)(concept<<442083009) at CodeableConcept.coding[0]
+15 0    : 0ms  : Filter "concept<<442083009": Code "485005" found in http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201
 </pre></div></td>
    </tr>
 </table>
@@ -1071,10 +1071,10 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.jurisdiction[0] (l1&#8203;/c31985)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:3166|20210120</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span></td>
+     <td><b>StructureDefinition&#8203;.jurisdiction[0] (l1&#8203;/c31984)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:3166|20210120</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[15]&#8203;.type[0]&#8203;.extension[1] (l1&#8203;/c50286)</b></td><td><b>information</b></td><td><b>The extension http://hl7.org/fhir/StructureDefinition/regex|5.2.0 is deprecated with the note: 'This was deprecated in favor of using a constraint on the element using FHIRPath, since constraints allow for the provision of a human readable message associated with the regex'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DEPENDS_ON_DEPRECATED_NOTE</span></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[15]&#8203;.type[0]&#8203;.extension[1] (l1&#8203;/c50285)</b></td><td><b>information</b></td><td><b>The extension http://hl7.org/fhir/StructureDefinition/regex|5.2.0 is deprecated with the note: 'This was deprecated in favor of using a constraint on the element using FHIRPath, since constraints allow for the provision of a human readable message associated with the regex'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DEPENDS_ON_DEPRECATED_NOTE</span></td>
    </tr>
 </table>
 <hr/>
@@ -1289,7 +1289,7 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.jurisdiction[0] (l1&#8203;/c18997)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:3166|20210120</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span></td>
+     <td><b>StructureDefinition&#8203;.jurisdiction[0] (l1&#8203;/c18996)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:3166|20210120</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span></td>
    </tr>
 </table>
 <hr/>
@@ -1378,19 +1378,19 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.jurisdiction[0] (l1&#8203;/c63725)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:3166|20210120</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span></td>
+     <td><b>StructureDefinition&#8203;.jurisdiction[0] (l1&#8203;/c63724)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:3166|20210120</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[8]&#8203;.type[0]&#8203;.profile[0] (l1&#8203;/c76029)</b></td><td><b>warning</b></td><td><b>There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/patient-citizenship'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 4.0.1 (from hl7.fhir.r4.core#4.0.1), 5.2.0 (from hl7.fhir.uv.extensions.r4#5.2.0). Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/patient-citizenship' to 'http://hl7.org/fhir/StructureDefinition/patient-citizenship|5.2.0'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_MULTIPLE_POSSIBLE_VERSIONS</span></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[8]&#8203;.type[0]&#8203;.profile[0] (l1&#8203;/c76028)</b></td><td><b>warning</b></td><td><b>There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/patient-citizenship'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 4.0.1 (from hl7.fhir.r4.core#4.0.1), 5.2.0 (from hl7.fhir.uv.extensions.r4#5.2.0). Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/patient-citizenship' to 'http://hl7.org/fhir/StructureDefinition/patient-citizenship|5.2.0'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_MULTIPLE_POSSIBLE_VERSIONS</span></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[15]&#8203;.binding&#8203;.valueSet (l1&#8203;/c82637)</b></td><td><b>error</b></td><td><b>Canonical URL 'urn:iso:std:iso:3166' refers to a resource that has the wrong type. Found CodeSystem expecting one of [ValueSet]</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_TYPE</span></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[15]&#8203;.binding&#8203;.valueSet (l1&#8203;/c82636)</b></td><td><b>error</b></td><td><b>Canonical URL 'urn:iso:std:iso:3166' refers to a resource that has the wrong type. Found CodeSystem expecting one of [ValueSet]</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_TYPE</span></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[2]&#8203;.type[0]&#8203;.profile[0] (l1&#8203;/c197439)</b></td><td><b>warning</b></td><td><b>There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/patient-citizenship'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 4.0.1 (from hl7.fhir.r4.core#4.0.1), 5.2.0 (from hl7.fhir.uv.extensions.r4#5.2.0). Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/patient-citizenship' to 'http://hl7.org/fhir/StructureDefinition/patient-citizenship|5.2.0'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_MULTIPLE_POSSIBLE_VERSIONS</span></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[2]&#8203;.type[0]&#8203;.profile[0] (l1&#8203;/c197438)</b></td><td><b>warning</b></td><td><b>There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/patient-citizenship'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 4.0.1 (from hl7.fhir.r4.core#4.0.1), 5.2.0 (from hl7.fhir.uv.extensions.r4#5.2.0). Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/patient-citizenship' to 'http://hl7.org/fhir/StructureDefinition/patient-citizenship|5.2.0'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_MULTIPLE_POSSIBLE_VERSIONS</span></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[4]&#8203;.binding&#8203;.valueSet (l1&#8203;/c197845)</b></td><td><b>error</b></td><td><b>Canonical URL 'urn:iso:std:iso:3166' refers to a resource that has the wrong type. Found CodeSystem expecting one of [ValueSet]</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_TYPE</span></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[4]&#8203;.binding&#8203;.valueSet (l1&#8203;/c197844)</b></td><td><b>error</b></td><td><b>Canonical URL 'urn:iso:std:iso:3166' refers to a resource that has the wrong type. Found CodeSystem expecting one of [ValueSet]</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_TYPE</span></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>StructureDefinition&#8203;.differential&#8203;.element[4]&#8203;.binding</b></td><td><b>error</b></td><td><b>The valueSet reference urn:iso:std:iso:3166 on element Patient.extension.extension.value[x] points to something that is not a value set (CodeSystem)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SD_ED_BIND_NOT_VS</span></td>
@@ -1547,7 +1547,7 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>StructureDefinition&#8203;.where(url = 'http:&#8203;/&#8203;/hl7&#8203;.no&#8203;/fhir&#8203;/StructureDefinition&#8203;/no-basis-address-official')</b></td><td><b>error</b></td><td><b>Conformance resource /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/StructureDefinition-no-basis-address-official.json - the canonical URL (http://hl7.no/fhir/ig/StructureDefinition/no-basis-address-official) does not match the URL (http://hl7.no/fhir/StructureDefinition/no-basis-address-official). Use the special-url parameter if you really mean for it not to match</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">RESOURCE_CANONICAL_MISMATCH</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.jurisdiction[0] (l1&#8203;/c12931)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:3166|20210120</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span></td>
+     <td><b>StructureDefinition&#8203;.jurisdiction[0] (l1&#8203;/c12930)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:3166|20210120</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>fsh-generated&#8203;/resources&#8203;/StructureDefinition-no-basis-address-official</b></td><td><b>error</b></td><td><b>URL Mismatch http://hl7.no/fhir/ig/StructureDefinition/no-basis-address-official vs http://hl7.no/fhir/StructureDefinition/no-basis-address-official</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
@@ -1582,7 +1582,7 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>StructureDefinition&#8203;.where(url = 'http:&#8203;/&#8203;/hl7&#8203;.no&#8203;/fhir&#8203;/StructureDefinition&#8203;/no-basis-middlename')</b></td><td><b>error</b></td><td><b>Conformance resource /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/StructureDefinition-no-basis-middlename.json - the canonical URL (http://hl7.no/fhir/ig/StructureDefinition/no-basis-middlename) does not match the URL (http://hl7.no/fhir/StructureDefinition/no-basis-middlename). Use the special-url parameter if you really mean for it not to match</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">RESOURCE_CANONICAL_MISMATCH</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.jurisdiction[0] (l1&#8203;/c12759)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:3166|20210120</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span></td>
+     <td><b>StructureDefinition&#8203;.jurisdiction[0] (l1&#8203;/c12758)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:3166|20210120</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>fsh-generated&#8203;/resources&#8203;/StructureDefinition-no-basis-middlename</b></td><td><b>error</b></td><td><b>URL Mismatch http://hl7.no/fhir/ig/StructureDefinition/no-basis-middlename vs http://hl7.no/fhir/StructureDefinition/no-basis-middlename</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
@@ -1601,7 +1601,7 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>StructureDefinition&#8203;.where(url = 'http:&#8203;/&#8203;/hl7&#8203;.no&#8203;/fhir&#8203;/StructureDefinition&#8203;/no-basis-municipalitycode')</b></td><td><b>error</b></td><td><b>Conformance resource /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/StructureDefinition-no-basis-municipalitycode.json - the canonical URL (http://hl7.no/fhir/ig/StructureDefinition/no-basis-municipalitycode) does not match the URL (http://hl7.no/fhir/StructureDefinition/no-basis-municipalitycode). Use the special-url parameter if you really mean for it not to match</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">RESOURCE_CANONICAL_MISMATCH</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.jurisdiction[0] (l1&#8203;/c16487)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:3166|20210120</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span></td>
+     <td><b>StructureDefinition&#8203;.jurisdiction[0] (l1&#8203;/c16486)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:3166|20210120</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>fsh-generated&#8203;/resources&#8203;/StructureDefinition-no-basis-municipalitycode</b></td><td><b>error</b></td><td><b>URL Mismatch http://hl7.no/fhir/ig/StructureDefinition/no-basis-municipalitycode vs http://hl7.no/fhir/StructureDefinition/no-basis-municipalitycode</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
@@ -1636,7 +1636,7 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>StructureDefinition&#8203;.where(url = 'http:&#8203;/&#8203;/hl7&#8203;.no&#8203;/fhir&#8203;/StructureDefinition&#8203;/no-basis-person-citizenship')</b></td><td><b>error</b></td><td><b>Conformance resource /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/StructureDefinition-no-basis-person-citizenship.json - the canonical URL (http://hl7.no/fhir/ig/StructureDefinition/no-basis-person-citizenship) does not match the URL (http://hl7.no/fhir/StructureDefinition/no-basis-person-citizenship). Use the special-url parameter if you really mean for it not to match</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">RESOURCE_CANONICAL_MISMATCH</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.jurisdiction[0] (l1&#8203;/c27882)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:3166|20210120</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span></td>
+     <td><b>StructureDefinition&#8203;.jurisdiction[0] (l1&#8203;/c27881)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:3166|20210120</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>fsh-generated&#8203;/resources&#8203;/StructureDefinition-no-basis-person-citizenship</b></td><td><b>error</b></td><td><b>URL Mismatch http://hl7.no/fhir/ig/StructureDefinition/no-basis-person-citizenship vs http://hl7.no/fhir/StructureDefinition/no-basis-person-citizenship</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
@@ -1652,7 +1652,7 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.jurisdiction[0] (l1&#8203;/c24029)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:3166|20210120</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span></td>
+     <td><b>StructureDefinition&#8203;.jurisdiction[0] (l1&#8203;/c24028)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:3166|20210120</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>StructureDefinition&#8203;.where(url = 'http:&#8203;/&#8203;/hl7&#8203;.no&#8203;/fhir&#8203;/ig&#8203;/StructureDefinition&#8203;/no-basis-prescriptiongroup')</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this extension</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
@@ -1671,10 +1671,10 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>StructureDefinition&#8203;.where(url = 'http:&#8203;/&#8203;/hl7&#8203;.no&#8203;/fhir&#8203;/StructureDefinition&#8203;/no-basis-propertyinformation')</b></td><td><b>error</b></td><td><b>Conformance resource /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/StructureDefinition-no-basis-propertyinformation.json - the canonical URL (http://hl7.no/fhir/ig/StructureDefinition/no-basis-propertyinformation) does not match the URL (http://hl7.no/fhir/StructureDefinition/no-basis-propertyinformation). Use the special-url parameter if you really mean for it not to match</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">RESOURCE_CANONICAL_MISMATCH</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.jurisdiction[0] (l1&#8203;/c54321)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:3166|20210120</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span></td>
+     <td><b>StructureDefinition&#8203;.jurisdiction[0] (l1&#8203;/c54320)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:3166|20210120</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[17]&#8203;.binding (l1&#8203;/c86978)</b></td><td><b>error</b></td><td><b>ElementDefinition.binding.strength: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ElementDefinition|4.0.1)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Validation_VAL_Profile_Minimum</span></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[17]&#8203;.binding (l1&#8203;/c86977)</b></td><td><b>error</b></td><td><b>ElementDefinition.binding.strength: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ElementDefinition|4.0.1)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Validation_VAL_Profile_Minimum</span></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>fsh-generated&#8203;/resources&#8203;/StructureDefinition-no-basis-propertyinformation</b></td><td><b>error</b></td><td><b>URL Mismatch http://hl7.no/fhir/ig/StructureDefinition/no-basis-propertyinformation vs http://hl7.no/fhir/StructureDefinition/no-basis-propertyinformation</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
@@ -1693,7 +1693,7 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>StructureDefinition&#8203;.where(url = 'http:&#8203;/&#8203;/hl7&#8203;.no&#8203;/fhir&#8203;/StructureDefinition&#8203;/no-basis-relatedperson-person-reference')</b></td><td><b>error</b></td><td><b>Conformance resource /__w/basisprofiler-r4-fsh/basisprofiler-r4-fsh/no-basis/fsh-generated/resources/StructureDefinition-no-basis-relatedperson-person-reference.json - the canonical URL (http://hl7.no/fhir/ig/StructureDefinition/no-basis-relatedperson-person-reference) does not match the URL (http://hl7.no/fhir/StructureDefinition/no-basis-relatedperson-person-reference). Use the special-url parameter if you really mean for it not to match</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">RESOURCE_CANONICAL_MISMATCH</span></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.jurisdiction[0] (l1&#8203;/c13194)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:3166|20210120</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span></td>
+     <td><b>StructureDefinition&#8203;.jurisdiction[0] (l1&#8203;/c13193)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:3166|20210120</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>fsh-generated&#8203;/resources&#8203;/StructureDefinition-no-basis-relatedperson-person-reference</b></td><td><b>error</b></td><td><b>URL Mismatch http://hl7.no/fhir/ig/StructureDefinition/no-basis-relatedperson-person-reference vs http://hl7.no/fhir/StructureDefinition/no-basis-relatedperson-person-reference</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
@@ -1722,7 +1722,7 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.jurisdiction[0] (l1&#8203;/c25667)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:3166|20210120</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span></td>
+     <td><b>StructureDefinition&#8203;.jurisdiction[0] (l1&#8203;/c25666)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:3166|20210120</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>StructureDefinition&#8203;.where(url = 'http:&#8203;/&#8203;/hl7&#8203;.no&#8203;/fhir&#8203;/ig&#8203;/StructureDefinition&#8203;/no-basis-sourceofinformation')</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this extension</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
@@ -1738,7 +1738,7 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition&#8203;.jurisdiction[0] (l1&#8203;/c13292)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:3166|20210120</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span></td>
+     <td><b>StructureDefinition&#8203;.jurisdiction[0] (l1&#8203;/c13291)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem urn:iso:std:iso:3166|20210120</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>StructureDefinition&#8203;.where(url = 'http:&#8203;/&#8203;/hl7&#8203;.no&#8203;/fhir&#8203;/ig&#8203;/StructureDefinition&#8203;/no-basis-urban-district')</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this extension</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>

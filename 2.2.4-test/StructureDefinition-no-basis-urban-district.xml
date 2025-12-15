@@ -17,7 +17,7 @@
   <version value="2.2.4-test"/>
   <name value="NoBasisUrbanDistrict"/>
   <title value="no-basis-urban-district"/>
-  <status value="active"/>
+  <status value="draft"/>
   <date value="2018-10-26"/>
   <description value="Simple extension containing information about what part of a norwegian city the patient is a resident. Administrative purpose."/>
   <jurisdiction>

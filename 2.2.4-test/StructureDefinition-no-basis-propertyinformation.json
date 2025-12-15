@@ -13,7 +13,7 @@
   "version" : "2.2.4-test",
   "name" : "NoBasisPropertyinformation",
   "title" : "no-basis-propertyinformation",
-  "status" : "active",
+  "status" : "draft",
   "date" : "2018-10-26",
   "description" : "This basis extension describes information identifying norwegian real property.",
   "jurisdiction" : [{

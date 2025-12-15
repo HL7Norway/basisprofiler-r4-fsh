@@ -9,7 +9,7 @@
 | | | |
 | :--- | :--- | :--- |
 | *Official URL*:http://hl7.no/fhir/StructureDefinition/no-basis-person-citizenship | *Version*:2.2.4-test | |
-| Active as of 2018-12-27 | [Maturity Level](http://hl7.org/fhir/versions.html#maturity): 1 | *Computable Name*:NoBasisPersonCitizenship |
+| Draft as of 2018-12-27 | [Maturity Level](http://hl7.org/fhir/versions.html#maturity): 1 | *Computable Name*:NoBasisPersonCitizenship |
 
 The Person's legal status as citizen of a country.
 
@@ -55,7 +55,7 @@ Other representations of profile: [CSV](StructureDefinition-no-basis-person-citi
   "version" : "2.2.4-test",
   "name" : "NoBasisPersonCitizenship",
   "title" : "no-basis-person-citizenship",
-  "status" : "active",
+  "status" : "draft",
   "date" : "2018-12-27T22:37:54+11:00",
   "description" : "The Person's legal status as citizen of a country.",
   "jurisdiction" : [
