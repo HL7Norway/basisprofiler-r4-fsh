@@ -1,4 +1,4 @@
-name: Gen IG and publish GH pages
+name: Gen IG and publish GH pages - master
 
 on:
   workflow_dispatch:
@@ -12,14 +12,14 @@ env:
 jobs:
   publish:
     runs-on: ubuntu-latest
-    container: hl7fhir/ig-publisher-base:latest 
+    container: hl7fhir/ig-publisher-base:latest
     steps:
       - uses: actions/checkout@v4
       - name: 🖥️ Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
-         
+          node-version: "20"
+
       - name: Run 🔥 IG Publisher with 🍣 Sushi
         run: |
           cd ${{ env.IG_SHORTNAME }}
@@ -29,13 +29,13 @@ jobs:
           npm install -g fsh-sushi
           echo "Run IG publisher"
           java -jar ./input-cache/publisher.jar publisher -ig ig.ini
-          
-      # Publishes the HTML page to a seperate branch in order to host it using GitHub-Pages.
-      # This will overwrite the currently published HTML page.
-      - name: 🚀 Deploy to GitHub-Pages
+
+      # Publishes the HTML page to the deploy-master branch for master version releases.
+      # This will overwrite the currently published master version.
+      - name: 🚀 Deploy to deploy-master branch
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ${{ env.IG_SHORTNAME }}/output
-          destination_dir: currentbuild
-          commit_message: 'Deploy IG build' 
+          publish_branch: deploy-master
+          commit_message: "Deploy master version IG build"
