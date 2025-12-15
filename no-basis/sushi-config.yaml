@@ -20,9 +20,9 @@ jurisdiction: urn:iso:std:iso:3166#NO "Norway"
 menu:
   Home: index.html
   Guidance:
-     Data types: Datatypes.html
-     Appointment and Encounter: Appointment-and-Encounter.html
-  Artifacts: 
+    Data types: Datatypes.html
+    Appointment and Encounter: Appointment-and-Encounter.html
+  Artifacts:
     Search Parameters: artifacts.html#1
     Profiles: artifacts.html#2
     Extensions: artifacts.html#3
@@ -30,6 +30,7 @@ menu:
     Code Systems: artifacts.html#5
     Naming Systems: artifacts.html#6
     Examples: artifacts.html#7
-  Changelog: 
+  Changelog:
     R4 Changelog: https://raw.githubusercontent.com/HL7Norway/basisprofiler-r4/master/Changelog-22.md
     STU3 Changelog: Changelog-STU3.html
+    All Versions: ../index.html
