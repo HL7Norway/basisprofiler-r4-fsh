@@ -1,0 +1,332 @@
+name: Generate Version Index Page
+
+on:
+  workflow_run:
+    workflows: ["Publish FHIR IG Release"]
+    types:
+      - completed
+  workflow_dispatch:
+
+jobs:
+  generate-index:
+    runs-on: ubuntu-latest
+    if: ${{ github.event.workflow_run.conclusion == 'success' || github.event_name == 'workflow_dispatch' }}
+
+    steps:
+      - name: 📥 Checkout gh-pages branch
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+          fetch-depth: 0
+
+      - name: 🔍 List available versions
+        id: list_versions
+        run: |
+          # Get all version directories (semantic versioning format)
+          VERSIONS=$(find . -maxdepth 1 -type d -name "[0-9]*.[0-9]*.[0-9]*" | sed 's|^\./||' | sort -V -r)
+
+          # Check for current/development build
+          CURRENT_EXISTS=""
+          if [ -d "current" ] || [ -d "currentbuild" ]; then
+            CURRENT_EXISTS="true"
+          fi
+
+          echo "versions<<EOF" >> $GITHUB_OUTPUT
+          echo "$VERSIONS" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+          echo "current_exists=$CURRENT_EXISTS" >> $GITHUB_OUTPUT
+
+          echo "Found versions:"
+          echo "$VERSIONS"
+
+      - name: 📝 Generate index.html
+        run: |
+          cat > index.html << 'HTML_END'
+          <!DOCTYPE html>
+          <html lang="en">
+          <head>
+              <meta charset="UTF-8">
+              <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <title>NoBasis FHIR Implementation Guide - Versions</title>
+              <style>
+                  * {
+                      margin: 0;
+                      padding: 0;
+                      box-sizing: border-box;
+                  }
+                  body {
+                      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+                      line-height: 1.6;
+                      color: #333;
+                      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                      min-height: 100vh;
+                      padding: 2rem;
+                  }
+                  .container {
+                      max-width: 900px;
+                      margin: 0 auto;
+                      background: white;
+                      border-radius: 12px;
+                      box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+                      overflow: hidden;
+                  }
+                  .header {
+                      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                      color: white;
+                      padding: 3rem 2rem;
+                      text-align: center;
+                  }
+                  .header h1 {
+                      font-size: 2.5rem;
+                      margin-bottom: 0.5rem;
+                      font-weight: 700;
+                  }
+                  .header p {
+                      font-size: 1.1rem;
+                      opacity: 0.95;
+                  }
+                  .content {
+                      padding: 2rem;
+                  }
+                  .section {
+                      margin-bottom: 2.5rem;
+                  }
+                  .section h2 {
+                      color: #667eea;
+                      margin-bottom: 1rem;
+                      font-size: 1.5rem;
+                      border-bottom: 2px solid #667eea;
+                      padding-bottom: 0.5rem;
+                  }
+                  .version-grid {
+                      display: grid;
+                      gap: 1rem;
+                      margin-top: 1.5rem;
+                  }
+                  .version-card {
+                      background: #f8f9fa;
+                      border: 2px solid #e9ecef;
+                      border-radius: 8px;
+                      padding: 1.5rem;
+                      transition: all 0.3s ease;
+                      text-decoration: none;
+                      color: inherit;
+                      display: block;
+                  }
+                  .version-card:hover {
+                      transform: translateY(-2px);
+                      box-shadow: 0 4px 12px rgba(102, 126, 234, 0.2);
+                      border-color: #667eea;
+                  }
+                  .version-card.current {
+                      background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 100%);
+                      border-color: #fdcb6e;
+                  }
+                  .version-card.latest {
+                      background: linear-gradient(135deg, #74b9ff 0%, #0984e3 100%);
+                      color: white;
+                      border-color: #0984e3;
+                  }
+                  .version-title {
+                      font-size: 1.3rem;
+                      font-weight: 600;
+                      margin-bottom: 0.5rem;
+                  }
+                  .version-badge {
+                      display: inline-block;
+                      padding: 0.25rem 0.75rem;
+                      border-radius: 12px;
+                      font-size: 0.75rem;
+                      font-weight: 600;
+                      text-transform: uppercase;
+                      margin-left: 0.5rem;
+                  }
+                  .badge-latest {
+                      background: #00b894;
+                      color: white;
+                  }
+                  .badge-stable {
+                      background: #0984e3;
+                      color: white;
+                  }
+                  .badge-dev {
+                      background: #fdcb6e;
+                      color: #2d3436;
+                  }
+                  .version-description {
+                      color: #666;
+                      font-size: 0.95rem;
+                      margin-top: 0.5rem;
+                  }
+                  .latest .version-description {
+                      color: rgba(255,255,255,0.9);
+                  }
+                  .info-box {
+                      background: #e3f2fd;
+                      border-left: 4px solid #2196f3;
+                      padding: 1rem;
+                      margin: 1.5rem 0;
+                      border-radius: 4px;
+                  }
+                  .info-box p {
+                      margin: 0.5rem 0;
+                  }
+                  .footer {
+                      text-align: center;
+                      padding: 2rem;
+                      background: #f8f9fa;
+                      color: #666;
+                      font-size: 0.9rem;
+                  }
+                  .footer a {
+                      color: #667eea;
+                      text-decoration: none;
+                      font-weight: 600;
+                  }
+                  .footer a:hover {
+                      text-decoration: underline;
+                  }
+                  @media (max-width: 768px) {
+                      body {
+                          padding: 1rem;
+                      }
+                      .header h1 {
+                          font-size: 1.8rem;
+                      }
+                      .header {
+                          padding: 2rem 1rem;
+                      }
+                  }
+              </style>
+          </head>
+          <body>
+              <div class="container">
+                  <div class="header">
+                      <h1>🏥 NoBasis FHIR IG</h1>
+                      <p>Norwegian Base Profiles for FHIR R4</p>
+                  </div>
+                  
+                  <div class="content">
+                      <div class="info-box">
+                          <p><strong>About this Implementation Guide:</strong></p>
+                          <p>NoBasis defines the base FHIR profiles for healthcare IT systems in Norway. Choose a version below to view the complete implementation guide.</p>
+                      </div>
+          HTML_END
+
+          # Add current/development build section if it exists
+          if [ "${{ steps.list_versions.outputs.current_exists }}" == "true" ]; then
+            cat >> index.html << 'HTML_END'
+                      <div class="section">
+                          <h2>Development Build</h2>
+                          <div class="version-grid">
+          HTML_END
+            
+            if [ -d "current" ]; then
+              cat >> index.html << 'HTML_END'
+                              <a href="current/" class="version-card current">
+                                  <div class="version-title">
+                                      Current Build
+                                      <span class="version-badge badge-dev">Dev</span>
+                                  </div>
+                                  <div class="version-description">
+                                      Latest development build from the main branch. May contain unreleased features and breaking changes.
+                                  </div>
+                              </a>
+          HTML_END
+            fi
+            
+            if [ -d "currentbuild" ]; then
+              cat >> index.html << 'HTML_END'
+                              <a href="currentbuild/" class="version-card current">
+                                  <div class="version-title">
+                                      Current Build
+                                      <span class="version-badge badge-dev">Dev</span>
+                                  </div>
+                                  <div class="version-description">
+                                      Latest development build from the main branch. May contain unreleased features and breaking changes.
+                                  </div>
+                              </a>
+          HTML_END
+            fi
+            
+            cat >> index.html << 'HTML_END'
+                          </div>
+                      </div>
+          HTML_END
+          fi
+
+          # Add published versions section
+          cat >> index.html << 'HTML_END'
+                      <div class="section">
+                          <h2>Published Versions</h2>
+                          <div class="version-grid">
+          HTML_END
+
+          # Generate version cards
+          FIRST=true
+          while IFS= read -r version; do
+            if [ -n "$version" ]; then
+              if [ "$FIRST" = true ]; then
+                cat >> index.html << HTML_END
+                              <a href="${version}/" class="version-card latest">
+                                  <div class="version-title">
+                                      Version ${version}
+                                      <span class="version-badge badge-latest">Latest</span>
+                                  </div>
+                                  <div class="version-description">
+                                      Latest stable release. Recommended for production use.
+                                  </div>
+                              </a>
+          HTML_END
+                FIRST=false
+              else
+                cat >> index.html << HTML_END
+                              <a href="${version}/" class="version-card">
+                                  <div class="version-title">
+                                      Version ${version}
+                                      <span class="version-badge badge-stable">Stable</span>
+                                  </div>
+                                  <div class="version-description">
+                                      Previous stable release.
+                                  </div>
+                              </a>
+          HTML_END
+              fi
+            fi
+          done <<< "${{ steps.list_versions.outputs.versions }}"
+
+          # Close HTML
+          cat >> index.html << 'HTML_END'
+                          </div>
+                      </div>
+                      
+                      <div class="info-box">
+                          <p><strong>Need help?</strong></p>
+                          <p>Visit the <a href="https://github.com/HL7Norway/basisprofiler-r4-fsh" target="_blank">GitHub repository</a> for documentation, issues, and discussions.</p>
+                      </div>
+                  </div>
+                  
+                  <div class="footer">
+                      <p>Published by <a href="https://www.hl7.no" target="_blank">HL7 Norway</a></p>
+                      <p>Implementation Guide built with <a href="https://github.com/HL7/fhir-ig-publisher" target="_blank">IG Publisher</a></p>
+                  </div>
+              </div>
+          </body>
+          </html>
+          HTML_END
+
+          echo "✅ Generated index.html"
+
+      - name: 🚀 Commit and push index page
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add index.html
+
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Update version index page"
+            git push
+            echo "✅ Pushed updated index.html"
+          fi
