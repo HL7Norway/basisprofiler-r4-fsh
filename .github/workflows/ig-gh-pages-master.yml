@@ -1,7 +1,9 @@
-name: Gen IG and publish GH pages - master
+name: Publish FHIR IG Release
 
 on:
-  workflow_dispatch:
+  release:
+    types: [published]
+  workflow_dispatch: # Keep manual trigger as backup
 
 # The short name is used to identify the IG and the folder where the IG is located
 env:
@@ -15,6 +17,20 @@ jobs:
     container: hl7fhir/ig-publisher-base:latest
     steps:
       - uses: actions/checkout@v4
+
+      - name: 📋 Extract version from release tag
+        id: get_version
+        run: |
+          if [ "${{ github.event_name }}" == "release" ]; then
+            VERSION="${{ github.event.release.tag_name }}"
+          else
+            VERSION="manual-build-$(date +%Y%m%d-%H%M%S)"
+          fi
+          # Remove 'v' prefix if present (v2.2.3 -> 2.2.3)
+          VERSION="${VERSION#v}"
+          echo "version=${VERSION}" >> $GITHUB_OUTPUT
+          echo "Deploying version: ${VERSION}"
+
       - name: 🖥️ Setup Node.js
         uses: actions/setup-node@v4
         with:
@@ -30,12 +46,13 @@ jobs:
           echo "Run IG publisher"
           java -jar ./input-cache/publisher.jar publisher -ig ig.ini
 
-      # Publishes the HTML page to the deploy-master branch for master version releases.
-      # This will overwrite the currently published master version.
-      - name: 🚀 Deploy to deploy-master branch
+      # Publishes the IG to a versioned directory on gh-pages branch.
+      # Each release gets its own directory, keeping all versions accessible.
+      - name: 🚀 Deploy version ${{ steps.get_version.outputs.version }} to gh-pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ${{ env.IG_SHORTNAME }}/output
-          publish_branch: deploy-master
-          commit_message: "Deploy master version IG build"
+          destination_dir: ${{ steps.get_version.outputs.version }}
+          keep_files: true # Keep other version directories
+          commit_message: "Deploy FHIR IG version ${{ steps.get_version.outputs.version }}"
