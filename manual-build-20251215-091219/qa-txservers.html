@@ -1,0 +1,818 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>NoBasis : Terminology Server Report</title>
+  <link href="fhir.css" rel="stylesheet"/>
+  <meta charset="utf-8"/>
+  <style>
+    span.flip  { background-color: #4CAF50; color: white; border: solid 1px #a6d8a8; padding: 2px }
+    span.toggle  { background-color: #e6f2ff; color: black; border: solid 1px #0056b3; padding: 2px; font-size: 10px }
+    span.toggle  { font-size: 10px }
+  </style>
+</head>
+<body style="margin: 20px; background-color: #ffffff">
+ <h1>Terminology Server Report for NoBasis</h1>
+ <p>Generated Mon Dec 15 09:14:45 UTC 2025, FHIR version 4.0.1 for hl7.fhir.no.basis#2.2.3-test (canonical = <a href="http://hl7.no/fhir/ig">http://hl7.no/fhir/ig</a> (<a href="http://hl7.no/fhir/ig/history.html">history</a>))</p>
+<p>This page provides a report on which terminology servers were used while publishing this IG. Note that terminology caching reduces the server hit count - this page only reports content that wasn't cached</p>
+<h2>Terminology Parameters</h2>
+<ul>
+  <li>
+    <b>x-system-cache-id</b>
+:     <code>dc8fd4bc-091a-424a-8a3b-6198ef146891</code>
+  </li>
+  <li>
+    <b>defaultDisplayLanguage</b>
+:     <code>no-NO</code>
+  </li>
+</ul>
+<h2>Tx Manager report for 'https://tx.fhir.org/tx-reg'</h2>
+<p>
+  <b>Decisions</b>
+</p>
+<table class="grid">
+  <tr>
+    <td>
+      <b>Message</b>
+    </td>
+    <td>
+      <b>Server</b>
+    </td>
+    <td>
+      <b>ValueSet</b>
+    </td>
+    <td>
+      <b>Systems</b>
+    </td>
+    <td>
+      <b>Choices</b>
+    </td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>https://tx.fhir.org/r4</td>
+    <td></td>
+    <td>urn:oid:2.16.578.1.12.4.1.1.9602</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>https://tx.fhir.org/r4</td>
+    <td>http://hl7.no/fhir/ValueSet/no-basis-documentreference-type-inc-0</td>
+    <td>urn:oid:2.16.578.1.12.4.1.1.9602</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Found candidate server http://tx.fhir.org/r4</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td>null</td>
+    <td>urn:iso:std:iso:3166</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4</td>
+  </tr>
+  <tr>
+    <td>Found candidate server http://tx.fhir.org/r4</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td>urn:oid:2.16.578.1.12.4.1.1.8406</td>
+    <td>http://loinc.org</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>https://tx.fhir.org/r4</td>
+    <td>null</td>
+    <td>urn:oid:2.16.578.1.12.4.1.1.7617</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Fallback: primary server</td>
+    <td>https://tx.fhir.org/r4</td>
+    <td>null</td>
+    <td>urn:oid:2.16.578.1.12.4.1.1.7617</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>https://tx.fhir.org/r4</td>
+    <td>null</td>
+    <td>urn:oid:2.16.578.1.12.4.1.1.9040</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Fallback: primary server</td>
+    <td>https://tx.fhir.org/r4</td>
+    <td>null</td>
+    <td>urn:oid:2.16.578.1.12.4.1.1.9040</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>https://tx.fhir.org/r4</td>
+    <td>null</td>
+    <td>urn:oid:2.16.578.1.12.4.1.1.8655</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Fallback: primary server</td>
+    <td>https://tx.fhir.org/r4</td>
+    <td>null</td>
+    <td>urn:oid:2.16.578.1.12.4.1.1.8655</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>https://tx.fhir.org/r4</td>
+    <td>null</td>
+    <td>https://register.geonorge.no/subregister/sosi-kodelister/kartverket/kommunenummer-alle</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Fallback: primary server</td>
+    <td>https://tx.fhir.org/r4</td>
+    <td>null</td>
+    <td>https://register.geonorge.no/subregister/sosi-kodelister/kartverket/kommunenummer-alle</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>https://tx.fhir.org/r4</td>
+    <td>null</td>
+    <td>urn:oid:2.16.578.1.12.4.1.1.9060</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Fallback: primary server</td>
+    <td>https://tx.fhir.org/r4</td>
+    <td>null</td>
+    <td>urn:oid:2.16.578.1.12.4.1.1.9060</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>https://tx.fhir.org/r4</td>
+    <td>null</td>
+    <td>urn:oid:2.16.578.1.12.4.1.1.7426</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Fallback: primary server</td>
+    <td>https://tx.fhir.org/r4</td>
+    <td>null</td>
+    <td>urn:oid:2.16.578.1.12.4.1.1.7426</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>https://tx.fhir.org/r4</td>
+    <td>null</td>
+    <td>urn:oid:2.16.578.1.12.4.1.1.7704</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Fallback: primary server</td>
+    <td>https://tx.fhir.org/r4</td>
+    <td>null</td>
+    <td>urn:oid:2.16.578.1.12.4.1.1.7704</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Found candidate server http://tx.fhir.org/r4</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td>null</td>
+    <td>http://snomed.info/sct</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir|https://smt.esante.gouv.fr/fhir|https://apps.health.belgium.be/ontoserver/fhir|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4</td>
+  </tr>
+  <tr>
+    <td>Found candidate server http://tx.fhir.org/r4</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td>null</td>
+    <td>http://snomed.info/sct</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir|https://smt.esante.gouv.fr/fhir|https://apps.health.belgium.be/ontoserver/fhir|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4</td>
+  </tr>
+  <tr>
+    <td>Found candidate server http://tx.fhir.org/r4</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td>null</td>
+    <td>http://snomed.info/sct</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir|https://smt.esante.gouv.fr/fhir|https://apps.health.belgium.be/ontoserver/fhir|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4</td>
+  </tr>
+  <tr>
+    <td>Found candidate server http://tx.fhir.org/r4</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td>http://hl7.org/fhir/ValueSet/body-site|4.0.1</td>
+    <td>http://snomed.info/sct</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir|https://smt.esante.gouv.fr/fhir|https://apps.health.belgium.be/ontoserver/fhir|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4</td>
+  </tr>
+  <tr>
+    <td>Found authoritative server http://tx.fhir.org/r4</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td></td>
+    <td>http://terminology.hl7.org/CodeSystem/v2-0360|2.7</td>
+    <td>auth = http://tx.fhir.org/r4, candidates=https://tx.ontoserver.csiro.au/fhir|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4</td>
+  </tr>
+  <tr>
+    <td>Found authoritative server http://tx.fhir.org/r4</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td>http://terminology.hl7.org/ValueSet/v2-2.7-0360|0360</td>
+    <td>http://terminology.hl7.org/CodeSystem/v2-0360|2.7</td>
+    <td>auth = http://tx.fhir.org/r4, candidates=https://tx.ontoserver.csiro.au/fhir|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>https://tx.fhir.org/r4</td>
+    <td></td>
+    <td>urn:oid:2.16.578.1.12.4.1.1.9602</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>https://tx.fhir.org/r4</td>
+    <td>http://hl7.no/fhir/ValueSet/no-basis-documentreference-type|2.2.3-test</td>
+    <td>urn:oid:2.16.578.1.12.4.1.1.9602</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>https://tx.fhir.org/r4</td>
+    <td></td>
+    <td>urn:oid:2.16.578.1.12.4.1.1.8660</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Systems handled by multiple servers. Using primary server</td>
+    <td>https://tx.fhir.org/r4</td>
+    <td>http://hl7.no/fhir/ValueSet/no-basis-service-type|2.2.3-test</td>
+    <td>[urn:oid:2.16.578.1.12.4.1.1.8664, urn:oid:2.16.578.1.12.4.1.1.8666, urn:oid:2.16.578.1.12.4.1.1.8660, urn:oid:2.16.578.1.12.4.1.1.8663, urn:oid:2.16.578.1.12.4.1.1.8669, urn:oid:2.16.578.1.12.4.1.1.8658, urn:oid:2.16.578.1.12.4.1.1.8668, urn:oid:2.16.578.1.12.4.1.1.8659]</td>
+    <td>[auth = , candidates=, auth = , candidates=, auth = , candidates=, auth = , candidates=, auth = , candidates=, auth = , candidates=, auth = , candidates=, auth = , candidates=]</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>https://tx.fhir.org/r4</td>
+    <td></td>
+    <td>urn:oid:2.16.840.1.113883.4.642.4.1809</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Found most authoritative server http://tx.fhir.org/r4</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td>http://hl7.no/fhir/ValueSet/no-basis-virtual-service-type|2.2.3-test</td>
+    <td>[http://hl7.org/fhir/contact-point-system, urn:oid:2.16.840.1.113883.4.642.4.1809]</td>
+    <td>[auth = http://tx.fhir.org/r4, candidates=https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4, auth = , candidates=]</td>
+  </tr>
+</table>
+<p>
+  <b>Errors</b>
+</p>
+<table class="grid">
+  <tr>
+    <td>
+      <b>URL</b>
+    </td>
+    <td>
+      <b>Message</b>
+    </td>
+  </tr>
+  <tr>
+    <td>http://hl7.no/fhir/StructureDefinition/no-basis-HealthcareService</td>
+    <td style="background-color: #ffe3e3">
+      <span title="https://tx.fhir.org/tx-reg/resolve?fhirVersion=4.0&amp;valueSet=http%3A%2F%2Fhl7.no%2Ffhir%2FStructureDefinition%2Fno-basis-HealthcareService&amp;usage=publication">Error resolving valueSet http://hl7.no/fhir/StructureDefinition/no-basis-HealthcareService: Bad Request</span>
+    </td>
+  </tr>
+  <tr>
+    <td>http://hl7.no/fhir/ig/urn:iso:std:iso:3166</td>
+    <td style="background-color: #ffe3e3">
+      <span title="https://tx.fhir.org/tx-reg/resolve?fhirVersion=4.0&amp;valueSet=http%3A%2F%2Fhl7.no%2Ffhir%2Fig%2Furn%3Aiso%3Astd%3Aiso%3A3166&amp;usage=publication">Error resolving valueSet http://hl7.no/fhir/ig/urn:iso:std:iso:3166: Bad Request</span>
+    </td>
+  </tr>
+  <tr>
+    <td>http://hl7.no/fhir/ig/urn:oid:2.16.578.1.12.4.1.1.0000</td>
+    <td style="background-color: #ffe3e3">
+      <span title="https://tx.fhir.org/tx-reg/resolve?fhirVersion=4.0&amp;valueSet=http%3A%2F%2Fhl7.no%2Ffhir%2Fig%2Furn%3Aoid%3A2.16.578.1.12.4.1.1.0000&amp;usage=publication">Error resolving valueSet http://hl7.no/fhir/ig/urn:oid:2.16.578.1.12.4.1.1.0000: Bad Request</span>
+    </td>
+  </tr>
+  <tr>
+    <td>http://hl7.no/fhir/ig/urn:oid:2.16.578.1.12.4.1.1.3402</td>
+    <td style="background-color: #ffe3e3">
+      <span title="https://tx.fhir.org/tx-reg/resolve?fhirVersion=4.0&amp;valueSet=http%3A%2F%2Fhl7.no%2Ffhir%2Fig%2Furn%3Aoid%3A2.16.578.1.12.4.1.1.3402&amp;usage=publication">Error resolving valueSet http://hl7.no/fhir/ig/urn:oid:2.16.578.1.12.4.1.1.3402: Bad Request</span>
+    </td>
+  </tr>
+  <tr>
+    <td>http://hl7.no/fhir/ig/urn:oid:2.16.578.1.12.4.1.1.3403</td>
+    <td style="background-color: #ffe3e3">
+      <span title="https://tx.fhir.org/tx-reg/resolve?fhirVersion=4.0&amp;valueSet=http%3A%2F%2Fhl7.no%2Ffhir%2Fig%2Furn%3Aoid%3A2.16.578.1.12.4.1.1.3403&amp;usage=publication">Error resolving valueSet http://hl7.no/fhir/ig/urn:oid:2.16.578.1.12.4.1.1.3403: Bad Request</span>
+    </td>
+  </tr>
+  <tr>
+    <td>http://hl7.no/fhir/ig/urn:oid:2.16.578.1.12.4.1.1.7426</td>
+    <td style="background-color: #ffe3e3">
+      <span title="https://tx.fhir.org/tx-reg/resolve?fhirVersion=4.0&amp;valueSet=http%3A%2F%2Fhl7.no%2Ffhir%2Fig%2Furn%3Aoid%3A2.16.578.1.12.4.1.1.7426&amp;usage=publication">Error resolving valueSet http://hl7.no/fhir/ig/urn:oid:2.16.578.1.12.4.1.1.7426: Bad Request</span>
+    </td>
+  </tr>
+  <tr>
+    <td>http://hl7.no/fhir/ig/urn:oid:2.16.578.1.12.4.1.1.7617</td>
+    <td style="background-color: #ffe3e3">
+      <span title="https://tx.fhir.org/tx-reg/resolve?fhirVersion=4.0&amp;valueSet=http%3A%2F%2Fhl7.no%2Ffhir%2Fig%2Furn%3Aoid%3A2.16.578.1.12.4.1.1.7617&amp;usage=publication">Error resolving valueSet http://hl7.no/fhir/ig/urn:oid:2.16.578.1.12.4.1.1.7617: Bad Request</span>
+    </td>
+  </tr>
+  <tr>
+    <td>http://hl7.no/fhir/ig/urn:oid:2.16.578.1.12.4.1.1.7704</td>
+    <td style="background-color: #ffe3e3">
+      <span title="https://tx.fhir.org/tx-reg/resolve?fhirVersion=4.0&amp;valueSet=http%3A%2F%2Fhl7.no%2Ffhir%2Fig%2Furn%3Aoid%3A2.16.578.1.12.4.1.1.7704&amp;usage=publication">Error resolving valueSet http://hl7.no/fhir/ig/urn:oid:2.16.578.1.12.4.1.1.7704: Bad Request</span>
+    </td>
+  </tr>
+  <tr>
+    <td>http://hl7.no/fhir/ig/urn:oid:2.16.578.1.12.4.1.1.8279</td>
+    <td style="background-color: #ffe3e3">
+      <span title="https://tx.fhir.org/tx-reg/resolve?fhirVersion=4.0&amp;valueSet=http%3A%2F%2Fhl7.no%2Ffhir%2Fig%2Furn%3Aoid%3A2.16.578.1.12.4.1.1.8279&amp;usage=publication">Error resolving valueSet http://hl7.no/fhir/ig/urn:oid:2.16.578.1.12.4.1.1.8279: Bad Request</span>
+    </td>
+  </tr>
+  <tr>
+    <td>http://hl7.no/fhir/ig/urn:oid:2.16.578.1.12.4.1.1.8406</td>
+    <td style="background-color: #ffe3e3">
+      <span title="https://tx.fhir.org/tx-reg/resolve?fhirVersion=4.0&amp;valueSet=http%3A%2F%2Fhl7.no%2Ffhir%2Fig%2Furn%3Aoid%3A2.16.578.1.12.4.1.1.8406&amp;usage=publication">Error resolving valueSet http://hl7.no/fhir/ig/urn:oid:2.16.578.1.12.4.1.1.8406: Bad Request</span>
+    </td>
+  </tr>
+  <tr>
+    <td>http://hl7.no/fhir/ig/urn:oid:2.16.578.1.12.4.1.1.8432</td>
+    <td style="background-color: #ffe3e3">
+      <span title="https://tx.fhir.org/tx-reg/resolve?fhirVersion=4.0&amp;valueSet=http%3A%2F%2Fhl7.no%2Ffhir%2Fig%2Furn%3Aoid%3A2.16.578.1.12.4.1.1.8432&amp;usage=publication">Error resolving valueSet http://hl7.no/fhir/ig/urn:oid:2.16.578.1.12.4.1.1.8432: Bad Request</span>
+    </td>
+  </tr>
+  <tr>
+    <td>http://hl7.no/fhir/ig/urn:oid:2.16.578.1.12.4.1.1.8451</td>
+    <td style="background-color: #ffe3e3">
+      <span title="https://tx.fhir.org/tx-reg/resolve?fhirVersion=4.0&amp;valueSet=http%3A%2F%2Fhl7.no%2Ffhir%2Fig%2Furn%3Aoid%3A2.16.578.1.12.4.1.1.8451&amp;usage=publication">Error resolving valueSet http://hl7.no/fhir/ig/urn:oid:2.16.578.1.12.4.1.1.8451: Bad Request</span>
+    </td>
+  </tr>
+  <tr>
+    <td>http://hl7.no/fhir/ig/urn:oid:2.16.578.1.12.4.1.1.8624</td>
+    <td style="background-color: #ffe3e3">
+      <span title="https://tx.fhir.org/tx-reg/resolve?fhirVersion=4.0&amp;valueSet=http%3A%2F%2Fhl7.no%2Ffhir%2Fig%2Furn%3Aoid%3A2.16.578.1.12.4.1.1.8624&amp;usage=publication">Error resolving valueSet http://hl7.no/fhir/ig/urn:oid:2.16.578.1.12.4.1.1.8624: Bad Request</span>
+    </td>
+  </tr>
+  <tr>
+    <td>http://hl7.no/fhir/ig/urn:oid:2.16.578.1.12.4.1.1.8628</td>
+    <td style="background-color: #ffe3e3">
+      <span title="https://tx.fhir.org/tx-reg/resolve?fhirVersion=4.0&amp;valueSet=http%3A%2F%2Fhl7.no%2Ffhir%2Fig%2Furn%3Aoid%3A2.16.578.1.12.4.1.1.8628&amp;usage=publication">Error resolving valueSet http://hl7.no/fhir/ig/urn:oid:2.16.578.1.12.4.1.1.8628: Bad Request</span>
+    </td>
+  </tr>
+  <tr>
+    <td>http://hl7.no/fhir/ig/urn:oid:2.16.578.1.12.4.1.1.8654</td>
+    <td style="background-color: #ffe3e3">
+      <span title="https://tx.fhir.org/tx-reg/resolve?fhirVersion=4.0&amp;valueSet=http%3A%2F%2Fhl7.no%2Ffhir%2Fig%2Furn%3Aoid%3A2.16.578.1.12.4.1.1.8654&amp;usage=publication">Error resolving valueSet http://hl7.no/fhir/ig/urn:oid:2.16.578.1.12.4.1.1.8654: Bad Request</span>
+    </td>
+  </tr>
+  <tr>
+    <td>http://hl7.no/fhir/ig/urn:oid:2.16.578.1.12.4.1.1.8655</td>
+    <td style="background-color: #ffe3e3">
+      <span title="https://tx.fhir.org/tx-reg/resolve?fhirVersion=4.0&amp;valueSet=http%3A%2F%2Fhl7.no%2Ffhir%2Fig%2Furn%3Aoid%3A2.16.578.1.12.4.1.1.8655&amp;usage=publication">Error resolving valueSet http://hl7.no/fhir/ig/urn:oid:2.16.578.1.12.4.1.1.8655: Bad Request</span>
+    </td>
+  </tr>
+  <tr>
+    <td>http://hl7.no/fhir/ig/urn:oid:2.16.578.1.12.4.1.1.9034</td>
+    <td style="background-color: #ffe3e3">
+      <span title="https://tx.fhir.org/tx-reg/resolve?fhirVersion=4.0&amp;valueSet=http%3A%2F%2Fhl7.no%2Ffhir%2Fig%2Furn%3Aoid%3A2.16.578.1.12.4.1.1.9034&amp;usage=publication">Error resolving valueSet http://hl7.no/fhir/ig/urn:oid:2.16.578.1.12.4.1.1.9034: Bad Request</span>
+    </td>
+  </tr>
+  <tr>
+    <td>http://hl7.no/fhir/ig/urn:oid:2.16.578.1.12.4.1.1.9040</td>
+    <td style="background-color: #ffe3e3">
+      <span title="https://tx.fhir.org/tx-reg/resolve?fhirVersion=4.0&amp;valueSet=http%3A%2F%2Fhl7.no%2Ffhir%2Fig%2Furn%3Aoid%3A2.16.578.1.12.4.1.1.9040&amp;usage=publication">Error resolving valueSet http://hl7.no/fhir/ig/urn:oid:2.16.578.1.12.4.1.1.9040: Bad Request</span>
+    </td>
+  </tr>
+  <tr>
+    <td>http://hl7.no/fhir/ig/urn:oid:2.16.578.1.12.4.1.1.9060</td>
+    <td style="background-color: #ffe3e3">
+      <span title="https://tx.fhir.org/tx-reg/resolve?fhirVersion=4.0&amp;valueSet=http%3A%2F%2Fhl7.no%2Ffhir%2Fig%2Furn%3Aoid%3A2.16.578.1.12.4.1.1.9060&amp;usage=publication">Error resolving valueSet http://hl7.no/fhir/ig/urn:oid:2.16.578.1.12.4.1.1.9060: Bad Request</span>
+    </td>
+  </tr>
+  <tr>
+    <td>http://hl7.no/fhir/ig/urn:oid:2.16.578.1.12.4.1.1.9151</td>
+    <td style="background-color: #ffe3e3">
+      <span title="https://tx.fhir.org/tx-reg/resolve?fhirVersion=4.0&amp;valueSet=http%3A%2F%2Fhl7.no%2Ffhir%2Fig%2Furn%3Aoid%3A2.16.578.1.12.4.1.1.9151&amp;usage=publication">Error resolving valueSet http://hl7.no/fhir/ig/urn:oid:2.16.578.1.12.4.1.1.9151: Bad Request</span>
+    </td>
+  </tr>
+  <tr>
+    <td>http://hl7.org/fhir/ValueSet/country</td>
+    <td style="background-color: #ffe3e3">
+      <span title="https://tx.fhir.org/tx-reg/resolve?fhirVersion=4.0&amp;valueSet=http%3A%2F%2Fhl7.org%2Ffhir%2FValueSet%2Fcountry&amp;usage=publication">Error resolving valueSet http://hl7.org/fhir/ValueSet/country: Bad Request</span>
+    </td>
+  </tr>
+  <tr>
+    <td>http://www.rfc-editor.org/bcp/bcp13.txt</td>
+    <td style="background-color: #ffe3e3">
+      <span title="https://tx.fhir.org/tx-reg/resolve?fhirVersion=4.0&amp;valueSet=http%3A%2F%2Fwww.rfc-editor.org%2Fbcp%2Fbcp13.txt&amp;usage=publication">Error resolving valueSet http://www.rfc-editor.org/bcp/bcp13.txt: Bad Request</span>
+    </td>
+  </tr>
+  <tr>
+    <td>https://register.geonorge.no/subregister/sosi-kodelister/kartverket/kommunenummer-alle</td>
+    <td style="background-color: #ffe3e3">
+      <span title="https://tx.fhir.org/tx-reg/resolve?fhirVersion=4.0&amp;valueSet=https%3A%2F%2Fregister.geonorge.no%2Fsubregister%2Fsosi-kodelister%2Fkartverket%2Fkommunenummer-alle&amp;usage=publication">Error resolving valueSet https://register.geonorge.no/subregister/sosi-kodelister/kartverket/kommunenummer-alle: Bad Request</span>
+    </td>
+  </tr>
+  <tr>
+    <td>urn:iso:std:iso:3166</td>
+    <td style="background-color: #ffe3e3">
+      <span title="https://tx.fhir.org/tx-reg/resolve?fhirVersion=4.0&amp;valueSet=urn%3Aiso%3Astd%3Aiso%3A3166&amp;usage=publication">Error resolving valueSet urn:iso:std:iso:3166: Bad Request</span>
+    </td>
+  </tr>
+  <tr>
+    <td>urn:oid:2.16.578.1.12.4.1.1.0000</td>
+    <td style="background-color: #ffe3e3">
+      <span title="https://tx.fhir.org/tx-reg/resolve?fhirVersion=4.0&amp;valueSet=urn%3Aoid%3A2.16.578.1.12.4.1.1.0000&amp;usage=publication">Error resolving valueSet urn:oid:2.16.578.1.12.4.1.1.0000: Bad Request</span>
+    </td>
+  </tr>
+  <tr>
+    <td>urn:oid:2.16.578.1.12.4.1.1.3402</td>
+    <td style="background-color: #ffe3e3">
+      <span title="https://tx.fhir.org/tx-reg/resolve?fhirVersion=4.0&amp;valueSet=urn%3Aoid%3A2.16.578.1.12.4.1.1.3402&amp;usage=publication">Error resolving valueSet urn:oid:2.16.578.1.12.4.1.1.3402: Bad Request</span>
+    </td>
+  </tr>
+  <tr>
+    <td>urn:oid:2.16.578.1.12.4.1.1.3403</td>
+    <td style="background-color: #ffe3e3">
+      <span title="https://tx.fhir.org/tx-reg/resolve?fhirVersion=4.0&amp;valueSet=urn%3Aoid%3A2.16.578.1.12.4.1.1.3403&amp;usage=publication">Error resolving valueSet urn:oid:2.16.578.1.12.4.1.1.3403: Bad Request</span>
+    </td>
+  </tr>
+  <tr>
+    <td>urn:oid:2.16.578.1.12.4.1.1.7426</td>
+    <td style="background-color: #ffe3e3">
+      <span title="https://tx.fhir.org/tx-reg/resolve?fhirVersion=4.0&amp;valueSet=urn%3Aoid%3A2.16.578.1.12.4.1.1.7426&amp;usage=publication">Error resolving valueSet urn:oid:2.16.578.1.12.4.1.1.7426: Bad Request</span>
+    </td>
+  </tr>
+  <tr>
+    <td>urn:oid:2.16.578.1.12.4.1.1.7617</td>
+    <td style="background-color: #ffe3e3">
+      <span title="https://tx.fhir.org/tx-reg/resolve?fhirVersion=4.0&amp;valueSet=urn%3Aoid%3A2.16.578.1.12.4.1.1.7617&amp;usage=publication">Error resolving valueSet urn:oid:2.16.578.1.12.4.1.1.7617: Bad Request</span>
+    </td>
+  </tr>
+  <tr>
+    <td>urn:oid:2.16.578.1.12.4.1.1.7704</td>
+    <td style="background-color: #ffe3e3">
+      <span title="https://tx.fhir.org/tx-reg/resolve?fhirVersion=4.0&amp;valueSet=urn%3Aoid%3A2.16.578.1.12.4.1.1.7704&amp;usage=publication">Error resolving valueSet urn:oid:2.16.578.1.12.4.1.1.7704: Bad Request</span>
+    </td>
+  </tr>
+  <tr>
+    <td>urn:oid:2.16.578.1.12.4.1.1.8279</td>
+    <td style="background-color: #ffe3e3">
+      <span title="https://tx.fhir.org/tx-reg/resolve?fhirVersion=4.0&amp;valueSet=urn%3Aoid%3A2.16.578.1.12.4.1.1.8279&amp;usage=publication">Error resolving valueSet urn:oid:2.16.578.1.12.4.1.1.8279: Bad Request</span>
+    </td>
+  </tr>
+  <tr>
+    <td>urn:oid:2.16.578.1.12.4.1.1.8406</td>
+    <td style="background-color: #ffe3e3">
+      <span title="https://tx.fhir.org/tx-reg/resolve?fhirVersion=4.0&amp;valueSet=urn%3Aoid%3A2.16.578.1.12.4.1.1.8406&amp;usage=publication">Error resolving valueSet urn:oid:2.16.578.1.12.4.1.1.8406: Bad Request</span>
+    </td>
+  </tr>
+  <tr>
+    <td>urn:oid:2.16.578.1.12.4.1.1.8432</td>
+    <td style="background-color: #ffe3e3">
+      <span title="https://tx.fhir.org/tx-reg/resolve?fhirVersion=4.0&amp;valueSet=urn%3Aoid%3A2.16.578.1.12.4.1.1.8432&amp;usage=publication">Error resolving valueSet urn:oid:2.16.578.1.12.4.1.1.8432: Bad Request</span>
+    </td>
+  </tr>
+  <tr>
+    <td>urn:oid:2.16.578.1.12.4.1.1.8451</td>
+    <td style="background-color: #ffe3e3">
+      <span title="https://tx.fhir.org/tx-reg/resolve?fhirVersion=4.0&amp;valueSet=urn%3Aoid%3A2.16.578.1.12.4.1.1.8451&amp;usage=publication">Error resolving valueSet urn:oid:2.16.578.1.12.4.1.1.8451: Bad Request</span>
+    </td>
+  </tr>
+  <tr>
+    <td>urn:oid:2.16.578.1.12.4.1.1.8624</td>
+    <td style="background-color: #ffe3e3">
+      <span title="https://tx.fhir.org/tx-reg/resolve?fhirVersion=4.0&amp;valueSet=urn%3Aoid%3A2.16.578.1.12.4.1.1.8624&amp;usage=publication">Error resolving valueSet urn:oid:2.16.578.1.12.4.1.1.8624: Bad Request</span>
+    </td>
+  </tr>
+  <tr>
+    <td>urn:oid:2.16.578.1.12.4.1.1.8628</td>
+    <td style="background-color: #ffe3e3">
+      <span title="https://tx.fhir.org/tx-reg/resolve?fhirVersion=4.0&amp;valueSet=urn%3Aoid%3A2.16.578.1.12.4.1.1.8628&amp;usage=publication">Error resolving valueSet urn:oid:2.16.578.1.12.4.1.1.8628: Bad Request</span>
+    </td>
+  </tr>
+  <tr>
+    <td>urn:oid:2.16.578.1.12.4.1.1.8654</td>
+    <td style="background-color: #ffe3e3">
+      <span title="https://tx.fhir.org/tx-reg/resolve?fhirVersion=4.0&amp;valueSet=urn%3Aoid%3A2.16.578.1.12.4.1.1.8654&amp;usage=publication">Error resolving valueSet urn:oid:2.16.578.1.12.4.1.1.8654: Bad Request</span>
+    </td>
+  </tr>
+  <tr>
+    <td>urn:oid:2.16.578.1.12.4.1.1.8655</td>
+    <td style="background-color: #ffe3e3">
+      <span title="https://tx.fhir.org/tx-reg/resolve?fhirVersion=4.0&amp;valueSet=urn%3Aoid%3A2.16.578.1.12.4.1.1.8655&amp;usage=publication">Error resolving valueSet urn:oid:2.16.578.1.12.4.1.1.8655: Bad Request</span>
+    </td>
+  </tr>
+  <tr>
+    <td>urn:oid:2.16.578.1.12.4.1.1.8658</td>
+    <td style="background-color: #ffe3e3">
+      <span title="https://tx.fhir.org/tx-reg/resolve?fhirVersion=4.0&amp;valueSet=urn%3Aoid%3A2.16.578.1.12.4.1.1.8658&amp;usage=publication">Error resolving valueSet urn:oid:2.16.578.1.12.4.1.1.8658: Bad Request</span>
+    </td>
+  </tr>
+  <tr>
+    <td>urn:oid:2.16.578.1.12.4.1.1.8659</td>
+    <td style="background-color: #ffe3e3">
+      <span title="https://tx.fhir.org/tx-reg/resolve?fhirVersion=4.0&amp;valueSet=urn%3Aoid%3A2.16.578.1.12.4.1.1.8659&amp;usage=publication">Error resolving valueSet urn:oid:2.16.578.1.12.4.1.1.8659: Bad Request</span>
+    </td>
+  </tr>
+  <tr>
+    <td>urn:oid:2.16.578.1.12.4.1.1.8660</td>
+    <td style="background-color: #ffe3e3">
+      <span title="https://tx.fhir.org/tx-reg/resolve?fhirVersion=4.0&amp;valueSet=urn%3Aoid%3A2.16.578.1.12.4.1.1.8660&amp;usage=publication">Error resolving valueSet urn:oid:2.16.578.1.12.4.1.1.8660: Bad Request</span>
+    </td>
+  </tr>
+  <tr>
+    <td>urn:oid:2.16.578.1.12.4.1.1.8663</td>
+    <td style="background-color: #ffe3e3">
+      <span title="https://tx.fhir.org/tx-reg/resolve?fhirVersion=4.0&amp;valueSet=urn%3Aoid%3A2.16.578.1.12.4.1.1.8663&amp;usage=publication">Error resolving valueSet urn:oid:2.16.578.1.12.4.1.1.8663: Bad Request</span>
+    </td>
+  </tr>
+  <tr>
+    <td>urn:oid:2.16.578.1.12.4.1.1.8664</td>
+    <td style="background-color: #ffe3e3">
+      <span title="https://tx.fhir.org/tx-reg/resolve?fhirVersion=4.0&amp;valueSet=urn%3Aoid%3A2.16.578.1.12.4.1.1.8664&amp;usage=publication">Error resolving valueSet urn:oid:2.16.578.1.12.4.1.1.8664: Bad Request</span>
+    </td>
+  </tr>
+  <tr>
+    <td>urn:oid:2.16.578.1.12.4.1.1.8666</td>
+    <td style="background-color: #ffe3e3">
+      <span title="https://tx.fhir.org/tx-reg/resolve?fhirVersion=4.0&amp;valueSet=urn%3Aoid%3A2.16.578.1.12.4.1.1.8666&amp;usage=publication">Error resolving valueSet urn:oid:2.16.578.1.12.4.1.1.8666: Bad Request</span>
+    </td>
+  </tr>
+  <tr>
+    <td>urn:oid:2.16.578.1.12.4.1.1.8668</td>
+    <td style="background-color: #ffe3e3">
+      <span title="https://tx.fhir.org/tx-reg/resolve?fhirVersion=4.0&amp;valueSet=urn%3Aoid%3A2.16.578.1.12.4.1.1.8668&amp;usage=publication">Error resolving valueSet urn:oid:2.16.578.1.12.4.1.1.8668: Bad Request</span>
+    </td>
+  </tr>
+  <tr>
+    <td>urn:oid:2.16.578.1.12.4.1.1.8669</td>
+    <td style="background-color: #ffe3e3">
+      <span title="https://tx.fhir.org/tx-reg/resolve?fhirVersion=4.0&amp;valueSet=urn%3Aoid%3A2.16.578.1.12.4.1.1.8669&amp;usage=publication">Error resolving valueSet urn:oid:2.16.578.1.12.4.1.1.8669: Bad Request</span>
+    </td>
+  </tr>
+  <tr>
+    <td>urn:oid:2.16.578.1.12.4.1.1.9034</td>
+    <td style="background-color: #ffe3e3">
+      <span title="https://tx.fhir.org/tx-reg/resolve?fhirVersion=4.0&amp;valueSet=urn%3Aoid%3A2.16.578.1.12.4.1.1.9034&amp;usage=publication">Error resolving valueSet urn:oid:2.16.578.1.12.4.1.1.9034: Bad Request</span>
+    </td>
+  </tr>
+  <tr>
+    <td>urn:oid:2.16.578.1.12.4.1.1.9040</td>
+    <td style="background-color: #ffe3e3">
+      <span title="https://tx.fhir.org/tx-reg/resolve?fhirVersion=4.0&amp;valueSet=urn%3Aoid%3A2.16.578.1.12.4.1.1.9040&amp;usage=publication">Error resolving valueSet urn:oid:2.16.578.1.12.4.1.1.9040: Bad Request</span>
+    </td>
+  </tr>
+  <tr>
+    <td>urn:oid:2.16.578.1.12.4.1.1.9060</td>
+    <td style="background-color: #ffe3e3">
+      <span title="https://tx.fhir.org/tx-reg/resolve?fhirVersion=4.0&amp;valueSet=urn%3Aoid%3A2.16.578.1.12.4.1.1.9060&amp;usage=publication">Error resolving valueSet urn:oid:2.16.578.1.12.4.1.1.9060: Bad Request</span>
+    </td>
+  </tr>
+  <tr>
+    <td>urn:oid:2.16.578.1.12.4.1.1.9151</td>
+    <td style="background-color: #ffe3e3">
+      <span title="https://tx.fhir.org/tx-reg/resolve?fhirVersion=4.0&amp;valueSet=urn%3Aoid%3A2.16.578.1.12.4.1.1.9151&amp;usage=publication">Error resolving valueSet urn:oid:2.16.578.1.12.4.1.1.9151: Bad Request</span>
+    </td>
+  </tr>
+  <tr>
+    <td>urn:oid:2.16.578.1.12.4.1.1.9602</td>
+    <td style="background-color: #ffe3e3">
+      <span title="https://tx.fhir.org/tx-reg/resolve?fhirVersion=4.0&amp;valueSet=urn%3Aoid%3A2.16.578.1.12.4.1.1.9602&amp;usage=publication">Error resolving valueSet urn:oid:2.16.578.1.12.4.1.1.9602: Bad Request</span>
+    </td>
+  </tr>
+  <tr>
+    <td>urn:oid:2.16.840.1.113883.4.642.4.1809</td>
+    <td style="background-color: #ffe3e3">
+      <span title="https://tx.fhir.org/tx-reg/resolve?fhirVersion=4.0&amp;valueSet=urn%3Aoid%3A2.16.840.1.113883.4.642.4.1809&amp;usage=publication">Error resolving valueSet urn:oid:2.16.840.1.113883.4.642.4.1809: Bad Request</span>
+    </td>
+  </tr>
+</table>
+<h2>Primary Server: https://tx.fhir.org/r4</h2>
+<a href="https://tx.fhir.org/r4"></a>
+<p>Use Count: 124. Code Systems used: </p>
+<table class="grid">
+  <tr>
+    <th>
+      <b>System</b>
+    </th>
+    <th>
+      <b>#Exp.</b>
+    </th>
+    <th>
+      <b>#Val.</b>
+    </th>
+    <th>
+      <b>Details</b>
+    </th>
+  </tr>
+  <tr>
+    <td>http://hl7.org/fhir/contact-point-system</td>
+    <td>1</td>
+    <td>0</td>
+    <td>
+      <a href="http://hl7.org/fhir/R4/codesystem-contact-point-system.html">ContactPointSystem</a>
+    </td>
+  </tr>
+  <tr>
+    <td>http://loinc.org</td>
+    <td>0</td>
+    <td>1</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>http://snomed.info/sct</td>
+    <td>0</td>
+    <td>4</td>
+    <td>
+      <a href="http://hl7.org/fhir/R4/codesystem-snomedct.html">SNOMED CT (all versions)</a>
+    </td>
+  </tr>
+  <tr>
+    <td>http://terminology.hl7.org/CodeSystem/v2-0360|2.7</td>
+    <td>2</td>
+    <td>0</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>https://register.geonorge.no/subregister/sosi-kodelister/kartverket/kommunenummer-alle</td>
+    <td>0</td>
+    <td>1</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>urn:iso:std:iso:3166</td>
+    <td>0</td>
+    <td>1</td>
+    <td>
+      <a href="http://tx.fhir.org/r4/ValueSet/iso-3166">ISO 3166 Country Codes</a>
+    </td>
+  </tr>
+  <tr>
+    <td>urn:oid:2.16.578.1.12.4.1.1.7426</td>
+    <td>0</td>
+    <td>1</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>urn:oid:2.16.578.1.12.4.1.1.7617</td>
+    <td>0</td>
+    <td>1</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>urn:oid:2.16.578.1.12.4.1.1.7704</td>
+    <td>0</td>
+    <td>1</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>urn:oid:2.16.578.1.12.4.1.1.8655</td>
+    <td>0</td>
+    <td>1</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>urn:oid:2.16.578.1.12.4.1.1.8658</td>
+    <td>1</td>
+    <td>0</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>urn:oid:2.16.578.1.12.4.1.1.8659</td>
+    <td>1</td>
+    <td>0</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>urn:oid:2.16.578.1.12.4.1.1.8660</td>
+    <td>2</td>
+    <td>0</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>urn:oid:2.16.578.1.12.4.1.1.8663</td>
+    <td>1</td>
+    <td>0</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>urn:oid:2.16.578.1.12.4.1.1.8664</td>
+    <td>1</td>
+    <td>0</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>urn:oid:2.16.578.1.12.4.1.1.8666</td>
+    <td>1</td>
+    <td>0</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>urn:oid:2.16.578.1.12.4.1.1.8668</td>
+    <td>1</td>
+    <td>0</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>urn:oid:2.16.578.1.12.4.1.1.8669</td>
+    <td>1</td>
+    <td>0</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>urn:oid:2.16.578.1.12.4.1.1.9040</td>
+    <td>0</td>
+    <td>1</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>urn:oid:2.16.578.1.12.4.1.1.9060</td>
+    <td>0</td>
+    <td>1</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>urn:oid:2.16.578.1.12.4.1.1.9602</td>
+    <td>4</td>
+    <td>0</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>urn:oid:2.16.840.1.113883.4.642.4.1809</td>
+    <td>2</td>
+    <td>0</td>
+    <td></td>
+  </tr>
+</table>
+<p>ValueSets fetched:</p>
+<ul>
+  <li>http://hl7.no/fhir/StructureDefinition/no-basis-HealthcareService</li>
+  <li>http://hl7.no/fhir/ig/urn:iso:std:iso:3166</li>
+  <li>http://hl7.no/fhir/ig/urn:oid:2.16.578.1.12.4.1.1.0000</li>
+  <li>http://hl7.no/fhir/ig/urn:oid:2.16.578.1.12.4.1.1.3402</li>
+  <li>http://hl7.no/fhir/ig/urn:oid:2.16.578.1.12.4.1.1.3403</li>
+  <li>http://hl7.no/fhir/ig/urn:oid:2.16.578.1.12.4.1.1.7426</li>
+  <li>http://hl7.no/fhir/ig/urn:oid:2.16.578.1.12.4.1.1.7617</li>
+  <li>http://hl7.no/fhir/ig/urn:oid:2.16.578.1.12.4.1.1.7704</li>
+  <li>http://hl7.no/fhir/ig/urn:oid:2.16.578.1.12.4.1.1.8279</li>
+  <li>http://hl7.no/fhir/ig/urn:oid:2.16.578.1.12.4.1.1.8406</li>
+  <li>http://hl7.no/fhir/ig/urn:oid:2.16.578.1.12.4.1.1.8432</li>
+  <li>http://hl7.no/fhir/ig/urn:oid:2.16.578.1.12.4.1.1.8451</li>
+  <li>http://hl7.no/fhir/ig/urn:oid:2.16.578.1.12.4.1.1.8624</li>
+  <li>http://hl7.no/fhir/ig/urn:oid:2.16.578.1.12.4.1.1.8628</li>
+  <li>http://hl7.no/fhir/ig/urn:oid:2.16.578.1.12.4.1.1.8654</li>
+  <li>http://hl7.no/fhir/ig/urn:oid:2.16.578.1.12.4.1.1.8655</li>
+  <li>http://hl7.no/fhir/ig/urn:oid:2.16.578.1.12.4.1.1.9034</li>
+  <li>http://hl7.no/fhir/ig/urn:oid:2.16.578.1.12.4.1.1.9040</li>
+  <li>http://hl7.no/fhir/ig/urn:oid:2.16.578.1.12.4.1.1.9060</li>
+  <li>http://hl7.no/fhir/ig/urn:oid:2.16.578.1.12.4.1.1.9151</li>
+  <li>http://hl7.org/fhir/ValueSet/country</li>
+  <li>http://www.rfc-editor.org/bcp/bcp13.txt</li>
+  <li>https://register.geonorge.no/subregister/sosi-kodelister/kartverket/kommunenummer-alle</li>
+  <li>urn:iso:std:iso:3166</li>
+  <li>urn:oid:2.16.578.1.12.4.1.1.0000</li>
+  <li>urn:oid:2.16.578.1.12.4.1.1.3402</li>
+  <li>urn:oid:2.16.578.1.12.4.1.1.3403</li>
+  <li>urn:oid:2.16.578.1.12.4.1.1.7426</li>
+  <li>urn:oid:2.16.578.1.12.4.1.1.7617</li>
+  <li>urn:oid:2.16.578.1.12.4.1.1.7704</li>
+  <li>urn:oid:2.16.578.1.12.4.1.1.8279</li>
+  <li>urn:oid:2.16.578.1.12.4.1.1.8406</li>
+  <li>urn:oid:2.16.578.1.12.4.1.1.8432</li>
+  <li>urn:oid:2.16.578.1.12.4.1.1.8451</li>
+  <li>urn:oid:2.16.578.1.12.4.1.1.8624</li>
+  <li>urn:oid:2.16.578.1.12.4.1.1.8628</li>
+  <li>urn:oid:2.16.578.1.12.4.1.1.8654</li>
+  <li>urn:oid:2.16.578.1.12.4.1.1.8655</li>
+  <li>urn:oid:2.16.578.1.12.4.1.1.8658</li>
+  <li>urn:oid:2.16.578.1.12.4.1.1.8659</li>
+  <li>urn:oid:2.16.578.1.12.4.1.1.8660</li>
+  <li>urn:oid:2.16.578.1.12.4.1.1.8663</li>
+  <li>urn:oid:2.16.578.1.12.4.1.1.8664</li>
+  <li>urn:oid:2.16.578.1.12.4.1.1.8666</li>
+  <li>urn:oid:2.16.578.1.12.4.1.1.8668</li>
+  <li>urn:oid:2.16.578.1.12.4.1.1.8669</li>
+  <li>urn:oid:2.16.578.1.12.4.1.1.9034</li>
+  <li>urn:oid:2.16.578.1.12.4.1.1.9040</li>
+  <li>urn:oid:2.16.578.1.12.4.1.1.9060</li>
+  <li>urn:oid:2.16.578.1.12.4.1.1.9151</li>
+  <li>urn:oid:2.16.578.1.12.4.1.1.9602</li>
+  <li>urn:oid:2.16.840.1.113883.4.642.4.1809</li>
+</ul>
+<h2>Server: https://tx.fhir.org/r4</h2>
+<a href="https://tx.fhir.org/r4"></a>
+<p>Use Count: 11. Code Systems used: </p>
+<table class="grid">
+  <tr>
+    <th>
+      <b>System</b>
+    </th>
+    <th>
+      <b>#Exp.</b>
+    </th>
+    <th>
+      <b>#Val.</b>
+    </th>
+    <th>
+      <b>Details</b>
+    </th>
+  </tr>
+</table>
+</body>
+</html>
