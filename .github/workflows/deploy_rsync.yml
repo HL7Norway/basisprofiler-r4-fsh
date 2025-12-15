@@ -14,8 +14,8 @@ jobs:
         with:
           FLAGS: -avzr --delete
           EXCLUDES: --exclude .htaccess --exclude /uploads/
-          USER deploybot
-          HOST: myserver.com
+          USER seland.org
+          HOST: ssh.seland.org
           LOCALPATH: /currentbuild/
-          REMOTEPATH: /srv/myapp/public/htdocs/
+          REMOTEPATH: /customers/4/3/6/seland.org/httpd.www/hl7/ig
           DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
