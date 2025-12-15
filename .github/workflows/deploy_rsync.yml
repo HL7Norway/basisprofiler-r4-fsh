@@ -1,7 +1,7 @@
 name: Deploy to production ssh rsync
 
 on:
-  push:
+#  push:
     branches:
       - gh-pages
 
