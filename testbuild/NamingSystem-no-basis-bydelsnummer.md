@@ -1,4 +1,4 @@
-# no-basis-bydelsnummer - v2.2.3-test
+# no-basis-bydelsnummer - v2.2.4-test
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,35 +8,11 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.no/fhir/ig/NamingSystem/no-basis-bydelsnummer | *Version*:2.2.3-test |
+| *Official URL*:http://hl7.no/fhir/ig/NamingSystem/no-basis-bydelsnummer | *Version*:2.2.4-test |
 | Active as of 2018-10-26 | *Computable Name*:Bydelsnummer |
 
  
 Nummerering av kommuner i henhold til SSB sin offisielle liste. Inneholder fremtidige, gyldige og utgåtte kommunenummer. 
-
-version: 1.0
-
-### Summary
-
-| | |
-| :--- | :--- |
-| Defining URL | http://hl7.no/fhir/ig/NamingSystem/no-basis-bydelsnummer |
-| Version | 2.2.3-test |
-| Name | Bydelsnummer |
-| Status | active |
-| Definition | Nummerering av kommuner i henhold til SSB sin offisielle liste. Inneholder fremtidige, gyldige og utgåtte kommunenummer. |
-
-### Identifiers
-
-* **Type**: URI
-  * **Value**: http://hl7.no/fhir/NamingSystem/bydelsnummer
-  * **Preferred**: false
-* **Type**: URI
-  * **Value**: http://data.ssb.no/api/klass/v1/versions/919
-  * **Preferred**: true
-* **Type**: URI
-  * **Value**: urn:oid:2.16.578.1.12.4.1.1.3403
-  * **Preferred**: false
 
 
 
@@ -49,50 +25,42 @@ version: 1.0
   "meta" : {
     "versionId" : "1.0"
   },
-  "extension" : [
-    {
-      "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.url",
-      "valueUri" : "http://hl7.no/fhir/ig/NamingSystem/no-basis-bydelsnummer"
-    },
-    {
-      "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.version",
-      "valueString" : "2.2.3-test"
-    }
-  ],
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.url",
+    "valueUri" : "http://hl7.no/fhir/ig/NamingSystem/no-basis-bydelsnummer"
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.version",
+    "valueString" : "2.2.4-test"
+  }],
   "name" : "Bydelsnummer",
   "status" : "active",
   "kind" : "identifier",
   "date" : "2018-10-26",
   "responsible" : "Statistisk sentralbyrå",
   "description" : "Nummerering av kommuner i henhold til SSB sin offisielle liste. Inneholder fremtidige, gyldige og utgåtte kommunenummer.",
-  "jurisdiction" : [
-    {
-      "coding" : [
-        {
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "NO",
-          "display" : "Norway"
-        }
-      ]
-    }
-  ],
-  "uniqueId" : [
-    {
-      "type" : "uri",
-      "value" : "http://hl7.no/fhir/NamingSystem/bydelsnummer",
-      "preferred" : false
-    },
-    {
-      "type" : "uri",
-      "value" : "http://data.ssb.no/api/klass/v1/versions/919",
-      "preferred" : true
-    },
-    {
-      "type" : "uri",
-      "value" : "urn:oid:2.16.578.1.12.4.1.1.3403",
-      "preferred" : false
-    }
-  ]
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "NO",
+      "display" : "Norway"
+    }]
+  }],
+  "uniqueId" : [{
+    "type" : "uri",
+    "value" : "http://hl7.no/fhir/NamingSystem/bydelsnummer",
+    "preferred" : false
+  },
+  {
+    "type" : "uri",
+    "value" : "http://data.ssb.no/api/klass/v1/versions/919",
+    "preferred" : true
+  },
+  {
+    "type" : "uri",
+    "value" : "urn:oid:2.16.578.1.12.4.1.1.3403",
+    "preferred" : false
+  }]
 }
 
 ```

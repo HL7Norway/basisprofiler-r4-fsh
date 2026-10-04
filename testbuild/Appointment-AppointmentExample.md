@@ -1,4 +1,4 @@
-# Appointment Example - v2.2.3-test
+# Appointment Example - v2.2.4-test
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -36,37 +36,31 @@ Profile: [no-basis-Appointment](StructureDefinition-no-basis-Appointment.md)
   "resourceType" : "Appointment",
   "id" : "AppointmentExample",
   "meta" : {
-    "profile" : [
-      "http://hl7.no/fhir/ig/StructureDefinition/no-basis-Appointment"
-    ]
+    "profile" : ["http://hl7.no/fhir/ig/StructureDefinition/no-basis-Appointment"]
   },
   "status" : "booked",
   "appointmentType" : {
-    "coding" : [
-      {
-        "system" : "http://terminology.hl7.org/CodeSystem/v2-0276",
-        "code" : "CHECKUP"
-      },
-      {
-        "system" : "urn:oid:2.16.578.1.12.4.1.1.7617",
-        "code" : "Ordinær"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v2-0276",
+      "code" : "CHECKUP"
+    },
+    {
+      "system" : "urn:oid:2.16.578.1.12.4.1.1.7617",
+      "code" : "Ordinær"
+    }]
   },
   "description" : "Discussion on the results of your recent MRI",
   "start" : "2023-08-10T09:00:00Z",
   "end" : "2023-08-10T11:00:00Z",
   "comment" : "Further expand on the results of the MRI and determine the next actions that may be appropriate.",
-  "participant" : [
-    {
-      "actor" : {
-        "reference" : "Patient/PatientExample",
-        "display" : "Peter James Chalmers"
-      },
-      "required" : "required",
-      "status" : "accepted"
-    }
-  ]
+  "participant" : [{
+    "actor" : {
+      "reference" : "Patient/PatientExample",
+      "display" : "Peter James Chalmers"
+    },
+    "required" : "required",
+    "status" : "accepted"
+  }]
 }
 
 ```

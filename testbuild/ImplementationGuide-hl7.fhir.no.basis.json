@@ -6,10 +6,10 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide hl7.fhir.no.basis</b></p><a name=\"hl7.fhir.no.basis\"> </a><a name=\"hchl7.fhir.no.basis\"> </a><h2>NoBasis</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.no/fhir/ig/ImplementationGuide/hl7.fhir.no.basis</pre></div>"
   },
   "url" : "http://hl7.no/fhir/ig/ImplementationGuide/hl7.fhir.no.basis",
-  "version" : "2.2.3-test",
+  "version" : "2.2.4-test",
   "name" : "NoBasis",
-  "status" : "active",
-  "date" : "2025-11-06T10:34:36+00:00",
+  "status" : "draft",
+  "date" : "2026-10-04T17:32:19+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -28,7 +28,7 @@
     }],
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r4",
-    "version" : "6.5.0"
+    "version" : "7.4.0"
   },
   {
     "id" : "hl7ext",
@@ -38,7 +38,7 @@
     }],
     "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
     "packageId" : "hl7.fhir.uv.extensions.r4",
-    "version" : "5.2.0"
+    "version" : "5.3.0"
   }],
   "definition" : {
     "extension" : [{
@@ -318,7 +318,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
-      "valueCode" : "hl7.fhir.uv.tools.r4#0.8.0"
+      "valueCode" : "hl7.fhir.uv.tools.r4#1.1.2"
     },
     {
       "extension" : [{
@@ -628,6 +628,7 @@
         "reference" : "Organization/Direktoratet-for-eHelse-Organization"
       },
       "name" : "Direktoratet-for-eHelse-Organization",
+      "description" : "Example of an organization using no-basis profile. The profile is identical to the basis profile except there is an extension that can be used for official addresses.",
       "exampleCanonical" : "http://hl7.no/fhir/ig/StructureDefinition/no-basis-Organization"
     },
     {
@@ -639,6 +640,7 @@
         "reference" : "Patient/EspenEksempel"
       },
       "name" : "EspenEksempel",
+      "description" : "Eksempel på pasient med fødselsnummer, navn, telefonnummer, adresse, sivilstand og fastlege.",
       "exampleCanonical" : "http://hl7.no/fhir/ig/StructureDefinition/no-basis-Patient"
     },
     {
@@ -650,6 +652,7 @@
         "reference" : "Patient/JanniceSoreng"
       },
       "name" : "JanniceSoreng",
+      "description" : "Eksempel på pasient med fødselsnummer, navn, telefonnummer, adresse, sivilstand og fastlege.",
       "exampleCanonical" : "http://hl7.no/fhir/ig/StructureDefinition/no-basis-Patient"
     },
     {
@@ -661,6 +664,7 @@
         "reference" : "Patient/JanniceSorengTo"
       },
       "name" : "JanniceSorengTo",
+      "description" : "Eksempel på pasient med fødselsnummer, navn, telefonnummer, adresse, sivilstand og fastlege.",
       "exampleCanonical" : "http://hl7.no/fhir/ig/StructureDefinition/no-basis-Patient"
     },
     {
@@ -672,7 +676,20 @@
         "reference" : "Practitioner/Magnar-Komann-Practitioner"
       },
       "name" : "Magnar-Komann-Practitioner",
+      "description" : "Eksempel på helsepersonell med identifikator, navn, telefonnummer, adresse og kvalifikasjoner.",
       "exampleCanonical" : "http://hl7.no/fhir/ig/StructureDefinition/no-basis-Practitioner"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Procedure"
+      }],
+      "reference" : {
+        "reference" : "Procedure/no-basis-Procedure-example"
+      },
+      "name" : "No Basis Procedure Example",
+      "description" : "Example of a colonoscopy procedure using no-basis profile",
+      "exampleCanonical" : "http://hl7.no/fhir/ig/StructureDefinition/no-basis-Procedure"
     },
     {
       "extension" : [{
@@ -827,6 +844,7 @@
         "reference" : "ValueSet/no-basis-documentreference-type.valueset"
       },
       "name" : "no-basis-documentreference-type.valueset",
+      "description" : "Kodeverket er for å angi dokumenttype når man skal dele et dokument i en XDS-løsning. Kodeverket er også harmonert med eksisterende kodeverk for dokumenttyper og journalstruktur i den grad dette har vært mulig. Dette gjelder primært følgende kodeverk: - 9066 Kategori journalinformasjon - 9601 Emneorienterte sakstyper (Piene inndelingen)",
       "exampleBoolean" : false
     },
     {
@@ -958,6 +976,18 @@
       },
       "name" : "no-basis-HumanName",
       "description" : "Basisprofil for Norwegian HumanName. Defined by The Norwegian Directorate of eHealth and HL7 Norway. The profile adds the concept of middlename and further explains of the use for the data-elements in a Norwegian context. The basis profile is open, but derived profiles should close down the information elements according to specification relevant to the use-case.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "NamingSystem"
+      }],
+      "reference" : {
+        "reference" : "NamingSystem/no-basis-icpc-2"
+      },
+      "name" : "no-basis-icpc-2",
+      "description" : "In Norway primary care uses ICPC-2 to document contact-reason, health related problem and diagnosis.",
       "exampleBoolean" : false
     },
     {
@@ -1203,17 +1233,6 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Procedure"
-      }],
-      "reference" : {
-        "reference" : "Procedure/no-basis-Procedure-example"
-      },
-      "name" : "no-basis-Procedure-example",
-      "exampleCanonical" : "http://hl7.no/fhir/StructureDefinition/no-basis-Procedure"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
@@ -1322,18 +1341,6 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "NamingSystem"
-      }],
-      "reference" : {
-        "reference" : "NamingSystem/no-basis-icpc-2"
-      },
-      "name" : "NoBasisICPC2",
-      "description" : "In Norway primary care uses ICPC-2 to document contact-reason, health related problem and diagnosis.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Patient"
       }],
       "reference" : {
@@ -1387,6 +1394,7 @@
         "reference" : "RelatedPerson/Solid-Aresdoktor-RelatedPerson"
       },
       "name" : "Solid-Aresdoktor-RelatedPerson",
+      "description" : "Eksempel på pårørende med fødselsnummer, navn, telefonnummer, adresse, sivilstand og relasjon til pasient.",
       "exampleCanonical" : "http://hl7.no/fhir/ig/StructureDefinition/no-basis-RelatedPerson"
     },
     {
@@ -1398,6 +1406,7 @@
         "reference" : "RelatedPerson/Sorgard-Erlend-RelatedPerson"
       },
       "name" : "Sorgard-Erlend-RelatedPerson",
+      "description" : "Eksempel på pårørende med fødselsnummer, navn, telefonnummer, adresse, sivilstand og relasjon til pasient.",
       "exampleCanonical" : "http://hl7.no/fhir/ig/StructureDefinition/no-basis-RelatedPerson"
     }],
     "page" : {

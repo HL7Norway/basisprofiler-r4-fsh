@@ -1,4 +1,4 @@
-# Datatypes - v2.2.3-test
+# Datatypes - v2.2.4-test
 
 * [**Table of Contents**](toc.md)
 * **Datatypes**
@@ -7,7 +7,7 @@
 
 # Data types
 
-![](https://raw.githubusercontent.com/HL7Norway/basisprofiler-r4/master/Images/no-basis-Datatypes.png)
+ ![](https://raw.githubusercontent.com/HL7Norway/basisprofiler-r4/master/Images/no-basis-Datatypes.png)
 
 ## no-basis-Address
 

@@ -1,4 +1,4 @@
-# no-basis-parental-responsibility.codesystem - v2.2.3-test
+# no-basis-parental-responsibility.codesystem - v2.2.4-test
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.no/fhir/CodeSystem/no-basis-parental-responsibility | *Version*:2.2.3-test |
+| *Official URL*:http://hl7.no/fhir/CodeSystem/no-basis-parental-responsibility | *Version*:2.2.4-test |
 | Active as of 2019-05-15 | *Computable Name*:NoBasisParentalResponsibility |
 
  
@@ -16,7 +16,7 @@ Copy of Codes from Foreldreansvar defined by Skatteetaten
 
  This Code system is referenced in the content logical definition of the following value sets: 
 
-* [NoBasisParentalResponsibilityVS](ValueSet-no-basis-parental-responsibility.valueset.md)
+* [no-basis-parental-responsibility.valueset](ValueSet-no-basis-parental-responsibility.valueset.md)
 
 
 
@@ -31,51 +31,47 @@ Copy of Codes from Foreldreansvar defined by Skatteetaten
     "lastUpdated" : "2019-05-07T00:00:00+00:00"
   },
   "url" : "http://hl7.no/fhir/CodeSystem/no-basis-parental-responsibility",
-  "version" : "2.2.3-test",
+  "version" : "2.2.4-test",
   "name" : "NoBasisParentalResponsibility",
   "title" : "no-basis-parental-responsibility.codesystem",
   "status" : "active",
+  "experimental" : false,
   "date" : "2019-05-15T00:00:00+00:00",
   "description" : "Copy of Codes from Foreldreansvar defined by Skatteetaten",
-  "jurisdiction" : [
-    {
-      "coding" : [
-        {
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "NO",
-          "display" : "Norway"
-        }
-      ]
-    }
-  ],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "NO",
+      "display" : "Norway"
+    }]
+  }],
+  "caseSensitive" : true,
   "content" : "complete",
   "count" : 6,
-  "concept" : [
-    {
-      "code" : "felles",
-      "display" : "Felles"
-    },
-    {
-      "code" : "mor",
-      "display" : "Mor"
-    },
-    {
-      "code" : "far",
-      "display" : "Far"
-    },
-    {
-      "code" : "medmor",
-      "display" : "Medmor"
-    },
-    {
-      "code" : "andre",
-      "display" : "Andre"
-    },
-    {
-      "code" : "ukjent",
-      "display" : "Ukjent"
-    }
-  ]
+  "concept" : [{
+    "code" : "felles",
+    "display" : "Felles"
+  },
+  {
+    "code" : "mor",
+    "display" : "Mor"
+  },
+  {
+    "code" : "far",
+    "display" : "Far"
+  },
+  {
+    "code" : "medmor",
+    "display" : "Medmor"
+  },
+  {
+    "code" : "andre",
+    "display" : "Andre"
+  },
+  {
+    "code" : "ukjent",
+    "display" : "Ukjent"
+  }]
 }
 
 ```

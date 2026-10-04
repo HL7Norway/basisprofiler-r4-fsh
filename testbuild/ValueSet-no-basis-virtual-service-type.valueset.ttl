@@ -1,6 +1,5 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -8,52 +7,51 @@
 
 <http://hl7.no/fhir/ig/ValueSet/no-basis-virtual-service-type.valueset> a fhir:ValueSet ;
   fhir:nodeRole fhir:treeRoot ;
-  fhir:id [ fhir:v "no-basis-virtual-service-type.valueset"] ; # 
-  fhir:text [
-     fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet no-basis-virtual-service-type.valueset</b></p><a name=\"no-basis-virtual-service-type.valueset\"> </a><a name=\"hcno-basis-virtual-service-type.valueset\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <code>urn:oid:2.16.840.1.113883.4.642.4.1809</code><span title=\"Version is not explicity stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span></li><li>Include all codes defined in <a href=\"http://hl7.org/fhir/R4/codesystem-contact-point-system.html\"><code>http://hl7.org/fhir/contact-point-system</code></a><span title=\"Version is not explicitly stated, which means it is fixed to 4.0.1, the version found through the package references\"> version ?4.0.1</span></li></ul></div>"^^rdf:XMLLiteral ]
-  ] ; # 
-  fhir:url [
-     fhir:v "http://hl7.no/fhir/ValueSet/no-basis-virtual-service-type"^^xsd:anyURI ;
-     fhir:l <http://hl7.no/fhir/ValueSet/no-basis-virtual-service-type>
-  ] ; # 
-  fhir:version [ fhir:v "2.2.3-test"] ; # 
-  fhir:name [ fhir:v "NoBasisVirtualServiceType"] ; # 
-  fhir:title [ fhir:v "No Basis VirtualServiceType Value Set"] ; # 
-  fhir:status [ fhir:v "active"] ; # 
-  fhir:experimental [ fhir:v false] ; # 
-  fhir:date [ fhir:v "2023-10-05T21:14:02.936+00:00"^^xsd:dateTime] ; # 
-  fhir:contact ( [
-     fhir:name [ fhir:v "Hl7 Norge" ] ;
-     fhir:telecom ( [
-       fhir:system [ fhir:v "url" ] ;
-       fhir:value [ fhir:v "http://Hl7.no/" ]
-     ] )
-  ] ) ; # 
-  fhir:description [ fhir:v "Example codes for virtual service connection types. Any other codes or codesystem should be added to this valueSet"] ; # 
-  fhir:jurisdiction ( [
-     fhir:coding ( [
-       fhir:system [
-         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
-         fhir:l <urn:iso:std:iso:3166>
-       ] ;
-       fhir:code [ fhir:v "NO" ] ;
-       fhir:display [ fhir:v "Norway" ]
-     ] )
-  ] ) ; # 
-  fhir:compose [
-     fhir:include ( [
-       fhir:system [
-         fhir:v "urn:oid:2.16.840.1.113883.4.642.4.1809"^^xsd:anyURI ;
-         fhir:l <urn:oid:2.16.840.1.113883.4.642.4.1809>
-       ]
-     ] [
-       fhir:system [
-         fhir:v "http://hl7.org/fhir/contact-point-system"^^xsd:anyURI ;
-         fhir:l <http://hl7.org/fhir/contact-point-system>
-       ]
-     ] )
-  ] . # 
+  fhir:Resource.id [ fhir:value "no-basis-virtual-service-type.valueset"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet no-basis-virtual-service-type.valueset</b></p><a name=\"no-basis-virtual-service-type.valueset\"> </a><a name=\"hcno-basis-virtual-service-type.valueset\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <code>urn:oid:2.16.840.1.113883.4.642.4.1809</code><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span></li><li>Include all codes defined in <a href=\"http://hl7.org/fhir/R4/codesystem-contact-point-system.html\"><code>http://hl7.org/fhir/contact-point-system</code></a><span title=\"Version is not explicitly stated, which means it is fixed to 4.0.1, the version found through the package references\"> version ?4.0.1</span></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "http://hl7.no/fhir/ValueSet/no-basis-virtual-service-type"] ;
+  fhir:ValueSet.version [ fhir:value "2.2.4-test"] ;
+  fhir:ValueSet.name [ fhir:value "NoBasisVirtualServiceType"] ;
+  fhir:ValueSet.title [ fhir:value "No Basis VirtualServiceType Value Set"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:ValueSet.date [ fhir:value "2023-10-05T21:14:02.936+00:00"^^xsd:dateTime] ;
+  fhir:ValueSet.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "Hl7 Norge" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "http://Hl7.no/" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "Example codes for virtual service connection types. Any other codes or codesystem should be added to this valueSet"] ;
+  fhir:ValueSet.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "NO" ] ;
+       fhir:Coding.display [ fhir:value "Norway" ]
+     ]
+  ] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "urn:oid:2.16.840.1.113883.4.642.4.1809" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://hl7.org/fhir/contact-point-system" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.no/fhir/ig/ValueSet/no-basis-virtual-service-type.valueset.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 

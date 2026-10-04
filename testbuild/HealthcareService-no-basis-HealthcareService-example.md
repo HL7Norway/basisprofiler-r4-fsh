@@ -1,4 +1,4 @@
-# no-basis-HealthcareService-example - v2.2.3-test
+# no-basis-HealthcareService-example - v2.2.4-test
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -27,17 +27,13 @@ Profiles: [no-basis-HealthcareService](StructureDefinition-no-basis-HealthcareSe
   "resourceType" : "HealthcareService",
   "id" : "no-basis-HealthcareService-example",
   "meta" : {
-    "profile" : [
-      "http://hl7.no/fhir/ig/StructureDefinition/no-basis-HealthcareService",
-      "http://hl7.no/fhir/StructureDefinition/no-basis-HealthcareService"
-    ]
+    "profile" : ["http://hl7.no/fhir/ig/StructureDefinition/no-basis-HealthcareService",
+    "http://hl7.no/fhir/StructureDefinition/no-basis-HealthcareService"]
   },
-  "identifier" : [
-    {
-      "system" : "http://hl7.no/shared-ids",
-      "value" : "HS-12"
-    }
-  ],
+  "identifier" : [{
+    "system" : "http://hl7.no/shared-ids",
+    "value" : "HS-12"
+  }],
   "active" : true,
   "providedBy" : {
     "reference" : "Organization/Direktoratet-for-eHelse-Organization",
@@ -47,28 +43,20 @@ Profiles: [no-basis-HealthcareService](StructureDefinition-no-basis-HealthcareSe
     },
     "display" : "Direktoratet for e-Helse"
   },
-  "category" : [
-    {
-      "coding" : [
-        {
-          "system" : "urn:oid:2.16.578.1.12.4.1.1.9040",
-          "code" : "101",
-          "display" : "Helseforetak/private sykehus"
-        }
-      ]
-    }
-  ],
-  "specialty" : [
-    {
-      "coding" : [
-        {
-          "system" : "urn:oid:2.16.578.1.12.4.1.1.8655",
-          "code" : "S0208",
-          "display" : "Ortopedisk kirurgi"
-        }
-      ]
-    }
-  ]
+  "category" : [{
+    "coding" : [{
+      "system" : "urn:oid:2.16.578.1.12.4.1.1.9040",
+      "code" : "101",
+      "display" : "Helseforetak/private sykehus"
+    }]
+  }],
+  "specialty" : [{
+    "coding" : [{
+      "system" : "urn:oid:2.16.578.1.12.4.1.1.8655",
+      "code" : "S0208",
+      "display" : "Ortopedisk kirurgi"
+    }]
+  }]
 }
 
 ```

@@ -1,4 +1,4 @@
-# no-basis-shortnotice - v2.2.3-test
+# no-basis-shortnotice - v2.2.4-test
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.no/fhir/ig/StructureDefinition/no-basis-shortnotice | *Version*:2.2.3-test |
-| Active as of 2025-11-06 | *Computable Name*:NoBasisShortNotice |
+| *Official URL*:http://hl7.no/fhir/ig/StructureDefinition/no-basis-shortnotice | *Version*:2.2.4-test |
+| Active as of 2026-10-04 | *Computable Name*:NoBasisShortNotice |
 
 The basis extension defines a boolean concept that expresses the possibility to meet on short notice if the there are available appointment slots.
 
@@ -22,7 +22,7 @@ The basis extension defines a boolean concept that expresses the possibility to 
 * Use this Extension: [no-basis-AppointmentResponse](StructureDefinition-no-basis-AppointmentResponse.md)
 * Examples for this Extension: [AppointmentResponse/PatientAppointmentResponseExample](AppointmentResponse-PatientAppointmentResponseExample.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.no.basis|current/StructureDefinition/no-basis-shortnotice)
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/hl7.fhir.no.basis|current/StructureDefinition/StructureDefinition-no-basis-shortnotice.json)
 
 ### Formal Views of Extension Content
 
@@ -43,70 +43,58 @@ Other representations of profile: [CSV](StructureDefinition-no-basis-shortnotice
   "resourceType" : "StructureDefinition",
   "id" : "no-basis-shortnotice",
   "url" : "http://hl7.no/fhir/ig/StructureDefinition/no-basis-shortnotice",
-  "version" : "2.2.3-test",
+  "version" : "2.2.4-test",
   "name" : "NoBasisShortNotice",
   "title" : "no-basis-shortnotice",
   "status" : "active",
-  "date" : "2025-11-06T10:34:36+00:00",
+  "date" : "2026-10-04T17:32:19+00:00",
   "description" : "The basis extension defines a boolean concept that expresses the possibility to meet on short notice if the there are available appointment slots.",
-  "jurisdiction" : [
-    {
-      "coding" : [
-        {
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "NO",
-          "display" : "Norway"
-        }
-      ]
-    }
-  ],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "NO",
+      "display" : "Norway"
+    }]
+  }],
   "fhirVersion" : "4.0.1",
-  "mapping" : [
-    {
-      "identity" : "rim",
-      "uri" : "http://hl7.org/v3",
-      "name" : "RIM Mapping"
-    }
-  ],
+  "mapping" : [{
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  }],
   "kind" : "complex-type",
   "abstract" : false,
-  "context" : [
-    {
-      "type" : "element",
-      "expression" : "AppointmentResponse"
-    }
-  ],
+  "context" : [{
+    "type" : "element",
+    "expression" : "AppointmentResponse"
+  }],
   "type" : "Extension",
   "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
   "derivation" : "constraint",
   "differential" : {
-    "element" : [
-      {
-        "id" : "Extension",
-        "path" : "Extension",
-        "max" : "1"
-      },
-      {
-        "id" : "Extension.extension",
-        "path" : "Extension.extension",
-        "max" : "0"
-      },
-      {
-        "id" : "Extension.url",
-        "path" : "Extension.url",
-        "fixedUri" : "http://hl7.no/fhir/ig/StructureDefinition/no-basis-shortnotice"
-      },
-      {
-        "id" : "Extension.value[x]",
-        "path" : "Extension.value[x]",
-        "short" : "Patient can come on short notice.",
-        "type" : [
-          {
-            "code" : "boolean"
-          }
-        ]
-      }
-    ]
+    "element" : [{
+      "id" : "Extension",
+      "path" : "Extension",
+      "max" : "1"
+    },
+    {
+      "id" : "Extension.extension",
+      "path" : "Extension.extension",
+      "max" : "0"
+    },
+    {
+      "id" : "Extension.url",
+      "path" : "Extension.url",
+      "fixedUri" : "http://hl7.no/fhir/ig/StructureDefinition/no-basis-shortnotice"
+    },
+    {
+      "id" : "Extension.value[x]",
+      "path" : "Extension.value[x]",
+      "short" : "Patient can come on short notice.",
+      "type" : [{
+        "code" : "boolean"
+      }]
+    }]
   }
 }
 

@@ -1,4 +1,4 @@
-# no-basis-connection-type.valueset - v2.2.3-test
+# no-basis-connection-type.valueset - v2.2.4-test
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.no/fhir/ValueSet/no-basis-connection-type | *Version*:2.2.3-test |
-| Active as of 2019-03-13 | *Computable Name*:NoBasisConnectionTypeVS |
+| *Official URL*:http://hl7.no/fhir/ValueSet/no-basis-connection-type | *Version*:2.2.4-test |
+| Active as of 2019-03-13 | *Computable Name*:NoBasisConnectionType |
 
  
 ValueSet for connection types used in Endpoint definition. Includes all Norwegian specific types (no-basis-connection-type) and the extensible HL7 CodeSystem for connection-type 
@@ -20,18 +20,9 @@ ValueSet for connection types used in Endpoint definition. Includes all Norwegia
 
 ### Logical Definition (CLD)
 
-version: 1; Last updated: 2018-10-16 10:48:46+0000
-
-This value set includes codes based on the following rules:
-
-* Include all codes defined in [`http://hl7.no/fhir/CodeSystem/no-basis-connection-type`](CodeSystem-no-basis-connection-type.codesystem.md)version 📦2.2.3-test
-* Include all codes defined in [`http://terminology.hl7.org/CodeSystem/endpoint-connection-type`](http://terminology.hl7.org/6.5.0/CodeSystem-endpoint-connection-type.html)version 📦2.1.1
-
  
 
 ### Expansion
-
-This value set contains 17 concepts
 
 -------
 
@@ -59,34 +50,28 @@ This value set contains 17 concepts
     "lastUpdated" : "2018-10-16T10:48:46.366+00:00"
   },
   "url" : "http://hl7.no/fhir/ValueSet/no-basis-connection-type",
-  "version" : "2.2.3-test",
-  "name" : "NoBasisConnectionTypeVS",
+  "version" : "2.2.4-test",
+  "name" : "NoBasisConnectionType",
   "title" : "no-basis-connection-type.valueset",
   "status" : "active",
   "experimental" : true,
   "date" : "2019-03-13T10:48:45.936+00:00",
   "description" : "ValueSet for connection types used in Endpoint definition. Includes all Norwegian specific types (no-basis-connection-type) and the extensible HL7 CodeSystem for connection-type",
-  "jurisdiction" : [
-    {
-      "coding" : [
-        {
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "NO",
-          "display" : "Norway"
-        }
-      ]
-    }
-  ],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "NO",
+      "display" : "Norway"
+    }]
+  }],
   "immutable" : false,
   "compose" : {
-    "include" : [
-      {
-        "system" : "http://hl7.no/fhir/CodeSystem/no-basis-connection-type"
-      },
-      {
-        "system" : "http://terminology.hl7.org/CodeSystem/endpoint-connection-type"
-      }
-    ]
+    "include" : [{
+      "system" : "http://hl7.no/fhir/CodeSystem/no-basis-connection-type"
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/endpoint-connection-type"
+    }]
   }
 }
 

@@ -1,4 +1,4 @@
-# Patient Example - v2.2.3-test
+# Patient Example - v2.2.4-test
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -18,13 +18,11 @@ Peter James Chalmers (official) (no stated gender), DoB Unknown
 {
   "resourceType" : "Patient",
   "id" : "PatientExample",
-  "name" : [
-    {
-      "use" : "official",
-      "family" : "Chalmers",
-      "given" : ["Peter James"]
-    }
-  ]
+  "name" : [{
+    "use" : "official",
+    "family" : "Chalmers",
+    "given" : ["Peter James"]
+  }]
 }
 
 ```

@@ -1,4 +1,4 @@
-# No Basis VirtualServiceType Value Set - v2.2.3-test
+# No Basis VirtualServiceType Value Set - v2.2.4-test
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.no/fhir/ValueSet/no-basis-virtual-service-type | *Version*:2.2.3-test |
+| *Official URL*:http://hl7.no/fhir/ValueSet/no-basis-virtual-service-type | *Version*:2.2.4-test |
 | Active as of 2023-10-05 | *Computable Name*:NoBasisVirtualServiceType |
 
  
@@ -20,16 +20,11 @@ Example codes for virtual service connection types. Any other codes or codesyste
 
 ### Logical Definition (CLD)
 
-This value set includes codes based on the following rules:
-
-* Include all codes defined in `urn:oid:2.16.840.1.113883.4.642.4.1809`version Not Stated (use latest from terminology server)
-* Include all codes defined in [`http://hl7.org/fhir/contact-point-system`](http://hl7.org/fhir/R4/codesystem-contact-point-system.html)version 📦4.0.1
-
  
 
 ### Expansion
 
-No Expansion for this valueset (not supported by Publication Tooling)
+No Expansion for this valueset (Unknown Code System)
 
 -------
 
@@ -53,44 +48,34 @@ No Expansion for this valueset (not supported by Publication Tooling)
   "resourceType" : "ValueSet",
   "id" : "no-basis-virtual-service-type.valueset",
   "url" : "http://hl7.no/fhir/ValueSet/no-basis-virtual-service-type",
-  "version" : "2.2.3-test",
+  "version" : "2.2.4-test",
   "name" : "NoBasisVirtualServiceType",
   "title" : "No Basis VirtualServiceType Value Set",
   "status" : "active",
   "experimental" : false,
   "date" : "2023-10-05T21:14:02.936+00:00",
-  "contact" : [
-    {
-      "name" : "Hl7 Norge",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://Hl7.no/"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "Hl7 Norge",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://Hl7.no/"
+    }]
+  }],
   "description" : "Example codes for virtual service connection types. Any other codes or codesystem should be added to this valueSet",
-  "jurisdiction" : [
-    {
-      "coding" : [
-        {
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "NO",
-          "display" : "Norway"
-        }
-      ]
-    }
-  ],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "NO",
+      "display" : "Norway"
+    }]
+  }],
   "compose" : {
-    "include" : [
-      {
-        "system" : "urn:oid:2.16.840.1.113883.4.642.4.1809"
-      },
-      {
-        "system" : "http://hl7.org/fhir/contact-point-system"
-      }
-    ]
+    "include" : [{
+      "system" : "urn:oid:2.16.840.1.113883.4.642.4.1809"
+    },
+    {
+      "system" : "http://hl7.org/fhir/contact-point-system"
+    }]
   }
 }
 

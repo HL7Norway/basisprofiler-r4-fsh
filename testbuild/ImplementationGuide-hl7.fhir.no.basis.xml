@@ -6,10 +6,10 @@
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide hl7.fhir.no.basis</b></p><a name="hl7.fhir.no.basis"> </a><a name="hchl7.fhir.no.basis"> </a><h2>NoBasis</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.no/fhir/ig/ImplementationGuide/hl7.fhir.no.basis</pre></div>
   </text>
   <url value="http://hl7.no/fhir/ig/ImplementationGuide/hl7.fhir.no.basis"/>
-  <version value="2.2.3-test"/>
+  <version value="2.2.4-test"/>
   <name value="NoBasis"/>
-  <status value="active"/>
-  <date value="2025-11-06T10:34:36+00:00"/>
+  <status value="draft"/>
+  <date value="2026-10-04T17:32:19+00:00"/>
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166"/>
@@ -26,7 +26,7 @@
     </extension>
     <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
     <packageId value="hl7.terminology.r4"/>
-    <version value="6.5.0"/>
+    <version value="7.4.0"/>
   </dependsOn>
   <dependsOn id="hl7ext">
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
@@ -34,7 +34,7 @@
     </extension>
     <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
     <packageId value="hl7.fhir.uv.extensions.r4"/>
-    <version value="5.2.0"/>
+    <version value="5.3.0"/>
   </dependsOn>
   <definition>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -238,7 +238,7 @@
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
-      <valueCode value="hl7.fhir.uv.tools.r4#0.8.0"/>
+      <valueCode value="hl7.fhir.uv.tools.r4#1.1.2"/>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
@@ -470,6 +470,7 @@
         <reference value="Organization/Direktoratet-for-eHelse-Organization"/>
       </reference>
       <name value="Direktoratet-for-eHelse-Organization"/>
+      <description value="Example of an organization using no-basis profile. The profile is identical to the basis profile except there is an extension that can be used for official addresses."/>
       <exampleCanonical value="http://hl7.no/fhir/ig/StructureDefinition/no-basis-Organization"/>
     </resource>
     <resource>
@@ -480,6 +481,7 @@
         <reference value="Patient/EspenEksempel"/>
       </reference>
       <name value="EspenEksempel"/>
+      <description value="Eksempel på pasient med fødselsnummer, navn, telefonnummer, adresse, sivilstand og fastlege."/>
       <exampleCanonical value="http://hl7.no/fhir/ig/StructureDefinition/no-basis-Patient"/>
     </resource>
     <resource>
@@ -490,6 +492,7 @@
         <reference value="Patient/JanniceSoreng"/>
       </reference>
       <name value="JanniceSoreng"/>
+      <description value="Eksempel på pasient med fødselsnummer, navn, telefonnummer, adresse, sivilstand og fastlege."/>
       <exampleCanonical value="http://hl7.no/fhir/ig/StructureDefinition/no-basis-Patient"/>
     </resource>
     <resource>
@@ -500,6 +503,7 @@
         <reference value="Patient/JanniceSorengTo"/>
       </reference>
       <name value="JanniceSorengTo"/>
+      <description value="Eksempel på pasient med fødselsnummer, navn, telefonnummer, adresse, sivilstand og fastlege."/>
       <exampleCanonical value="http://hl7.no/fhir/ig/StructureDefinition/no-basis-Patient"/>
     </resource>
     <resource>
@@ -510,7 +514,19 @@
         <reference value="Practitioner/Magnar-Komann-Practitioner"/>
       </reference>
       <name value="Magnar-Komann-Practitioner"/>
+      <description value="Eksempel på helsepersonell med identifikator, navn, telefonnummer, adresse og kvalifikasjoner."/>
       <exampleCanonical value="http://hl7.no/fhir/ig/StructureDefinition/no-basis-Practitioner"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Procedure"/>
+      </extension>
+      <reference>
+        <reference value="Procedure/no-basis-Procedure-example"/>
+      </reference>
+      <name value="No Basis Procedure Example"/>
+      <description value="Example of a colonoscopy procedure using no-basis profile"/>
+      <exampleCanonical value="http://hl7.no/fhir/ig/StructureDefinition/no-basis-Procedure"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -652,6 +668,7 @@
         <reference value="ValueSet/no-basis-documentreference-type.valueset"/>
       </reference>
       <name value="no-basis-documentreference-type.valueset"/>
+      <description value="Kodeverket er for å angi dokumenttype når man skal dele et dokument i en XDS-løsning. Kodeverket er også harmonert med eksisterende kodeverk for dokumenttyper og journalstruktur i den grad dette har vært mulig. Dette gjelder primært følgende kodeverk: - 9066 Kategori journalinformasjon - 9601 Emneorienterte sakstyper (Piene inndelingen)"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -772,6 +789,17 @@
       </reference>
       <name value="no-basis-HumanName"/>
       <description value="Basisprofil for Norwegian HumanName. Defined by The Norwegian Directorate of eHealth and HL7 Norway. The profile adds the concept of middlename and further explains of the use for the data-elements in a Norwegian context. The basis profile is open, but derived profiles should close down the information elements according to specification relevant to the use-case."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="NamingSystem"/>
+      </extension>
+      <reference>
+        <reference value="NamingSystem/no-basis-icpc-2"/>
+      </reference>
+      <name value="no-basis-icpc-2"/>
+      <description value="In Norway primary care uses ICPC-2 to document contact-reason, health related problem and diagnosis."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -996,16 +1024,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Procedure"/>
-      </extension>
-      <reference>
-        <reference value="Procedure/no-basis-Procedure-example"/>
-      </reference>
-      <name value="no-basis-Procedure-example"/>
-      <exampleCanonical value="http://hl7.no/fhir/StructureDefinition/no-basis-Procedure"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
@@ -1105,17 +1123,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="NamingSystem"/>
-      </extension>
-      <reference>
-        <reference value="NamingSystem/no-basis-icpc-2"/>
-      </reference>
-      <name value="NoBasisICPC2"/>
-      <description value="In Norway primary care uses ICPC-2 to document contact-reason, health related problem and diagnosis."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Patient"/>
       </extension>
       <reference>
@@ -1165,6 +1172,7 @@
         <reference value="RelatedPerson/Solid-Aresdoktor-RelatedPerson"/>
       </reference>
       <name value="Solid-Aresdoktor-RelatedPerson"/>
+      <description value="Eksempel på pårørende med fødselsnummer, navn, telefonnummer, adresse, sivilstand og relasjon til pasient."/>
       <exampleCanonical value="http://hl7.no/fhir/ig/StructureDefinition/no-basis-RelatedPerson"/>
     </resource>
     <resource>
@@ -1175,6 +1183,7 @@
         <reference value="RelatedPerson/Sorgard-Erlend-RelatedPerson"/>
       </reference>
       <name value="Sorgard-Erlend-RelatedPerson"/>
+      <description value="Eksempel på pårørende med fødselsnummer, navn, telefonnummer, adresse, sivilstand og relasjon til pasient."/>
       <exampleCanonical value="http://hl7.no/fhir/ig/StructureDefinition/no-basis-RelatedPerson"/>
     </resource>
     <page>

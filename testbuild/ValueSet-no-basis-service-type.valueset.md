@@ -1,4 +1,4 @@
-# no-basis-service-type.valueset - v2.2.3-test
+# no-basis-service-type.valueset - v2.2.4-test
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.no/fhir/ValueSet/no-basis-service-type | *Version*:2.2.3-test |
+| *Official URL*:http://hl7.no/fhir/ValueSet/no-basis-service-type | *Version*:2.2.4-test |
 | Active as of 2018-10-26 | *Computable Name*:NoBasisServiceType |
 
  
@@ -20,24 +20,11 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
 
 ### Logical Definition (CLD)
 
-version: 1; Last updated: 2018-10-16 10:48:46+0000
-
-This value set includes codes based on the following rules:
-
-* Include all codes defined in `urn:oid:2.16.578.1.12.4.1.1.8660`version Not Stated (use latest from terminology server)
-* Include all codes defined in `urn:oid:2.16.578.1.12.4.1.1.8668`version Not Stated (use latest from terminology server)
-* Include all codes defined in `urn:oid:2.16.578.1.12.4.1.1.8669`version Not Stated (use latest from terminology server)
-* Include all codes defined in `urn:oid:2.16.578.1.12.4.1.1.8658`version Not Stated (use latest from terminology server)
-* Include all codes defined in `urn:oid:2.16.578.1.12.4.1.1.8659`version Not Stated (use latest from terminology server)
-* Include all codes defined in `urn:oid:2.16.578.1.12.4.1.1.8663`version Not Stated (use latest from terminology server)
-* Include all codes defined in `urn:oid:2.16.578.1.12.4.1.1.8664`version Not Stated (use latest from terminology server)
-* Include all codes defined in `urn:oid:2.16.578.1.12.4.1.1.8666`version Not Stated (use latest from terminology server)
-
  
 
 ### Expansion
 
-No Expansion for this valueset (not supported by Publication Tooling)
+No Expansion for this valueset (Unknown Code System)
 
 -------
 
@@ -65,52 +52,46 @@ No Expansion for this valueset (not supported by Publication Tooling)
     "lastUpdated" : "2018-10-16T10:48:46.366+00:00"
   },
   "url" : "http://hl7.no/fhir/ValueSet/no-basis-service-type",
-  "version" : "2.2.3-test",
+  "version" : "2.2.4-test",
   "name" : "NoBasisServiceType",
   "title" : "no-basis-service-type.valueset",
   "status" : "active",
   "experimental" : true,
   "date" : "2018-10-26T10:48:45.936+00:00",
   "description" : "ValueSet including all codes for service type (tjenestetype) allowed in the Adressergister",
-  "jurisdiction" : [
-    {
-      "coding" : [
-        {
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "NO",
-          "display" : "Norway"
-        }
-      ]
-    }
-  ],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "NO",
+      "display" : "Norway"
+    }]
+  }],
   "immutable" : false,
   "compose" : {
-    "include" : [
-      {
-        "system" : "urn:oid:2.16.578.1.12.4.1.1.8660"
-      },
-      {
-        "system" : "urn:oid:2.16.578.1.12.4.1.1.8668"
-      },
-      {
-        "system" : "urn:oid:2.16.578.1.12.4.1.1.8669"
-      },
-      {
-        "system" : "urn:oid:2.16.578.1.12.4.1.1.8658"
-      },
-      {
-        "system" : "urn:oid:2.16.578.1.12.4.1.1.8659"
-      },
-      {
-        "system" : "urn:oid:2.16.578.1.12.4.1.1.8663"
-      },
-      {
-        "system" : "urn:oid:2.16.578.1.12.4.1.1.8664"
-      },
-      {
-        "system" : "urn:oid:2.16.578.1.12.4.1.1.8666"
-      }
-    ]
+    "include" : [{
+      "system" : "urn:oid:2.16.578.1.12.4.1.1.8660"
+    },
+    {
+      "system" : "urn:oid:2.16.578.1.12.4.1.1.8668"
+    },
+    {
+      "system" : "urn:oid:2.16.578.1.12.4.1.1.8669"
+    },
+    {
+      "system" : "urn:oid:2.16.578.1.12.4.1.1.8658"
+    },
+    {
+      "system" : "urn:oid:2.16.578.1.12.4.1.1.8659"
+    },
+    {
+      "system" : "urn:oid:2.16.578.1.12.4.1.1.8663"
+    },
+    {
+      "system" : "urn:oid:2.16.578.1.12.4.1.1.8664"
+    },
+    {
+      "system" : "urn:oid:2.16.578.1.12.4.1.1.8666"
+    }]
   }
 }
 

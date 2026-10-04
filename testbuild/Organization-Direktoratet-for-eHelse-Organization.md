@@ -1,4 +1,4 @@
-# Direktoratet-for-eHelse-Organization - v2.2.3-test
+# Direktoratet-for-eHelse-Organization - v2.2.4-test
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -26,43 +26,33 @@ Profile: [no-basis-Organization](StructureDefinition-no-basis-Organization.md)
   "resourceType" : "Organization",
   "id" : "Direktoratet-for-eHelse-Organization",
   "meta" : {
-    "profile" : [
-      "http://hl7.no/fhir/ig/StructureDefinition/no-basis-Organization"
-    ]
+    "profile" : ["http://hl7.no/fhir/ig/StructureDefinition/no-basis-Organization"]
   },
-  "identifier" : [
-    {
-      "system" : "urn:oid:2.16.578.1.12.4.1.4.101",
-      "value" : "915933149"
-    }
-  ],
+  "identifier" : [{
+    "system" : "urn:oid:2.16.578.1.12.4.1.4.101",
+    "value" : "915933149"
+  }],
   "name" : "Direktoratet for e-Helse",
-  "address" : [
-    {
-      "extension" : [
-        {
-          "url" : "http://hl7.no/fhir/StructureDefinition/no-basis-address-official",
-          "valueBoolean" : true
-        }
-      ],
-      "type" : "postal",
-      "line" : ["Postboks 221 Skøyen"],
-      "city" : "OSLO",
-      "postalCode" : "0213"
-    },
-    {
-      "extension" : [
-        {
-          "url" : "http://hl7.no/fhir/StructureDefinition/no-basis-address-official",
-          "valueBoolean" : true
-        }
-      ],
-      "type" : "physical",
-      "line" : ["Verkstedveien 1"],
-      "city" : "OSLO",
-      "postalCode" : "0277"
-    }
-  ]
+  "address" : [{
+    "extension" : [{
+      "url" : "http://hl7.no/fhir/StructureDefinition/no-basis-address-official",
+      "valueBoolean" : true
+    }],
+    "type" : "postal",
+    "line" : ["Postboks 221 Skøyen"],
+    "city" : "OSLO",
+    "postalCode" : "0213"
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.no/fhir/StructureDefinition/no-basis-address-official",
+      "valueBoolean" : true
+    }],
+    "type" : "physical",
+    "line" : ["Verkstedveien 1"],
+    "city" : "OSLO",
+    "postalCode" : "0277"
+  }]
 }
 
 ```

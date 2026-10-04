@@ -1,4 +1,4 @@
-# Pasient-1 - v2.2.3-test
+# Pasient-1 - v2.2.4-test
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 Profile: [no-basis-Patient](StructureDefinition-no-basis-Patient.md)
 
-Rita Lin (no stated gender), DoB Unknown ( urn:oid:2.16.578.1.12.4.1.4.1#13031353453)
+Rita Lin (no stated gender), DoB Unknown ( urn:oid:2.16.578.1.12.4.1.4.1#Foedselsnummer#13031353453)
 
 -------
 
@@ -23,18 +23,14 @@ Rita Lin (no stated gender), DoB Unknown ( urn:oid:2.16.578.1.12.4.1.4.1#1303135
   "meta" : {
     "profile" : ["http://hl7.no/fhir/ig/StructureDefinition/no-basis-Patient"]
   },
-  "identifier" : [
-    {
-      "system" : "urn:oid:2.16.578.1.12.4.1.4.1",
-      "value" : "13031353453"
-    }
-  ],
-  "name" : [
-    {
-      "family" : "Lin",
-      "given" : ["Rita"]
-    }
-  ]
+  "identifier" : [{
+    "system" : "urn:oid:2.16.578.1.12.4.1.4.1",
+    "value" : "13031353453"
+  }],
+  "name" : [{
+    "family" : "Lin",
+    "given" : ["Rita"]
+  }]
 }
 
 ```

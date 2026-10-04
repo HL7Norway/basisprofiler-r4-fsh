@@ -1,4 +1,4 @@
-# no-basis-person-citizenship - v2.2.3-test
+# no-basis-person-citizenship - v2.2.4-test
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | | |
 | :--- | :--- | :--- |
-| *Official URL*:http://hl7.no/fhir/ig/StructureDefinition/no-basis-person-citizenship | *Version*:2.2.3-test | |
-| Active as of 2018-12-27 | [Maturity Level](http://hl7.org/fhir/versions.html#maturity): 1 | *Computable Name*:NoBasisPersonCitizenship |
+| *Official URL*:http://hl7.no/fhir/StructureDefinition/no-basis-person-citizenship | *Version*:2.2.4-test | |
+| Draft as of 2018-12-27 | [Maturity Level](http://hl7.org/fhir/versions.html#maturity): 1 | *Computable Name*:NoBasisPersonCitizenship |
 
 The Person's legal status as citizen of a country.
 
@@ -19,9 +19,9 @@ The Person's legal status as citizen of a country.
 
 **Usages:**
 
-* This Extension is not used by any profiles in this Implementation Guide
+* Examples for this Extension: [RelatedPerson/Sorgard-Erlend-RelatedPerson](RelatedPerson-Sorgard-Erlend-RelatedPerson.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.no.basis|current/StructureDefinition/no-basis-person-citizenship)
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/hl7.fhir.no.basis|current/StructureDefinition/StructureDefinition-no-basis-person-citizenship.json)
 
 ### Formal Views of Extension Content
 
@@ -41,132 +41,116 @@ Other representations of profile: [CSV](StructureDefinition-no-basis-person-citi
 {
   "resourceType" : "StructureDefinition",
   "id" : "no-basis-person-citizenship",
-  "extension" : [
-    {
-      "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
-      "valueCode" : "pa"
-    },
-    {
-      "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
-      "valueInteger" : 1
-    }
-  ],
-  "url" : "http://hl7.no/fhir/ig/StructureDefinition/no-basis-person-citizenship",
-  "version" : "2.2.3-test",
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+    "valueCode" : "pa"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 1
+  }],
+  "url" : "http://hl7.no/fhir/StructureDefinition/no-basis-person-citizenship",
+  "version" : "2.2.4-test",
   "name" : "NoBasisPersonCitizenship",
   "title" : "no-basis-person-citizenship",
-  "status" : "active",
+  "status" : "draft",
   "date" : "2018-12-27T22:37:54+11:00",
   "description" : "The Person's legal status as citizen of a country.",
-  "jurisdiction" : [
-    {
-      "coding" : [
-        {
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "NO",
-          "display" : "Norway"
-        }
-      ]
-    }
-  ],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "NO",
+      "display" : "Norway"
+    }]
+  }],
   "fhirVersion" : "4.0.1",
-  "mapping" : [
-    {
-      "identity" : "rim",
-      "uri" : "http://hl7.org/v3",
-      "name" : "RIM Mapping"
-    }
-  ],
+  "mapping" : [{
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  }],
   "kind" : "complex-type",
   "abstract" : false,
-  "context" : [
-    {
-      "type" : "element",
-      "expression" : "Person"
-    },
-    {
-      "type" : "element",
-      "expression" : "RelatedPerson"
-    }
-  ],
+  "context" : [{
+    "type" : "element",
+    "expression" : "Person"
+  },
+  {
+    "type" : "element",
+    "expression" : "RelatedPerson"
+  }],
   "type" : "Extension",
   "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
   "derivation" : "constraint",
   "differential" : {
-    "element" : [
-      {
-        "id" : "Extension",
-        "path" : "Extension",
-        "short" : "Nation(s) where the person claims citizenship",
-        "definition" : "The person's legal status as citizen of a country."
-      },
-      {
-        "id" : "Extension.extension:code",
-        "path" : "Extension.extension",
-        "sliceName" : "code",
-        "short" : "Nation code of citizenship",
-        "definition" : "Nation code representing the citizenship of person.",
-        "min" : 0,
-        "max" : "1"
-      },
-      {
-        "id" : "Extension.extension:code.extension",
-        "path" : "Extension.extension.extension",
-        "max" : "0"
-      },
-      {
-        "id" : "Extension.extension:code.url",
-        "path" : "Extension.extension.url",
-        "fixedUri" : "code"
-      },
-      {
-        "id" : "Extension.extension:code.value[x]",
-        "path" : "Extension.extension.value[x]",
-        "type" : [
-          {
-            "code" : "CodeableConcept"
-          }
-        ]
-      },
-      {
-        "id" : "Extension.extension:period",
-        "path" : "Extension.extension",
-        "sliceName" : "period",
-        "short" : "Time period of citizenship",
-        "definition" : "Period when citizenship was effective.",
-        "min" : 0,
-        "max" : "1"
-      },
-      {
-        "id" : "Extension.extension:period.extension",
-        "path" : "Extension.extension.extension",
-        "max" : "0"
-      },
-      {
-        "id" : "Extension.extension:period.url",
-        "path" : "Extension.extension.url",
-        "fixedUri" : "period"
-      },
-      {
-        "id" : "Extension.extension:period.value[x]",
-        "path" : "Extension.extension.value[x]",
-        "type" : [
-          {
-            "code" : "Period"
-          }
-        ]
-      },
-      {
-        "id" : "Extension.url",
-        "path" : "Extension.url",
-        "fixedUri" : "http://hl7.no/fhir/ig/StructureDefinition/no-basis-person-citizenship"
-      },
-      {
-        "id" : "Extension.value[x]",
-        "path" : "Extension.value[x]",
-        "max" : "0"
-      }
-    ]
+    "element" : [{
+      "id" : "Extension",
+      "path" : "Extension",
+      "short" : "Nation(s) where the person claims citizenship",
+      "definition" : "The person's legal status as citizen of a country."
+    },
+    {
+      "id" : "Extension.extension:code",
+      "path" : "Extension.extension",
+      "sliceName" : "code",
+      "short" : "Nation code of citizenship",
+      "definition" : "Nation code representing the citizenship of person.",
+      "min" : 0,
+      "max" : "1"
+    },
+    {
+      "id" : "Extension.extension:code.extension",
+      "path" : "Extension.extension.extension",
+      "max" : "0"
+    },
+    {
+      "id" : "Extension.extension:code.url",
+      "path" : "Extension.extension.url",
+      "fixedUri" : "code"
+    },
+    {
+      "id" : "Extension.extension:code.value[x]",
+      "path" : "Extension.extension.value[x]",
+      "type" : [{
+        "code" : "CodeableConcept"
+      }]
+    },
+    {
+      "id" : "Extension.extension:period",
+      "path" : "Extension.extension",
+      "sliceName" : "period",
+      "short" : "Time period of citizenship",
+      "definition" : "Period when citizenship was effective.",
+      "min" : 0,
+      "max" : "1"
+    },
+    {
+      "id" : "Extension.extension:period.extension",
+      "path" : "Extension.extension.extension",
+      "max" : "0"
+    },
+    {
+      "id" : "Extension.extension:period.url",
+      "path" : "Extension.extension.url",
+      "fixedUri" : "period"
+    },
+    {
+      "id" : "Extension.extension:period.value[x]",
+      "path" : "Extension.extension.value[x]",
+      "type" : [{
+        "code" : "Period"
+      }]
+    },
+    {
+      "id" : "Extension.url",
+      "path" : "Extension.url",
+      "fixedUri" : "http://hl7.no/fhir/StructureDefinition/no-basis-person-citizenship"
+    },
+    {
+      "id" : "Extension.value[x]",
+      "path" : "Extension.value[x]",
+      "max" : "0"
+    }]
   }
 }
 

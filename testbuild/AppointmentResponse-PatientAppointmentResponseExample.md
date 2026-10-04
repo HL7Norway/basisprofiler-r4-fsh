@@ -1,4 +1,4 @@
-# Patient Appointment Response Example - v2.2.3-test
+# Patient Appointment Response Example - v2.2.4-test
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -25,16 +25,12 @@ Profile: [no-basis-AppointmentResponse](StructureDefinition-no-basis-Appointment
   "resourceType" : "AppointmentResponse",
   "id" : "PatientAppointmentResponseExample",
   "meta" : {
-    "profile" : [
-      "http://hl7.no/fhir/ig/StructureDefinition/no-basis-AppointmentResponse"
-    ]
+    "profile" : ["http://hl7.no/fhir/ig/StructureDefinition/no-basis-AppointmentResponse"]
   },
-  "extension" : [
-    {
-      "url" : "http://hl7.no/fhir/ig/StructureDefinition/no-basis-shortnotice",
-      "valueBoolean" : true
-    }
-  ],
+  "extension" : [{
+    "url" : "http://hl7.no/fhir/ig/StructureDefinition/no-basis-shortnotice",
+    "valueBoolean" : true
+  }],
   "appointment" : {
     "reference" : "Appointment/AppointmentExample",
     "display" : "MRI results discussion"

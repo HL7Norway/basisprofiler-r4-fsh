@@ -1,4 +1,4 @@
-# Appointment and Encounter - v2.2.3-test
+# Appointment and Encounter - v2.2.4-test
 
 * [**Table of Contents**](toc.md)
 * **Appointment and Encounter**
@@ -9,7 +9,7 @@
 
 ### no-basis Appointment and no-basis-Encounter
 
-![](no-basis-Workflow-Management.png)
+ ![](no-basis-Workflow-Management.png)
 
 Appointment and Encounter have dependencies as they both describe different aspects of the administrative relationship between patient and health care organizations.
 

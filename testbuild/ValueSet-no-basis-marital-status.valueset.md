@@ -1,4 +1,4 @@
-# no-basis-marital-status.valueset - v2.2.3-test
+# no-basis-marital-status.valueset - v2.2.4-test
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.no/fhir/ValueSet/no-basis-marital-status | *Version*:2.2.3-test |
-| Active as of 2020-03-20 | *Computable Name*:NoBasisMaritalStatusVS |
+| *Official URL*:http://hl7.no/fhir/ValueSet/no-basis-marital-status | *Version*:2.2.4-test |
+| Active as of 2020-03-20 | *Computable Name*:NoBasisMaritalStatus |
 
  
 Copy of Codes from Sivilstandstype defined by Skatteetaten 
@@ -19,8 +19,6 @@ Copy of Codes from Sivilstandstype defined by Skatteetaten
 * [no-basis-RelatedPerson](StructureDefinition-no-basis-RelatedPerson.md)
 
 ### Logical Definition (CLD)
-
-* Include all codes defined in [`http://hl7.no/fhir/CodeSystem/no-basis-marital-status`](CodeSystem-no-basis-marital-status.codesystem.md)version 📦2.2.3-test
 
  
 
@@ -48,31 +46,25 @@ Copy of Codes from Sivilstandstype defined by Skatteetaten
   "resourceType" : "ValueSet",
   "id" : "no-basis-marital-status.valueset",
   "url" : "http://hl7.no/fhir/ValueSet/no-basis-marital-status",
-  "version" : "2.2.3-test",
-  "name" : "NoBasisMaritalStatusVS",
+  "version" : "2.2.4-test",
+  "name" : "NoBasisMaritalStatus",
   "title" : "no-basis-marital-status.valueset",
   "status" : "active",
   "experimental" : true,
   "date" : "2020-03-20T10:48:45.936+00:00",
   "description" : "Copy of Codes from Sivilstandstype defined by Skatteetaten",
-  "jurisdiction" : [
-    {
-      "coding" : [
-        {
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "NO",
-          "display" : "Norway"
-        }
-      ]
-    }
-  ],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "NO",
+      "display" : "Norway"
+    }]
+  }],
   "immutable" : false,
   "compose" : {
-    "include" : [
-      {
-        "system" : "http://hl7.no/fhir/CodeSystem/no-basis-marital-status"
-      }
-    ]
+    "include" : [{
+      "system" : "http://hl7.no/fhir/CodeSystem/no-basis-marital-status"
+    }]
   }
 }
 

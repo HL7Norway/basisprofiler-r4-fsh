@@ -1,4 +1,4 @@
-# EspenEksempel - v2.2.3-test
+# EspenEksempel - v2.2.4-test
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 Profile: [no-basis-Patient](StructureDefinition-no-basis-Patient.md)
 
-Espen Eksempel Male, DoB Unknown ( urn:oid:2.16.578.1.12.4.1.4.1#210377xxxxx)
+Espen Eksempel Male, DoB Unknown ( urn:oid:2.16.578.1.12.4.1.4.1#Foedselsnummer#210377xxxxx)
 
 -------
 
@@ -35,98 +35,74 @@ Espen Eksempel Male, DoB Unknown ( urn:oid:2.16.578.1.12.4.1.4.1#210377xxxxx)
   "meta" : {
     "profile" : ["http://hl7.no/fhir/ig/StructureDefinition/no-basis-Patient"]
   },
-  "extension" : [
-    {
-      "extension" : [
-        {
-          "url" : "code",
-          "valueCodeableConcept" : {
-            "coding" : [
-              {
-                "system" : "urn:iso:std:iso:3166",
-                "code" : "NO"
-              }
-            ]
-          }
-        }
-      ],
-      "url" : "http://hl7.org/fhir/StructureDefinition/patient-citizenship"
-    }
-  ],
-  "identifier" : [
-    {
-      "system" : "urn:oid:2.16.578.1.12.4.1.4.1",
-      "value" : "210377xxxxx"
-    }
-  ],
-  "name" : [
-    {
-      "family" : "Eksempel",
-      "given" : ["Espen"]
-    }
-  ],
-  "telecom" : [
-    {
-      "system" : "phone",
-      "value" : "+4798216832",
-      "use" : "home"
-    }
-  ],
+  "extension" : [{
+    "extension" : [{
+      "url" : "code",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "NO"
+        }]
+      }
+    }],
+    "url" : "http://hl7.org/fhir/StructureDefinition/patient-citizenship"
+  }],
+  "identifier" : [{
+    "system" : "urn:oid:2.16.578.1.12.4.1.4.1",
+    "value" : "210377xxxxx"
+  }],
+  "name" : [{
+    "family" : "Eksempel",
+    "given" : ["Espen"]
+  }],
+  "telecom" : [{
+    "system" : "phone",
+    "value" : "+4798216832",
+    "use" : "home"
+  }],
   "gender" : "male",
-  "address" : [
-    {
-      "extension" : [
-        {
-          "extension" : [
-            {
-              "url" : "municipality",
-              "valueCoding" : {
-                "system" : "urn:oid:2.16.578.1.12.4.1.1.3402",
-                "code" : "0301",
-                "display" : "Oslo"
-              }
-            }
-          ],
-          "url" : "http://hl7.no/fhir/StructureDefinition/no-basis-propertyinformation"
-        },
-        {
-          "url" : "http://hl7.no/fhir/StructureDefinition/no-basis-address-official",
-          "valueBoolean" : true
+  "address" : [{
+    "extension" : [{
+      "extension" : [{
+        "url" : "municipality",
+        "valueCoding" : {
+          "system" : "urn:oid:2.16.578.1.12.4.1.1.3402",
+          "code" : "0301",
+          "display" : "Oslo"
         }
-      ],
-      "use" : "home",
-      "line" : ["Stålverkskroken 14"],
-      "city" : "Oslo",
-      "district" : "Oslo",
-      "postalCode" : "0661",
-      "country" : "NO"
-    }
-  ],
+      }],
+      "url" : "http://hl7.no/fhir/StructureDefinition/no-basis-propertyinformation"
+    },
+    {
+      "url" : "http://hl7.no/fhir/StructureDefinition/no-basis-address-official",
+      "valueBoolean" : true
+    }],
+    "use" : "home",
+    "line" : ["Stålverkskroken 14"],
+    "city" : "Oslo",
+    "district" : "Oslo",
+    "postalCode" : "0661",
+    "country" : "NO"
+  }],
   "maritalStatus" : {
-    "coding" : [
-      {
-        "system" : "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
-        "code" : "U",
-        "display" : "unmarried"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+      "code" : "U",
+      "display" : "unmarried"
+    }]
   },
-  "communication" : [
-    {
-      "language" : {
-        "text" : "Norsk"
-      }
+  "communication" : [{
+    "language" : {
+      "text" : "Norsk"
     }
-  ],
-  "generalPractitioner" : [
-    {
-      "identifier" : {
-        "system" : "urn:oid:2.16.578.1.12.4.1.2",
-        "value" : "720"
-      },
-      "display" : "SIDSEL AASE JAVERY"
-    }
-  ]
+  }],
+  "generalPractitioner" : [{
+    "identifier" : {
+      "system" : "urn:oid:2.16.578.1.12.4.1.2",
+      "value" : "720"
+    },
+    "display" : "SIDSEL AASE JAVERY"
+  }]
 }
 
 ```

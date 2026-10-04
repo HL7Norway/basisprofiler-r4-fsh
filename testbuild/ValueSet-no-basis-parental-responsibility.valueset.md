@@ -1,4 +1,4 @@
-# no-basis-parental-responsibility.valueset - v2.2.3-test
+# no-basis-parental-responsibility.valueset - v2.2.4-test
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.no/fhir/ValueSet/no-basis-parental-responsibility | *Version*:2.2.3-test |
-| Active as of 2018-10-26 | *Computable Name*:NoBasisParentalResponsibilityVS |
+| *Official URL*:http://hl7.no/fhir/ValueSet/no-basis-parental-responsibility | *Version*:2.2.4-test |
+| Active as of 2018-10-26 | *Computable Name*:NoBasisParentalResponsibility |
 
  
 Copy of Codes from Foreldreansvar defined by Skatteetaten 
@@ -19,10 +19,6 @@ Copy of Codes from Foreldreansvar defined by Skatteetaten
 * [no-basis-RelatedPerson](StructureDefinition-no-basis-RelatedPerson.md)
 
 ### Logical Definition (CLD)
-
-version: 1; Last updated: 2018-10-16 10:48:46+0000
-
-* Include all codes defined in [`http://hl7.no/fhir/CodeSystem/no-basis-parental-responsibility`](CodeSystem-no-basis-parental-responsibility.codesystem.md)version 📦2.2.3-test
 
  
 
@@ -54,31 +50,25 @@ version: 1; Last updated: 2018-10-16 10:48:46+0000
     "lastUpdated" : "2018-10-16T10:48:46.366+00:00"
   },
   "url" : "http://hl7.no/fhir/ValueSet/no-basis-parental-responsibility",
-  "version" : "2.2.3-test",
-  "name" : "NoBasisParentalResponsibilityVS",
+  "version" : "2.2.4-test",
+  "name" : "NoBasisParentalResponsibility",
   "title" : "no-basis-parental-responsibility.valueset",
   "status" : "active",
   "experimental" : true,
   "date" : "2018-10-26T10:48:45.936+00:00",
   "description" : "Copy of Codes from Foreldreansvar defined by Skatteetaten",
-  "jurisdiction" : [
-    {
-      "coding" : [
-        {
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "NO",
-          "display" : "Norway"
-        }
-      ]
-    }
-  ],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "NO",
+      "display" : "Norway"
+    }]
+  }],
   "immutable" : false,
   "compose" : {
-    "include" : [
-      {
-        "system" : "http://hl7.no/fhir/CodeSystem/no-basis-parental-responsibility"
-      }
-    ]
+    "include" : [{
+      "system" : "http://hl7.no/fhir/CodeSystem/no-basis-parental-responsibility"
+    }]
   }
 }
 

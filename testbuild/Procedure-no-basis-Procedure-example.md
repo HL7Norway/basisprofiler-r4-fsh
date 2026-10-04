@@ -1,10 +1,10 @@
-# no-basis-Procedure-example - v2.2.3-test
+# No Basis Procedure Example - v2.2.4-test
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **no-basis-Procedure-example**
+* **No Basis Procedure Example**
 
-## Example Procedure: no-basis-Procedure-example
+## Example Procedure: No Basis Procedure Example
 
 Profile: [no-basis-Procedure](StructureDefinition-no-basis-Procedure.md)
 
@@ -12,14 +12,14 @@ Profile: [no-basis-Procedure](StructureDefinition-no-basis-Procedure.md)
 
 **code**: Colonoscopy (procedure)
 
-**subject**: [Patient/example](Patient/example)
+**subject**: [Peter James Chalmers (official) (no stated gender), DoB Unknown](Patient-PatientExample.md)
 
 ### Performers
 
 | | | |
 | :--- | :--- | :--- |
 | - | **Function** | **Actor** |
-| * | Primary performing endoscopist (person) | [Practitioner/example](Practitioner/example) |
+| * | Primary performing endoscopist (person) | [Practitioner Magnar Koman ](Practitioner-Magnar-Komann-Practitioner.md) |
 
 **bodySite**: TC - Transverse colon
 
@@ -32,48 +32,38 @@ Profile: [no-basis-Procedure](StructureDefinition-no-basis-Procedure.md)
   "resourceType" : "Procedure",
   "id" : "no-basis-Procedure-example",
   "meta" : {
-    "profile" : ["http://hl7.no/fhir/StructureDefinition/no-basis-Procedure"]
+    "profile" : ["http://hl7.no/fhir/ig/StructureDefinition/no-basis-Procedure"]
   },
   "status" : "completed",
   "code" : {
-    "coding" : [
-      {
-        "system" : "http://snomed.info/sct",
-        "code" : "73761001",
-        "display" : "Colonoscopy (procedure)"
-      }
-    ]
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "73761001",
+      "display" : "Colonoscopy (procedure)"
+    }]
   },
   "subject" : {
-    "reference" : "Patient/example"
+    "reference" : "Patient/PatientExample"
   },
-  "performer" : [
-    {
-      "function" : {
-        "coding" : [
-          {
-            "system" : "http://snomed.info/sct",
-            "code" : "8921000202108",
-            "display" : "Primary performing endoscopist (person)"
-          }
-        ]
-      },
-      "actor" : {
-        "reference" : "Practitioner/example"
-      }
+  "performer" : [{
+    "function" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "8921000202108",
+        "display" : "Primary performing endoscopist (person)"
+      }]
+    },
+    "actor" : {
+      "reference" : "Practitioner/Magnar-Komann-Practitioner"
     }
-  ],
-  "bodySite" : [
-    {
-      "coding" : [
-        {
-          "system" : "http://snomed.info/sct",
-          "code" : "485005",
-          "display" : "TC - Transverse colon"
-        }
-      ]
-    }
-  ]
+  }],
+  "bodySite" : [{
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "485005",
+      "display" : "TC - Transverse colon"
+    }]
+  }]
 }
 
 ```

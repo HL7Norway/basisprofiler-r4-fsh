@@ -1,4 +1,4 @@
-# no-basis-family-relation.valueset - v2.2.3-test
+# no-basis-family-relation.valueset - v2.2.4-test
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.no/fhir/ValueSet/no-basis-family-relation | *Version*:2.2.3-test |
-| Active as of 2018-10-26 | *Computable Name*:NoBasisFamilyRelationVS |
+| *Official URL*:http://hl7.no/fhir/ValueSet/no-basis-family-relation | *Version*:2.2.4-test |
+| Active as of 2018-10-26 | *Computable Name*:NoBasisFamilyRelation |
 
  
 Copy of Codes from Familierelasjon defined by Skatteetaten 
@@ -19,10 +19,6 @@ Copy of Codes from Familierelasjon defined by Skatteetaten
 * [no-basis-RelatedPerson](StructureDefinition-no-basis-RelatedPerson.md)
 
 ### Logical Definition (CLD)
-
-version: 1; Last updated: 2018-10-16 10:48:46+0000
-
-* Include all codes defined in [`http://hl7.no/fhir/CodeSystem/no-basis-family-relation`](CodeSystem-no-basis-family-relation.codesystem.md)version 📦2.2.3-test
 
  
 
@@ -54,31 +50,25 @@ version: 1; Last updated: 2018-10-16 10:48:46+0000
     "lastUpdated" : "2018-10-16T10:48:46.366+00:00"
   },
   "url" : "http://hl7.no/fhir/ValueSet/no-basis-family-relation",
-  "version" : "2.2.3-test",
-  "name" : "NoBasisFamilyRelationVS",
+  "version" : "2.2.4-test",
+  "name" : "NoBasisFamilyRelation",
   "title" : "no-basis-family-relation.valueset",
   "status" : "active",
   "experimental" : true,
   "date" : "2018-10-26T10:48:45.936+00:00",
   "description" : "Copy of Codes from Familierelasjon defined by Skatteetaten",
-  "jurisdiction" : [
-    {
-      "coding" : [
-        {
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "NO",
-          "display" : "Norway"
-        }
-      ]
-    }
-  ],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "NO",
+      "display" : "Norway"
+    }]
+  }],
   "immutable" : false,
   "compose" : {
-    "include" : [
-      {
-        "system" : "http://hl7.no/fhir/CodeSystem/no-basis-family-relation"
-      }
-    ]
+    "include" : [{
+      "system" : "http://hl7.no/fhir/CodeSystem/no-basis-family-relation"
+    }]
   }
 }
 
