@@ -103,5 +103,17 @@
     "uses" : {
     },
     "StructureDefinition-no-basis-Procedure.html" : "no-basis-Procedure"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/iso3166-1-2",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "Iso3166-1-2",
+    "title" : "Iso 3166 Part 1: 2 Letter Codes",
+    "description" : "This value set defines the ISO 3166 Part 1 2-letter codes",
+    "systems" : ["urn:iso:std:iso:3166"],
+    "uses" : {
+    },
+    "StructureDefinition-no-basis-Patient.html" : "no-basis-Patient"
   }]
 }

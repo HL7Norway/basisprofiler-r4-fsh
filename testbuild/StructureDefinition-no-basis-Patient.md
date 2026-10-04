@@ -129,7 +129,7 @@ Other representations of profile: [CSV](StructureDefinition-no-basis-Patient.csv
       "path" : "Patient.extension.extension.value[x]",
       "binding" : {
         "strength" : "preferred",
-        "valueSet" : "urn:iso:std:iso:3166"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/iso3166-1-2"
       }
     },
     {

@@ -16,7 +16,7 @@
   fhir:SearchParameter.version [ fhir:value "2.2.4-test"] ;
   fhir:SearchParameter.name [ fhir:value "NoBasisMiddlename"] ;
   fhir:SearchParameter.status [ fhir:value "active"] ;
-  fhir:SearchParameter.date [ fhir:value "2026-10-04T17:32:19+00:00"^^xsd:dateTime] ;
+  fhir:SearchParameter.date [ fhir:value "2026-10-04T17:44:22+00:00"^^xsd:dateTime] ;
   fhir:SearchParameter.description [ fhir:value "SearchParameter for the Norwegian middlename extension http://hl7.no/fhir/StructureDefinition/no-basis-middlename"] ;
   fhir:SearchParameter.jurisdiction [
      fhir:index 0 ;
